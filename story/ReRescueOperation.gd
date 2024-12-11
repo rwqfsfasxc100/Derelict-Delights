@@ -26,6 +26,7 @@ func canBeAt(pos):
 		Debug.l("* Denied because of random chance of %f" % rc)
 		return false
 	var chaos = get_parent().getChaosAt(pos)
+	l(ReRescueOperation used successfully)
 	return chaos >= chaosLimit
 
 func grandf():
