@@ -8,7 +8,7 @@ Fulfil your derelict-hunting dream with this mod. All remaining 14 ship types an
 ## Derelict Spawn Chances
 Check [this wiki page](https://delta-v.kodera.pl/index.php/Profit_Strategy_-_Derelicts#Finding_Derelicts_in_the_Wild) for further understanding on how derelicts spawn, as some of these values may seem misleading as to what they do.
 * KX37 TNTRL:
-*   Spawn Chance: 70%
+**   Spawn Chance: 70%
 *   Minimum Chance: 10%
 *   Money Ceiling: 4 million E$
 * Runasimi KR37 TNTRL:
