@@ -22,7 +22,7 @@ func _init(modLoader = ModLoader):
 	
 	replaceScene("story/TheRing.tscn")
 	replaceScene("Game.tscn")
-	installScriptExtension("story/Shipyard.gd")
+	installScriptExtension("ships/Shipyard.gd")
 	
 	l("Initialized")
 
