@@ -2,6 +2,7 @@
 
 [ext_resource path="res://story/TheRing.tscn" type="PackedScene" id=1]
 [ext_resource path="res://story/ReRescueOperation.gd" type="Script" id=2]
+[ext_resource path="res://story/MinerMining.gd" type="Script" id=3]
 
 [node name="TheRing" instance=ExtResource( 1 )]
 
@@ -130,3 +131,55 @@ moneyCeiling = 9e+06
 model = "KITSUNE"
 rescue = false
 chaosLimit = 0.2
+
+[node name="ConstructionMinerMining" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "OCP"
+
+[node name="ShuttleMinerMining" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "KITSUNE"
+
+[node name="LargeMinerMining" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "AT225"
+
+[node name="LargeMinerMining2" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "AT225-B"
+
+[node name="ProspectorMinerMining" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "PROSPECTOR-VP"
+
+[node name="ProspectorMinerMining2" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "PROSPECTOR-FAT"
+
+[node name="ProspectorMinerMining3" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "PROSPECTOR-LUX"
+
+[node name="MinerMining2" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "TRTL-LCB"
+
+[node name="MinerMining3" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "TRTL-R"
+
+[node name="MinerMining4" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "TRTL-T"
+
+[node name="AncientMinerMining2" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "COTHON-CHK"
+
+[node name="AncientMinerMining3" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "COTHON-LND"
+
+[node name="AncientMinerMining4" type="Node" parent="."]
+script = ExtResource( 3 )
+ship = "COTHON-V"
