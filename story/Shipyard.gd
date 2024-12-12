@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 var DDUsedShips = {
-"COTHON":[
+	"COTHON":[
 		{
 		"weaponSlot":{
 			"right":{
@@ -89,8 +89,8 @@ var DDUsedShips = {
 			"main":"SYSTEM_MAIN_ENGINE_PNTR", 
 			"rcs":"SYSTEM_THRUSTER_MA150HO"
 		}
-	}
-]
+		}
+	]
 }
 
 func _ready():
