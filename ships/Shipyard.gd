@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
-var DDUsedShips["COTHON"] = {
-	[
+var DDUsedShips = {
+	"COTHON":[
 		{
 		"weaponSlot":{
 			"right":{
