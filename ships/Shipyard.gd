@@ -146,73 +146,74 @@ var DDUsedShips = {
 	],
 	"AT225":[
 		{
-    		  "ammo": {
-   		     "capacity": 1000,
-    		    "initial": 1000
-    		  },
-    		  "autopilot": {
-    		    "type": "SYSTEM_AUTOPILOT_MK2"
-    		  },
-    		  "aux": {
-    		    "power": "SYSTEM_NONE"
-   		   },
-   		   "capacitor": {
-    		    "capacity": 500
-   		   },
-      		"cargo": {
-    		    "equipment": "SYSTEM_CARGO_MPUFSO"
-  		    },
-  		    "drones": {
-   		     "capacity": 0,
-  		      "initial": 0
- 		     },
- 		     "fuel": {
-  		      "capacity": 80000,
-  		      "initial": 80000
-  		    },
-  		      "type": "SYSTEM_HUD_AT225"
-  		    },
-   		   "propulsion": {
-    		    "main": "SYSTEM_MAIN_ENGINE_BWMT535",
-    		    "rcs": "SYSTEM_THRUSTER_K37"
-    		  },
-   		   "reactor": {
-    		    "power": 16
-    		  },
-    		  "shielding": {
-        		"emp": 0
-   		   },
-   		   "tuning": {},
-    		  "turbine": {
-   		     "power": 200
-   		   },
-   		   "weaponSlot": {
-		      "leftBay1":{
-   		       "type": "SYSTEM_DND_HAUL"
-    		    },
-   		     "leftBay2": {
-    		      "type": "SYSTEM_EXMONO-L"
-    		    },
-    		    "leftBay3": {
-    		      "type": "SYSTEM_EXMONO-L"
-   		     },
-    		    "middleLeft": {
-   		       "type": "SYSTEM_PDMWG"
-  		      },
-   		     "middleRight": {
-     		     "type": "SYSTEM_PDMWG"
-       		 	},
-      		  "rightBay1": {
-      		    "type": "SYSTEM_DND_HAUL"
-    		    },
-     		   "rightBay2": {
-     		     "type": "SYSTEM_EXMONO-R"
-   		     },
-    		    "rightBay3": {
-     		     "type": "SYSTEM_EXMONO-R"
-     	  		 }
-  		    }
-    		}
+		"ammo": {
+			"capacity": 1000,
+			"initial": 1000
+		},
+		"autopilot": {
+			"type": "SYSTEM_AUTOPILOT_MK2"
+		},
+		"aux": {
+			"power": "SYSTEM_NONE"
+		},
+		"capacitor": {
+			"capacity": 500
+		},
+		"cargo": {
+			"equipment": "SYSTEM_CARGO_MPUFSO"
+		},
+		"drones": {
+			"capacity": 0,
+			"initial": 0
+		},
+		"fuel": {
+			"capacity": 80000,
+			"initial": 80000
+		},
+		"hud":{
+			"type": "SYSTEM_HUD_AT225"
+		},
+		"propulsion": {
+			"main": "SYSTEM_MAIN_ENGINE_BWMT535",
+			"rcs": "SYSTEM_THRUSTER_K37"
+		},
+		"reactor": {
+			"power": 16
+		},
+		"shielding": {
+			"emp": 0
+		},
+		"tuning": {},
+		"turbine": {
+			"power": 200
+		},
+		"weaponSlot": {
+			"leftBay1":{
+				"type": "SYSTEM_DND_HAUL"
+			},
+			"leftBay2": {
+				"type": "SYSTEM_EXMONO-L"
+			},
+			"leftBay3": {
+				"type": "SYSTEM_EXMONO-L"
+			},
+			"middleLeft": {
+				"type": "SYSTEM_PDMWG"
+			},
+			"middleRight": {
+				"type": "SYSTEM_PDMWG"
+			},
+			"rightBay1": {
+				"type": "SYSTEM_DND_HAUL"
+			},
+			"rightBay2": {
+				"type": "SYSTEM_EXMONO-R"
+			},
+			"rightBay3": {
+				"type": "SYSTEM_EXMONO-R"
+			}
+		}
+	}
 	]
 }
 
