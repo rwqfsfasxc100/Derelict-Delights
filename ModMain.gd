@@ -20,11 +20,34 @@ func _init(modLoader = ModLoader):
 	
 	loadDLC()
 	
+	# Event initialization
 	replaceScene("story/TheRing.tscn")
-	replaceScene("Game.tscn")
-	installScriptExtension("ships/Shipyard.gd")
+	# replaceScene("Game.tscn") - Legacy code that used to handle event spawning
+	l("res://story/TheRing.tcsn and subsequent new events have been processed")
+# Scripts used to compile new equipment loadouts for ships
+	# installScriptExtension("ships/Shipyard.gd") - Legacy script used to load new equipment loadouts
+	installScriptExtension("ships/prospector.gd")
+	l("Added ship configs for general prospector ships")
+	installScriptExtension("ships/prospector-bald.gd")
+	l("Added ship configs for bald eagles")
+	installScriptExtension("ships/prospector-vp.gd")
+	l("Added ship configs for vultures")
+	installScriptExtension("ships/at225.gd")
+	l("Added ship configs for titan ships")
+	installScriptExtension("ships/cothon.gd")
+	l("Added ship configs for cothon ships")
+	installScriptExtension("ships/eime.gd")
+	l("Added ship configs for the EIME")
+	installScriptExtension("ships/kitsune.gd")
+	l("Added ship configs for the kitsune")
+	installScriptExtension("ships/ocp.gd")
+	l("Added ship configs for the ocp")
+	installScriptExtension("ships/trtl.gd")
+	l("Added ship configs for general TNTRL ships")
+	installScriptExtension("ships/trtl-44.gd")
+	l("Added ship configs for the K44")
 	
-	l("Initialized")
+	l("Initialized Derelict Delights completely!")
 
 
 # Do stuff on ready
