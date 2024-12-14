@@ -1,5 +1,8 @@
 extends "res://ships/Shipyard.gd"
 
+func _ready():
+	usedShipConfigs.merge(thisTookWayTooLongToGetWorkingWhyIsJSONSoStingyAndCouldntThisHaveJustBeenDoneInATCSNToMakeTheEngineDoTheWorkInstead, true)
+
 var thisTookWayTooLongToGetWorkingWhyIsJSONSoStingyAndCouldntThisHaveJustBeenDoneInATCSNToMakeTheEngineDoTheWorkInstead = {
 	"COTHON":[
 		{
@@ -583,5 +586,7 @@ var thisTookWayTooLongToGetWorkingWhyIsJSONSoStingyAndCouldntThisHaveJustBeenDon
 	]
 }
 
-func _ready():
-  usedShipConfigs.merge(thisTookWayTooLongToGetWorkingWhyIsJSONSoStingyAndCouldntThisHaveJustBeenDoneInATCSNToMakeTheEngineDoTheWorkInstead, true)
+# var additionalShipType = {
+#	"PROSPECTOR-VP":"TRTL"
+#	}
+#	configAlias.merge(additionalShipType)
