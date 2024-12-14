@@ -1,6 +1,6 @@
 extends "res://ships/Shipyard.gd"
 
-var DDUsedShips = {
+var thisTookWayTooLongToGetWorkingWhyIsJSONSoStingyAndCouldntThisHaveJustBeenDoneInATCSNToMakeTheEngineDoTheWorkInstead = {
 	"COTHON":[
 		{
 		"weaponSlot":{
@@ -130,7 +130,7 @@ var DDUsedShips = {
 			"equipment":"SYSTEM_CARGO_MPUFSO"
 			}, 
 		"autopilot":{
-			"type":"SYSTEM_AUTOPILOT_MK3z"
+			"type":"SYSTEM_AUTOPILOT_MK3"
 			}, 
 		"propulsion":{
 			"main":"SYSTEM_MAIN_ENGINE_BWMT535", 
@@ -226,7 +226,7 @@ var DDUsedShips = {
 		"hud":{
 			"type": "SYSTEM_HUD_AT225"
 		},
-    		"drone": {
+		"drone": {
 			"scanner": "SYSTEM_RD_GRAVIMETRIC"
 		},
 		"lidar": {
@@ -297,7 +297,7 @@ var DDUsedShips = {
 		"hud":{
 			"type": "SYSTEM_HUD_AT225"
 		},
-    		"drone": {
+		"drone": {
 			"scanner": "SYSTEM_RD_SPECTROMETER"
 		},
 		"lidar": {
@@ -460,8 +460,128 @@ var DDUsedShips = {
 			}
 		}
 	}
+	],
+	"PROSPECTOR-BALD":[
+	{
+		"ammo":{
+			"capacity":5000,
+			"initial":5000
+		},
+		"autopilot":{
+			"type":"SYSTEM_AUTOPILOT_RTYPE"
+		},
+		"aux":{
+			"power":"SYSTEM_AUX_MPD_MK2"
+		},
+		"capacitor":{
+			"capacity":1500
+		},
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_MPU_FAB"
+		},
+		"drone":{
+			"scanner":"SYSTEM_RD_STANDARD"
+		},
+		"drones":{
+			"capacity":10000,
+			"initial":10000
+		},
+		"fuel":{
+			"capacity":50000,
+			"initial":50000
+		},
+		"hud":{
+			"type":"SYSTEM_HUD_OCP209"
+		},
+		"lidar":{
+			"type":"SYSTEM_LIDAR_DOPPLER_HIRES"
+		},
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_NPMP",
+			"rcs":"SYSTEM_THRUSTER_K69V"
+		},
+		"reactor":{
+			"power":50
+		},
+		"turbine":{
+			"power":500
+		},
+		"weaponSlot":{
+			"leftDrone":{
+				"type":"SYSTEM_DND_FIX"
+			},
+			"rightDrone":{
+				"type":"SYSTEM_DND_FIX"
+			},
+			"middleLeft":{
+				"type":"SYSTEM_RAILTOR"
+			},
+			"middleRight":{
+				"type":"SYSTEM_MWG"
+			}
+		}
+	},
+	{
+		"ammo":{
+			"capacity":0,
+			"initial":0
+		},
+		"autopilot":{
+			"type":"SYSTEM_AUTOPILOT_RTYPE"
+		},
+		"aux":{
+			"power":"SYSTEM_AUX_MPD_MK3"
+		},
+		"capacitor":{
+			"capacity":1500
+		},
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_MPU_FAB"
+		},
+		"drone":{
+			"scanner":"SYSTEM_RD_STANDARD"
+		},
+		"drones":{
+			"capacity":10000,
+			"initial":10000
+		},
+		"fuel":{
+			"capacity":200000,
+			"initial":200000
+		},
+		"hud":{
+			"type":"SYSTEM_HUD_OCP209"
+		},
+		"lidar":{
+			"type":"SYSTEM_LIDAR_DOPPLER_HIRES"
+		},
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_EIZAP",
+			"rcs":"SYSTEM_THRUSTER_K69V"
+		},
+		"reactor":{
+			"power":50
+		},
+		"turbine":{
+			"power":500
+		},
+		"weaponSlot":{
+			"leftDrone":{
+				"type":"SYSTEM_DND_FIX"
+			},
+			"rightDrone":{
+				"type":"SYSTEM_DND_FIX"
+			},
+			"middleLeft":{
+				"type":"SYSTEM_DND_FIX"
+			},
+			"middleRight":{
+				"type":"SYSTEM_DND_FIX"
+			}
+		}
+	}
 	]
 }
 
 func _ready():
-  usedShipConfigs.merge(DDUsedShips, true)
+  usedShipConfigs.merge(thisTookWayTooLongToGetWorkingWhyIsJSONSoStingyAndCouldntThisHaveJustBeenDoneInATCSNToMakeTheEngineDoTheWorkInstead, true)
