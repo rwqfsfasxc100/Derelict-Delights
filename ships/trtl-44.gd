@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 func _ready():
-	usedShipConfigs.append_array(TRTL_44, true)
+	usedShipConfigs.append_array(TRTL_44)
 
 var TRTL_44 = {
 	"TRTL-44":[
