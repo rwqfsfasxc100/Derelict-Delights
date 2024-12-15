@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 func _ready():
-	usedShipConfigs.merge(AT225, true)
+	usedShipConfigs.merge(AT225)
 
 var AT225 = {
 	"AT225":[
