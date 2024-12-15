@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 func _ready():
-	usedShipConfigs.merge(OCP209, true)
+	usedShipConfigs.merge(OCP209)
 
 var OCP209 = {
 	"OCP209":[
