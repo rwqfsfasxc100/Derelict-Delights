@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 func _ready():
-	usedShipConfigs.append_array(PROSPECTOR_VULTURE, true)
+	usedShipConfigs.append_array(PROSPECTOR_VULTURE)
 
 var PROSPECTOR_VULTURE = {
 	"PROSPECTOR-VP":[
