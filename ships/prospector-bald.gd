@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 func _ready():
-	usedShipConfigs.merge(PROSPECTOR_BALD, true)
+	usedShipConfigs.merge(PROSPECTOR_BALD)
 
 var PROSPECTOR_BALD = {
 	"PROSPECTOR-BALD":[
