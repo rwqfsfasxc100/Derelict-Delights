@@ -25,7 +25,7 @@ func _init(modLoader = ModLoader):
 	# Event initialization
 	replaceScene("story/TheRing.tscn")
 	# replaceScene("Game.tscn") - Legacy code that used to handle event spawning
-	l("res://story/TheRing.tcsn and subsequent new events have been processed, loading new ship configurations")
+	l("TheRing.tscn and subsequent new events have been processed, loading new ship configurations")
 
 	# Scripts used to compile new equipment loadouts for ships
 	# installScriptExtension("ships/Shipyard.gd") - Legacy script used to load new equipment loadouts
