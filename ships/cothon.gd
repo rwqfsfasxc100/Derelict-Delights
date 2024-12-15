@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 func _ready():
-	usedShipConfigs.append_array(COTHON, true)
+	usedShipConfigs.append_array(COTHON)
 
 var COTHON = {
 	"COTHON":[
