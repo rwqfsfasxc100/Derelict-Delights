@@ -26,26 +26,26 @@ func _init(modLoader = ModLoader):
 	l("res://story/TheRing.tcsn and subsequent new events have been processed")
 # Scripts used to compile new equipment loadouts for ships
 	# installScriptExtension("ships/Shipyard.gd") - Legacy script used to load new equipment loadouts
-	installScriptExtension("ships/prospector.gd")
-	l("Added ship configs for general prospector ships")
-	installScriptExtension("ships/prospector-bald.gd")
-	l("Added ship configs for bald eagles")
-	installScriptExtension("ships/prospector-vp.gd")
-	l("Added ship configs for vultures")
-	installScriptExtension("ships/at225.gd")
-	l("Added ship configs for titan ships")
-	installScriptExtension("ships/cothon.gd")
-	l("Added ship configs for cothon ships")
-	installScriptExtension("ships/eime.gd")
-	l("Added ship configs for the EIME")
-	installScriptExtension("ships/kitsune.gd")
-	l("Added ship configs for the kitsune")
-	installScriptExtension("ships/ocp.gd")
-	l("Added ship configs for the ocp")
-	installScriptExtension("ships/trtl.gd")
-	l("Added ship configs for general TNTRL ships")
-	installScriptExtension("ships/trtl-44.gd")
-	l("Added ship configs for the K44")
+#	installScriptExtension("ships/prospector.gd")
+#	l("Added ship configs for general prospector ships")
+#	installScriptExtension("ships/prospector-bald.gd")
+#	l("Added ship configs for bald eagles")
+#	installScriptExtension("ships/prospector-vp.gd")
+#	l("Added ship configs for vultures")
+#	installScriptExtension("ships/at225.gd")
+#	l("Added ship configs for titan ships")
+#	installScriptExtension("ships/cothon.gd")
+#	l("Added ship configs for cothon ships")
+#	installScriptExtension("ships/eime.gd")
+#	l("Added ship configs for the EIME")
+#	installScriptExtension("ships/kitsune.gd")
+#	l("Added ship configs for the kitsune")
+#	installScriptExtension("ships/ocp.gd")
+#	l("Added ship configs for the ocp")
+#	installScriptExtension("ships/trtl.gd")
+#	l("Added ship configs for general TNTRL ships")
+#	installScriptExtension("ships/trtl-44.gd")
+#	l("Added ship configs for the K44")
 	
 	l("Initialized Derelict Delights completely!")
 
@@ -55,7 +55,7 @@ func _init(modLoader = ModLoader):
 func _ready():
 	l("Readying")
 	l("Ready")
-
+	
 
 # Helper script to load translations using csv format
 # `path` is the path to the transalation file
