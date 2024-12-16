@@ -1,29 +1,53 @@
 locale|en
 
-DIALOG_PIRATE_BUSINESS_SHIP_KTA24|
+DIALOG_PIRATE_BUSINESS_SHIP_K44|I have one of those failed K44 prototype thingies. Turns out they do actually exist and not just a myth. The transponder still has some power, but it's a total wreck. \nYou can take it off of my hands for 250 grand.
 
-DIALOG_PIRATE_BUSINESS_SHIP_KX37|
+DIALOG_PIRATE_BUSINESS_SHIP_COTHON_217|I have an experimental Cothon stored away. The processed hold is reduced, but doesn't have the sectioned constraints of normal holds. \nYou can take it for 200 grand.
 
-DIALOG_PIRATE_BUSINESS_SHIP_KR37|
+DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_PEACOCK|I've got a luxury Prospector in a good spot. Leather seats and everything, I almost feel bad about giving it up but whatever. \nIt's yours for 300 grand.
 
-DIALOG_PIRATE_BUSINESS_SHIP_KITSUNE|
+DIALOG_PIRATE_BUSINESS_SHIP_KTA24|Got a KTA tug out about. Looks like it could make a good vessel for our operations, but the front thrusters are funky. Fit some proper gear to it and it could be great. \nTake it for 200 grand.
 
-DIALOG_PIRATE_BUSINESS_SHIP_COTHON_213|
+DIALOG_PIRATE_BUSINESS_SHIP_KX37|Found an extended K37 model after some guy had overstressed it. Good enough nick to take, but I wouldn't say it's flightworthy. \n200 grand for the hunk.
 
-DIALOG_PIRATE_BUSINESS_SHIP_COTHON_211|
+DIALOG_PIRATE_BUSINESS_SHIP_KR37|We've got a research K37 around here. Bit small for our liking, but has all the inns and outs of a K37, minus the size of everything. Comes fitted with a Faraday cage and everything too. \nWe'll take 200 grand for the piece.
 
-DIALOG_PIRATE_BUSINESS_SHIP_BALD_EAGLE|
+DIALOG_PIRATE_BUSINESS_SHIP_KITSUNE|One of the demilitarized Kitsunes landed our way, and we've had one lying around. Didn't really see much point in using one, so may as well make an offer to you for it. \nWe're offering 200 grand flat for it.
 
-DIALOG_PIRATE_BUSINESS_SHIP_PELICAN|
+DIALOG_PIRATE_BUSINESS_SHIP_COTHON_213|I've got an old Cothon here, except this one's got a neat thing up it's sleeve. Three engines instead of one, packs a punch but it's Faraday cage is lost. \nSelling it at 200k.
 
-DIALOG_PIRATE_BUSINESS_SHIP_VULTURE|
+DIALOG_PIRATE_BUSINESS_SHIP_COTHON_211|We've got a belter Cothon here. Larger than the standard models, just a little offset. Damage is here and there, but it's still in one piece. \nI'll let you take it for 200 000 E$
 
-DIALOG_PIRATE_BUSINESS_SHIP_OCP|
+DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_BALD|Got our hands on a Bald Eagle of all things. Owner lost a race to a Cothon of all things, and abandoned it in shame. Still a lovely piece of work dented or not. \n600 grand and the bird is yours to collect.
 
-DIALOG_PIRATE_BUSINESS_SHIP_TITAN|
+DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_PELICAN|We've got our hands on a large Prospector. It's bay is huge for what it is, and it's mass is probably what got it in trouble to begin with. I couldn't tell you if it's flightworthy with the state it's in. \n250 grand for it and I hope you'll see it gone.
 
-DIALOG_PIRATE_BUSINESS_SHIP_TITAN_BB|
+DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_VULTURE|I've got a Prospector-K37 hybrid build stored up around here. It's nice to have with it's equipment, but sure is it uncomfortable to fly. \nWe want it off our hands and will hand you the coords for 200 grand.
 
-DIALOG_PIRATE_BUSINESS_SHIP_TITAN_M|
+DIALOG_PIRATE_BUSINESS_SHIP_OCP|Some of the construction crew for Obonto Seven left one of their ships unlocked while on an inspection break. Somehow managed to take it without them noticing until too late. It's too unwieldy for our liking, so you can take a look for 300 grand.
 
-DIALOG_PIRATE_BUSINESS_SHIP_EIME|
+DIALOG_PIRATE_BUSINESS_SHIP_TITAN|Got a derelict Titan of all things stored up, cargo pods and everything. Huge thing it is, but damages to the rim and back. \nWe can let you take it for half a mega.
+
+DIALOG_PIRATE_BUSINESS_SHIP_TITAN_BB|Have one of those hollowed-out Titans at hand. Beast of a ship with a cargo bay of an even bigger beast, although it does lack some of it's bays. \nWe're offering half a mega for it.
+
+DIALOG_PIRATE_BUSINESS_SHIP_TITAN_M|A buddy discovered this very weird modification of a Titan. All of the docking bays got switched out with torch fittings, and it seems to have gotten a research package installed. Got the Faraday cage and everything. Looked like we weren't the first ones there as the airlock was broke. \nYou can take it to fix up for a mega.
+
+DIALOG_PIRATE_BUSINESS_SHIP_EIME|Found an EIME abandoned not too far from here. Surprising find to us at least as those ships are tough as nails when we try to engage with them. \nIt's a total wreck, but you can have it for 750 grand.
+
+DIALOG_PIRATE_BUSINESS_SHIP_K37_I|I have a K37 in decent condition, still with transponders. Bit of holes in the reactor and some stains, but nothing a good mechanic can't take care of. \nI can sell it to you for 200 grand.
+
+DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_I|We have a Prospector for sale. Cleared on the station a legitimate derelict after a mining accident. That one is not spaceworthy. \n200 grand.
+
+DIALOG_PIRATE_BUSINESS_SHIP_COTHON_I|I got my hands on an early Cothon, in pretty good condition. Legitimate salvage, transponder still on, listed as missing. The reactor is still a bit leaky. \nOn sale for 200 grand.
+
+DIALOG_PIRATE_BUSINESS_ORE_I|We have some ore to sell. High quality, processed, just waiting in the rings in a nice, tidy container. You just need to bring a cradle with you and grab it. 100 grand and it's yours.
+
+DIALOG_PIRATE_BUSINESS_ORE_II|We have some ore to sell. High quality, processed, just waiting in the rings in a nice, tidy container. You just need to bring a cradle with you and grab it. 100 grand and it's yours.
+
+DIALOG_PIRATE_BUSINESS_ORE_III|We have some ore to sell. High quality, processed, just waiting in the rings in a nice, tidy container. You just need to bring a cradle with you and grab it. 100 grand and it's yours.
+
+DIALOG_PIRATE_BUSINESS_ORE_IV|We have some ore to sell. High quality, processed, just waiting in the rings in a nice, tidy container. You just need to bring a cradle with you and grab it. 100 grand and it's yours.
+
+DIALOG_PIRATE_BUSINESS_ORE_V|We have some ore to sell. High quality, processed, just waiting in the rings in a nice, tidy container. You just need to bring a cradle with you and grab it. 100 grand and it's yours.
+
+DIALOG_PIRATE_BUSINESS_ORE_VI|We have some ore to sell. High quality, processed, just waiting in the rings in a nice, tidy container. You just need to bring a cradle with you and grab it. 100 grand and it's yours.
