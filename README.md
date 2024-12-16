@@ -1,5 +1,10 @@
 # Derelict-Delights
-Fulfil your derelict-hunting dream with this mod. All remaining 14 ship types and variants not usually found in derelict form can now be found deserted within the rings.
+Fulfil your derelict-hunting dream with this mod. All remaining 13 ship types and variants not usually found in the rings can now be found from both miners and in derelict form.
+
+This mod currently adds:
+* NPC miner and derelict forms for all TNTRL variants (except the K44), Cothon variants, Eagle variants, AT-K225 variants (except modified variant), OCP-209, and the Kitsune.
+* New ship configs for dealership, NPC, and derelict ships.
+* Ganymedeans now have a chance to sell you the K44, Peacock Prospector, and Cothon-217.
 
 ## NOTES
 1. If you have any suggestions for this mod, please feel free to comment on the mod's [Discord thread](https://discord.com/channels/426287934870781952/1316256288329699419). If you want to suggest a new ship loadout configuration, check out [this Google form here](https://forms.gle/yzvbGmaWeHWH9ChK8), and it should give you a quick dropdown selection for each equipment on a ship to save time and not clog up the Discord channel.
