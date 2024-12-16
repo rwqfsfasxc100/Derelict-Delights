@@ -25,6 +25,7 @@ func _init(modLoader = ModLoader):
 	# Event initialization
 	replaceScene("story/TheRing.tscn")
 	replaceScene("Game.tscn")
+	installScriptExtension("story/Vilcy.gd")
 	
 	l("TheRing.tscn and subsequent new events have been loaded, now initializing new ship configurations")
 
