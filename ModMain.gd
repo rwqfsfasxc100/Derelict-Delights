@@ -2,9 +2,9 @@ extends Node
 
 # Set mod priority if you want it to load before/after other mods
 # Mods are loaded from lowest to highest priority, default is 0
-const MOD_PRIORITY = 1
+const MOD_PRIORITY = -1
 # Name of the mod, used for writing to the logs
-const MOD_NAME = "DerelictDelights"
+const MOD_NAME = "Derelict Delights v.0.4.0"
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
@@ -19,22 +19,24 @@ func _init(modLoader = ModLoader):
 	l("Initializing DLC")
 	
 	loadDLC()
-
-	l("DLC Loaded, Initializing events") 
-
+	
+	l("DLC loaded, now initializing events")
+	
 	# Event initialization
 	replaceScene("story/TheRing.tscn")
-	# replaceScene("Game.tscn") - Legacy code that used to handle event spawning
-	l("TheRing.tscn and subsequent new events have been processed, loading new ship configurations")
+	replaceScene("Game.tscn")
+	
+	l("TheRing.tscn and subsequent new events have been loaded, now initializing new ship configurations")
 
-	# Scripts used to compile new equipment loadouts for ships
+# Scripts used to compile new equipment loadouts for ships
 	# installScriptExtension("ships/Shipyard.gd") - Legacy script used to load new equipment loadouts
+
 	installScriptExtension("ships/prospector.gd")
 	l("Added ship configs for general prospector ships")
 	installScriptExtension("ships/prospector-bald.gd")
 	l("Added ship configs for bald eagles")
-	installScriptExtension("ships/prospector-vp.gd")
-	l("Added ship configs for vultures")
+	#installScriptExtension("ships/prospector-vp.gd") - Crashes game if loaded
+	#l("Added ship configs for vultures")
 	installScriptExtension("ships/at225.gd")
 	l("Added ship configs for titan ships")
 	installScriptExtension("ships/cothon.gd")
@@ -47,10 +49,17 @@ func _init(modLoader = ModLoader):
 	l("Added ship configs for the ocp")
 	installScriptExtension("ships/trtl.gd")
 	l("Added ship configs for general TNTRL ships")
-	installScriptExtension("ships/trtl-44.gd")
-	l("Added ship configs for the K44")
-	l("Ship configurations finished")
-
+	#installScriptExtension("ships/trtl-44.gd") - Crashes game if loaded
+	#("Added ship configs for the K44")
+	
+	l("Loaded ship configurations, now initializing conversations")
+	#Conversation initialization
+	replaceScene("comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+	l("Loaded conversations, now initializing translations")
+	
+	updateTL("i18n/en.txt", "|")
+	l("Loaded translations")
+	
 	l("Initialized Derelict Delights completely!")
 
 
