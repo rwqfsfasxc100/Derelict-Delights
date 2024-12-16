@@ -894,7 +894,7 @@ changePlayerMoney = -100000.0
 grantAchivement = "STORY_PIRATE_QUEST"
 poiExposeName = "POI_PIRATE_ORE"
 poiExposeUnique = false
-poiExposeEvent = "StoragePod"
+poiExposeEvent = "StoragePodFull"
 poiDistanceKm = 500.0
 poiDirection = Vector2( 1, 0 )
 
