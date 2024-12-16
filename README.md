@@ -4,7 +4,7 @@ Fulfil your derelict-hunting dream with this mod. All remaining 13 ship types an
 This mod currently adds:
 * NPC miner and derelict forms for all TNTRL variants (except the K44), Cothon variants, Eagle variants, AT-K225 variants (except modified variant), OCP-209, and the Kitsune.
 * New ship configs for dealership, NPC, and derelict ships.
-* Ganymedeans now have a chance to sell you the K44, Peacock Prospector, and Cothon-217.
+* Ganymedeans now have a chance to sell a ship other than the default 3 (K37, Eagle Prospector, Cothon-212)
 
 ## NOTES
 1. If you have any suggestions for this mod, please feel free to comment on the mod's [Discord thread](https://discord.com/channels/426287934870781952/1316256288329699419). If you want to suggest a new ship loadout configuration, check out [this Google form here](https://forms.gle/yzvbGmaWeHWH9ChK8), and it should give you a quick dropdown selection for each equipment on a ship to save time and not clog up the Discord channel.
@@ -68,3 +68,12 @@ Check [this wiki page](https://delta-v.kodera.pl/index.php/Profit_Strategy_-_Der
   *   Spawn Chance: 75%
   *   Minimum Chance: 10%
   *   Money Ceiling: 9 million E$
+
+## Planned Additions
+* ~~Similar setup to allow NPC miners use these vessels too~~ (maybe GA too if this works out ok)
+* ~~Add dialogue for GA ship trading for ships, and add weighted rarity to the selection to make it more balanced between common (TNTRL line) and expensive (K225 and EIME) captures.~~
+* add new derelict types to add onto the K37 for radar anomalies
+* new loadout defaults for vessels (partially complete, needs more in the way of community loadouts)
+* new racing events using different vessel mixups
+* check to see if non-player-accessible vessels work for some of the above situations
+* create derelict (and other) spawns for modded ships
