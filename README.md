@@ -4,7 +4,7 @@ Fulfil your derelict-hunting dream with this mod. All remaining 13 ship types an
 This mod currently adds:
 * NPC miner and derelict forms for all TNTRL variants (except the K44), Cothon variants, Eagle variants, AT-K225 variants (except modified variant), OCP-209, and the Kitsune.
 * New ship configs for dealership, NPC, and derelict ships.
-* Ganymedeans now have a chance to sell a ship other than the default 3 (K37, Eagle Prospector, Cothon-212). As a result to the increase in ship opportunities, the weight to be offered an ore container has been increased sevenfold to a 50.6/49.4 container-to-ship offer ratio.
+* Ganymedeans now have a chance to sell a ship other than the default 3 (K37, Eagle Prospector, Cothon-212). As a result to the increase in ship opportunities, the weight to be offered an ore container has been increased sevenfold, and the weights for the vanilla 3 ship offers have been increased fourfold each, resulting in a 50.6/49.4 container-to-ship offer ratio.
 
 ## NOTES
 1. If you have any suggestions for this mod, please feel free to comment on the mod's [Discord thread](https://discord.com/channels/426287934870781952/1316256288329699419). If you want to suggest a new ship loadout configuration, check out [this Google form here](https://forms.gle/yzvbGmaWeHWH9ChK8), and it should give you a quick dropdown selection for each equipment on a ship to save time and not clog up the Discord channel.
