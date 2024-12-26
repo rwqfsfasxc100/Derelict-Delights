@@ -162,5 +162,64 @@ var TRTL = [
 					"type":"SYSTEM_PDMWG-R"
 				}
 			}
+		},
+		{
+			"autopilot":{
+				"type":"SYSTEM_AUTOPILOT_MK2"
+			}, 
+			"capacitor":{
+				"capacity":1500.0
+			}, 
+			"drones":{
+				"initial":0.0, 
+				"capacity":0.0
+			}, 
+			"fuel":{
+				"capacity":80000.0, 
+				"initial":80000.0
+			}, 
+			"propulsion":{
+				"main":"SYSTEM_MAIN_ENGINE_K37", 
+				"rcs":"SYSTEM_THRUSTER_K37"
+			}, 
+			"ammo":{
+				"capacity":0.0, 
+				"initial":0.0
+			}, 
+			"hud":{
+				"type":"SYSTEM_HUD_AT225"
+			}, 
+			"reactor":{
+				"power":8.0
+			}, 
+			"drone":{
+				"scanner":"SYSTEM_RD_SPECTROMETER"
+			},
+			"cargo":{
+				"equipment":"SYSTEM_CARGO_MPU"
+			}, 
+			"lidar":{
+				"type": "SYSTEM_LIDAR_DOPPLER_HIRES"
+			},
+			"turbine":{
+				"power":500.0
+			}, 
+			"weaponSlot":{
+				"left":{
+					"type":"SYSTEM_HUNK-L"
+				}, 
+				"main":{
+					"type":"SYSTEM_SALVAGE_ARM"
+				}, 
+				"right":{
+					"type":"SYSTEM_CL150-R"
+				},
+				"leftBack":{
+					"type":"SYSTEM_NONE"
+				}, 
+				"rightback":{
+					"type":"SYSTEM_NONE"
+				}
+			}
 		}
 	]
