@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 func _ready():
-	usedShipConfigs["AT225"] = AT225
+	usedShipConfigs["AT225"].append_array(AT225)
 
 var AT225 = [
 	{
