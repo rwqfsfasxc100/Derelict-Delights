@@ -77,7 +77,7 @@ Check [this wiki page](https://delta-v.kodera.pl/index.php/Profit_Strategy_-_Der
 * ~~Similar setup to allow NPC miners use these vessels too (maybe GA too if this works out ok)~~
 * ~~Add dialogue for GA ship trading for ships, and add weighted rarity to the selection to make it more balanced between common (TNTRL line) and expensive (K225 and EIME) captures.~~
 * ~~add new derelict types to add onto the K37 for radar anomalies~~
-* ~~new loadout defaults for vessels (partially complete, needs more in the way of community loadouts)~~
+* ~~new loadout defaults for vessels~~ (partially complete, needs more in the way of community loadouts)
 * new racing events using different vessel mixups
 * check to see if non-player-accessible vessels work for some of the above situations
 * create derelict (and other) spawns for modded ships
