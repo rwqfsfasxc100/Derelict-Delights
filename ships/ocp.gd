@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 func _ready():
-	usedShipConfigs["OCP209"] = OCP209
+	usedShipConfigs["OCP209"].append_array(OCP209)
 
 var OCP209 = [
 	{
@@ -162,6 +162,65 @@ var OCP209 = [
 			},
 			"middleRight":{
 				"type":"SYSTEM_ACL200P"
+			}
+		}
+	},
+	{
+		"ammo":{
+			"capacity":20000,
+			"initial":20000
+		},
+		"autopilot":{
+			"type":"SYSTEM_AUTOPILOT_MK3"
+		},
+		"aux":{
+			"power":"SYSTEM_AUX_MPDG_MK3"
+		},
+		"capacitor":{
+			"capacity":1000
+		},
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_MPUFSO"
+		},
+		"drone":{
+			"scanner":"SYSTEM_RD_SPECTROMETER"
+		},
+		"drones":{
+			"capacity":20000,
+			"initial":20000
+		},
+		"fuel":{
+			"capacity":500000,
+			"initial":500000
+		},
+		"hud":{
+			"type":"SYSTEM_HUD_OCP209"
+		},
+		"lidar":{
+			"type":"SYSTEM_LIDAR_DOPPLER"
+		},
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_DFMPD2205",
+			"rcs":"SYSTEM_THRUSTER_MA350HO"
+		},
+		"reactor":{
+			"power":30
+		},
+		"turbine":{
+			"power":200
+		},
+		"weaponSlot":{
+			"mainLeft":{
+				"type":"SYSTEM_SALVAGE_ARM"
+			},
+			"mainRight":{
+				"type":"SYSTEM_DND_HAUL"
+			},
+			"middleLeft":{
+				"type":"SYSTEM_ACL200P"
+			},
+			"middleRight":{
+				"type":"SYSTEM_PDT-R"
 			}
 		}
 	}
