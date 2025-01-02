@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 func _ready():
-	usedShipConfigs["KITSUNE"].append_array(KITSUNE)
+	usedShipConfigs["KITSUNE"] = KITSUNE
 
 var KITSUNE = [
 	{
@@ -569,5 +569,103 @@ var KITSUNE = [
 			"propulsion":{
 				"rcs":"SYSTEM_THRUSTER_MA150HO"
 			} 
+		},
+		{
+			"hud":{
+				"type":"SYSTEM_HUD_PROSPECTOR_BALD"
+			}, 
+			"weaponSlot":{
+				"mainLow":{
+					"type":"SYSTEM_DND_FIX"
+					}
+			}, 
+			"reactor":{
+				"power":12.0
+			}, 
+			"ammo":{
+				"capacity":5000.0, 
+				"initial":5000.0, 
+			},
+			"drones":{
+				"capacity":5000.0, 
+				"initial":5000.0, 
+			}, 
+			"fuel":{
+				"capacity":50000.0, 
+				"initial":50000.0, 
+			}, 
+			"capacitor":{
+				"capacity":1500.0, 
+			}, 
+			"aux":{
+				"power":"SYSTEM_AUX_SMES_MK3"
+			},
+			"turbine":{
+				"power":500.0, 
+			}, 
+			"autopilot":{
+				"type":"SYSTEM_AUTOPILOT_MK4"
+			}, 
+			"propulsion":{
+				"rcs":"SYSTEM_THRUSTER_K69V"
+			},
+			"cargo":{
+				"equipment":"SYSTEM_CARGO_MPU_FAB"
+			},
+			"lidar":{
+				"type":"SYSTEM_LIDAR_OPA"
+			},
+			"drone":{
+				"scanner":"SYSTEM_RD_GUIDING"
+			}
+		},
+		{
+			"hud":{
+				"type":"SYSTEM_HUD_PROSPECTOR_BALD"
+			}, 
+			"weaponSlot":{
+				"mainLow":{
+					"type":"SYSTEM_CL600P"
+					}
+			}, 
+			"reactor":{
+				"power":12.0
+			}, 
+			"ammo":{
+				"capacity":5000.0, 
+				"initial":5000.0, 
+			},
+			"drones":{
+				"capacity":5000.0, 
+				"initial":5000.0, 
+			}, 
+			"fuel":{
+				"capacity":50000.0, 
+				"initial":50000.0, 
+			}, 
+			"capacitor":{
+				"capacity":1500.0, 
+			}, 
+			"aux":{
+				"power":"SYSTEM_AUX_MPD_MK3"
+			},
+			"turbine":{
+				"power":500.0, 
+			}, 
+			"autopilot":{
+				"type":"SYSTEM_AUTOPILOT_MK1"
+			}, 
+			"propulsion":{
+				"rcs":"SYSTEM_THRUSTER_K69V"
+			},
+			"cargo":{
+				"equipment":"SYSTEM_CARGO_MPU_FAB"
+			},
+			"lidar":{
+				"type":"SYSTEM_LIDAR_DOPPLER"
+			},
+			"drone":{
+				"scanner":"SYSTEM_RD_STANDARD"
+			}
 		}
 	]

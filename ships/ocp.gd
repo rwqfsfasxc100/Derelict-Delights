@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 func _ready():
-	usedShipConfigs["OCP209"].append_array(OCP209)
+	usedShipConfigs["OCP209"] = OCP209
 
 var OCP209 = [
 	{
@@ -174,7 +174,7 @@ var OCP209 = [
 			"type":"SYSTEM_AUTOPILOT_MK3"
 		},
 		"aux":{
-			"power":"SYSTEM_AUX_MPDG_MK3"
+			"power":"SYSTEM_AUX_MPD_MK3"
 		},
 		"capacitor":{
 			"capacity":1000
@@ -221,6 +221,124 @@ var OCP209 = [
 			},
 			"middleRight":{
 				"type":"SYSTEM_PDT-R"
+			}
+		}
+	},
+	{
+		"ammo":{
+			"capacity":50000,
+			"initial":50000
+		},
+		"autopilot":{
+			"type":"SYSTEM_AUTOPILOT_MK4"
+		},
+		"aux":{
+			"power":"SYSTEM_AUX_SMES_MK3"
+		},
+		"capacitor":{
+			"capacity":1500
+		},
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_MPU_FAB"
+		},
+		"drone":{
+			"scanner":"SYSTEM_RD_GUIDING"
+		},
+		"drones":{
+			"capacity":50000,
+			"initial":50000
+		},
+		"fuel":{
+			"capacity":500000,
+			"initial":500000
+		},
+		"hud":{
+			"type":"SYSTEM_HUD_PROSPECTOR_BALD"
+		},
+		"lidar":{
+			"type":"SYSTEM_LIDAR_OPA"
+		},
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_EIZAP",
+			"rcs":"SYSTEM_THRUSTER_K69V"
+		},
+		"reactor":{
+			"power":50
+		},
+		"turbine":{
+			"power":500
+		},
+		"weaponSlot":{
+			"mainLeft":{
+				"type":"SYSTEM_DND_FIX"
+			},
+			"mainRight":{
+				"type":"SYSTEM_DND_FIX"
+			},
+			"middleLeft":{
+				"type":"SYSTEM_DND_FIX"
+			},
+			"middleRight":{
+				"type":"SYSTEM_DND_FIX"
+			}
+		}
+	},
+	{
+		"ammo":{
+			"capacity":50000,
+			"initial":50000
+		},
+		"autopilot":{
+			"type":"SYSTEM_AUTOPILOT_MK4"
+		},
+		"aux":{
+			"power":"SYSTEM_AUX_MPD_MK3"
+		},
+		"capacitor":{
+			"capacity":1500
+		},
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_MPU_FAB"
+		},
+		"drone":{
+			"scanner":"SYSTEM_RD_GUIDING"
+		},
+		"drones":{
+			"capacity":50000,
+			"initial":50000
+		},
+		"fuel":{
+			"capacity":500000,
+			"initial":500000
+		},
+		"hud":{
+			"type":"SYSTEM_HUD_PROSPECTOR_BALD"
+		},
+		"lidar":{
+			"type":"SYSTEM_LIDAR_OPA"
+		},
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_EIZAP",
+			"rcs":"SYSTEM_THRUSTER_K69V"
+		},
+		"reactor":{
+			"power":50
+		},
+		"turbine":{
+			"power":500
+		},
+		"weaponSlot":{
+			"mainLeft":{
+				"type":"SYSTEM_NANI"
+			},
+			"mainRight":{
+				"type":"SYSTEM_NANI"
+			},
+			"middleLeft":{
+				"type":"SYSTEM_SYNCHRO-L"
+			},
+			"middleRight":{
+				"type":"SYSTEM_SYNCHRO-L"
 			}
 		}
 	}

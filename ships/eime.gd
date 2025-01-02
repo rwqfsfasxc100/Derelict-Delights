@@ -1,7 +1,7 @@
 extends "res://ships/Shipyard.gd"
 
 func _ready():
-	usedShipConfigs["EIME"].append_array(EIME)
+	usedShipConfigs["EIME"] = EIME
 
 var EIME = [
 	{
@@ -142,6 +142,118 @@ var EIME = [
 			},
 			"turbine":{
 				"power":1000.0
+			}
+		},
+		{
+			"autopilot":{
+				"type":"SYSTEM_AUTOPILOT_MK1"
+			}, 
+			"capacitor":{
+				"capacity":1500.0
+			}, 
+			"drones":{
+				"initial":10000.0, 
+				"capacity":10000.0
+			}, 
+			"fuel":{
+				"capacity":200000.0, 
+				"initial":200000.0
+			}, 
+			"propulsion":{
+				"main":"SYSTEM_MAIN_ENGINE_EIZAP", 
+				"rcs":"SYSTEM_THRUSTER_K69V"
+			}, 
+			"ammo":{
+				"capacity":10000.0, 
+				"initial":10000.0
+			}, 
+			"hud":{
+				"type":"SYSTEM_HUD_TNTRL"
+			}, 
+			"drone":{
+				"scanner":"SYSTEM_RD_STANDARD"
+			},
+			"aux":{
+				"power":"SYSTEM_AUX_MPD_MK3"
+			},
+			"cargo":{
+				"equipment":"SYSTEM_CARGO_MPU_FAB"
+			}, 
+			"lidar":{
+				"type": "SYSTEM_LIDAR_DOPPLER"
+			},
+			"weaponSlot":{
+				"left":{
+					"type":"SYSTEM_SYNCHRO-L"
+				}, 
+				"main":{
+					"type":"SYSTEM_NANI"
+				}, 
+				"right":{
+					"type":"SYSTEM_SYNCHRO-R"
+				}
+			}
+		},
+		{
+			"autopilot":{
+				"type":"SYSTEM_AUTOPILOT_MK4"
+			}, 
+			"capacitor":{
+				"capacity":1500.0
+			}, 
+			"drones":{
+				"initial":10000.0, 
+				"capacity":10000.0
+			}, 
+			"fuel":{
+				"capacity":200000.0, 
+				"initial":200000.0
+			}, 
+			"propulsion":{
+				"main":"SYSTEM_MAIN_ENGINE_EIZAP", 
+				"rcs":"SYSTEM_THRUSTER_AGILE"
+			}, 
+			"ammo":{
+				"capacity":1000.0, 
+				"initial":1000.0
+			}, 
+			"hud":{
+				"type":"SYSTEM_HUD_PROSPECTOR_BALD"
+			}, 
+			"reactor":{
+				"power":50.0
+			}, 
+			"drone":{
+				"scanner":"SYSTEM_RD_GUIDING"
+			},
+			"aux":{
+				"power":"SYSTEM_AUX_SMES_MK3"
+			},
+			"cargo":{
+				"equipment":"SYSTEM_CARGO_MPU_FAB"
+			}, 
+			"lidar":{
+				"type": "SYSTEM_LIDAR_OPA"
+			},
+			"turbine":{
+				"power":500.0
+			}, 
+			"weaponSlot":{
+				"left":{
+					"type":"SYSTEM_DND_FIX"
+				}, 
+				"main":{
+					"type":"SYSTEM_DND_FIX"
+				}, 
+				"right":{
+					"type":"SYSTEM_DND_FIX"
+				},
+				"leftBack":{
+					"type":"SYSTEM_DND_FIX"
+				}, 
+				"rightback":{
+					"type":"SYSTEM_DND_FIX"
+				}
 			}
 		}
 ]	
