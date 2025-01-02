@@ -65,3 +65,5 @@ SYSTEM_EXBIG_MANUAL|Automatically stores processed ore.\nYou can customize ore s
 POI_SCRAP|Mining Incident Site
 
 DIALOG_POI_RANDOM_6|Captain, one of my old colleagues looked me out in my quarters while we were back on Enceladus. They told me that my old captain had gotten into a mining incident. Can we take a look to see if they're ok?
+
+DERELICTDELIGHTS_SUGGEST|Suggest New Ship Loadouts
