@@ -4,4 +4,8 @@
 
 [node name="Game" instance=ExtResource( 1 )]
 
+[node name="TheRing" parent="." index="2"]
+odditiesEvery = 400
+diggerEvery = 40
+
 [editable path="TitleAnimPlayer/SubtitleLayer/IntroContainer/CRT"]
