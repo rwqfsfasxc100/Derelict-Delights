@@ -5,7 +5,7 @@
 [ext_resource path="res://story/MinerMining.gd" type="Script" id=3]
 [ext_resource path="res://story/LifepodIsFloating.gd" type="Script" id=4]
 [ext_resource path="res://DerelictDelights/ships/drone/StoragePodSuperBig.tscn" type="PackedScene" id=5]
-[ext_resource path="res://DerelictDelights/story/Vilcy.gd" type="Script" id=6]
+[ext_resource path="res://story/Vilcy.gd" type="Script" id=6]
 
 [node name="TheRing" instance=ExtResource( 1 )]
 
@@ -189,7 +189,7 @@ script = ExtResource( 6 )
 minCapacity = 0.5
 pirateEagle = 1
 
-[node name="highPerformancePirate" type="Node" parent="." index="108"]
+[node name="HighPerformancePirate" type="Node" parent="." index="108"]
 script = ExtResource( 6 )
 minCapacity = 0.8
 lockOutStory = ""
