@@ -338,7 +338,7 @@ var OCP209 = [
 				"type":"SYSTEM_SYNCHRO-L"
 			},
 			"middleRight":{
-				"type":"SYSTEM_SYNCHRO-L"
+				"type":"SYSTEM_SYNCHRO-R"
 			}
 		}
 	}

@@ -1,0 +1,45 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=1]
+[ext_resource path="res://comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn" type="PackedScene" id=2]
+
+[node name="DIALOG_STORAGE_RETURNING_1" instance=ExtResource( 2 )]
+
+[node name="DIALOG_STORAGE_NEED_CONTAINER" type="Node" parent="." index="5"]
+script = ExtResource( 1 )
+myLine = false
+onlyOnce = true
+
+[node name="DIALOG_STORAGE_OPTIONS" type="Node" parent="DIALOG_STORAGE_NEED_CONTAINER" index="0"]
+script = ExtResource( 1 )
+faceless = true
+aiImperativeStrenght = 5.0
+aiImperative = 8
+poiDistanceKm = 2.0
+
+[node name="DIALOG_STORAGE_THICC" type="Node" parent="DIALOG_STORAGE_NEED_CONTAINER/DIALOG_STORAGE_OPTIONS" index="0"]
+script = ExtResource( 1 )
+myLine = false
+requirePlayerMoney = 5000.0
+changePlayerMoney = -5000.0
+poiExposeName = "NEARBYCONTAINER"
+poiExposeEvent = "EmptyStoragePod"
+poiDistanceKm = 2.0
+
+[node name="DIALOG_STORAGE_THX" type="Node" parent="DIALOG_STORAGE_NEED_CONTAINER/DIALOG_STORAGE_OPTIONS/DIALOG_STORAGE_THICC" index="0"]
+script = ExtResource( 1 )
+faceless = true
+
+[node name="DIALOG_STORAGE_THIMC" type="Node" parent="DIALOG_STORAGE_NEED_CONTAINER/DIALOG_STORAGE_OPTIONS" index="1"]
+script = ExtResource( 1 )
+myLine = false
+requirePlayerMoney = 10000.0
+changePlayerMoney = -10000.0
+poiExposeName = "NEARBYCONTAINERMONO"
+poiExposeEvent = "EmptyStoragePodMono"
+forgetPoiMatch = "EmptyStoragePodMono"
+poiDistanceKm = 2.0
+
+[node name="DIALOG_STORAGE_THX" type="Node" parent="DIALOG_STORAGE_NEED_CONTAINER/DIALOG_STORAGE_OPTIONS/DIALOG_STORAGE_THIMC" index="0"]
+script = ExtResource( 1 )
+faceless = true

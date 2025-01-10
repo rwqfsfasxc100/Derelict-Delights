@@ -67,9 +67,6 @@ var PROSPECTOR = [
 				"rightDrone":{
 					"type":"SYSTEM_DND_FIX"
 				}, 
-				"main":{
-					"type":"SYSTEM_CL150"
-				}
 			}, 
 			"drones":{
 				"capacity":5000.0, 
@@ -132,9 +129,6 @@ var PROSPECTOR = [
 				"rightDrone":{
 					"type":"SYSTEM_DND_FIX"
 				},  
-				"main":{
-					"type":"SYSTEM_SALVAGE_ARM"
-				}
 			}, 
 			"drones":{
 				"capacity":5000.0, 
@@ -191,9 +185,6 @@ var PROSPECTOR = [
 				"rightDrone":{
 					"type":"SYSTEM_DND_FIX"
 				}, 
-				"main":{
-					"type":"SYSTEM_CL150"
-				}
 			}, 
 			"drones":{
 				"capacity":10000.0, 
@@ -253,9 +244,6 @@ var PROSPECTOR = [
 				"rightDrone":{
 					"type":"SYSTEM_DND_FIX"
 				}, 
-				"main":{
-					"type":"SYSTEM_DND_FIX"
-				}
 			}, 
 			"drones":{
 				"capacity":10000.0, 
@@ -315,9 +303,6 @@ var PROSPECTOR = [
 				"rightDrone":{
 					"type":"SYSTEM_DND_FIX"
 				}, 
-				"main":{
-					"type":"SYSTEM_NANI"
-				}
 			}, 
 			"drones":{
 				"capacity":10000.0, 
@@ -377,9 +362,6 @@ var PROSPECTOR = [
 				"rightDrone":{
 					"type":"SYSTEM_DND_TUG"
 				}, 
-				"main":{
-					"type":"SYSTEM_CL600P"
-				}
 			}, 
 			"drones":{
 				"capacity":10000.0, 

@@ -5,9 +5,9 @@
 [node name="SystemShipUpgradeUI" instance=ExtResource( 1 )]
 slot = "weaponSlot.main.type"
 system = "SYSTEM_EXBIG-L"
-price = 550000
-testProtocol = "detach"
 nameOverride = "SYSTEM_EXBIG"
+price = 350000
+testProtocol = "detach"
 
 [node name="System" parent="HBox" index="0"]
 text = "SYSTEM_EXBIG-L"

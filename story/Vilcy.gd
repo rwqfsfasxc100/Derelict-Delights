@@ -1,7 +1,8 @@
 extends "res://story/Vilcy.gd"
 
-var pirateEagle = 0
-var highPerformancePirate = 0
+export var pirateEagle = 0
+export var highPerformancePirate = 0
+export var vilcyBattleship = 0
 
 func makePirateEagle():
 	var cfg = Shipyard.getDefaultConfigByName("PROSPECTOR")
@@ -74,6 +75,69 @@ func makeHighPerformanceEagle():
 	ship.rotation = randf() * 2 * PI
 	ship.hostilityHitWhenEncelading = - 0.2
 	return ship
+	
+func makeVilcyBattleship():
+	var cfg = Shipyard.getDefaultConfigByName("AT225")
+	cfg.config.weaponSlot = {
+				"middleRight":{
+					"type":"SYSTEM_ACL200P"
+				}, 
+				"middleLeft":{
+					"type":"SYSTEM_ACL200P"
+				}, 
+				"leftBay1":{
+					"type":"SYSTEM_PDT-L"
+				}, 
+				"leftBay2":{
+					"type":"SYSTEM_PDT-L"
+				}, 
+				"leftBay3":{
+					"type":"SYSTEM_PDT-L"
+				}, 
+				"rightBay1":{
+					"type":"SYSTEM_PDT-R"
+				}, 
+				"rightBay2":{
+					"type":"SYSTEM_PDT-R"
+				}, 
+				"rightBay3":{
+					"type":"SYSTEM_PDT-R"
+				}, 
+			}
+	cfg.config.ammo = {
+		"capacity":50000, 
+		"initial":50000
+	}
+	cfg.config.drones = {
+		"capacity":0,
+		"initial":0
+	}
+	cfg.config.propulsion = {
+		"main":"SYSTEM_MAIN_ENGINE_NDNTR",
+		"rcs":"SYSTEM_THRUSTER_NDSTR"
+	}
+	cfg.config.turbine.power = 1500
+	cfg.config.capacitor.capacity = 4500
+	cfg.config.aux = {
+		"power":"SYSTEM_AUX_SMES_MK3"
+	}
+	cfg.config.fuel = {
+		"capacity":500000,
+		"initial":500000
+	}
+	cfg.config.reactor.power = 50
+	cfg.faction = "vilcy"
+	var ship = Shipyard.createShipByConfig(cfg)
+	ship.ai = true
+	ship.preheat = true
+	ship.customPaint = vilcyPaint
+	ship.aiCuriosityDisance = 2000
+	ship.aiCuriosityMaxVelocity = 200
+	ship.aiHunterAccurancy = 0.99
+	ship.aiMaxMargin = 2.5
+	ship.rotation = randf() * 2 * PI
+	ship.hostilityHitWhenEncelading = - 0.2
+	return ship
 
 func makeAt(pos):
 	var out = .makeAt(pos)
@@ -83,5 +147,8 @@ func makeAt(pos):
 		out.append(ship)
 	for i in range(highPerformancePirate):
 		var ship = makeHighPerformanceEagle()
+		out.append(ship)
+	for i in range(vilcyBattleship):
+		var ship = makeVilcyBattleship()
 		out.append(ship)
 	return out

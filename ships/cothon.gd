@@ -247,7 +247,7 @@ var COTHON = [
 			"type":"SYSTEM_AUTOPILOT_MK4"
 		},
 		"aux":{
-			"power":"SYSTEM_SMES_MK3"
+			"power":"SYSTEM_AUX_SMES_MK3"
 		},
 		"capacitor":{
 			"capacity":1500
@@ -306,7 +306,7 @@ var COTHON = [
 			"type":"SYSTEM_AUTOPILOT_MK2"
 		},
 		"aux":{
-			"power":"SYSTEM_MPD_MK3"
+			"power":"SYSTEM_AUX_MPD_MK3"
 		},
 		"capacitor":{
 			"capacity":1500

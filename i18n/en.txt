@@ -58,7 +58,7 @@ SYSTEM_EXBIG|THI Interlunar Container
 
 SYSTEM_EXBIG_DESC|From the success that THI's previous cargo solutions venture had become, they started work on a successor that would be increasingly practical for interplanetary transportation. As successful as the initial venture was, the containers were too bulky for commercial use, so a consumer-grade model was produced for interlunar transportation between the rings. Considerably more managable for miners, and the lack of a need for specialized thrust to power them made maintenance equivalent to that of the original Cargo Container line, however installation costs still make the THICC popular among startups.
 
-SYSTEM_EXBIG_SPECS|Cargo capacity: 45,000 kg / mineral \nPower usage (nominal): 20 MW \nDrone Mass: 5,000 kg \nCradle mass: 500 kg \nManufacturer: Titan Heavy Industries, Experimental Resize
+SYSTEM_EXBIG_SPECS|Cargo capacity: 45,000 kg / mineral \nPower usage (nominal): 20 MW \nDry Mass: 5,000 kg \nCradle mass: 500 kg \nReaction Mass Tank: 4,500 kg \nManufacturer: Titan Heavy Industries, Experimental Resize
 
 SYSTEM_EXBIG_MANUAL|Automatically stores processed ore.\nYou can customize ore stored on Geologist tab.\nRequires mineral processing unit to be used effectively.\nWill unbalance the ship if only one is installed.\nCan be ejected by disabling the hardpoint.\nThe ejected container will attempt to return to the station with its cargo automatically.\nEmpty cradle arm can catch drones and lifepods.
 
@@ -67,3 +67,21 @@ POI_SCRAP|Mining Incident Site
 DIALOG_POI_RANDOM_6|Captain, one of my old colleagues looked me out in my quarters while we were back on Enceladus. They told me that my old captain had gotten into a mining incident. Can we take a look to see if they're ok?
 
 DERELICTDELIGHTS_SUGGEST|Suggest New Ship Loadouts
+
+DIALOG_STORAGE_THX|Container should appear on LIDAR soon. You will need to manually collect the container for safety protocols. Note that containers cannot be sent in quick succession.
+
+NEARBYCONTAINER|Empty Cargo Unit Nearby
+
+NEARBYCONTAINERMONO|Empty Monocargo Unit Nearby
+
+DIALOG_STORAGE_NEED_CONTAINER|I need a replacement container
+
+DIALOG_STORAGE_THIMC|I need a new monocargo container!
+
+DIALOG_STORAGE_THICC|I need a new cargo container!
+
+DIALOG_STORAGE_OPTIONS|Which container type would you like?
+
+SYSTEM_EXSTORAGE_SPECS_DD|Cargo capacity: 15,000 kg / mineral \nPower usage (nominal): 20 MW \nDry Mass: 2,000 kg \nCradle mass: 500 kg \nReaction Mass Tank: 1,000 kg \nManufacturer: Titan Heavy Industries
+
+SYSTEM_EXMONO_SPECS_DD|Cargo capacity: 90,000 kg \nPower usage (nominal): 20 MW \nDry Mass: 2,000 kg \nCradle mass: 500 kg \nReaction Mass Tank: 1,000 kg \nManufacturer: Titan Heavy Industries
