@@ -17,7 +17,6 @@
 [node name="TheRing" parent="." index="2"]
 odditiesEvery = 400
 diggerEvery = 40
-testSpecificStoryElement = "HabitatUnderConstruction"
 
 [node name="DerelictLCB" type="Node" parent="TheRing" index="77"]
 script = ExtResource( 6 )
