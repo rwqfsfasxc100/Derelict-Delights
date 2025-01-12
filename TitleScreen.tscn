@@ -23,7 +23,7 @@ rect_rotation = -22.5
 rect_scale = Vector2( 0.8, 0.8 )
 theme = ExtResource( 4 )
 custom_fonts/font = ExtResource( 5 )
-text = "Derelict Delights v.1.1.7
+text = "Derelict Delights v.1.2.0
 Credit: hev; Za'Krin Yoran"
 valign = 2
 

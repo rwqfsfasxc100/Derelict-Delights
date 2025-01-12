@@ -82,6 +82,44 @@ DIALOG_STORAGE_THICC|I need a new cargo container!
 
 DIALOG_STORAGE_OPTIONS|Which container type would you like?
 
-SYSTEM_EXSTORAGE_SPECS_DD|Cargo capacity: 15,000 kg / mineral \nPower usage (nominal): 20 MW \nDry Mass: 2,000 kg \nCradle mass: 500 kg \nReaction Mass Tank: 1,000 kg \nManufacturer: Titan Heavy Industries
+DIALOG_HABITAT_NEED_W|Welcome {target/shipname}. Do you have processed tungsten for trade? The habitat's skeleton could do with a patch up.
 
-SYSTEM_EXMONO_SPECS_DD|Cargo capacity: 90,000 kg \nPower usage (nominal): 20 MW \nDry Mass: 2,000 kg \nCradle mass: 500 kg \nReaction Mass Tank: 1,000 kg \nManufacturer: Titan Heavy Industries
+DIALOG_HABITAT_NEED_W_DESPERATE|I'm really glad to see you {target/shipname}, we could really use some processed tungsten, the skeleton's lost some integrity. We'll pay you a premium.
+
+DIALOG_HABITAT_NEED_BE|Welcome {target/shipname}. Do you have processed beryllium for trade? Our reactor could do with a stock up of spare reflectors.
+
+DIALOG_HABITAT_NEED_BE_DESPERATE|I'm really glad to see you {target/shipname}, we could really use some processed beryllium, our reactor's in need of some maintenance and we don't have enough reflectors. We'll pay you a premium.
+
+DIALOG_INTERPLANETARY_WEIRD|Doesn't that container look large for even an interlunar one, and what are those thrusters?
+
+AGENDA_HACKER_INTERPLANETARY_IS_IT|Hold on, isn't this one of those interplanetary containers?
+
+POI_HABITAT_BUILDING|Habitat-Under-Construction - Obonto Eight
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_W|Welcome {target/shipname}. Do you have processed tungsten for trade? Our skeleton needs a quick reinforcement before being bolted down.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_W_DESPERATE|I'm really glad to see you {target/shipname}, we could really do with some processed tungsten, we're behind schedule for finishing the skeleton and our shipment is already late. We'll pay you a premium.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_V|Welcome {target/shipname}. Do you have processed vanadium for trade? We are in need of a restock on our toolheads.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_V_DESPERATE|I'm really glad to see you {target/shipname}, we are in desperate need for some vanadium, we're completely out of toolheads and our shipment is running late. We'll pay you a premium.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_FE|Welcome {target/shipname}. Do you have processed iron for trade? We could use some extra to help reinforce our frame.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_FE_DESPERATE|I'm really glad to see you {target/shipname}, we're in dire need of some iron, we're in desperate need of some patchwork to the frame and our shipment is running late. We'll pay you a premium.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_PT|Welcome {target/shipname}. Do you have processed platinum for trade? We need some to fix up a faulty wiring situation.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_PT_DESPERATE|I'm really glad to see you {target/shipname}, we are in desperate need for some platinum, we're got severe electrical problems and our shipment is running late. We'll pay you a premium.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_PD|Welcome {target/shipname}. Do you have processed palladium for trade? We could do with a replenishment of our scrubbers.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_PD_DESPERATE|I'm really glad to see you {target/shipname}, we are in desperate need for some palladium, we're in desperate need for some work on our scrubbers. We'll pay you a premium.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_BE|Welcome {target/shipname}. Do you have processed beryllium for trade? Our reactor could do with some spare reflectors.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_BE_DESPERATE|I'm really glad to see you {target/shipname}, we could really use some processed beryllium, our reactor's in dire need of some maintenance from exposure and we don't have enough reflectors. We'll pay you a premium.
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_WATER|Welcome {target/shipname}. Do you have remass for trade? We're close to going negative on our water consumption balance/
+
+DIALOG_HABITAT_CONSTRUCTION_NEED_WATER_DESPERATE|I'm really glad to see you {target/shipname}, we are in desperate need for some remass, our water tank is close to empty and we don't have a processor to reclaim it. We'll pay you a premium.

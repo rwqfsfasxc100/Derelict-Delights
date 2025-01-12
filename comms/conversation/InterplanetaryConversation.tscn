@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=1]
+
+[node name="InterplanetaryConversation" type="Node"]
+script = ExtResource( 1 )
+onlyOnce = true
+
+[node name="AGENDA_ANDROID_INTERPLANETARY_IS_IT" type="Node" parent="."]
+script = ExtResource( 1 )
+myLine = false
+agendaNPC = true
+agenda = "AGENDA_ANDROID"
+storyFlag = "dd.story.interplanetary"
+storyFlagMax = 0
+storyFlagSet = 1
+onlyOnce = true
+
+[node name="DIALOG_INTERPLANETARY_WEIRD" type="Node" parent="."]
+script = ExtResource( 1 )
+weight = 0.3
+myLine = false
+storyFlag = "dd.story.interplanetary"
+storyFlagMax = 0
+onlyOnce = true

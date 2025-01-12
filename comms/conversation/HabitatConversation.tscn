@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://comms/conversation/subtrees/DIALOG_HABITAT_NEED_MINERAL.tscn" type="PackedScene" id=1]
+[ext_resource path="res://comms/conversation/HabitatConversation.tscn" type="PackedScene" id=2]
+
+[node name="HabitatConversation" instance=ExtResource( 2 )]
+
+[node name="DIALOG_HABITAT_NEED_W" parent="." index="18" instance=ExtResource( 1 )]
+weight = 0.4
+mostPrelevantDisposition = "curiosity"
+tradeInMineral = "W"
+
+[node name="DIALOG_HABITAT_NEED_W|like" parent="." index="19" instance=ExtResource( 1 )]
+weight = 0.4
+mostPrelevantDisposition = "support"
+tradeInMineral = "W"
+
+[node name="DIALOG_HABITAT_NEED_W_DESPERATE" parent="." index="20" instance=ExtResource( 1 )]
+weight = 0.4
+mostPrelevantDisposition = "curiosity"
+changeHostility = -0.5
+changeFear = -0.5
+tradeInMineral = "W"
+setDiscountTo = 5.0
+
+[node name="DIALOG_HABITAT_NEED_BE" parent="." index="21" instance=ExtResource( 1 )]
+weight = 0.2
+mostPrelevantDisposition = "curiosity"
+tradeInMineral = "Be"
+
+[node name="DIALOG_HABITAT_NEED_BE|like" parent="." index="22" instance=ExtResource( 1 )]
+weight = 0.2
+mostPrelevantDisposition = "support"
+tradeInMineral = "Be"
+
+[node name="DIALOG_HABITAT_NEED_BE_DESPERATE" parent="." index="23" instance=ExtResource( 1 )]
+weight = 0.2
+mostPrelevantDisposition = "curiosity"
+changeHostility = -0.5
+changeFear = -0.5
+tradeInMineral = "Be"
+setDiscountTo = 5.0
+
+[editable path="DIALOG_HABITAT_DOCKING_SECURE"]
+[editable path="DIALOG_HABITAT_DOCKING_SECURE|going"]
+[editable path="DIALOG_HABITAT_DOCKING_SECURE_NOTRADE"]

@@ -1,0 +1,145 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=1]
+[ext_resource path="res://comms/conversation/subtrees/DIALOG_HABITAT_NEED_MINERAL.tscn" type="PackedScene" id=2]
+[ext_resource path="res://comms/conversation/subtrees/DIALOG_HABITAT_WATCH_FIRE_FEAR.tscn" type="PackedScene" id=3]
+
+[node name="HabitatConstructionConversation" type="Node"]
+script = ExtResource( 1 )
+
+[node name="DIALOG_HABITAT_WATCH_FIRE_FEAR" parent="." instance=ExtResource( 3 )]
+
+[node name="DIALOG_HABITAT_WATCH_FIRE_HATE" parent="." instance=ExtResource( 3 )]
+mostPrelevantDisposition = "hostility"
+
+[node name="DIALOG_HABITAT_DOCKING_SECURE" parent="." instance=ExtResource( 2 )]
+weight = 0.9
+tradeInMineral = ""
+notTrading = false
+onlyTrading = true
+setDiscountTo = -1.0
+onlyDocked = true
+notDocked = false
+
+[node name="DIALOG_HABITAT_DO_YOU_READ" parent="DIALOG_HABITAT_DOCKING_SECURE" index="7"]
+weight = 0.0
+
+[node name="DIALOG_HABITAT_DOCKING_SECURE_NOTRADE" parent="." instance=ExtResource( 2 )]
+tradeInMineral = ""
+setDiscountTo = -1.0
+onlyDocked = true
+notDocked = false
+
+[node name="DIALOG_HABITAT_DO_YOU_READ" parent="DIALOG_HABITAT_DOCKING_SECURE_NOTRADE" index="7"]
+weight = 0.0
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_W" parent="." instance=ExtResource( 2 )]
+weight = 0.7
+mostPrelevantDisposition = "curiosity"
+tradeInMineral = "W"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_W|like" parent="." instance=ExtResource( 2 )]
+weight = 0.7
+mostPrelevantDisposition = "support"
+tradeInMineral = "W"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_W_DESPERATE" parent="." instance=ExtResource( 2 )]
+weight = 0.7
+mostPrelevantDisposition = "curiosity"
+changeHostility = -0.5
+changeFear = -0.5
+tradeInMineral = "W"
+setDiscountTo = 5.0
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_FE" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "curiosity"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_FE|like" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "support"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_FE_DESPERATE" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "curiosity"
+changeHostility = -0.5
+changeFear = -0.5
+setDiscountTo = 5.0
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_V" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "curiosity"
+tradeInMineral = "V"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_V|like" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "support"
+tradeInMineral = "V"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_V_DESPERATE" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "curiosity"
+changeHostility = -0.5
+changeFear = -0.5
+tradeInMineral = "V"
+setDiscountTo = 5.0
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_PT" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "curiosity"
+tradeInMineral = "Pt"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_PT|like" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "support"
+tradeInMineral = "Pt"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_PT_DESPERATE" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "curiosity"
+changeHostility = -0.5
+changeFear = -0.5
+tradeInMineral = "Pt"
+setDiscountTo = 5.0
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_PD" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "curiosity"
+tradeInMineral = "Pd"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_PD|like" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "support"
+tradeInMineral = "Pd"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_PD_DESPERATE" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "curiosity"
+changeHostility = -0.5
+changeFear = -0.5
+tradeInMineral = "Pd"
+setDiscountTo = 5.0
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_WATER" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "curiosity"
+tradeInMineral = "H2O"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_WATER|like" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "support"
+tradeInMineral = "H2O"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_WATER_DESPERATE" parent="." instance=ExtResource( 2 )]
+mostPrelevantDisposition = "curiosity"
+changeHostility = -0.5
+changeFear = -0.5
+tradeInMineral = "H2O"
+setDiscountTo = 5.0
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_BE" parent="." instance=ExtResource( 2 )]
+weight = 0.5
+mostPrelevantDisposition = "curiosity"
+tradeInMineral = "Be"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_BE|like" parent="." instance=ExtResource( 2 )]
+weight = 0.5
+mostPrelevantDisposition = "support"
+tradeInMineral = "Be"
+
+[node name="DIALOG_HABITAT_CONSTRUCTION_NEED_BE_DESPERATE" parent="." instance=ExtResource( 2 )]
+weight = 0.5
+mostPrelevantDisposition = "curiosity"
+changeHostility = -0.5
+changeFear = -0.5
+tradeInMineral = "Be"
+setDiscountTo = 5.0
+
+[editable path="DIALOG_HABITAT_DOCKING_SECURE"]
+[editable path="DIALOG_HABITAT_DOCKING_SECURE_NOTRADE"]

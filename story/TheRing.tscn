@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://story/TheRing.tscn" type="PackedScene" id=1]
 [ext_resource path="res://story/RescueOperation.gd" type="Script" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://DerelictDelights/ships/drone/StoragePodBigRogue.tscn" type="PackedScene" id=7]
 [ext_resource path="res://DerelictDelights/ships/drone/StoragePodEmpty.tscn" type="PackedScene" id=8]
 [ext_resource path="res://DerelictDelights/ships/drone/StoragePodEmptyMono.tscn" type="PackedScene" id=9]
+[ext_resource path="res://DerelictDelights/story/habitat/HabitatBeingBuilt.tscn" type="PackedScene" id=10]
+[ext_resource path="res://story/InstanceWithChance.gd" type="Script" id=11]
 
 [node name="TheRing" instance=ExtResource( 1 )]
 
@@ -216,6 +218,7 @@ script = ExtResource( 6 )
 chaosLimit = 0.2
 lockOutStory = ""
 lockOutLimit = 0
+pirateEagle = 2
 
 [node name="HighPerformancePirate" type="Node" parent="." index="108"]
 script = ExtResource( 6 )
@@ -225,6 +228,7 @@ lockOutStory = ""
 lockOutLimit = 0
 requireStory = "g4a.destroyed"
 requireMin = 1
+highPerformancePirate = 1
 
 [node name="HighEnduranceBattleNoG4A" type="Node" parent="." index="109"]
 script = ExtResource( 6 )
@@ -236,6 +240,8 @@ lockOutStory = ""
 lockOutLimit = 0
 requireStory = "g4a.destroyed"
 requireMin = 1
+highPerformancePirate = 2
+vilcyBattleship = 1
 
 [node name="VilcyBattleship" type="Node" parent="." index="110"]
 script = ExtResource( 6 )
@@ -245,6 +251,7 @@ lockOutStory = ""
 lockOutLimit = 0
 requireStory = "vilcy.bbw.destroyed"
 requireMin = 1
+vilcyBattleship = 1
 
 [node name="HighEnduranceBattleNoBBW" type="Node" parent="." index="111"]
 script = ExtResource( 6 )
@@ -256,6 +263,8 @@ lockOutStory = ""
 lockOutLimit = 0
 requireStory = "vilcy.bbw.destroyed"
 requireMin = 1
+vilcyBattleship = 2
+highPerformancePirate = 1
 
 [node name="EmptyStoragePod" type="Node" parent="." index="112"]
 script = ExtResource( 4 )
@@ -264,3 +273,13 @@ lifepod = ExtResource( 8 )
 [node name="EmptyStoragePodMono" type="Node" parent="." index="113"]
 script = ExtResource( 4 )
 lifepod = ExtResource( 9 )
+
+[node name="HabitatUnderConstruction" type="Node" parent="." index="114"]
+script = ExtResource( 11 )
+rock = ExtResource( 10 )
+maxDensity = PoolIntArray( 2, 4, 32, 128, 256 )
+poi = "POI_HABITAT_BUILDING"
+transponder = "SRA-08"
+customName = "POI_HABITAT_BUILDING"
+awayRadius = 1000000
+lockoutPoi = "POI_HABITAT_BUILDING"

@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://hud/HudBare.tscn" type="PackedScene" id=2]
@@ -14,6 +14,7 @@
 [ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=12]
 [ext_resource path="res://ships/modules/DisableAI.tscn" type="PackedScene" id=13]
 [ext_resource path="res://ships/modules/ThrusterSlot.tscn" type="PackedScene" id=14]
+[ext_resource path="res://tools/Placeholder.gd" type="Script" id=15]
 
 [sub_resource type="PhysicsMaterial" id=1]
 rough = true
@@ -74,7 +75,6 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
-hasMusicChange = false
 shipName = "SHIP_POD_SUPER_BIG"
 hullPrice = 38999
 processedCargoCapacity = 120000
@@ -224,5 +224,9 @@ collision_mask = 2147487232
 
 [node name="Noises" parent="." instance=ExtResource( 5 )]
 scale = Vector2( 1.5, 1.5 )
+
+[node name="InterlunarConversation" type="Node2D" parent="."]
+script = ExtResource( 15 )
+placeholder = "res://comms/conversation/InterplanetaryConversation.tscn"
 
 [editable path="AI"]

@@ -343,16 +343,75 @@ var COTHON = [
 		},
 		"weaponSlot":{
 			"left":{
-				"type":"SYSTEM_SYNCHRO-L"
+				"type":"SYSTEM_SCOOP-L"
 			},
 			"leftBack":{
-				"type":"SYSTEM_DND_FIX"
+				"type":"SYSTEM_EXSTORAGE-L"
 			},
 			"right":{
-				"type":"SYSTEM_SYNCHRO-R"
+				"type":"SYSTEM_MWG"
 			},
 			"rightBack":{
-				"type":"SYSTEM_DND_FIX"
+				"type":"SYSTEM_EXSTORAGE-R"
+			}
+		}
+	},
+		{
+		"ammo":{
+			"capacity":0,
+			"initial":0
+		},
+		"autopilot":{
+			"type":"SYSTEM_AUTOPILOT_MK1"
+		},
+		"aux":{
+			"power":"SYSTEM_NONE"
+		},
+		"capacitor":{
+			"capacity":500
+		},
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_MPUFSO"
+		},
+		"drone":{
+			"scanner":"SYSTEM_RD_STANDARD"
+		},
+		"drones":{
+			"capacity":0,
+			"initial":0
+		},
+		"fuel":{
+			"capacity":200000,
+			"initial":200000
+		},
+		"hud":{
+			"type":"SYSTEM_HUD_OCP"
+		},
+		"lidar":{
+			"type":"SYSTEM_LIDAR_RADAR"
+		},
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_NDNTR",
+			"rcs":"SYSTEM_THRUSTER_MA150HO"
+		},
+		"reactor":{
+			"power":8
+		},
+		"turbine":{
+			"power":200
+		},
+		"weaponSlot":{
+			"left":{
+				"type":"SYSTEM_SCOOP-L"
+			},
+			"leftBack":{
+				"type":"SYSTEM_EXSTORAGE-L"
+			},
+			"right":{
+				"type":"SYSTEM_MWG"
+			},
+			"rightBack":{
+				"type":"SYSTEM_EXSTORAGE-R"
 			}
 		}
 	}

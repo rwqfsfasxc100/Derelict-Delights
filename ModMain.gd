@@ -4,7 +4,7 @@ extends Node
 # Mods are loaded from lowest to highest priority, default is 0
 const MOD_PRIORITY = 1
 # Name of the mod, used for writing to the logs
-const MOD_NAME = "Derelict Delights v.1.1.7"
+const MOD_NAME = "Derelict Delights v.1.2.0"
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
@@ -66,6 +66,7 @@ func _init(modLoader = ModLoader):
 	#Conversation initialization
 	replaceScene("comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn") # thanks Kaidere for this suggestion
 	replaceScene("comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+	replaceScene("comms/conversation/HabitatConversation.tscn")
 	replaceScene("comms/conversation/InterCrewBanter.tscn")
 	l("Loaded conversations, now initializing translations")
 	
