@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://hud/HudBare.tscn" type="PackedScene" id=2]
@@ -14,7 +14,8 @@
 [ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=12]
 [ext_resource path="res://ships/modules/DisableAI.tscn" type="PackedScene" id=13]
 [ext_resource path="res://ships/modules/ThrusterSlot.tscn" type="PackedScene" id=14]
-[ext_resource path="res://tools/Placeholder.gd" type="Script" id=15]
+[ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=15]
+[ext_resource path="res://DerelictDelights/comms/conversation/SuperCargoContainer.tscn" type="PackedScene" id=16]
 
 [sub_resource type="PhysicsMaterial" id=1]
 rough = true
@@ -64,10 +65,23 @@ radius = 77.0065
 [sub_resource type="CircleShape2D" id=6]
 radius = 175.14
 
-[node name="StoragePodBig" type="RigidBody2D" groups=["drones", "tactical"]]
+[sub_resource type="StreamTexture" id=7]
+flags = 4
+load_path = "res://.import/ai-core-cd.png-b2ad28b6472bbd7f3c8bef9866da50ac.stex"
+
+[sub_resource type="StreamTexture" id=8]
+flags = 5
+load_path = "res://.import/ai-core-n.png-1564200f86f6da3e763dd3b9b6c3fbe5.stex"
+
+[sub_resource type="StreamTexture" id=9]
+flags = 4
+load_path = "res://.import/distant-proxy.png-98675bc9d9f12f358407a4140e174bf3.stex"
+
+[node name="StoragePodSuper" type="RigidBody2D" groups=["drones", "tactical"]]
+position = Vector2( 1, -1 )
 collision_layer = 4099
 collision_mask = 5
-mass = 10.0
+mass = 25.0
 physics_material_override = SubResource( 1 )
 linear_damp = 0.0
 angular_damp = 0.0
@@ -75,6 +89,7 @@ script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
+hasMusicChange = false
 shipName = "SHIP_POD_SUPER_BIG"
 hullPrice = 38999
 processedCargoCapacity = 120000
@@ -88,7 +103,6 @@ autopilotRotationAssumption = 1.0
 autopilotComfort = false
 autopilotMaxVelocity = 1000.0
 rotationCabinOffsetPx = 0.0
-faction = "pirate"
 factionIndependent = true
 factionClaimable = true
 reactiveMass = 30000
@@ -111,7 +125,7 @@ aiDockAlignToTarget = true
 aiDockingDisance = 10
 aiPerfectDockingDisance = 500
 aiDockingDistanceFactor = 0.05
-dialogTree = NodePath("CargoContainer")
+dialogTree = NodePath("SuperCargoContainer")
 
 [node name="Hull" type="Sprite" parent="."]
 light_mask = 5
@@ -225,8 +239,34 @@ collision_mask = 2147487232
 [node name="Noises" parent="." instance=ExtResource( 5 )]
 scale = Vector2( 1.5, 1.5 )
 
-[node name="InterlunarConversation" type="Node2D" parent="."]
+[node name="tank" type="Sprite" parent="."]
+scale = Vector2( 0.3, 0.3 )
+z_index = 25
+texture = SubResource( 7 )
+normal_map = SubResource( 8 )
+
+[node name="tank2" type="Sprite" parent="."]
+position = Vector2( -40, 0 )
+scale = Vector2( 0.3, 0.3 )
+texture = SubResource( 7 )
+normal_map = SubResource( 8 )
+
+[node name="tank3" type="Sprite" parent="."]
+position = Vector2( 40, 0 )
+scale = Vector2( 0.3, 0.3 )
+texture = SubResource( 7 )
+normal_map = SubResource( 8 )
+
+[node name="EditorLight" type="Light2D" parent="."]
+position = Vector2( -1, 0 )
+scale = Vector2( 1024, 1024 )
+editor_only = true
+texture = SubResource( 9 )
+texture_scale = 0.01
+energy = 5.0
+range_height = 3.3
+
+[node name="SuperCargoContainer" parent="." instance=ExtResource( 16 )]
 script = ExtResource( 15 )
-placeholder = "res://comms/conversation/InterplanetaryConversation.tscn"
 
 [editable path="AI"]

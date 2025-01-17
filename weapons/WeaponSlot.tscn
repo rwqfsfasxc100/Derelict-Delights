@@ -7,79 +7,13 @@
 [node name="SYSTEM_EXBIG-L" parent="." index="29" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockBig-L.tscn"]
 visible = false
 position = Vector2( 0, 196 )
-repairReplacementPrice = 350000
 
 [node name="SYSTEM_EXBIG-R" parent="." index="30" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockBig.tscn"]
 visible = false
 position = Vector2( 0, 196 )
-repairReplacementPrice = 350000
 
-[node name="SYSTEM_SCOOP-E-L" parent="." index="38" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockE-L.tscn"]
-visible = false
+[node name="SYSTEM_EXSUPER-L" parent="." index="31" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockSuper-L.tscn"]
 position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-E"
 
-[node name="SYSTEM_SCOOP-E-R" parent="." index="39" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockE-R.tscn"]
-visible = false
+[node name="SYSTEM_EXSUPER-R" parent="." index="32" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockSuper.tscn"]
 position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-E"
-
-[node name="SYSTEM_SCOOP-EP-L" parent="." index="40" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockEP-L.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-EP"
-
-[node name="SYSTEM_SCOOP-EP-R" parent="." index="41" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockEP-R.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-EP"
-
-[node name="SYSTEM_SCOOP-L-L" parent="." index="42" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockL-L.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-L"
-
-[node name="SYSTEM_SCOOP-L-R" parent="." index="43" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockL-R.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-L"
-
-[node name="SYSTEM_SCOOP-LP-L" parent="." index="44" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockLP-L.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-LP"
-
-[node name="SYSTEM_SCOOP-LP-R" parent="." index="45" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockLP-R.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-LP"
-
-[node name="SYSTEM_SCOOP-M-L" parent="." index="46" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockM-L.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-M"
-
-[node name="SYSTEM_SCOOP-M-R" parent="." index="47" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockM-R.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-M"
-
-[node name="SYSTEM_SCOOP-MP-L" parent="." index="48" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockMP-L.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-MP"
-
-[node name="SYSTEM_SCOOP-MP-R" parent="." index="49" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockMP-R.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-MP"
-
-[node name="SYSTEM_SCOOP-P-L" parent="." index="50" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockP-L.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-P"
-
-[node name="SYSTEM_SCOOP-P-R" parent="." index="51" instance_placeholder="res://DerelictDelights/ships/modules/CargoScoopDockP-R.tscn"]
-visible = false
-position = Vector2( 0, 196 )
-systemName = "SYSTEM_SCOOP-P"

@@ -5,16 +5,23 @@
 [node name="Eagle-Lux" instance=ExtResource( 1 )]
 
 [node name="SYSTEM_EXBIG-L" parent="WeaponLeft" index="36" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockBig-L.tscn"]
-position = Vector2( 48, -86 )
+position = Vector2( 48, -108 )
+
+[node name="SYSTEM_EXSUPER-L" parent="WeaponLeft" index="37" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockSuper-L.tscn"]
+position = Vector2( 48, -120 )
 
 [node name="SYSTEM_EXBIG-R" parent="WeaponRight" index="36" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockBig.tscn"]
-position = Vector2( -48, -86 )
+position = Vector2( -48, -108 )
+
+[node name="SYSTEM_EXSUPER-R" parent="WeaponRight" index="37" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockSuper.tscn"]
+position = Vector2( -48, -120 )
 
 [editable path="engine-main-1"]
 [editable path="engine-main-2"]
 [editable path="WeaponLeft"]
 [editable path="WeaponRight"]
 [editable path="MineralProcessingUnit"]
+[editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_SMELT"]
 [editable path="MineralProcessingUnit_FAB"]

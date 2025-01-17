@@ -1,44 +1,40 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://ships/modules/ClaimOwner.gd" type="Script" id=1]
 [ext_resource path="res://ships/modules/DockingArm.tscn" type="PackedScene" id=2]
+[ext_resource path="res://DerelictDelights/ships/drone/StoragePodSuperBig.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 200, 200 )
+extents = Vector2( 200, 300 )
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 1.0
 
-[node name="SYSTEM_SCOOP-R" instance=ExtResource( 2 )]
+[node name="StorageContainerDockSuper" instance=ExtResource( 2 )]
 hardLock = true
 timeAccelerationOverride = 2
-repairReplacementPrice = 115000
+repairFixPrice = 30000
+repairReplacementPrice = 550000
 resetAi = true
 maxDist = 120
 conDist = 300
 velLimit = 200
 claimDockedForFaction = true
 mineralTargetting = true
-guidingDrone = true
-sanbusTargetting = true
+onlyMinerals = true
 targetAsCargo = true
-processedCargoTransferSpeed = 100
+processedCargoTransferSpeed = 500
 processedCargoTransferBuffer = 500
-remassTransferSpeed = 100
-remassTransferBuffer = 5000
 targetMassThrust = 25
-targetMassTorque = 50000
+targetMassTorque = 20000
 fullThrust = 15000
 easeDistance = 2
-torque = 300000.0
+torque = 20000.0
 targetRotation = 3.14
 autopilotRelease = false
 lights = false
-systemName = "SYSTEM_SCOOP"
+systemName = "SYSTEM_EXSUPER"
 angularVelocityScale = 0.1
-command = "x"
-passFireAsCommand = "x"
-transferPower = 10000.0
 
 [node name="Arm" parent="." index="0"]
 rotation = 1.5708
@@ -75,9 +71,8 @@ shape = SubResource( 2 )
 
 [node name="ClaimOwner" type="Node2D" parent="." index="5"]
 script = ExtResource( 1 )
-transponderFormat = "{ship}-CS{nr}"
 
-[node name="CargoScoop" parent="ClaimOwner" index="0" instance_placeholder="res://DerelictDelights/ships/drone/CargoScoop-MP.tscn"]
+[node name="StoragePodSuperBig" parent="ClaimOwner" index="0" instance=ExtResource( 3 )]
 position = Vector2( 80, -40 )
 
 [editable path="Arm"]

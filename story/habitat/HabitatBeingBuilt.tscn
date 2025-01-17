@@ -47,12 +47,6 @@ visible = false
 [node name="Light2D" parent="." index="3"]
 position = Vector2( 2720, -861 )
 
-[node name="DockingArm1" parent="TradingHub" index="0"]
-visible = false
-
-[node name="DockingArm2" parent="TradingHub" index="1"]
-visible = false
-
 [node name="DockingArm3" parent="TradingHub" index="2"]
 massLimit = 1000000
 

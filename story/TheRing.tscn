@@ -1,16 +1,17 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://story/TheRing.tscn" type="PackedScene" id=1]
 [ext_resource path="res://story/RescueOperation.gd" type="Script" id=2]
 [ext_resource path="res://story/MinerMining.gd" type="Script" id=3]
 [ext_resource path="res://story/LifepodIsFloating.gd" type="Script" id=4]
-[ext_resource path="res://DerelictDelights/ships/drone/StoragePodSuperBig.tscn" type="PackedScene" id=5]
-[ext_resource path="res://story/Vilcy.gd" type="Script" id=6]
+[ext_resource path="res://DerelictDelights/ships/drone/StoragePodSuperBigRogue.tscn" type="PackedScene" id=5]
+[ext_resource path="res://DerelictDelights/story/Vilcy.gd" type="Script" id=6]
 [ext_resource path="res://DerelictDelights/ships/drone/StoragePodBigRogue.tscn" type="PackedScene" id=7]
 [ext_resource path="res://DerelictDelights/ships/drone/StoragePodEmpty.tscn" type="PackedScene" id=8]
 [ext_resource path="res://DerelictDelights/ships/drone/StoragePodEmptyMono.tscn" type="PackedScene" id=9]
 [ext_resource path="res://DerelictDelights/story/habitat/HabitatBeingBuilt.tscn" type="PackedScene" id=10]
 [ext_resource path="res://story/InstanceWithChance.gd" type="Script" id=11]
+[ext_resource path="res://DerelictDelights/story/SuperTHICCDerelict.gd" type="Script" id=12]
 
 [node name="TheRing" instance=ExtResource( 1 )]
 
@@ -263,8 +264,8 @@ lockOutStory = ""
 lockOutLimit = 0
 requireStory = "vilcy.bbw.destroyed"
 requireMin = 1
-vilcyBattleship = 2
 highPerformancePirate = 1
+vilcyBattleship = 2
 
 [node name="EmptyStoragePod" type="Node" parent="." index="112"]
 script = ExtResource( 4 )
@@ -283,3 +284,7 @@ transponder = "SRA-08"
 customName = "POI_HABITAT_BUILDING"
 awayRadius = 1000000
 lockoutPoi = "POI_HABITAT_BUILDING"
+
+[node name="DerelictSuperTHICC" type="Node" parent="." index="115"]
+script = ExtResource( 12 )
+imperative = 15

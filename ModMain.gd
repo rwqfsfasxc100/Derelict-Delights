@@ -4,7 +4,7 @@ extends Node
 # Mods are loaded from lowest to highest priority, default is 0
 const MOD_PRIORITY = 1
 # Name of the mod, used for writing to the logs
-const MOD_NAME = "Derelict Delights v.1.2.0"
+const MOD_NAME = "Derelict Delights v.1.3.0"
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
@@ -26,7 +26,7 @@ func _init(modLoader = ModLoader):
 	installScriptExtension("story/Vilcy.gd")
 	
 	l("New events have been loaded, now initializing new ship equipment")
-
+	
 	replaceScene("ships/EIME.tscn")
 	replaceScene("ships/Eagle-Prospector.tscn")
 	replaceScene("ships/Eagle-Prospector-VP.tscn")
@@ -63,11 +63,16 @@ func _init(modLoader = ModLoader):
 	l("Added ship configs for the K44")
 	
 	l("Loaded ship configurations, now initializing conversations")
+	#Adding new agenda role
+	installScriptExtension("story/Agenda.gd")
 	#Conversation initialization
+	replaceScene("comms/conversation/subtrees/StandClearMyArea.tscn")
 	replaceScene("comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn") # thanks Kaidere for this suggestion
 	replaceScene("comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+	replaceScene("comms/conversation/subtrees/DIALOG_MINER_SEEN_STATION.tscn")
 	replaceScene("comms/conversation/HabitatConversation.tscn")
 	replaceScene("comms/conversation/InterCrewBanter.tscn")
+	replaceScene("comms/conversation/MinerConversation.tscn")
 	l("Loaded conversations, now initializing translations")
 	
 	updateTL("i18n/en.txt", "|")

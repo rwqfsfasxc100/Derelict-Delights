@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=1]
+
+[node name="DIALOG_ASK_ABOUT_SUPER_THICC" type="Node"]
+script = ExtResource( 1 )
+myLine = false
+agendaNPC = true
+agenda = "AGENDA_HISTORIAN"
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 2
+storyFlagMax = 2
+
+[node name="DIALOG_MINER_SEEN_NO" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[node name="DIALOG_ASK_SORRY" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[node name="DIALOG_ASK_HINTS" type="Node" parent="."]
+script = ExtResource( 1 )
+
+[node name="DIALOG_ASK_ACTUALLY_YES" type="Node" parent="."]
+script = ExtResource( 1 )
+weight = 0.6
+poiExposeName = "POI_ANOMALY"
+poiExposeEvent = "DerelictSuperTHICC"

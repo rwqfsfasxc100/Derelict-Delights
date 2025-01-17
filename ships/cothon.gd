@@ -414,5 +414,64 @@ var COTHON = [
 				"type":"SYSTEM_EXSTORAGE-R"
 			}
 		}
+	},
+		{
+		"ammo":{
+			"capacity":5000,
+			"initial":5000
+		},
+		"autopilot":{
+			"type":"SYSTEM_AUTOPILOT_RTYPE"
+		},
+		"aux":{
+			"power":"SYSTEM_AUX_SMES"
+		},
+		"capacitor":{
+			"capacity":1000
+		},
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_MPUFSO"
+		},
+		"drone":{
+			"scanner":"SYSTEM_RD_SPECTROMETER"
+		},
+		"drones":{
+			"capacity":5000,
+			"initial":5000
+		},
+		"fuel":{
+			"capacity":50000,
+			"initial":50000
+		},
+		"hud":{
+			"type":"SYSTEM_HUD_TNTRL"
+		},
+		"lidar":{
+			"type":"SYSTEM_LIDAR_OPA"
+		},
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_EIZAP",
+			"rcs":"SYSTEM_THRUSTER_EIT"
+		},
+		"reactor":{
+			"power":30
+		},
+		"turbine":{
+			"power":200
+		},
+		"weaponSlot":{
+			"left":{
+				"type":"SYSTEM_MWG"
+			},
+			"leftBack":{
+				"type":"SYSTEM_EXSTORAGE-L"
+			},
+			"right":{
+				"type":"SYSTEM_MWG"
+			},
+			"rightBack":{
+				"type":"SYSTEM_EXSTORAGE-R"
+			}
+		}
 	}
 ]

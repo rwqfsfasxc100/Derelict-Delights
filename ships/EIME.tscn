@@ -7,6 +7,9 @@
 [node name="SYSTEM_CL150" parent="WeaponSlot" index="1"]
 visible = false
 
+[node name="WeaponLeft" parent="." index="22"]
+visible = true
+
 [node name="SYSTEM_CL150" parent="WeaponLeft" index="1"]
 visible = false
 
@@ -17,6 +20,13 @@ visible = false
 visible = false
 position = Vector2( 0, 64 )
 
+[node name="SYSTEM_EXSUPER-L" parent="WeaponLeft" index="37" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockSuper-L.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="WeaponRight" parent="." index="23"]
+visible = true
+script = null
+
 [node name="SYSTEM_CL150" parent="WeaponRight" index="1"]
 visible = false
 
@@ -24,11 +34,15 @@ visible = false
 visible = false
 position = Vector2( 0, 64 )
 
+[node name="SYSTEM_EXSUPER-R" parent="WeaponRight" index="37" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockSuper - OLD.tscn"]
+position = Vector2( 0, 64 )
+
 [editable path="Noises"]
 [editable path="AI"]
 [editable path="Beak/Claw Right/MineralProcessingUnit"]
 [editable path="Beak/Claw Left/MineralProcessingUnit_SMELT"]
 [editable path="Beak/Claw Left/MineralProcessingUnit_FAB"]
+[editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="WeaponSlot"]
 [editable path="WeaponLeft"]

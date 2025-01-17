@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=1]
-[ext_resource path="res://comms/conversation/subtrees/DIALOG_HABITAT_NEED_MINERAL.tscn" type="PackedScene" id=2]
+[ext_resource path="res://DerelictDelights/comms/conversation/subtrees/DIALOG_HABITAT_CONSTRUCTION.tscn" type="PackedScene" id=2]
 [ext_resource path="res://comms/conversation/subtrees/DIALOG_HABITAT_WATCH_FIRE_FEAR.tscn" type="PackedScene" id=3]
 
 [node name="HabitatConstructionConversation" type="Node"]

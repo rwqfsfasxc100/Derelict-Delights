@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=1]
+[ext_resource path="res://comms/conversation/subtrees/DIALOG_HABITAT_NEED_MINERAL.tscn" type="PackedScene" id=2]
+
+[node name="DIALOG_HABITAT_CONSTRUCTION" instance=ExtResource( 2 )]
+
+[node name="DIALOG_HABITAT_BUILDING_CONTAINER_ASK" type="Node" parent="." index="7"]
+script = ExtResource( 1 )
+myLine = false
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 1
+storyFlagMax = 1
+
+[node name="DIALOG_HABITAT_BUILDING_CONTAINER_EXPLAIN" type="Node" parent="DIALOG_HABITAT_BUILDING_CONTAINER_ASK" index="0"]
+script = ExtResource( 1 )
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 1
+storyFlagMax = 1
+
+[node name="DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER" type="Node" parent="DIALOG_HABITAT_BUILDING_CONTAINER_ASK/DIALOG_HABITAT_BUILDING_CONTAINER_EXPLAIN" index="0"]
+script = ExtResource( 1 )
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 1
+storyFlagMax = 1
+
+[node name="DIALOG_HABITAT_BUILDING_CONTAINER_FIND" type="Node" parent="DIALOG_HABITAT_BUILDING_CONTAINER_ASK/DIALOG_HABITAT_BUILDING_CONTAINER_EXPLAIN/DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER" index="0"]
+script = ExtResource( 1 )
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 1
+storyFlagMax = 1
+storyFlagSet = 2

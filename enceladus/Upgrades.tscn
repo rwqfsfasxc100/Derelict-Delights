@@ -25,104 +25,44 @@ texture = SubResource( 1 )
 texture = SubResource( 2 )
 
 [node name="MarginContainer" parent="VB/MarginContainer/ScrollContainer" index="0"]
-margin_bottom = 26172.0
+margin_bottom = 26542.0
 
 [node name="Items" parent="VB/MarginContainer/ScrollContainer/MarginContainer" index="0"]
-margin_bottom = 26156.0
+margin_bottom = 26526.0
 
 [node name="LeftWeaponSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="4"]
-margin_bottom = 7099.0
+margin_bottom = 7173.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot" index="0"]
-margin_bottom = 1681.0
+margin_bottom = 1755.0
 
-[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="35" instance=ExtResource( 2 )]
+[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 1609.0
+margin_top = 1535.0
 margin_right = 1196.0
+margin_bottom = 1605.0
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="35"]
+margin_top = 1609.0
 margin_bottom = 1679.0
 
-[node name="EXSCOOP-P-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
-visible = false
+[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 1683.0
 margin_right = 1196.0
 margin_bottom = 1753.0
-system = "SYSTEM_EXSCOOP-P-L"
-nameOverride = "SYSTEM_EXSCOOP-P"
-price = 180000
-
-[node name="EXSCOOP-L-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="37" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1757.0
-margin_right = 1196.0
-margin_bottom = 1827.0
-system = "SYSTEM_EXSCOOP-L-L"
-nameOverride = "SYSTEM_EXSCOOP-L"
-price = 220000
-
-[node name="EXSCOOP-LP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="38" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1831.0
-margin_right = 1196.0
-margin_bottom = 1901.0
-system = "SYSTEM_EXSCOOP-LP-L"
-nameOverride = "SYSTEM_EXSCOOP-LP"
-price = 250000
-
-[node name="EXSCOOP-M-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="39" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1905.0
-margin_right = 1196.0
-margin_bottom = 1975.0
-system = "SYSTEM_EXSCOOP-M-L"
-nameOverride = "SYSTEM_EXSCOOP-M"
-price = 160000
-
-[node name="EXSCOOP-MP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="40" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1979.0
-margin_right = 1196.0
-margin_bottom = 2049.0
-system = "SYSTEM_EXSCOOP-MP-L"
-nameOverride = "SYSTEM_EXSCOOP-MP"
-price = 190000
-
-[node name="EXSCOOP-E-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="41" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 2053.0
-margin_right = 1196.0
-margin_bottom = 2123.0
-system = "SYSTEM_EXSCOOP-E-L"
-nameOverride = "SYSTEM_EXSCOOP-E"
-price = 150000
-
-[node name="EXSCOOP-EP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="42" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 2127.0
-margin_right = 1196.0
-margin_bottom = 2197.0
-system = "SYSTEM_EXSCOOP-EP-L"
-nameOverride = "SYSTEM_EXSCOOP-EP"
-price = 180000
+slot = "weaponSlot.left.type"
+system = "SYSTEM_EXSUPER-L"
+nameOverride = "SYSTEM_EXSUPER"
+price = 550000
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 10
 
 [node name="MiddleLeftWeaponSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="5"]
-margin_top = 7103.0
-margin_bottom = 8342.0
+margin_top = 7177.0
+margin_bottom = 8416.0
 
 [node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/MiddleLeftWeaponSlot/VBoxContainer" index="35" instance=ExtResource( 2 )]
 visible = false
@@ -133,100 +73,39 @@ margin_right = 1196.0
 margin_bottom = 1309.0
 
 [node name="RightWeaponSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="6"]
-margin_top = 8346.0
-margin_bottom = 10029.0
+margin_top = 8420.0
+margin_bottom = 10177.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot" index="0"]
-margin_bottom = 1681.0
+margin_bottom = 1755.0
 
-[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="35" instance=ExtResource( 2 )]
+[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 1609.0
+margin_top = 1535.0
 margin_right = 1196.0
-margin_bottom = 1679.0
+margin_bottom = 1605.0
 system = "SYSTEM_EXBIG-R"
 
-[node name="EXSCOOP-P-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
-visible = false
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="35"]
+margin_top = 1609.0
+margin_bottom = 1679.0
+
+[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 1683.0
 margin_right = 1196.0
 margin_bottom = 1753.0
-system = "SYSTEM_EXSCOOP-P-R"
-nameOverride = "SYSTEM_EXSCOOP-P"
-price = 180000
-
-[node name="EXSCOOP-L-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="37" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1757.0
-margin_right = 1196.0
-margin_bottom = 1827.0
-system = "SYSTEM_EXSCOOP-L-R"
-nameOverride = "SYSTEM_EXSCOOP-L"
-price = 220000
-
-[node name="EXSCOOP-LP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="38" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1831.0
-margin_right = 1196.0
-margin_bottom = 1901.0
-system = "SYSTEM_EXSCOOP-LP-R"
-nameOverride = "SYSTEM_EXSCOOP-LP"
-price = 250000
-
-[node name="EXSCOOP-M-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="39" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1905.0
-margin_right = 1196.0
-margin_bottom = 1975.0
-system = "SYSTEM_EXSCOOP-M-R"
-nameOverride = "SYSTEM_EXSCOOP-M"
-price = 160000
-
-[node name="EXSCOOP-MP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="40" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1979.0
-margin_right = 1196.0
-margin_bottom = 2049.0
-system = "SYSTEM_EXSCOOP-MP-R"
-nameOverride = "SYSTEM_EXSCOOP-MP"
-price = 190000
-
-[node name="EXSCOOP-E-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="41" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 2053.0
-margin_right = 1196.0
-margin_bottom = 2123.0
-system = "SYSTEM_EXSCOOP-E-R"
-nameOverride = "SYSTEM_EXSCOOP-E"
-price = 150000
-
-[node name="EXSCOOP-EP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="42" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 2127.0
-margin_right = 1196.0
-margin_bottom = 2197.0
-system = "SYSTEM_EXSCOOP-EP-R"
-nameOverride = "SYSTEM_EXSCOOP-EP"
-price = 180000
+system = "SYSTEM_EXSUPER-L"
+nameOverride = "SYSTEM_EXSUPER"
+price = 550000
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 10
 
 [node name="MiddleRightWeaponSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="7"]
-margin_top = 10033.0
-margin_bottom = 11272.0
+margin_top = 10181.0
+margin_bottom = 11420.0
 
 [node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/MiddleRightWeaponSlot/VBoxContainer" index="35" instance=ExtResource( 2 )]
 visible = false
@@ -238,800 +117,318 @@ margin_bottom = 1309.0
 system = "SYSTEM_EXBIG-R"
 
 [node name="LeftDroneSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="8"]
-margin_top = 11276.0
-margin_bottom = 11627.0
+margin_top = 11424.0
+margin_bottom = 11775.0
 
 [node name="RightDroneSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="9"]
-margin_top = 11631.0
-margin_bottom = 11982.0
+margin_top = 11779.0
+margin_bottom = 12130.0
 
 [node name="LeftRearSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="10"]
-margin_top = 11986.0
-margin_bottom = 12855.0
+margin_top = 12134.0
+margin_bottom = 13077.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot" index="0"]
-margin_bottom = 867.0
+margin_bottom = 941.0
 
-[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="35" instance=ExtResource( 2 )]
+[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 795.0
+margin_top = 721.0
 margin_right = 1196.0
+margin_bottom = 791.0
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="35"]
+margin_top = 795.0
 margin_bottom = 865.0
 
-[node name="EXSCOOP-P-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
-visible = false
+[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 869.0
 margin_right = 1196.0
 margin_bottom = 939.0
-system = "SYSTEM_EXSCOOP-P-L"
-nameOverride = "SYSTEM_EXSCOOP-P"
-price = 180000
-
-[node name="EXSCOOP-L-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="37" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 943.0
-margin_right = 1196.0
-margin_bottom = 1013.0
-system = "SYSTEM_EXSCOOP-L-L"
-nameOverride = "SYSTEM_EXSCOOP-L"
-price = 220000
-
-[node name="EXSCOOP-LP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="38" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1017.0
-margin_right = 1196.0
-margin_bottom = 1087.0
-system = "SYSTEM_EXSCOOP-LP-L"
-nameOverride = "SYSTEM_EXSCOOP-LP"
-price = 250000
-
-[node name="EXSCOOP-M-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="39" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1091.0
-margin_right = 1196.0
-margin_bottom = 1161.0
-system = "SYSTEM_EXSCOOP-M-L"
-nameOverride = "SYSTEM_EXSCOOP-M"
-price = 160000
-
-[node name="EXSCOOP-MP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="40" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1165.0
-margin_right = 1196.0
-margin_bottom = 1235.0
-system = "SYSTEM_EXSCOOP-MP-L"
-nameOverride = "SYSTEM_EXSCOOP-MP"
-price = 190000
-
-[node name="EXSCOOP-E-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="41" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1239.0
-margin_right = 1196.0
-margin_bottom = 1309.0
-system = "SYSTEM_EXSCOOP-E-L"
-nameOverride = "SYSTEM_EXSCOOP-E"
-price = 150000
-
-[node name="EXSCOOP-EP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="42" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1313.0
-margin_right = 1196.0
-margin_bottom = 1383.0
-system = "SYSTEM_EXSCOOP-EP-L"
-nameOverride = "SYSTEM_EXSCOOP-EP"
-price = 180000
+system = "SYSTEM_EXSUPER-L"
+nameOverride = "SYSTEM_EXSUPER"
+price = 550000
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 10
 
 [node name="RightRearSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="11"]
-margin_top = 12859.0
-margin_bottom = 13728.0
+margin_top = 13081.0
+margin_bottom = 14024.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot" index="0"]
-margin_bottom = 867.0
+margin_bottom = 941.0
 
-[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="35" instance=ExtResource( 2 )]
+[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 795.0
+margin_top = 721.0
 margin_right = 1196.0
-margin_bottom = 865.0
+margin_bottom = 791.0
 system = "SYSTEM_EXBIG-R"
 
-[node name="EXSCOOP-P-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
-visible = false
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="35"]
+margin_top = 795.0
+margin_bottom = 865.0
+
+[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 869.0
 margin_right = 1196.0
 margin_bottom = 939.0
-system = "SYSTEM_EXSCOOP-P-R"
-nameOverride = "SYSTEM_EXSCOOP-P"
-price = 180000
-
-[node name="EXSCOOP-L-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="37" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 943.0
-margin_right = 1196.0
-margin_bottom = 1013.0
-system = "SYSTEM_EXSCOOP-L-R"
-nameOverride = "SYSTEM_EXSCOOP-L"
-price = 220000
-
-[node name="EXSCOOP-LP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="38" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1017.0
-margin_right = 1196.0
-margin_bottom = 1087.0
-system = "SYSTEM_EXSCOOP-LP-R"
-nameOverride = "SYSTEM_EXSCOOP-LP"
-price = 250000
-
-[node name="EXSCOOP-M-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="39" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1091.0
-margin_right = 1196.0
-margin_bottom = 1161.0
-system = "SYSTEM_EXSCOOP-M-R"
-nameOverride = "SYSTEM_EXSCOOP-M"
-price = 160000
-
-[node name="EXSCOOP-MP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="40" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1165.0
-margin_right = 1196.0
-margin_bottom = 1235.0
-system = "SYSTEM_EXSCOOP-MP-R"
-nameOverride = "SYSTEM_EXSCOOP-MP"
-price = 190000
-
-[node name="EXSCOOP-E-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="41" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1239.0
-margin_right = 1196.0
-margin_bottom = 1309.0
-system = "SYSTEM_EXSCOOP-E-R"
-nameOverride = "SYSTEM_EXSCOOP-E"
-price = 150000
-
-[node name="EXSCOOP-EP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="42" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1313.0
-margin_right = 1196.0
-margin_bottom = 1383.0
-system = "SYSTEM_EXSCOOP-EP-R"
-nameOverride = "SYSTEM_EXSCOOP-EP"
-price = 180000
+system = "SYSTEM_EXSUPER-L"
+nameOverride = "SYSTEM_EXSUPER"
+price = 550000
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 10
 
 [node name="LeftBay1" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="12"]
-margin_top = 13732.0
-margin_bottom = 14601.0
+margin_top = 14028.0
+margin_bottom = 14897.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1" index="0"]
 margin_bottom = 867.0
 
-[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="35" instance=ExtResource( 2 )]
+[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 795.0
+margin_top = 721.0
 margin_right = 1196.0
+margin_bottom = 791.0
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="35"]
+margin_top = 795.0
 margin_bottom = 865.0
 
-[node name="EXSCOOP-P-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="36" instance=ExtResource( 2 )]
 visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 869.0
 margin_right = 1196.0
 margin_bottom = 939.0
-system = "SYSTEM_EXSCOOP-P-L"
-nameOverride = "SYSTEM_EXSCOOP-P"
-price = 180000
-
-[node name="EXSCOOP-L-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="37" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 943.0
-margin_right = 1196.0
-margin_bottom = 1013.0
-system = "SYSTEM_EXSCOOP-L-L"
-nameOverride = "SYSTEM_EXSCOOP-L"
-price = 220000
-
-[node name="EXSCOOP-LP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="38" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1017.0
-margin_right = 1196.0
-margin_bottom = 1087.0
-system = "SYSTEM_EXSCOOP-LP-L"
-nameOverride = "SYSTEM_EXSCOOP-LP"
-price = 250000
-
-[node name="EXSCOOP-M-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="39" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1091.0
-margin_right = 1196.0
-margin_bottom = 1161.0
-system = "SYSTEM_EXSCOOP-M-L"
-nameOverride = "SYSTEM_EXSCOOP-M"
-price = 160000
-
-[node name="EXSCOOP-MP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="40" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1165.0
-margin_right = 1196.0
-margin_bottom = 1235.0
-system = "SYSTEM_EXSCOOP-MP-L"
-nameOverride = "SYSTEM_EXSCOOP-MP"
-price = 190000
-
-[node name="EXSCOOP-E-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="41" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1239.0
-margin_right = 1196.0
-margin_bottom = 1309.0
-system = "SYSTEM_EXSCOOP-E-L"
-nameOverride = "SYSTEM_EXSCOOP-E"
-price = 150000
-
-[node name="EXSCOOP-EP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="42" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1313.0
-margin_right = 1196.0
-margin_bottom = 1383.0
-system = "SYSTEM_EXSCOOP-EP-L"
-nameOverride = "SYSTEM_EXSCOOP-EP"
-price = 180000
+system = "SYSTEM_EXSUPER-L"
+nameOverride = "SYSTEM_EXSUPER"
+price = 550000
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 10
 
 [node name="RightBay1" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="13"]
-margin_top = 14605.0
-margin_bottom = 15474.0
+margin_top = 14901.0
+margin_bottom = 15770.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1" index="0"]
 margin_bottom = 867.0
 
-[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="35" instance=ExtResource( 2 )]
+[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 795.0
+margin_top = 721.0
 margin_right = 1196.0
-margin_bottom = 865.0
+margin_bottom = 791.0
 system = "SYSTEM_EXBIG-R"
 
-[node name="EXSCOOP-P-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="35"]
+margin_top = 795.0
+margin_bottom = 865.0
+
+[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="36" instance=ExtResource( 2 )]
 visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 869.0
 margin_right = 1196.0
 margin_bottom = 939.0
-system = "SYSTEM_EXSCOOP-P-R"
-nameOverride = "SYSTEM_EXSCOOP-P"
-price = 180000
-
-[node name="EXSCOOP-L-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="37" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 943.0
-margin_right = 1196.0
-margin_bottom = 1013.0
-system = "SYSTEM_EXSCOOP-L-R"
-nameOverride = "SYSTEM_EXSCOOP-L"
-price = 220000
-
-[node name="EXSCOOP-LP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="38" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1017.0
-margin_right = 1196.0
-margin_bottom = 1087.0
-system = "SYSTEM_EXSCOOP-LP-R"
-nameOverride = "SYSTEM_EXSCOOP-LP"
-price = 250000
-
-[node name="EXSCOOP-M-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="39" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1091.0
-margin_right = 1196.0
-margin_bottom = 1161.0
-system = "SYSTEM_EXSCOOP-M-R"
-nameOverride = "SYSTEM_EXSCOOP-M"
-price = 160000
-
-[node name="EXSCOOP-MP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="40" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1165.0
-margin_right = 1196.0
-margin_bottom = 1235.0
-system = "SYSTEM_EXSCOOP-MP-R"
-nameOverride = "SYSTEM_EXSCOOP-MP"
-price = 190000
-
-[node name="EXSCOOP-E-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="41" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1239.0
-margin_right = 1196.0
-margin_bottom = 1309.0
-system = "SYSTEM_EXSCOOP-E-R"
-nameOverride = "SYSTEM_EXSCOOP-E"
-price = 150000
-
-[node name="EXSCOOP-EP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="42" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1313.0
-margin_right = 1196.0
-margin_bottom = 1383.0
-system = "SYSTEM_EXSCOOP-EP-R"
-nameOverride = "SYSTEM_EXSCOOP-EP"
-price = 180000
+system = "SYSTEM_EXSUPER-L"
+nameOverride = "SYSTEM_EXSUPER"
+price = 550000
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 10
 
 [node name="LeftBay2" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="14"]
-margin_top = 15478.0
-margin_bottom = 16273.0
+margin_top = 15774.0
+margin_bottom = 16569.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2" index="0"]
 margin_bottom = 793.0
 
-[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="35" instance=ExtResource( 2 )]
+[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 721.0
+margin_top = 647.0
 margin_right = 1196.0
+margin_bottom = 717.0
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="35"]
+margin_top = 721.0
 margin_bottom = 791.0
 
-[node name="EXSCOOP-P-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="36" instance=ExtResource( 2 )]
 visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 795.0
 margin_right = 1196.0
 margin_bottom = 865.0
-system = "SYSTEM_EXSCOOP-P-L"
-nameOverride = "SYSTEM_EXSCOOP-P"
-price = 180000
-
-[node name="EXSCOOP-L-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="37" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 869.0
-margin_right = 1196.0
-margin_bottom = 939.0
-system = "SYSTEM_EXSCOOP-L-L"
-nameOverride = "SYSTEM_EXSCOOP-L"
-price = 220000
-
-[node name="EXSCOOP-LP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="38" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 943.0
-margin_right = 1196.0
-margin_bottom = 1013.0
-system = "SYSTEM_EXSCOOP-LP-L"
-nameOverride = "SYSTEM_EXSCOOP-LP"
-price = 250000
-
-[node name="EXSCOOP-M-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="39" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1017.0
-margin_right = 1196.0
-margin_bottom = 1087.0
-system = "SYSTEM_EXSCOOP-M-L"
-nameOverride = "SYSTEM_EXSCOOP-M"
-price = 160000
-
-[node name="EXSCOOP-MP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="40" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1091.0
-margin_right = 1196.0
-margin_bottom = 1161.0
-system = "SYSTEM_EXSCOOP-MP-L"
-nameOverride = "SYSTEM_EXSCOOP-MP"
-price = 190000
-
-[node name="EXSCOOP-E-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="41" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1165.0
-margin_right = 1196.0
-margin_bottom = 1235.0
-system = "SYSTEM_EXSCOOP-E-L"
-nameOverride = "SYSTEM_EXSCOOP-E"
-price = 150000
-
-[node name="EXSCOOP-EP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="42" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1239.0
-margin_right = 1196.0
-margin_bottom = 1309.0
-system = "SYSTEM_EXSCOOP-EP-L"
-nameOverride = "SYSTEM_EXSCOOP-EP"
-price = 180000
+system = "SYSTEM_EXSUPER-L"
+nameOverride = "SYSTEM_EXSUPER"
+price = 550000
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 10
 
 [node name="RightBay2" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="15"]
-margin_top = 16277.0
-margin_bottom = 17072.0
+margin_top = 16573.0
+margin_bottom = 17368.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2" index="0"]
 margin_bottom = 793.0
 
-[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="35" instance=ExtResource( 2 )]
+[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 721.0
+margin_top = 647.0
 margin_right = 1196.0
-margin_bottom = 791.0
+margin_bottom = 717.0
 system = "SYSTEM_EXBIG-R"
 
-[node name="EXSCOOP-P-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="35"]
+margin_top = 721.0
+margin_bottom = 791.0
+
+[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="36" instance=ExtResource( 2 )]
 visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 795.0
 margin_right = 1196.0
 margin_bottom = 865.0
-system = "SYSTEM_EXSCOOP-P-R"
-nameOverride = "SYSTEM_EXSCOOP-P"
-price = 180000
-
-[node name="EXSCOOP-L-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="37" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 869.0
-margin_right = 1196.0
-margin_bottom = 939.0
-system = "SYSTEM_EXSCOOP-L-R"
-nameOverride = "SYSTEM_EXSCOOP-L"
-price = 220000
-
-[node name="EXSCOOP-LP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="38" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 943.0
-margin_right = 1196.0
-margin_bottom = 1013.0
-system = "SYSTEM_EXSCOOP-LP-R"
-nameOverride = "SYSTEM_EXSCOOP-LP"
-price = 250000
-
-[node name="EXSCOOP-M-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="39" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1017.0
-margin_right = 1196.0
-margin_bottom = 1087.0
-system = "SYSTEM_EXSCOOP-M-R"
-nameOverride = "SYSTEM_EXSCOOP-M"
-price = 160000
-
-[node name="EXSCOOP-MP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="40" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1091.0
-margin_right = 1196.0
-margin_bottom = 1161.0
-system = "SYSTEM_EXSCOOP-MP-R"
-nameOverride = "SYSTEM_EXSCOOP-MP"
-price = 190000
-
-[node name="EXSCOOP-E-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="41" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1165.0
-margin_right = 1196.0
-margin_bottom = 1235.0
-system = "SYSTEM_EXSCOOP-E-R"
-nameOverride = "SYSTEM_EXSCOOP-E"
-price = 150000
-
-[node name="EXSCOOP-EP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="42" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1239.0
-margin_right = 1196.0
-margin_bottom = 1309.0
-system = "SYSTEM_EXSCOOP-EP-R"
-nameOverride = "SYSTEM_EXSCOOP-EP"
-price = 180000
+system = "SYSTEM_EXSUPER-L"
+nameOverride = "SYSTEM_EXSUPER"
+price = 550000
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 10
 
 [node name="LeftBay3" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="16"]
-margin_top = 17076.0
-margin_bottom = 17871.0
+margin_top = 17372.0
+margin_bottom = 18167.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3" index="0"]
 margin_bottom = 793.0
 
-[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="35" instance=ExtResource( 2 )]
+[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 721.0
+margin_top = 647.0
 margin_right = 1196.0
+margin_bottom = 717.0
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="35"]
+margin_top = 721.0
 margin_bottom = 791.0
 
-[node name="EXSCOOP-P-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="36" instance=ExtResource( 2 )]
 visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 795.0
 margin_right = 1196.0
 margin_bottom = 865.0
-system = "SYSTEM_EXSCOOP-P-L"
-nameOverride = "SYSTEM_EXSCOOP-P"
-price = 180000
-
-[node name="EXSCOOP-L-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="37" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 869.0
-margin_right = 1196.0
-margin_bottom = 939.0
-system = "SYSTEM_EXSCOOP-L-L"
-nameOverride = "SYSTEM_EXSCOOP-L"
-price = 220000
-
-[node name="EXSCOOP-LP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="38" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 943.0
-margin_right = 1196.0
-margin_bottom = 1013.0
-system = "SYSTEM_EXSCOOP-LP-L"
-nameOverride = "SYSTEM_EXSCOOP-LP"
-price = 250000
-
-[node name="EXSCOOP-M-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="39" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1017.0
-margin_right = 1196.0
-margin_bottom = 1087.0
-system = "SYSTEM_EXSCOOP-M-L"
-nameOverride = "SYSTEM_EXSCOOP-M"
-price = 160000
-
-[node name="EXSCOOP-MP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="40" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1091.0
-margin_right = 1196.0
-margin_bottom = 1161.0
-system = "SYSTEM_EXSCOOP-MP-L"
-nameOverride = "SYSTEM_EXSCOOP-MP"
-price = 190000
-
-[node name="EXSCOOP-E-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="41" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1165.0
-margin_right = 1196.0
-margin_bottom = 1235.0
-system = "SYSTEM_EXSCOOP-E-L"
-nameOverride = "SYSTEM_EXSCOOP-E"
-price = 150000
-
-[node name="EXSCOOP-EP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="42" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1239.0
-margin_right = 1196.0
-margin_bottom = 1309.0
-system = "SYSTEM_EXSCOOP-EP-L"
-nameOverride = "SYSTEM_EXSCOOP-EP"
-price = 180000
+system = "SYSTEM_EXSUPER-L"
+nameOverride = "SYSTEM_EXSUPER"
+price = 550000
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 10
 
 [node name="RightBay3" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="17"]
-margin_top = 17875.0
-margin_bottom = 18670.0
+margin_top = 18171.0
+margin_bottom = 18966.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3" index="0"]
 margin_bottom = 793.0
 
-[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="35" instance=ExtResource( 2 )]
+[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 721.0
+margin_top = 647.0
 margin_right = 1196.0
-margin_bottom = 791.0
+margin_bottom = 717.0
 system = "SYSTEM_EXBIG-R"
 
-[node name="EXSCOOP-P-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="35"]
+margin_top = 721.0
+margin_bottom = 791.0
+
+[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="36" instance=ExtResource( 2 )]
 visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 795.0
 margin_right = 1196.0
 margin_bottom = 865.0
-system = "SYSTEM_EXSCOOP-P-R"
-nameOverride = "SYSTEM_EXSCOOP-P"
-price = 180000
-
-[node name="EXSCOOP-L-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="37" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 869.0
-margin_right = 1196.0
-margin_bottom = 939.0
-system = "SYSTEM_EXSCOOP-L-R"
-nameOverride = "SYSTEM_EXSCOOP-L"
-price = 220000
-
-[node name="EXSCOOP-LP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="38" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 943.0
-margin_right = 1196.0
-margin_bottom = 1013.0
-system = "SYSTEM_EXSCOOP-LP-R"
-nameOverride = "SYSTEM_EXSCOOP-LP"
-price = 250000
-
-[node name="EXSCOOP-M-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="39" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1017.0
-margin_right = 1196.0
-margin_bottom = 1087.0
-system = "SYSTEM_EXSCOOP-M-R"
-nameOverride = "SYSTEM_EXSCOOP-M"
-price = 160000
-
-[node name="EXSCOOP-MP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="40" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1091.0
-margin_right = 1196.0
-margin_bottom = 1161.0
-system = "SYSTEM_EXSCOOP-MP-R"
-nameOverride = "SYSTEM_EXSCOOP-MP"
-price = 190000
-
-[node name="EXSCOOP-E-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="41" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1165.0
-margin_right = 1196.0
-margin_bottom = 1235.0
-system = "SYSTEM_EXSCOOP-E-R"
-nameOverride = "SYSTEM_EXSCOOP-E"
-price = 150000
-
-[node name="EXSCOOP-EP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="42" instance=ExtResource( 2 )]
-visible = false
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_top = 1239.0
-margin_right = 1196.0
-margin_bottom = 1309.0
-system = "SYSTEM_EXSCOOP-EP-R"
-nameOverride = "SYSTEM_EXSCOOP-EP"
-price = 180000
+system = "SYSTEM_EXSUPER-L"
+nameOverride = "SYSTEM_EXSUPER"
+price = 550000
+storyFlag = "dd.story.interplanetary"
+storyFlagMin = 10
 
 [node name="AmmunitionDelivery" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="18"]
-margin_top = 18674.0
-margin_bottom = 19247.0
+margin_top = 18970.0
+margin_bottom = 19543.0
 
 [node name="DisposableDrones" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="19"]
-margin_top = 19251.0
-margin_bottom = 19750.0
+margin_top = 19547.0
+margin_bottom = 20046.0
 
 [node name="Propellant" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="20"]
-margin_top = 19754.0
-margin_bottom = 20253.0
+margin_top = 20050.0
+margin_bottom = 20549.0
 
 [node name="Thrusters" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="21"]
-margin_top = 20257.0
-margin_bottom = 21052.0
+margin_top = 20553.0
+margin_bottom = 21348.0
 
 [node name="Torches" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="22"]
-margin_top = 21056.0
-margin_bottom = 21777.0
+margin_top = 21352.0
+margin_bottom = 22073.0
 
 [node name="Rods" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="23"]
-margin_top = 21781.0
-margin_bottom = 22428.0
+margin_top = 22077.0
+margin_bottom = 22724.0
 
 [node name="Capacitor" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="24"]
-margin_top = 22432.0
-margin_bottom = 22709.0
+margin_top = 22728.0
+margin_bottom = 23005.0
 
 [node name="Turbine" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="25"]
-margin_top = 22713.0
-margin_bottom = 22990.0
+margin_top = 23009.0
+margin_bottom = 23286.0
 
 [node name="AuxilaryPower" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="26"]
-margin_top = 22994.0
-margin_bottom = 23567.0
+margin_top = 23290.0
+margin_bottom = 23863.0
 
 [node name="CargoBay" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="27"]
-margin_top = 23571.0
-margin_bottom = 24070.0
+margin_top = 23867.0
+margin_bottom = 24440.0
 
 [node name="Autopilot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="28"]
-margin_top = 24074.0
-margin_bottom = 24573.0
+margin_top = 24444.0
+margin_bottom = 24943.0
 
 [node name="Hud" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="29"]
-margin_top = 24577.0
-margin_bottom = 25372.0
+margin_top = 24947.0
+margin_bottom = 25742.0
 
 [node name="Lidar" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="30"]
-margin_top = 25376.0
-margin_bottom = 25801.0
+margin_top = 25746.0
+margin_bottom = 26171.0
 
 [node name="ReconDrone" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="31"]
-margin_top = 25805.0
-margin_bottom = 26156.0
+margin_top = 26175.0
+margin_bottom = 26526.0
 
 [editable path="VB/HeaderWithMoney"]
 [editable path="VB/WindowMargin/TabHintContainer"]

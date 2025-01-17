@@ -1,0 +1,29 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=1]
+
+[node name="AGENDA_HISTORIAN_INTERPLANETARY_IS_IT" type="Node"]
+script = ExtResource( 1 )
+agendaNPC = true
+timeout = 10.0
+agenda = "AGENDA_HISTORIAN"
+storyFlag = "dd.story.interplanetary"
+storyFlagMax = 0
+onlyOnce = true
+
+[node name="AGENDA_HISTORIAN_INTERPLANETARY_IT_IS" type="Node" parent="."]
+script = ExtResource( 1 )
+agendaNPC = true
+timeout = 10.0
+agenda = "AGENDA_HISTORIAN"
+storyFlag = "dd.story.interplanetary"
+storyFlagMax = 0
+
+[node name="AGENDA_HISTORIAN_INTERPLANETARY_WONDER" type="Node" parent="AGENDA_HISTORIAN_INTERPLANETARY_IT_IS"]
+script = ExtResource( 1 )
+agendaNPC = true
+timeout = 10.0
+agenda = "AGENDA_HISTORIAN"
+storyFlag = "dd.story.interplanetary"
+storyFlagMax = 0
+storyFlagSet = 1

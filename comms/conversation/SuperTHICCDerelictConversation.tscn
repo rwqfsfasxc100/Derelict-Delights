@@ -1,0 +1,49 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=1]
+
+[node name="AgendaSuperTHICC" type="Node"]
+script = ExtResource( 1 )
+
+[node name="DIALOG_SUPER_THICC_DERELICT_THIS" type="Node" parent="."]
+script = ExtResource( 1 )
+agendaNPC = true
+agenda = "AGENDA_HISTORIAN"
+onlyOnce = true
+
+[node name="DIALOG_SUPER_THICC_DERELICT_THIS_GO" type="Node" parent="DIALOG_SUPER_THICC_DERELICT_THIS"]
+script = ExtResource( 1 )
+myLine = false
+agendaNPC = true
+agenda = "AGENDA_HISTORIAN"
+
+[node name="DIALOG_SUPER_THICC_DERELICT_THIS_EVA" type="Node" parent="DIALOG_SUPER_THICC_DERELICT_THIS/DIALOG_SUPER_THICC_DERELICT_THIS_GO"]
+script = ExtResource( 1 )
+agendaNPC = true
+evaDirection = -1.0
+agenda = "AGENDA_HISTORIAN"
+storyFlag = "dd.story.interplanetary"
+storyFlagMax = 20
+storyFlagSet = 20
+
+[node name="DIALOG_SUPER_THICC_DERELICT_THIS_DOCUMENTS" type="Node" parent="DIALOG_SUPER_THICC_DERELICT_THIS/DIALOG_SUPER_THICC_DERELICT_THIS_GO/DIALOG_SUPER_THICC_DERELICT_THIS_EVA"]
+script = ExtResource( 1 )
+agendaNPC = true
+agenda = "AGENDA_HISTORIAN"
+storyFlag = "dd.story.interplanetary"
+
+[node name="DIALOG_SUPER_THICC_DERELICT_THIS_TAKE" type="Node" parent="DIALOG_SUPER_THICC_DERELICT_THIS/DIALOG_SUPER_THICC_DERELICT_THIS_GO/DIALOG_SUPER_THICC_DERELICT_THIS_EVA/DIALOG_SUPER_THICC_DERELICT_THIS_DOCUMENTS"]
+script = ExtResource( 1 )
+agendaNPC = true
+agenda = "AGENDA_HISTORIAN"
+storyFlag = "dd.story.interplanetary"
+deactivateAgendaMember = true
+deactivateAgendaMemeberTemporary = true
+getThisShip = true
+aiSetTargetAsImperative = true
+aiImperativeStrenght = 20.0
+aiImperative = 8
+
+[node name="link-eva" type="Node" parent="DIALOG_SUPER_THICC_DERELICT_THIS"]
+script = ExtResource( 1 )
+alias = NodePath("../DIALOG_SUPER_THICC_DERELICT_THIS_GO/DIALOG_SUPER_THICC_DERELICT_THIS_EVA")

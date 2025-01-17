@@ -59,3 +59,29 @@ poiExposeName = "POI_SCRAP"
 poiExposeUnique = false
 poiExposeEvent = "FlightForRescue"
 poiDistanceRandom = 90.0
+
+[node name="DIALOG_POI_RANDOM_1|HabitatBuilding" type="Node" parent="." index="49"]
+script = ExtResource( 2 )
+weight = 0.1
+agendaNPC = true
+agenda = "RANDOM"
+aiImperative = 4
+poiCantKnow = "POI_HABITAT_BUILDING"
+eventCantKnow = "HabitatUnderConstruction"
+poiExposeName = "POI_BIG_CONTACT"
+poiExposeUnique = false
+poiExposeEvent = "HabitatUnderConstruction"
+poiDistanceRandom = 90.0
+
+[node name="DIALOG_POI_RANDOM_5|HabitatBuilding" type="Node" parent="." index="50"]
+script = ExtResource( 2 )
+weight = 0.1
+agendaNPC = true
+agenda = "RANDOM"
+aiImperative = 4
+poiCantKnow = "POI_HABITAT_BUILDING"
+eventCantKnow = "HabitatUnderConstruction"
+poiExposeName = "POI_BIG_CONTACT"
+poiExposeUnique = false
+poiExposeEvent = "HabitatUnderConstruction"
+poiDistanceRandom = 90.0
