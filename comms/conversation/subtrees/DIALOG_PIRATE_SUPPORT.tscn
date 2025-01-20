@@ -458,8 +458,8 @@ changeHostility = -0.1
 changeFear = -0.1
 changeSupport = 0.1
 factionBroadcast = 1.0
-requirePlayerMoney = 600000.0
-changePlayerMoney = -600000.0
+requirePlayerMoney = 3e+06
+changePlayerMoney = -3e+06
 poiExposeName = "POI_PIRATE_SHIP"
 poiExposeUnique = false
 poiExposeEvent = "DerelictBALD"
@@ -492,8 +492,8 @@ changeHostility = -0.1
 changeFear = -0.1
 changeSupport = 0.1
 factionBroadcast = 1.0
-requirePlayerMoney = 500000.0
-changePlayerMoney = -500000.0
+requirePlayerMoney = 1.5e+06
+changePlayerMoney = -1.5e+06
 poiExposeName = "POI_PIRATE_SHIP"
 poiExposeUnique = false
 poiExposeEvent = "Derelict225"
@@ -526,8 +526,8 @@ changeHostility = -0.1
 changeFear = -0.1
 changeSupport = 0.1
 factionBroadcast = 1.0
-requirePlayerMoney = 500000.0
-changePlayerMoney = -500000.0
+requirePlayerMoney = 1.5e+06
+changePlayerMoney = -1.5e+06
 poiExposeName = "POI_PIRATE_SHIP"
 poiExposeUnique = false
 poiExposeEvent = "Derelict225B"
@@ -546,41 +546,7 @@ changeSupport = -0.2
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_TITAN_BB" index="2"]
 script = ExtResource( 2 )
 
-[node name="DIALOG_PIRATE_BUSINESS_SHIP_TITAN_M" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="22"]
-script = ExtResource( 2 )
-weight = 0.01
-mostPrelevantDisposition = "support"
-dispositionRequired = 0.7
-poiTimeHours = 168.0
-
-[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_TITAN_M" index="0"]
-script = ExtResource( 2 )
-myLine = false
-changeHostility = -0.1
-changeFear = -0.1
-changeSupport = 0.1
-factionBroadcast = 1.0
-requirePlayerMoney = 1e+06
-changePlayerMoney = -1e+06
-poiExposeName = "POI_PIRATE_SHIP"
-poiExposeUnique = false
-poiExposeEvent = "Derelict225M"
-poiDistanceKm = 500.0
-poiTimeHours = 168.0
-poiDirection = Vector2( 1, 0 )
-
-[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_TITAN_M/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
-script = ExtResource( 2 )
-
-[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_TITAN_M" index="1"]
-script = ExtResource( 2 )
-myLine = false
-changeSupport = -0.2
-
-[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_TITAN_M" index="2"]
-script = ExtResource( 2 )
-
-[node name="DIALOG_PIRATE_BUSINESS_SHIP_OCP" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="23"]
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_OCP" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="22"]
 script = ExtResource( 2 )
 weight = 0.08
 mostPrelevantDisposition = "support"
@@ -594,8 +560,8 @@ changeHostility = -0.1
 changeFear = -0.1
 changeSupport = 0.1
 factionBroadcast = 1.0
-requirePlayerMoney = 300000.0
-changePlayerMoney = -300000.0
+requirePlayerMoney = 750000.0
+changePlayerMoney = -750000.0
 poiExposeName = "POI_PIRATE_SHIP"
 poiExposeUnique = false
 poiExposeEvent = "DerelictOCP"
@@ -614,7 +580,7 @@ changeSupport = -0.2
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_OCP" index="2"]
 script = ExtResource( 2 )
 
-[node name="DIALOG_PIRATE_BUSINESS_SHIP_KITSUNE" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="24"]
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_KITSUNE" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="23"]
 script = ExtResource( 2 )
 weight = 0.3
 mostPrelevantDisposition = "support"
@@ -648,7 +614,7 @@ changeSupport = -0.2
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_KITSUNE" index="2"]
 script = ExtResource( 2 )
 
-[node name="DIALOG_PIRATE_BUSINESS_SHIP_EIME" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="25"]
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_EIME" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="24"]
 script = ExtResource( 2 )
 weight = 0.03
 mostPrelevantDisposition = "support"
@@ -662,8 +628,8 @@ changeHostility = -0.1
 changeFear = -0.1
 changeSupport = 0.1
 factionBroadcast = 1.0
-requirePlayerMoney = 750000.0
-changePlayerMoney = -750000.0
+requirePlayerMoney = 2e+06
+changePlayerMoney = -2e+06
 poiExposeName = "POI_PIRATE_SHIP"
 poiExposeUnique = false
 poiExposeEvent = "DerelictEime"
@@ -682,7 +648,7 @@ changeSupport = -0.2
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_EIME" index="2"]
 script = ExtResource( 2 )
 
-[node name="DIALOG_PIRATE_BUSINESS_ORE_I" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="26"]
+[node name="DIALOG_PIRATE_BUSINESS_ORE_I" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="25"]
 script = ExtResource( 2 )
 mostPrelevantDisposition = "support"
 dispositionRequired = 0.5
@@ -720,7 +686,7 @@ changeSupport = -0.2
 script = ExtResource( 2 )
 alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
-[node name="DIALOG_PIRATE_BUSINESS_ORE_II" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="27"]
+[node name="DIALOG_PIRATE_BUSINESS_ORE_II" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="26"]
 script = ExtResource( 2 )
 mostPrelevantDisposition = "support"
 dispositionRequired = 0.5
@@ -758,7 +724,7 @@ changeSupport = -0.2
 script = ExtResource( 2 )
 alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
-[node name="DIALOG_PIRATE_BUSINESS_ORE_III" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="28"]
+[node name="DIALOG_PIRATE_BUSINESS_ORE_III" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="27"]
 script = ExtResource( 2 )
 mostPrelevantDisposition = "support"
 dispositionRequired = 0.5
@@ -796,7 +762,7 @@ changeSupport = -0.2
 script = ExtResource( 2 )
 alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
-[node name="DIALOG_PIRATE_BUSINESS_ORE_IV" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="29"]
+[node name="DIALOG_PIRATE_BUSINESS_ORE_IV" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="28"]
 script = ExtResource( 2 )
 mostPrelevantDisposition = "support"
 dispositionRequired = 0.5
@@ -834,7 +800,7 @@ changeSupport = -0.2
 script = ExtResource( 2 )
 alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
-[node name="DIALOG_PIRATE_BUSINESS_ORE_V" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="30"]
+[node name="DIALOG_PIRATE_BUSINESS_ORE_V" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="29"]
 script = ExtResource( 2 )
 mostPrelevantDisposition = "support"
 dispositionRequired = 0.5
@@ -872,7 +838,7 @@ changeSupport = -0.2
 script = ExtResource( 2 )
 alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
-[node name="DIALOG_PIRATE_BUSINESS_ORE_VI" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="31"]
+[node name="DIALOG_PIRATE_BUSINESS_ORE_VI" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="30"]
 script = ExtResource( 2 )
 mostPrelevantDisposition = "support"
 dispositionRequired = 0.5

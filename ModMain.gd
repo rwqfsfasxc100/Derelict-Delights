@@ -4,12 +4,14 @@ extends Node
 # Mods are loaded from lowest to highest priority, default is 0
 const MOD_PRIORITY = 1
 # Name of the mod, used for writing to the logs
-const MOD_NAME = "Derelict Delights v.1.3.0"
+const MOD_NAME = "Derelict Delights v.1.3.4"
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
 var _savedObjects := []
 
+var modConfig = {}
+#Initializes the configuration variable. Used by loadSettings.
 
 # Initialize the mod
 # This function is executed before the majority of the game is loaded
@@ -18,62 +20,88 @@ var _savedObjects := []
 func _init(modLoader = ModLoader):
 	l("Initializing DLC")
 	
+# Modify Settings.gd first so we can load config and DLC
+	installScriptExtension("Settings.gd")
+	loadSettings()
+	
 	loadDLC()
 	
-	l("DLC loaded, now initializing events")
+	l("Settings & DLC loaded, now initializing events")
 	
 	# Event initialization
-	installScriptExtension("story/Vilcy.gd")
+	if modConfig["additions"]["addEvents"]:
+		l("Initializing combat-driven events [additions -> addEvents]")
+		installScriptExtension("story/Vilcy.gd")
+		l("Combat-driven events loaded")
 	
-	l("New events have been loaded, now initializing new ship equipment")
 	
-	replaceScene("ships/EIME.tscn")
-	replaceScene("ships/Eagle-Prospector.tscn")
-	replaceScene("ships/Eagle-Prospector-VP.tscn")
-	replaceScene("ships/Eagle-Prospector-Lux.tscn")
-	replaceScene("ships/Eagle-Prospector-Fat.tscn")
+	if modConfig["additions"]["addEquipment"]:
+		l("Initializing equipment [additions -> addEquipment]")
+		replaceScene("ships/EIME.tscn")
+		replaceScene("ships/Eagle-Prospector.tscn")
+		replaceScene("ships/Eagle-Prospector-VP.tscn")
+		replaceScene("ships/Eagle-Prospector-Lux.tscn")
+		replaceScene("ships/Eagle-Prospector-Fat.tscn")
 	
-	replaceScene("weapons/WeaponSlot.tscn")
-	replaceScene("enceladus/Upgrades.tscn")
+		replaceScene("weapons/WeaponSlot.tscn")
+		replaceScene("enceladus/Upgrades.tscn")
+		l("Equipment and ships loaded")
 	
-	l("Equipment and ships loaded, now initializing ship loadouts")
 # Scripts used to compile new equipment loadouts for ships
 	# installScriptExtension("ships/Shipyard.gd") - Legacy script used to load new equipment loadouts
 
-	installScriptExtension("ships/HardpointSeparation.gd")
-	installScriptExtension("ships/prospector.gd")
-	l("Added ship configs for general prospector ships")
-	installScriptExtension("ships/prospector-bald.gd")
-	l("Added ship configs for bald eagles")
-	installScriptExtension("ships/prospector-vp.gd")
-	l("Added ship configs for vultures")
-	installScriptExtension("ships/at225.gd")
-	l("Added ship configs for titan ships")
-	installScriptExtension("ships/cothon.gd")
-	l("Added ship configs for cothon ships")
-	installScriptExtension("ships/eime.gd")
-	l("Added ship configs for the EIME")
-	installScriptExtension("ships/kitsune.gd")
-	l("Added ship configs for the kitsune")
-	installScriptExtension("ships/ocp.gd")
-	l("Added ship configs for the ocp")
-	installScriptExtension("ships/trtl.gd")
-	l("Added ship configs for general TNTRL ships")
-	installScriptExtension("ships/trtl-44.gd")
-	l("Added ship configs for the K44")
+	if modConfig["gameTweaks"]["expandShipEquipmentOptions"]:
+		l("Initializing ship loadout configurations [gameTweaks -> expandShipEquipmentOptions]")
+		installScriptExtension("ships/HardpointSeparation.gd")
+		installScriptExtension("ships/prospector.gd")
+		l("Added ship configs for general prospector ships")
+		installScriptExtension("ships/prospector-bald.gd")
+		l("Added ship configs for bald eagles")
+		installScriptExtension("ships/prospector-vp.gd")
+		l("Added ship configs for vultures")
+		installScriptExtension("ships/at225.gd")
+		l("Added ship configs for titan ships")
+		installScriptExtension("ships/cothon.gd")
+		l("Added ship configs for cothon ships")
+		installScriptExtension("ships/eime.gd")
+		l("Added ship configs for the EIME")
+		installScriptExtension("ships/kitsune.gd")
+		l("Added ship configs for the kitsune")
+		installScriptExtension("ships/ocp.gd")
+		l("Added ship configs for the ocp")
+		installScriptExtension("ships/trtl.gd")
+		l("Added ship configs for general TNTRL ships")
+		installScriptExtension("ships/trtl-44.gd")
+		l("Added ship configs for the K44")
+		l("Loaded ship configurations")
 	
-	l("Loaded ship configurations, now initializing conversations")
 	#Adding new agenda role
-	installScriptExtension("story/Agenda.gd")
+	if modConfig["additions"]["addAgenda"]:
+		l("Initializing additional agendas [additions -> addAgenda]")
+		installScriptExtension("story/Agenda.gd")
+		l("Loaded agendas")
 	#Conversation initialization
-	replaceScene("comms/conversation/subtrees/StandClearMyArea.tscn")
-	replaceScene("comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn") # thanks Kaidere for this suggestion
-	replaceScene("comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
-	replaceScene("comms/conversation/subtrees/DIALOG_MINER_SEEN_STATION.tscn")
-	replaceScene("comms/conversation/HabitatConversation.tscn")
-	replaceScene("comms/conversation/InterCrewBanter.tscn")
-	replaceScene("comms/conversation/MinerConversation.tscn")
-	l("Loaded conversations, now initializing translations")
+	if modConfig["additions"]["addEvents"]:
+		l("Initializing dialogue-driven events [additions -> addEvents]")
+		replaceScene("comms/conversation/subtrees/StandClearMyArea.tscn")
+		replaceScene("comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+		replaceScene("comms/conversation/subtrees/DIALOG_MINER_SEEN_STATION.tscn")
+		replaceScene("comms/conversation/InterCrewBanter.tscn")
+		l("Loaded dialogue")
+		
+	if modConfig["gameTweaks"]["requestNewContainers"]:
+		l("Initializing container requesting [gameTweaks -> requestNewContainers]")
+		replaceScene("comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn")
+		l("Loaded container requesting dialogue, thanks Kaidere for this suggestion")
+	if modConfig["gameTweaks"]["obontosAskForMoreStuff"]:
+		l("Initializing habitat trades [gameTweaks -> obontosAskForMoreStuff]")
+		replaceScene("comms/conversation/HabitatConversation.tscn")
+		l("Loaded habitat trades")
+	if modConfig["additions"]["addEvents"] and modConfig["additions"]["addAgenda"] and modConfig["additions"]["addEquipment"]:
+		l("Initializing event-based equipment location [additions -> addEvents] + [additions -> addAgenda] + [additions -> addEquipment]")
+		replaceScene("comms/conversation/MinerConversation.tscn")
+		l("Loaded agenda-driven events")
+	l("Finished loading Derelict Delights content, now initializing translations")
 	
 	updateTL("i18n/en.txt", "|")
 	updateTL("i18n/ua.txt", "|")
@@ -83,11 +111,18 @@ func _init(modLoader = ModLoader):
 	
 	installScriptExtension("menu/TitleMenu.gd")
 	replaceScene("TitleScreen.tscn")
-	replaceScene("story/TheRing.tscn")
+	updateEvents()
 	replaceScene("Game.tscn")
 	
 	l("Initialized Derelict Delights completely!")
 
+
+
+func updateEvents():
+	if modConfig["additions"]["addEvents"]:
+		l("Initializing core event handling [additions -> addEvents]")
+		replaceScene("story/TheRing.tscn")
+		l("Loaded ring events")
 
 # Do stuff on ready
 # At this point all AutoLoads are available and the game is loaded
@@ -95,6 +130,15 @@ func _ready():
 	l("Readying")
 	l("Ready")
 	
+func loadSettings():
+	Debug.l("Derelict Delights: Loading mod settings")
+	var settings = load("res://Settings.gd").new()
+	settings.loadDDFromFile()
+	settings.saveDDToFile()
+	modConfig = settings.DDConfig
+	l("Derelict Delights: Current settings: %s" % modConfig)
+	settings.queue_free()
+	l("Derelict Delights: Finished loading settings")
 
 # Helper script to load translations using csv format
 # `path` is the path to the transalation file

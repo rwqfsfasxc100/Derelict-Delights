@@ -18,21 +18,19 @@ DIALOG_PIRATE_BUSINESS_SHIP_COTHON_213|I've got an old Cothon here, except this 
 
 DIALOG_PIRATE_BUSINESS_SHIP_COTHON_211|We've got a belter Cothon here. Excavator's larger than standard models, and is a little offset from te center. Damage is here and there, but it's still in one piece. I'll let you take it for 200 000 E$
 
-DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_BALD|Got our hands on a Bald Eagle of all things. Owner lost a race to a Cothon of all things, and abandoned it in shame. Still a lovely piece of work dented or not. 600 grand and the bird is yours to collect.
+DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_BALD|Got our hands on a Bald Eagle of all things. Owner lost a race to a Cothon, and abandoned it in shame. Still a lovely piece of work dented or not. 3 mega and the bird is yours to collect.
 
 DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_PELICAN|We've got our hands on a large Prospector. It's bay is huge for what it is, and it's mass is probably what got it in trouble to begin with. I couldn't tell you if it's flightworthy with the state it's in. 250 grand for it and I hope you'll see it gone.
 
 DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_VULTURE|I've got a Prospector-K37 hybrid build stored up around here. It's nice to have with it's equipment, but sure is it uncomfortable to fly. We want it off our hands and will hand you the coords for 200 grand.
 
-DIALOG_PIRATE_BUSINESS_SHIP_OCP|Some of the construction crew for Obonto Seven left one of their ships unlocked while on an inspection break. Somehow managed to take it without them noticing until too late. It's too unwieldy for our liking, so you can take a look for 300 grand.
+DIALOG_PIRATE_BUSINESS_SHIP_OCP|Some of the construction crew for Obonto Seven left one of their ships unlocked while on an inspection break. Somehow managed to take it without them noticing until too late. It's too unwieldy for our liking, so you can take a look for 750 grand.
 
-DIALOG_PIRATE_BUSINESS_SHIP_TITAN|Got a derelict Titan of all things stored up, cargo pods and everything. Huge thing it is, but damages to the rim and back. We can let you take it for half a mega.
+DIALOG_PIRATE_BUSINESS_SHIP_TITAN|Got a derelict Titan of all things stored up, cargo pods and everything. Huge thing it is, but damages to the rim and back. We can let you take it for a mega and a half.
 
-DIALOG_PIRATE_BUSINESS_SHIP_TITAN_BB|Have one of those hollowed-out Titans at hand. Beast of a ship with a cargo bay of an even bigger beast, although it does lack some of it's bays. We're offering half a mega for it.
+DIALOG_PIRATE_BUSINESS_SHIP_TITAN_BB|Have one of those hollowed-out Titans at hand. Beast of a ship with a cargo bay of an even bigger beast, although it does lack some of it's bays. We're offering a mega and a half for it.
 
-DIALOG_PIRATE_BUSINESS_SHIP_TITAN_M|A buddy discovered this very weird modification of a Titan. All of the docking bays got switched out with torch fittings, and it seems to have gotten a research package installed. Got the Faraday cage and everything. Looked like we weren't the first ones there as the airlock was broke. You can take it to fix up for a mega.
-
-DIALOG_PIRATE_BUSINESS_SHIP_EIME|Found an EIME abandoned not too far from here. Surprising find to us at least as those ships are tough as nails when we try to engage with them. It's a total wreck, but you can have it for 750 grand.
+DIALOG_PIRATE_BUSINESS_SHIP_EIME|Found an EIME abandoned not too far from here. Surprising find to us at least as those ships are tough as nails when we try to engage with them. It's a total wreck, but you can have it for 2 mega.
 
 DIALOG_PIRATE_BUSINESS_SHIP_K37_I|I have a K37 in decent condition, still with transponders. Bit of holes in the reactor and some stains, but nothing a good mechanic can't take care of. I can sell it to you for 200 grand.
 
