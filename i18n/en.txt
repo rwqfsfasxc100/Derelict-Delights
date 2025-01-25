@@ -161,3 +161,45 @@ DIALOG_SUPER_THICC_DERELICT_THIS_EVA|Already preparing it. May as well make this
 DIALOG_SUPER_THICC_DERELICT_THIS_DOCUMENTS|Looks like this hunk of junk really was ditched in a hurry. The cabin's full of paperwork. Luckily it seems the licensing documents are still in their cubby. Everything about them appears to be in check.
 
 DIALOG_SUPER_THICC_DERELICT_THIS_TAKE|As much as it looks pretty damaged from the outside, looking over it's systems from the computer, much of it is still operational, and the reactor seems to be functional at least. I'll take this for a spin and figure out the rest at Enceladus.
+
+DIALOG_STORAGE_DYNA|I need a new dyna container!
+
+DIALOG_PIRATE_BUSINESS_SHIP_DRONE_OCP|Found what we presume is a civilian retrofit to one of those construction ships, comes with an extra drone point. We haven't found much use for it, so we're gonna offer it at 350 grand to get it off of our hands.
+
+DIALOG_PIRATE_BUSINESS_SHIP_HEAVY_COTHON|Got a very bizarre modification to an ancient Cothon with us. Has one of it's front low-stress hardpoints replaced with what looks like a high-stress one. Seems like a liability to us, so it could be yours for 250 grand.
+
+DIALOG_PIRATE_BUSINESS_SHIP_TSUKUYOMI|We found a really old Tsukuyomi frigate around. Wrecked to hell and back, and probably nothing more than scrap in reality, but the hull is all there. Huge thing regardless, so we're offering seven and a half mega for it.
+
+DIALOG_PIRATE_BUSINESS_SHIP_STUB|I've got a short Titan variant around. It's got a decent bit of kit on it, but a very weird selection of what can be fitted to it. On offer for 900 grand.
+
+DIALOG_PIRATE_BUSINESS_SHIP_ATLAS|We've got an experimental retrofit to those ATLAS Edgerunner ships in storage. Pretty much straps a lifepod and some other junk to one to let a crew fly it. No idea how legal it is, but yours for 400 grand.
+
+DIALOG_PIRATE_BUSINESS_SHIP_COTHON_LUX|Got a premium Cothon variant in storage around. Pretty much improved on the old design in most ways, so we're going to add onto the usual price we offer for that line of ship. 250 grand for it all.
+
+DIALOG_PIRATE_BUSINESS_SHIP_PIDGEON|We have a Pidgeon Prospector around here. Basically an extended bay variant to the Vulture, with all the features that a Pelican provides. All yours for 550 grand.
+
+DIALOG_PIRATE_BUSINESS_SHIP_CERF|There's a civilian retrofit to the MAD-CERF Search and Rescue ships not too far from here. It's lacking a few of the usual features and a swapped out habitat and hardpoint to provide more mining capability kinda makes it suboptimal for our use, so we're going to let you have it for 800 grand if it interests you.
+
+DIALOG_PIRATE_BUSINESS_SHIP_OBERON|We've found a high-performance racing vessel around. Miracle it's still in a single piece considering how badly damaged some of the parts to it are, but still there in it's glory. One mega for the entire thing.
+
+DIALOG_PIRATE_BUSINESS_SHIP_DEEP_DISH|Got a mining modification to the construction ship. Pretty much just adds a few features to the original vessel to make mining a slight bit easier, so not really too useful to us. All yours for 500 grand.
+
+DIALOG_PIRATE_BUSINESS_SHIP_SNAP|Got an early version of the OCP construction vessel. It's door holds two moving parts to it's opening rather than a single one that modern ships have, making it have a more central opening. The firmware even comes with sounds from a late 20th century videogame too. 500 grand for the vessel.
+
+DIALOG_PIRATE_BUSINESS_SHIP_OK720|Got a very weird project ship that welded an OCP cargo bay to the hull of one of the failed K44 vessels. Pretty much a huge bay to one of them. 300 grand for the full package.
+
+DIALOG_PIRATE_BUSINESS_SHIP_RAM|I've got a civilian modification to the K37 that provides several features from a Prospector class of ships. Very functional and good for mining, but kinda uncomfortable to fly. 250 grand for the vessel.
+
+DIALOG_PIRATE_BUSINESS_SHIP_KTI_COTHON_MKI|Found one of KTI's modified Cothon vessels. Holds up pretty well as a mining vessel compared to other more modern vessels, so definitely has it's value. 250 grand for the piece.
+
+DIALOG_PIRATE_BUSINESS_SHIP_KTI_COTHON_MKII|Found one of KTI's modified Cothon vessels. Holds up pretty well as a mining vessel compared to other more modern vessels, so definitely has it's value. 250 grand for the piece.
+
+DIALOG_PIRATE_BUSINESS_SHIP_KTI_K225|Found one of KTI's Titan retrofit kits. It's similar to a stock Titan, with a few additional equipment positions, with the prize feature of a second auxiliary power unit slot. It's yours for a million and a quarter.
+
+DIALOG_PIRATE_BUSINESS_SHIP_KTI_KSERIES|One of KTI's K-Series modifications fell into our hands. This one's a modification of the K37. Pretty much adds some docking bays to the stock loadout, nothing too fancy. 250 grand for the pick.
+
+DIALOG_PIRATE_BUSINESS_SHIP_KTI_KSERIES_LCB|One of KTI's K-Series modifications fell into our hands. This one's a modification of the KX37. Pretty much adds some docking bays to the stock loadout, nothing too fancy. 250 grand for the pick.
+
+DIALOG_PIRATE_BUSINESS_SHIP_KTI_KITSUMO|One of the demilitarized Kitsunes landed our way, and we've had one lying around. This one is one of KTI's attempts to improve it with a high-stress hardpoint and a torch slot. Didn't really see much point in using one, so may as well make an offer to you for it. We're offering 250 grand flat for it.
+
+DIALOG_PIRATE_BUSINESS_SHIP_KTI_OCP230|Some of the construction crew for Obonto Seven left one of their ships unlocked while on an inspection break. Somehow managed to take it without them noticing until too late. This one appears to be one of KTI's modifications. It's too unwieldy for our liking, so you can take a look for 500 grand.
