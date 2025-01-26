@@ -6,17 +6,16 @@ const DD_VERSION = "1.4.0"
 # Default config values
 var DDConfig = {
 	"additions":{
-		"NOTE -":"- Adds features from the mod. By default, addModSupport is disabled as it still isn't completely ironed out.",
+		"NOTE -":"- Adds features from the mod.",
 		"addEquipment":true,
 		"addEvents":true,
 		"addAgenda":true,
-		"addModSupport":false,
+		"addModSupport":true,
 	}, 
 	"gameTweaks":{
 		"NOTE -":"- Adds tweaks or added depth to vanilla features that don't follow the direct addition of features that are added by this mod",
 		"requestNewContainers":true,
 		"obontosAskForMoreStuff":true,
-#		"expandShipEquipmentOptions":true, disabled for now, this is more so a minor QOL feature that no one is really gonna see
 	}, 
 	"supportedEventsFromMods":{
 		"NOTE -":"- These are event toggles for their respective mods, separated as they're the main feature from the automatic mod compatability feature, requires addEvents to work",
@@ -77,6 +76,8 @@ var DDConfig = {
 	},
 }
 
+
+#		"expandShipEquipmentOptions":true, disabled for now, this is more so a minor QOL feature that no one is really gonna see
 
 var DDPath = "user://DDsettings.cfg"
 var DDFile = ConfigFile.new()

@@ -2,7 +2,7 @@ extends Node
 
 # Set mod priority if you want it to load before/after other mods
 # Mods are loaded from lowest to highest priority, default is 0
-const MOD_PRIORITY = 1
+const MOD_PRIORITY = 1000
 # Name of the mod, used for writing to the logs
 const MOD_NAME = "Derelict Delights v.1.4.0"
 # Path of the mod folder, automatically generated on runtime
@@ -137,6 +137,12 @@ func _init(modLoader = ModLoader):
 	installScriptExtension("menu/TitleMenu.gd")
 	replaceScene("TitleScreen.tscn")
 	updateEvents()
+	handleMods()
+	replaceScene("Game.tscn")
+	
+	l("Initialized %s completely!" % MOD_NAME)
+
+func handleMods():
 	if modConfig["additions"]["addModSupport"]:
 		modsInstalled()
 		if not modConfig["DDEventLoaderSettings"]["disableDynamicEnablingAndForceModFunctionality"]:
@@ -145,11 +151,8 @@ func _init(modLoader = ModLoader):
 		else:
 			nonDynamicHandling()
 			attachModCompat()
-	replaceScene("Game.tscn")
-	
-	l("Initialized %s completely!" % MOD_NAME)
-
-
+	else:
+		l("Mod support not enabled, skipping")
 
 func updateEvents():
 	if modConfig["additions"]["addEvents"]:
@@ -182,40 +185,40 @@ func attachModCompat(): # Mod-based event additions
 	if modConfig["otherSupportedModFunctionalities"]["addModdedEquipmentToShipDefaults"] and not modConfig["gameTweaks"]["expandShipEquipmentOptions"] and modConfig["this is"]["a disabled feature"]:
 		l("Error loading modded equipment to ship equipment features. [expandShipEquipmentOptions] is not enabled")
 		
-	if INDUSTRIES_OF_ENCELADUS and modConfig["supportedEventsFromMods"]["IndustriesOfEnceladus"]:
-		replaceScene("modded/IoE/story/TheRing.tscn","story/TheRing.tscn")
-		l("Loaded mod supported events for the mod [Industries of Enceladus]")
 	if KTI_KITSUMO and modConfig["supportedEventsFromMods"]["KTI-Kitsumo"]:
-		replaceScene("modded/KTI-Kitsumo/story/TheRing.tscn","story/TheRing.tscn")
+		replaceScene("modded/KTI-Kitsumo/story/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded mod supported events for the mod [K-Tech Industrial - Kitsumo]")
 	if KTI_COTHON_MKII and modConfig["supportedEventsFromMods"]["KTI-CothonMkII"]:
-		replaceScene("modded/KTI-CothonMkII/story/TheRing.tscn","story/TheRing.tscn")
+		replaceScene("modded/KTI-CothonMkII/story/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded mod supported events for the mod [K-Tech Industrial - Cothon Mk II]")
 	if KTI_225 and modConfig["supportedEventsFromMods"]["KTI-K225"]:
-		replaceScene("modded/KTI-K225/story/TheRing.tscn","story/TheRing.tscn")
+		replaceScene("modded/KTI-K225/story/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded mod supported events for the mod [K-Tech Industrial - K225-KTI]")
 	if KTI_K_SERIES and modConfig["supportedEventsFromMods"]["KTI-KSeries"]:
-		replaceScene("modded/KTI-KSeries/story/TheRing.tscn","story/TheRing.tscn")
+		replaceScene("modded/KTI-KSeries/story/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded mod supported events for the mod [K-Tech Industrial - K-Series]")
 	if KTI_OCP and modConfig["supportedEventsFromMods"]["KTI-OCP"]:
-		replaceScene("modded/KTI-OCP/story/TheRing.tscn","story/TheRing.tscn")
+		replaceScene("modded/KTI-OCP/story/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded mod supported events for the mod [K-Tech Industrial - OCP]")
 	if DRONE_OCP and modConfig["supportedEventsFromMods"]["DroneOCP"]:
-		replaceScene("modded/DroneOCP/story/TheRing.tscn","story/TheRing.tscn")
+		replaceScene("modded/DroneOCP/story/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded mod supported events for the mod [Drone OCP]")
 	if HEAVY_COTHON and modConfig["supportedEventsFromMods"]["HeavyCothon"]:
-		replaceScene("modded/HeavyCothon/story/TheRing.tscn","story/TheRing.tscn")
+		replaceScene("modded/HeavyCothon/story/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded mod supported events for the mod [Heavy Cothon]")
 	if ZKY and modConfig["supportedEventsFromMods"]["ZKY"] and modConfig["this is"]["a disabled feature"]:
-		replaceScene("modded/ZKY/story/TheRing.tscn","story/TheRing.tscn")
+		replaceScene("modded/ZKY/story/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded mod supported events for the mod [ZKY]")
+	if INDUSTRIES_OF_ENCELADUS and modConfig["supportedEventsFromMods"]["IndustriesOfEnceladus"]:
+		replaceScene("modded/IoE/story/TheRing.tscn","res://story/TheRing.tscn")
+		l("Loaded mod supported events for the mod [Industries of Enceladus]")
 	
 	# Compatability for Derelict Delights features using stuff from other mods
 	# Add IoE containers to the request container options
 	if modConfig["otherSupportedModFunctionalities"]["IoERequestContainer"] and modConfig["gameTweaks"]["requestNewContainers"]:
 		l("Initializing IoE container request addition to the [requestNewContainers] feature")
-		replaceScene("modded/IoE/story/DynaContainerEvent.tscn","story/TheRing.tscn")
-		replaceScene("modded/IoE/comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn","comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn")
+		replaceScene("modded/IoE/story/DynaContainerEvent.tscn","res://story/TheRing.tscn")
+		replaceScene("modded/IoE/comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn","res://comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn")
 		l("Loaded IoE container request extension to Derelict Delights' [requestNewContainers] feature")
 	
 	if modConfig["otherSupportedModFunctionalities"]["IoERequestContainer"] and not modConfig["gameTweaks"]["requestNewContainers"]:
@@ -225,21 +228,21 @@ func attachModCompat(): # Mod-based event additions
 	if modConfig["otherSupportedModFunctionalities"]["addModdedShipsToPiratePool"] and modConfig["additions"]["addEvents"]:
 		l("Initializing support for pirate trading of ships")
 		if INDUSTRIES_OF_ENCELADUS:
-			replaceScene("modded/IoE/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+			replaceScene("modded/IoE/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
 		if KTI_225:
-			replaceScene("modded/KTI-K225/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+			replaceScene("modded/KTI-K225/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
 		if KTI_COTHON_MKII:
-			replaceScene("modded/KTI-CothonMkII/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+			replaceScene("modded/KTI-CothonMkII/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
 		if KTI_K_SERIES:
-			replaceScene("modded/KTI-KSeries/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+			replaceScene("modded/KTI-KSeries/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
 		if KTI_OCP:
-			replaceScene("modded/KTI-OCP/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+			replaceScene("modded/KTI-OCP/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
 		if DRONE_OCP:
-			replaceScene("modded/DroneOCP/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+			replaceScene("modded/DroneOCP/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
 		if HEAVY_COTHON:
-			replaceScene("modded/HeavyCothon/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+			replaceScene("modded/HeavyCothon/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
 		if ZKY and modConfig["this is"]["a disabled feature"]:
-			replaceScene("modded/ZKY/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+			replaceScene("modded/ZKY/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
 		
 	if modConfig["otherSupportedModFunctionalities"]["addModdedShipsToPiratePool"] and not modConfig["additions"]["addEvents"]:
 		l("Error loading modded pirate trades. [addEvents] is not enabled")
@@ -340,7 +343,7 @@ func dynamicModVerification():
 		l("K-Tech MTR RCS registered")
 	if listModZipFiles.has("K-T Industrial OCP230-KTI.zip"):
 		KTI_OCP = true
-		l("K-Tech OCP230 registered")
+		l("K-Tech OCP-230 registered")
 	if listModZipFiles.has("Moar.RADARs.zip"):
 		MOAR_RADARS = true
 		l("Moar RADARs registered")
@@ -352,49 +355,49 @@ func nonDynamicHandling():
 	l("Dynamic handling of mod support disabled, falling back to predefined configurations.")
 	if modConfig["DDEventLoaderSettings"]["forceDroneOCP"]:
 		l("Forcing configs for Drone OCP")
-		var DRONE_OCP = true
+		DRONE_OCP = true
 	if modConfig["DDEventLoaderSettings"]["forceBootlegPDT"]:
 		l("Forcing configs for Bootleg PDT")
-		var BOOTLEG_PDT = true
+		BOOTLEG_PDT = true
 	if modConfig["DDEventLoaderSettings"]["forceNTCED"]:
 		l("Forcing configs for NTCED")
-		var NTCED = true
+		NTCED = true
 	if modConfig["DDEventLoaderSettings"]["forceHeavyCothon"]:
 		l("Forcing configs for Heavy Cothon")
-		var HEAVY_COTHON = true
+		HEAVY_COTHON = true
 	if modConfig["DDEventLoaderSettings"]["forceIoE"]:
 		l("Forcing configs for Industries of Enceladus")
-		var INDUSTRIES_OF_ENCELADUS = true
+		INDUSTRIES_OF_ENCELADUS = true
 	if modConfig["DDEventLoaderSettings"]["forceKTICothonMkII"]:
 		l("Forcing configs for K-Tech Cothon MkII")
-		var KTI_COTHON_MKII = true
+		KTI_COTHON_MKII = true
 	if modConfig["DDEventLoaderSettings"]["forceKTI225"]:
 		l("Forcing configs for K-Tech 225-KTI")
-		var KTI_225 = true
+		KTI_225 = true
 	if modConfig["DDEventLoaderSettings"]["forceKTIKitsumo"]:
 		l("Forcing configs for K-Tech Kitsumo")
-		var KTI_KITSUMO = true
+		KTI_KITSUMO = true
 	if modConfig["DDEventLoaderSettings"]["forceKTIKSeries"]:
 		l("Forcing configs for K-Tech K-Series")
-		var KTI_K_SERIES = true
+		KTI_K_SERIES = true
 	if modConfig["DDEventLoaderSettings"]["forceKTIMPRRCS"]:
 		l("Forcing configs for K-Tech MPR RCS")
-		var KTI_MPR_RCS = true
+		KTI_MPR_RCS = true
 	if modConfig["DDEventLoaderSettings"]["forceKTIMPRTorch"]:
 		l("Forcing configs for K-Tech MPR Torch")
-		var KTI_MPR_TORCH = true
+		KTI_MPR_TORCH = true
 	if modConfig["DDEventLoaderSettings"]["forceKTIMTRRCS"]:
 		l("Forcing configs for K-Tech MTR RCS")
-		var KTI_MTR_RCS = true
+		KTI_MTR_RCS = true
 	if modConfig["DDEventLoaderSettings"]["forceKTIOCP"]:
-		l("Forcing configs for K-Tech OCP230")
-		var KTI_OCP = true
+		l("Forcing configs for K-Tech OCP-230")
+		KTI_OCP = true
 	if modConfig["DDEventLoaderSettings"]["forceMoarRADARs"]:
 		l("Forcing configs for Moar RADARs")
-		var MOAR_RADARS = true
+		MOAR_RADARS = true
 	if modConfig["DDEventLoaderSettings"]["forceZKY"]:
 		l("Forcing configs for ZKY")
-		var ZKY = true
+		ZKY = true
 
 
 # Helper function to extend scripts

@@ -124,7 +124,7 @@ script = ExtResource( 2 )
 randomChance = 0.55
 minimumChance = 0.03
 moneyCeiling = 6e+06
-model = "OCP"
+model = "OCP209"
 rescue = false
 chaosLimit = 0.4
 
@@ -139,7 +139,7 @@ chaosLimit = 0.1
 [node name="ConstructionMinerMining" type="Node" parent="." index="91"]
 script = ExtResource( 3 )
 chaosLimit = 0.2
-ship = "OCP"
+ship = "OCP209"
 
 [node name="ShuttleMinerMining" type="Node" parent="." index="92"]
 script = ExtResource( 3 )
