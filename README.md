@@ -14,6 +14,10 @@ This mod currently adds:
 * You can now ask a container to supply a new one nearby, at a cost of course.
 * Empty, inert containers can be found in the rings.
 * You can find a new Habitat, SRA-08, under construction in the rings.
+* Added a new crew agenda: the Historian
+* Questline with the historian unlocks the interplanetary line of cargo container
+* Mod support for the following mods: Industries of Enceladus (1.7.5 + Rewrite), K-Tech Industrial Shipyard, Drone OCP, Heavy Cothon
+* Fully configurable from a config file within your save folder
 
 ## NOTES
 1. If you have any suggestions for this mod, please feel free to comment on the mod's [Discord thread](https://discord.com/channels/426287934870781952/1316256288329699419). If you want to suggest a new ship loadout configuration, check out [this Google form here](https://forms.gle/yzvbGmaWeHWH9ChK8), and it should give you a quick dropdown selection for each equipment on a ship to save time and not clog up the Discord channel.
