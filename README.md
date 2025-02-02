@@ -83,7 +83,6 @@ Check [this wiki page](https://delta-v.kodera.pl/index.php/Profit_Strategy_-_Der
   *   Money Ceiling: 9 million E$
 
 ## Planned Additions
-* ~~Similar setup to allow NPC miners use these vessels too (maybe GA too if this works out ok)~~
-* ~~Add dialogue for GA ship trading for ships, and add weighted rarity to the selection to make it more balanced between common (TNTRL line) and expensive (K225 and EIME) captures.~~
-* ~~add new derelict types to add onto the K37 for radar anomalies~~
-* create derelict (and other) spawns for modded ships
+* Expanding Historian questline and other interactions
+* Expanding Vilcy & G4A encounters
+* Adding new storylines
