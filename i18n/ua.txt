@@ -203,3 +203,206 @@ DIALOG_PIRATE_BUSINESS_SHIP_KTI_KSERIES_LCB|Одна з модифікацій K
 DIALOG_PIRATE_BUSINESS_SHIP_KTI_KITSUMO|Один з демілітаризованих Kitsune потрапив до нас, і ми мали один, що валявся. Це одна з спроб KTI покращити його високостресовою точкою кріплення та слотом для смолоскипа. Не побачили особливого сенсу у використанні, тому можемо запропонувати вам. Пропонуємо рівно 250 тисяч за нього.
 
 DIALOG_PIRATE_BUSINESS_SHIP_KTI_OCP230|Дехто з будівельної бригади Обонто Сім залишив один із своїх кораблів незамкненим під час інспекційної перерви. Якимось чином вдалося забрати його так, що вони не помітили, поки не стало надто пізно. Схоже, це одна з модифікацій КТІ. Він занадто незграбний, як на наш смак, тож ви можете глянути на нього за 500 тисяч.
+
+DIALOG_HABITAT_BUILDING_CONTAINER_YOU_SEEM|You know, I'm surprised that your superstructure hasn't been finished yet, don't you usually get shipments alongside miners providing you with minerals as they pass by?
+
+DIALOG_HABITAT_BUILDING_CONTAINER_REASON|Normally we wouldn't mention this, even to contractors, however we believe you're trustworthy enough. \n\nWe have one contractor who managed to get their hands on a license to the experimental interplanetary containers. They had us sent them instead of standard cargo containers, albeit slower than usual shipments, but they provided a faster way to receive them. \n\nOf course, with this there was a risk. Fewer single shipments means a bigger impact if things go wrong, and they did. Most of the planned shipments go missing, and we haven't seen the contractor in a while to change the order. A few have reported the containers operating without a transponder, so we can only presume it's piracy.
+
+DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN|As for how they obtained the licensing, we can't say for sure but we believe it's some form of grandfathering clause at Enceladus Prime's shipyard. Something to do with equipment being allowed to utilize the safety protocols given to it at the time of the license being issued. Probably means they found one of the ships left abandoned in the rings from when they were still in testing. Basically means that if you can find a ship that still has the licensing for them in tact, you can fit them to your ship.
+
+DIALOG_HABITAT_BUILDING_CONTAINER_HELP|Perhaps if you ask around with other crews, you may be able to find someone who knows something about them, and they may be able to help more than we can.
+
+MENU_DERELICTDELIGHTS_CONFIG|Налаштування Derelict Delights
+
+SETTINGS_ADD_EQUIPMENT|Додати нове обладнання
+
+SETTINGS_ADD_EQUIPMENT_TOOLTIP|Додає обладнання, яке надає Derelict Delights. \nВключає міжмісячний контейнер THI та експериментальний міжпланетний контейнер. \nОстанній може вимагати активації інших перемикачів для отримання, оскільки це квестовий предмет.
+
+SETTINGS_ADD_AGENDAS|Додати нові цілі екіпажу
+
+SETTINGS_ADD_AGENDAS_TOOLTIP|Основний перемикач, що активує всі налаштування з розділу «Цілі».
+
+SETTINGS_ADD_EVENTS|Додати нові події
+
+SETTINGS_ADD_EVENTS_TOOLTIP|Основний перемикач для активації подій, що надаються цим модом.
+
+SETTINGS_REQUEST_NEW_CONTAINERS|Активувати запити контейнерів
+
+SETTINGS_REQUEST_NEW_CONTAINERS_TOOLTIP|Додає нову опцію діалогу до будь-якого варіанту вантажного контейнера, яка дозволяє запитати новий вантажний або моно-вантажний контейнер.
+
+SETTINGS_ADD_OBONTO_BALANCE|Нові торгові пропозиції з житловими станціями Obonto та ребалансування
+
+SETTINGS_ADD_OBONTO_BALANCE_TOOLTIP|Переробка торгівлі з Obonto: Дає можливість торгувати вольфрамом або берилієм. \nДодає обмеження маси всіх мінералів, щоб зробити торгівлю з житловими станціями трохи менш ефективною стратегією. \nОбмеження знижені до 50% і 25% від звичайних мінеральних обмежень для вольфраму і берилію відповідно.
+
+SETTINGS_EXPAND_SHIP_LOADOUTS|Розширити конфігурації кораблів
+
+SETTINGS_EXPAND_SHIP_LOADOUTS_TOOLTIP|Додає додаткові стандартні конфігурації для кораблів у дилерів, NPC-шахтарів та покинутих кораблів. \nМожна запропонувати нові варіанти через кнопку в головному меню.
+
+SETTINGS_ADD_MOD_SUPPORT|Увімкнути підтримку модів
+
+SETTINGS_ADD_MOD_SUPPORT_TOOLTIP|Основний перемикач для активації підтримки всіх модів. Перевірте файл DDSettings.cfg у папці збережень або запитайте на сторінці мода, щоб дізнатися, які моди підтримуються.
+
+SETTINGS_ADD_DERELICTS|Розширити пул покинутих кораблів
+
+SETTINGS_ADD_DERELICTS_TOOLTIP|Додає 14 стандартних варіантів кораблів, які не зустрічаються в покинутому стані, до пулу подій. \nНеобхідно для модифікованих покинутих кораблів.
+
+SETTINGS_ADD_NEW_NPCS|Розширити вибір кораблів для NPC
+
+SETTINGS_ADD_NEW_NPCS_TOOLTIP|Додає 13 стандартних кораблів до пулу, який можуть використовувати NPC. \nКораблі K44 та K225 (модифікований) ще не були знайдені Гільдією шахтарів. Необхідно для модифікованих NPC.
+
+SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION|Додати житлову cтанція у будівництві
+
+SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION_TOOLTIP|SRA-08 можна знайти у кільцях. Має унікальні торгові угоди та взаємодії, і необхідна для великої частини сюжетних ліній історика.
+
+SETTINGS_ADD_NEW_FACTION_ENCOUNTERS|Увімкнути нові фракційні події
+
+SETTINGS_ADD_NEW_FACTION_ENCOUNTERS_TOOLTIP|Додає нові зустрічі з Вілсі та Ганімедцями. Деякі відбуваються після знищення відповідної станції.
+
+SETTINGS_ADD_NEW_ROGUE_CONTAINERS|Непідконтрольні контейнери використовують обладнання Derelict Delights
+
+SETTINGS_ADD_NEW_ROGUE_CONTAINERS_TOOLTIP|Непідконтрольні контейнери використовують міжмісячні та міжпланетні контейнери. Необхідно для сюжетної лінії історика.
+
+SETTINGS_EXPAND_PIRATE_TRADES|Розширити пропозиції піратів
+
+SETTINGS_EXPAND_PIRATE_TRADES_TOOLTIP|Додає додаткові торгові пропозиції від піратів, крім 4 стандартних, хоча вони зустрічаються значно рідше.
+
+SETTINGS_ADD_HISTORIAN_AGENDA|Add the Historian Crew Agenda
+
+SETTINGS_ADD_HISTORIAN_AGENDA_TOOLTIP|Enables the Historian crew agenda and respective storylines. Requires several other toggles to function.
+
+SETTINGS_SUPPORT_IOE|Підтримка кораблів Industries of Enceladus
+
+SETTINGS_SUPPORT_IOE_TOOLTIP||Додає події, пов’язані з кораблями з моду Industries of Enceladus. \nПідтримує як оригінальну версію SPDX, так і HEV-переробку IoE.
+
+SETTINGS_SUPPORT_KITSUMO|Підтримка корабля KTI Kitsumo
+
+SETTINGS_SUPPORT_KITSUMO_TOOLTIP|Додає події з кораблями моду K-Tech Kitsumo.
+
+SETTINGS_SUPPORT_COTHON_MKII|Підтримка корабля KTI Cothon MkII
+
+SETTINGS_SUPPORT_COTHON_MKII_TOOLTIP|Додає події з кораблями моду K-Tech Cothon MkII.
+
+SETTINGS_SUPPORT_KTI_K225|Підтримка корабля KTI K225-XL
+
+SETTINGS_SUPPORT_KTI_K225_TOOLTIP|Додає події з кораблями моду K-Tech K225-XL.
+
+SETTINGS_SUPPORT_KTI_KSERIES|Підтримка кораблів KTI K-Series
+
+SETTINGS_SUPPORT_KTI_KSERIES_TOOLTIP|Додає події з кораблями моду K-Tech K-Series.
+
+SETTINGS_SUPPORT_KTI_OCP|Підтримка корабля KTI OCP
+
+SETTINGS_SUPPORT_KTI_OCP_TOOLTIP|Додає події з кораблями моду K-Tech OCP.
+
+SETTINGS_SUPPORT_DRONE_OCP|Підтримка корабля Drone OCP
+
+SETTINGS_SUPPORT_DRONE_OCP_TOOLTIP|Додає події з кораблями моду Drone OCP.
+
+SETTINGS_SUPPORT_HEAVY_COTHON|Підтримка корабля Heavy Cothon
+
+SETTINGS_SUPPORT_HEAVY_COTHON_TOOLTIP|Додає події з кораблями моду Heavy Cothon.
+
+SETTINGS_SUPPORT_IOE_CONTAINERS|Додати запити контейнерів IoE
+
+SETTINGS_SUPPORT_IOE_CONTAINERS_TOOLTIP|Додає контейнер Dyna-Cargo з моду Industries of Enceladus до списку запитів.
+
+SETTINGS_SUPPORT_MOD_PIRATE_TRADES|Додати модифіковані кораблі в піратські пропозиції
+
+SETTINGS_SUPPORT_MOD_PIRATE_TRADES_TOOLTIP|Покинуті кораблі, додані за допомогою перемикачів модів, будуть додані до пулу піратських пропозицій.
+
+SETTINGS_DISABLE_DYNAMIC_MOD_LOADING|Вимкнути динамічне керування модами
+
+SETTINGS_DISABLE_DYNAMIC_MOD_LOADING_TOOLTIP|Вимикає автоматичне керування модами для використання ручних налаштувань. \nВикористовуйте лише у випадках несумісності або змін у назвах модів. \nПеревірте DDSettings.cfg для назв, які шукає мод.
+
+SETTINGS_FORCE_DRONE_OCP|Примусово увімкнути DroneOCP
+
+SETTINGS_FORCE_DRONE_OCP_TOOLTIP|Примусово запускає сумісність з DroneOCP.
+
+SETTINGS_FORCE_HEAVY_COTHON|Примусово увімкнути HeavyCothon
+
+SETTINGS_FORCE_HEAVY_COTHON_TOOLTIP|Примусово запускає сумісність з Heavy Cothon.
+
+SETTINGS_FORCE_IOE|Примусово увімкнути IndustriesOfEnceladus
+
+SETTINGS_FORCE_IOE_TOOLTIP|Примусово запускає сумісність з Industries of Enceladus.
+
+SETTINGS_FORCE_KTI_COTHON_MKII|Примусово увімкнути KTI-CothonMkII
+
+SETTINGS_FORCE_KTI_COTHON_MKII_TOOLTIP|Примусово запускає сумісність з K-Tech Cothon MkII.
+
+SETTINGS_FORCE_KTI_K225|Примусово увімкнути KTI-K225
+
+SETTINGS_FORCE_KTI_K225_TOOLTIP|Примусово запускає сумісність з K-Tech K225-XL.
+
+SETTINGS_FORCE_KTI_KITSUMO|Примусово увімкнути KTI-Kitsumo
+
+SETTINGS_FORCE_KTI_KITSUMO_TOOLTIP|Примусово запускає сумісність з K-Tech Kitsumo.
+
+SETTINGS_FORCE_KTI_KSERIES|Примусово увімкнути KTI-KSeries
+
+SETTINGS_FORCE_KTI_KSERIES_TOOLTIP|Примусово запускає сумісність з K-Tech K-Series.
+
+SETTINGS_FORCE_KTI_OCP|Примусово увімкнути KTI-OCP
+
+SETTINGS_FORCE_KTI_OCP_TOOLTIP|Примусово запускає сумісність з K-Tech OCP.
+
+DD_MAIN_TOGGLES|Основні
+
+DD_EVENT_TOGGLES|Події
+
+DD_AGENDA_TOGGLES|Цілі
+
+DD_MOD_TOGGLES|Моди
+
+DD_MOD_DEBUG|DEBUG
+
+DD_DEBUG_WARNING|УВАГА! НЕПІДТРИМУВАНІ НАЛАШТУВАННЯ
+
+DD_DEBUG_WARNING_TOOLTIP|ПОПЕРЕДЖЕННЯ: ці налаштування слід використовувати з обережністю, оскільки вони не підтримуються безпосередньо і можуть зламати збереження, якщо їх змінити.\n\nЯкщо ви не впевнені, залиште опцію «Вимкнути динамічну обробку модів» відключеною. 
+
+DDCREDITS|Автори: hev; WT; Za'Krin Yoran
+
+SYSTEM_SCOOP_E|Прототип Nakamura Hunk Companion
+
+SYSTEM_SCOOP_E_DESC|Ранній прототип NT Mining Companion, створений Nakamura, спочатку використовував стандартний екскаватор, а не дробарку, як на сучасних компаньйонах. Вони були дуже надійні, але за них доводилося розплачуватися тим, що вони були дуже розбалансовані, що призводило до втрати дорогоцінної реактивної маси. Їх було знято з виробництва, коли подрібнювачі стали більш поширеними, але все ще існують на вторинному ринку для тих, хто зацікавлений у дешевшій альтернативі.
+
+SYSTEM_SCOOP_E_SPECS|Місткість: 50 m^3\nКлас автономності: C2\nStock Modification: Excavator\nЕнергоспоживання (номінальне): 10 MW\nСуха маса: 2,000 kg\nМаса люльки: 500 kg\nЗапас робочого тіла: 4,000 kg\nВиробник: Nakamura
+
+SYSTEM_SCOOP_EP|Прототип P-типу Nakamura Hunk Companion
+
+SYSTEM_SCOOP_EP_DESC|Ранній прототип NT Mining Companion, створений Nakamura, спочатку використовував стандартний екскаватор, а не дробарку, як на сучасних компаньйонах. Вони були дуже надійні, але за них доводилося розплачуватися тим, що вони були дуже розбалансовані, що призводило до втрати дорогоцінної реактивної маси. Їх було знято з виробництва, коли подрібнювачі стали більш поширеними, але все ще існують на вторинному ринку для тих, хто зацікавлений у дешевшій альтернативі.\n\nОдна з проєктних груп, яка поставила перед собою завдання знайти розв'язання проблеми балансу «Ханка», запропонувала встановити в нього блок перероблення мінералів, що не тільки частково розв'язало проблему балансу, а й дало змогу компаньйону витягувати трохи ремаси для тривалого польоту.
+
+SYSTEM_SCOOP_EP_SPECS|Місткість: 50 m^3\nКлас автономності: C2\nStock Modification: Excavator, УПМ\nЕнергоспоживання (номінальне): 10 MW\nСуха маса: 2,000 kg\nМаса люльки: 500 kg\nЗапас робочого тіла: 4,000 kg\nВиробник: Nakamura-Titan
+
+SYSTEM_SCOOP_L|NCT Blaze Companion
+
+SYSTEM_SCOOP_L_DESC|The blaze was a rather high-risk venture by Coherent Light to improve the general efficiency of the NT companion. Nicknamed the Blaze, the replacement of the companion's usual mike with a CL-150 laser gave it almost unparalleled performance, however the laser was too much for the internal turbine to handle. The resulting frequent brownouts caused severe problems for the onboard computer, with several unintended effects on the autonomous systems.
+
+SYSTEM_SCOOP_L_SPECS|Місткість: 50 m^3\nКлас автономності: C2\nStock Modification: Mining laser\nЕнергоспоживання (номінальне): 10 MW\nСуха маса: 2,000 kg\nМаса люльки: 500 kg\nЗапас робочого тіла: 4,000 kg\nВиробник: Nakamura-Coherent Light-Titan
+
+SYSTEM_SCOOP_LP|NCT P-Type Blaze Companion
+
+SYSTEM_SCOOP_LP_DESC|The blaze was a rather high-risk venture by Coherent Light to improve the general efficiency of the NT companion. Nicknamed the Blaze, the replacement of the companion's usual mike with a CL-150 laser gave it almost unparalleled performance, however the laser was too much for the internal turbine to handle. The resulting frequent brownouts caused severe problems for the onboard computer, with several unintended effects on the autonomous systems.\n\nA subset of the Blaze model, a fitted УПМ was intended to further make efficiencies, however an oversight in the programming meant that it was left running during standard operations, which only made the brownout issues worse.
+
+SYSTEM_SCOOP_LP_SPECS|Місткість: 50 m^3\nКлас автономності: C2\nStock Modification: Mining laser, УПМ\nЕнергоспоживання (номінальне): 10 MW\nСуха маса: 2,000 kg\nМаса люльки: 500 kg\nЗапас робочого тіла: 4,000 kg\nВиробник: Nakamura-Coherent Light-Titan
+
+SYSTEM_SCOOP_M|N-A Mining Companion
+
+SYSTEM_SCOOP_M_DESC|A lesser known project for the mining companion team came together with Antonoff to produce a limited-run variation of the stock NT companion. This variant ran with a mass driver, and was initially intended with ambush combat in mind, closely mirroring the military techniques of the early to mid 21st century. They were slowly repurposed into mining drones as Nakamura demilitarized their ring operations, and still see some usage with a handful of crews.
+
+SYSTEM_SCOOP_M_SPECS|Місткість: 50 m^3\nКлас автономності: C2\nStock Modification: Mass driver\nЕнергоспоживання (номінальне): 10 MW\nСуха маса: 2,000 kg\nМаса люльки: 500 kg\nЗапас робочого тіла: 4,000 kg\nВиробник: Nakamura-Antonoff
+
+SYSTEM_SCOOP_MP|N-A P-Type Mining Companion
+
+SYSTEM_SCOOP_MP_DESC|A lesser known project for the mining companion team came together with Antonoff to produce a limited-run variation of the stock NT companion. This variant ran with a mass driver, and was initially intended with ambush combat in mind, closely mirroring the military techniques of the early to mid 21st century. They were slowly repurposed into mining drones as Nakamura demilitarized their ring operations, and still see some usage with a handful of crews.\n\nA third party modification brought in the УПМ to the driver line of companions. Not too much use was seen from these lines of drones, but they became popular among the pirates as self-sustaining ambush drones.
+
+SYSTEM_SCOOP_MP_SPECS|Місткість: 50 m^3\nКлас автономності: C2\nStock Modification: Mass driver, УПМ\nЕнергоспоживання (номінальне): 10 MW\nСуха маса: 2,000 kg\nМаса люльки: 500 kg\nЗапас робочого тіла: 4,000 kg\nВиробник: Nakamura-Antonoff
+
+SYSTEM_SCOOP_P|NT P-Type Mining Companion
+
+SYSTEM_SCOOP_P_DESC|In the early 23rd century, a joint-venture between Nakamura Dynamics and Titan Heavy Industries produced autonomous mining drones in an attempt to automate ring excavation. While initially successful, drone swarms developed personality quirks in their neural networks which diminished performance over time, with drones engaging in social behavior rather than excavation. The autonomous mining project was ultimately canceled, but the drones were quietly refurbished and rebranded as Mining Companions, to be sold to independent miners.\n\nA secondhand retrofit from Titan came with the added УПМ and respective storage. A 15 tonne variable processed hold provides a reasonable storage for the companion to use. Many crews lean towards this model over the standard NT companion due to a lower maintainance runtime, only coming back to the mothership to transfer minerals.
+
+SYSTEM_SCOOP_P_SPECS|Місткість: 50 m^3\nStock Modification: УПМ\nКлас автономності: C2\nЕнергоспоживання (номінальне): 10 MW\nСуха маса: 2,000 kg\nМаса люльки: 500 kg\nЗапас робочого тіла: 4,000 kg\nВиробник: Nakamura-Titan
+
+SYSTEM_SCOOP_MPU_MANUAL|Deploy by powering down the arm and moving away.\nWill gather ore automatically.\nGathering parameters can be adjusted on the Geologist tab.\nInternal processing unit packs down ore chunks and replenished remass\nDock with and disable parameters in the Geologist tab to move processed ore to the ship\nReturns to the station when full or low on propellant.\nWhen attached, grinders are synchronized with your ship.\nEmpty cradle arm can catch drones and lifepods.
+
