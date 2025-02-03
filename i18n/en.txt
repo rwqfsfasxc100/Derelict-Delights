@@ -366,43 +366,43 @@ SYSTEM_SCOOP_E|Nakamura Prototype Hunk Companion
 
 SYSTEM_SCOOP_E_DESC|An early prototype to Nakamura's NT Mining Companion, this venture initially utilized a standard excavator hatch instead of the grinder fitting that are seen on the modern-day companions. As reliable as they were, they came at the cost of being very off-balance, thus wasting precious reaction mass in the process. They were phased out as grinders started becoming more commonplace, but still exist on the secondhand market for any personell interested in a slightly cheaper alternative.
 
-SYSTEM_SCOOP_E_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura
+SYSTEM_SCOOP_E_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nStock Modification: Excavator\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura
 
 SYSTEM_SCOOP_EP|Nakamura P-Type Prototype Hunk Companion
 
 SYSTEM_SCOOP_EP_DESC|An early prototype to Nakamura's NT Mining Companion, this venture initially utilized a standard excavator hatch instead of the grinder fitting that are seen on the modern-day companions. As reliable as they were, they came at the cost of being very off-balance, thus wasting precious reaction mass in the process. They were phased out as grinders started becoming more commonplace, but still exist on the secondhand market for any personell interested in a slightly cheaper alternative.\n\nOne project team that was set to find a solution to the Hunk's balance problem proposed fitting a mineral processing unit within it, which not only solved part of the balance issue, also provided a way for the companion to reclaim some remass for an extended flight.
 
-SYSTEM_SCOOP_EP_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Titan
+SYSTEM_SCOOP_EP_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nStock Modification: Excavator, mineral processing unit\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Titan
 
 SYSTEM_SCOOP_L|NCT Blaze Companion
 
 SYSTEM_SCOOP_L_DESC|The blaze was a rather high-risk venture by Coherent Light to improve the general efficiency of the NT companion. Nicknamed the Blaze, the replacement of the companion's usual mike with a CL-150 laser gave it almost unparalleled performance, however the laser was too much for the internal turbine to handle. The resulting frequent brownouts caused severe problems for the onboard computer, with several unintended effects on the autonomous systems.
 
-SYSTEM_SCOOP_L_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Coherent Light-Titan
+SYSTEM_SCOOP_L_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nStock Modification: Mining laser\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Coherent Light-Titan
 
 SYSTEM_SCOOP_LP|NCT P-Type Blaze Companion
 
 SYSTEM_SCOOP_LP_DESC|The blaze was a rather high-risk venture by Coherent Light to improve the general efficiency of the NT companion. Nicknamed the Blaze, the replacement of the companion's usual mike with a CL-150 laser gave it almost unparalleled performance, however the laser was too much for the internal turbine to handle. The resulting frequent brownouts caused severe problems for the onboard computer, with several unintended effects on the autonomous systems.\n\nA subset of the Blaze model, a fitted mineral processing unit was intended to further make efficiencies, however an oversight in the programming meant that it was left running during standard operations, which only made the brownout issues worse.
 
-SYSTEM_SCOOP_LP_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Coherent Light-Titan
+SYSTEM_SCOOP_LP_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nStock Modification: Mining laser, mineral processing unit\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Coherent Light-Titan
 
 SYSTEM_SCOOP_M|N-A Mining Companion
 
 SYSTEM_SCOOP_M_DESC|A lesser known project for the mining companion team came together with Antonoff to produce a limited-run variation of the stock NT companion. This variant ran with a mass driver, and was initially intended with ambush combat in mind, closely mirroring the military techniques of the early to mid 21st century. They were slowly repurposed into mining drones as Nakamura demilitarized their ring operations, and still see some usage with a handful of crews.
 
-SYSTEM_SCOOP_M_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Antonoff
+SYSTEM_SCOOP_M_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nStock Modification: Mass driver\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Antonoff
 
 SYSTEM_SCOOP_MP|N-A P-Type Mining Companion
 
 SYSTEM_SCOOP_MP_DESC|A lesser known project for the mining companion team came together with Antonoff to produce a limited-run variation of the stock NT companion. This variant ran with a mass driver, and was initially intended with ambush combat in mind, closely mirroring the military techniques of the early to mid 21st century. They were slowly repurposed into mining drones as Nakamura demilitarized their ring operations, and still see some usage with a handful of crews.\n\nA third party modification brought in the mineral processing unit to the driver line of companions. Not too much use was seen from these lines of drones, but they became popular among the pirates as self-sustaining ambush drones.
 
-SYSTEM_SCOOP_MP_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Antonoff
+SYSTEM_SCOOP_MP_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nStock Modification: Mass driver, mineral processing unit\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Antonoff
 
 SYSTEM_SCOOP_P|NT P-Type Mining Companion
 
 SYSTEM_SCOOP_P_DESC|In the early 23rd century, a joint-venture between Nakamura Dynamics and Titan Heavy Industries produced autonomous mining drones in an attempt to automate ring excavation. While initially successful, drone swarms developed personality quirks in their neural networks which diminished performance over time, with drones engaging in social behavior rather than excavation. The autonomous mining project was ultimately canceled, but the drones were quietly refurbished and rebranded as Mining Companions, to be sold to independent miners.\n\nA secondhand retrofit from Titan came with the added mineral processing unit and respective storage. A 15 tonne variable processed hold provides a reasonable storage for the companion to use. Many crews lean towards this model over the standard NT companion due to a lower maintainance runtime, only coming back to the mothership to transfer minerals.
 
-SYSTEM_SCOOP_P_SPECS|Cargo capacity: 50 m^3\nAutonomy class: C2\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Titan
+SYSTEM_SCOOP_P_SPECS|Cargo capacity: 50 m^3\nStock Modification: Mineral processing unit\nAutonomy class: C2\nPower usage (nominal): 10 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Titan
 
 SYSTEM_SCOOP_MPU_MANUAL|Deploy by powering down the arm and moving away.\nWill gather ore automatically.\nGathering parameters can be adjusted on the Geologist tab.\nInternal processing unit packs down ore chunks and replenished remass\nDock with and disable parameters in the Geologist tab to move processed ore to the ship\nReturns to the station when full or low on propellant.\nWhen attached, grinders are synchronized with your ship.\nEmpty cradle arm can catch drones and lifepods.
 
