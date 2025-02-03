@@ -57,7 +57,7 @@ func makeHighPerformanceEagle():
 		"main":"SYSTEM_MAIN_ENGINE_EIZAP",
 		"rcs":"SYSTEM_THRUSTER_K69V"
 	}
-	cfg.config.turbine.power = 500
+	cfg.config.turbine.power = 1500
 	cfg.config.capacitor.capacity = 1500
 	cfg.config.aux = {
 		"power":"SYSTEM_AUX_SMES_MK3"

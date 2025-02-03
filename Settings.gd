@@ -1,22 +1,34 @@
 extends "res://Settings.gd"
 
 # Mod version
-const DD_VERSION = "1.4.0"
+const DD_VERSION = "1.4.3"
 
 # Default config values
 var DDConfig = {
-	"additions":{
-		"NOTE -":"- Adds features from the mod.",
+	"mainToggles":{
+		"NOTE -":"- Main toggles to add mod additions, tweaks or added depth to vanilla features",
 		"addEquipment":true,
 		"addEvents":true,
 		"addAgenda":true,
 		"addModSupport":true,
-	}, 
-	"gameTweaks":{
-		"NOTE -":"- Adds tweaks or added depth to vanilla features that don't follow the direct addition of features that are added by this mod",
 		"requestNewContainers":true,
 		"obontosAskForMoreStuff":true,
+		"expandShipEquipmentOptions":true,
 	}, 
+	"eventToggles":{
+		"NOTE -":"- Toggles for specific events - requires the addEvents toggle to be enabled",
+		"addDerelicts":true,
+		"addNewNPCMiners":true,
+		"addHabitatUnderConstruction":true,
+		"addNewVilcyAndG4AEncounters":true,
+		"addNewRogueContainers":true,
+		"addNewPirateTrades":true,
+	},
+	"agendaToggles":{
+		"NOTE -":"- These toggles will not work without several other toggles being enabled",
+		"NOTE2 -":"- Historian needs the following toggles: (from mainToggles) addEvents, addAgenda, addEquipment, (from eventToggles) addHabitatUnderConstruction, addNewRogueContainers",
+		"addHistorian":true,
+	},
 	"supportedEventsFromMods":{
 		"NOTE -":"- These are event toggles for their respective mods, separated as they're the main feature from the automatic mod compatability feature, requires addEvents to work",
 		"IndustriesOfEnceladus":true,

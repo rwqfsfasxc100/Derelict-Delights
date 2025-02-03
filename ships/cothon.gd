@@ -185,33 +185,33 @@ var COTHON = [
 			"initial":0
 		},
 		"autopilot":{
-			"type":"SYSTEM_AUTOPILOT_MK3"
+			"type":"SYSTEM_AUTOPILOT_RTYPE"
 		},
 		"aux":{
 			"power":"SYSTEM_NONE"
 		},
 		"capacitor":{
-			"capacity":1000
+			"capacity":500
 		},
 		"cargo":{
-			"equipment":"SYSTEM_CARGO_STANDARD"
+			"equipment":"SYSTEM_CARGO_MPU"
 		},
 		"drone":{
 			"scanner":"SYSTEM_RD_GRAVIMETRIC"
 		},
 		"drones":{
-			"capacity":20000,
-			"initial":20000
+			"capacity":10000,
+			"initial":10000
 		},
 		"fuel":{
-			"capacity":50000,
-			"initial":50000
+			"capacity":200000,
+			"initial":200000
 		},
 		"hud":{
 			"type":"SYSTEM_HUD_HAL"
 		},
 		"lidar":{
-			"type":"SYSTEM_LIDAR_DOPPLER"
+			"type":"SYSTEM_LIDAR_DOPPLER_HIRES"
 		},
 		"propulsion":{
 			"main":"SYSTEM_MAIN_ENGINE_BWMT535",
@@ -471,6 +471,65 @@ var COTHON = [
 			},
 			"rightBack":{
 				"type":"SYSTEM_EXSTORAGE-R"
+			}
+		}
+	},
+		{
+		"ammo":{
+			"capacity":5000,
+			"initial":5000
+		},
+		"autopilot":{
+			"type":"SYSTEM_AUTOPILOT_RTYPE"
+		},
+		"aux":{
+			"power":"SYSTEM_AUX_SMES"
+		},
+		"capacitor":{
+			"capacity":1000
+		},
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_MPUFSO"
+		},
+		"drone":{
+			"scanner":"SYSTEM_RD_SPECTROMETER"
+		},
+		"drones":{
+			"capacity":5000,
+			"initial":5000
+		},
+		"fuel":{
+			"capacity":50000,
+			"initial":50000
+		},
+		"hud":{
+			"type":"SYSTEM_HUD_TNTRL"
+		},
+		"lidar":{
+			"type":"SYSTEM_LIDAR_"
+		},
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_K44",
+			"rcs":"SYSTEM_THRUSTER_K69V"
+		},
+		"reactor":{
+			"power":12
+		},
+		"turbine":{
+			"power":100
+		},
+		"weaponSlot":{
+			"left":{
+				"type":"SYSTEM_SCOOP-L"
+			},
+			"leftBack":{
+				"type":"SYSTEM_DND_HAUL"
+			},
+			"right":{
+				"type":"SYSTEM_ACL200P"
+			},
+			"rightBack":{
+				"type":"SYSTEM_DND_HAUL"
 			}
 		}
 	}

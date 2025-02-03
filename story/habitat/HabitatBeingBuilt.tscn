@@ -30,6 +30,7 @@ load_path = "res://.import/enceladus-inner-n.png-9f15b186dad557f542bf978309fb167
 [node name="Habitat" instance=ExtResource( 2 )]
 specialName = "SRA-08"
 shipName = "STATION_HABITAT_BUILDING"
+faction = "construction"
 dialogTree = NodePath("HabitatBuildingConversation")
 
 [node name="Glow" parent="Hull-1" index="0"]
@@ -241,8 +242,8 @@ region_enabled = true
 region_rect = Rect2( 1402, 795.883, 94, 153.117 )
 
 [node name="Sprite18" type="Sprite" parent="." index="41"]
-position = Vector2( 731, 54 )
-rotation = 1.68599
+position = Vector2( 741, 64 )
+rotation = 1.74036
 z_index = 187
 texture = SubResource( 2 )
 normal_map = SubResource( 3 )
@@ -250,8 +251,8 @@ region_enabled = true
 region_rect = Rect2( -2, 1010, 137, 379 )
 
 [node name="Sprite19" type="Sprite" parent="." index="42"]
-position = Vector2( 652, -316 )
-rotation = 1.22522
+position = Vector2( 632, -353 )
+rotation = 1.03648
 z_index = 187
 texture = SubResource( 2 )
 normal_map = SubResource( 3 )
@@ -259,8 +260,8 @@ region_enabled = true
 region_rect = Rect2( -2, 1010, 137, 379 )
 
 [node name="Sprite20" type="Sprite" parent="." index="43"]
-position = Vector2( 389, -614 )
-rotation = 0.534071
+position = Vector2( 339, -658 )
+rotation = 0.499395
 z_index = 187
 texture = SubResource( 2 )
 normal_map = SubResource( 3 )

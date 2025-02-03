@@ -5,15 +5,59 @@
 
 [node name="HabitatConversation" instance=ExtResource( 2 )]
 
+[node name="DIALOG_HABITAT_NEED_FE" parent="." index="0"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_NEED_FE|like" parent="." index="1"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_NEED_PD" parent="." index="2"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_NEED_PD|like" parent="." index="3"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_NEED_PT" parent="." index="4"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_NEED_PT|like" parent="." index="5"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_NEED_V" parent="." index="6"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_NEED_V|like" parent="." index="7"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_NEED_FE_DESPERATE" parent="." index="8"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_NEED_PT_DESPERATE" parent="." index="9"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_NEED_PD_DESPERATE" parent="." index="10"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_NEED_V_DESPERATE" parent="." index="11"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_WATCH_FIRE_FEAR" parent="." index="12"]
+tradeLimitKg = 100000
+
+[node name="DIALOG_HABITAT_WATCH_FIRE_HATE" parent="." index="13"]
+tradeLimitKg = 100000
+
 [node name="DIALOG_HABITAT_NEED_W" parent="." index="18" instance=ExtResource( 1 )]
 weight = 0.4
 mostPrelevantDisposition = "curiosity"
 tradeInMineral = "W"
+tradeLimitKg = 50000
 
 [node name="DIALOG_HABITAT_NEED_W|like" parent="." index="19" instance=ExtResource( 1 )]
 weight = 0.4
 mostPrelevantDisposition = "support"
 tradeInMineral = "W"
+tradeLimitKg = 50000
 
 [node name="DIALOG_HABITAT_NEED_W_DESPERATE" parent="." index="20" instance=ExtResource( 1 )]
 weight = 0.4
@@ -21,17 +65,20 @@ mostPrelevantDisposition = "curiosity"
 changeHostility = -0.5
 changeFear = -0.5
 tradeInMineral = "W"
+tradeLimitKg = 50000
 setDiscountTo = 5.0
 
 [node name="DIALOG_HABITAT_NEED_BE" parent="." index="21" instance=ExtResource( 1 )]
 weight = 0.2
 mostPrelevantDisposition = "curiosity"
 tradeInMineral = "Be"
+tradeLimitKg = 25000
 
 [node name="DIALOG_HABITAT_NEED_BE|like" parent="." index="22" instance=ExtResource( 1 )]
 weight = 0.2
 mostPrelevantDisposition = "support"
 tradeInMineral = "Be"
+tradeLimitKg = 25000
 
 [node name="DIALOG_HABITAT_NEED_BE_DESPERATE" parent="." index="23" instance=ExtResource( 1 )]
 weight = 0.2
@@ -39,6 +86,7 @@ mostPrelevantDisposition = "curiosity"
 changeHostility = -0.5
 changeFear = -0.5
 tradeInMineral = "Be"
+tradeLimitKg = 25000
 setDiscountTo = 5.0
 
 [editable path="DIALOG_HABITAT_DOCKING_SECURE"]

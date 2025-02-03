@@ -25,10 +25,10 @@ texture = SubResource( 1 )
 texture = SubResource( 2 )
 
 [node name="MarginContainer" parent="VB/MarginContainer/ScrollContainer" index="0"]
-margin_bottom = 26542.0
+margin_bottom = 26986.0
 
 [node name="Items" parent="VB/MarginContainer/ScrollContainer/MarginContainer" index="0"]
-margin_bottom = 26526.0
+margin_bottom = 26970.0
 
 [node name="LeftWeaponSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="4"]
 margin_bottom = 7173.0
@@ -56,7 +56,7 @@ margin_bottom = 1753.0
 slot = "weaponSlot.left.type"
 system = "SYSTEM_EXSUPER-L"
 nameOverride = "SYSTEM_EXSUPER"
-price = 550000
+price = 1100000
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
@@ -99,7 +99,7 @@ margin_right = 1196.0
 margin_bottom = 1753.0
 system = "SYSTEM_EXSUPER-R"
 nameOverride = "SYSTEM_EXSUPER"
-price = 550000
+price = 1100000
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
@@ -150,7 +150,7 @@ margin_right = 1196.0
 margin_bottom = 939.0
 system = "SYSTEM_EXSUPER-L"
 nameOverride = "SYSTEM_EXSUPER"
-price = 550000
+price = 1100000
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
@@ -181,16 +181,16 @@ margin_right = 1196.0
 margin_bottom = 939.0
 system = "SYSTEM_EXSUPER-R"
 nameOverride = "SYSTEM_EXSUPER"
-price = 550000
+price = 1100000
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="LeftBay1" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="12"]
 margin_top = 14028.0
-margin_bottom = 14897.0
+margin_bottom = 14971.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1" index="0"]
-margin_bottom = 867.0
+margin_bottom = 941.0
 
 [node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
@@ -204,7 +204,6 @@ margin_top = 795.0
 margin_bottom = 865.0
 
 [node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="36" instance=ExtResource( 2 )]
-visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 869.0
@@ -212,16 +211,16 @@ margin_right = 1196.0
 margin_bottom = 939.0
 system = "SYSTEM_EXSUPER-L"
 nameOverride = "SYSTEM_EXSUPER"
-price = 550000
+price = 1100000
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="RightBay1" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="13"]
-margin_top = 14901.0
-margin_bottom = 15770.0
+margin_top = 14975.0
+margin_bottom = 15918.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1" index="0"]
-margin_bottom = 867.0
+margin_bottom = 941.0
 
 [node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
@@ -236,7 +235,6 @@ margin_top = 795.0
 margin_bottom = 865.0
 
 [node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="36" instance=ExtResource( 2 )]
-visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 869.0
@@ -244,16 +242,16 @@ margin_right = 1196.0
 margin_bottom = 939.0
 system = "SYSTEM_EXSUPER-R"
 nameOverride = "SYSTEM_EXSUPER"
-price = 550000
+price = 1100000
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="LeftBay2" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="14"]
-margin_top = 15774.0
-margin_bottom = 16569.0
+margin_top = 15922.0
+margin_bottom = 16791.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2" index="0"]
-margin_bottom = 793.0
+margin_bottom = 867.0
 
 [node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
@@ -267,7 +265,6 @@ margin_top = 721.0
 margin_bottom = 791.0
 
 [node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="36" instance=ExtResource( 2 )]
-visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 795.0
@@ -275,16 +272,16 @@ margin_right = 1196.0
 margin_bottom = 865.0
 system = "SYSTEM_EXSUPER-L"
 nameOverride = "SYSTEM_EXSUPER"
-price = 550000
+price = 1100000
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="RightBay2" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="15"]
-margin_top = 16573.0
-margin_bottom = 17368.0
+margin_top = 16795.0
+margin_bottom = 17664.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2" index="0"]
-margin_bottom = 793.0
+margin_bottom = 867.0
 
 [node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
@@ -299,7 +296,6 @@ margin_top = 721.0
 margin_bottom = 791.0
 
 [node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="36" instance=ExtResource( 2 )]
-visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 795.0
@@ -307,16 +303,16 @@ margin_right = 1196.0
 margin_bottom = 865.0
 system = "SYSTEM_EXSUPER-R"
 nameOverride = "SYSTEM_EXSUPER"
-price = 550000
+price = 1100000
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="LeftBay3" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="16"]
-margin_top = 17372.0
-margin_bottom = 18167.0
+margin_top = 17668.0
+margin_bottom = 18537.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3" index="0"]
-margin_bottom = 793.0
+margin_bottom = 867.0
 
 [node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
@@ -330,7 +326,6 @@ margin_top = 721.0
 margin_bottom = 791.0
 
 [node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="36" instance=ExtResource( 2 )]
-visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 795.0
@@ -338,16 +333,16 @@ margin_right = 1196.0
 margin_bottom = 865.0
 system = "SYSTEM_EXSUPER-L"
 nameOverride = "SYSTEM_EXSUPER"
-price = 550000
+price = 1100000
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="RightBay3" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="17"]
-margin_top = 18171.0
-margin_bottom = 18966.0
+margin_top = 18541.0
+margin_bottom = 19410.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3" index="0"]
-margin_bottom = 793.0
+margin_bottom = 867.0
 
 [node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="34" instance=ExtResource( 2 )]
 anchor_right = 0.0
@@ -362,7 +357,6 @@ margin_top = 721.0
 margin_bottom = 791.0
 
 [node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="36" instance=ExtResource( 2 )]
-visible = false
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 795.0
@@ -370,65 +364,65 @@ margin_right = 1196.0
 margin_bottom = 865.0
 system = "SYSTEM_EXSUPER-R"
 nameOverride = "SYSTEM_EXSUPER"
-price = 550000
+price = 1100000
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="AmmunitionDelivery" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="18"]
-margin_top = 18970.0
-margin_bottom = 19543.0
+margin_top = 19414.0
+margin_bottom = 19987.0
 
 [node name="DisposableDrones" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="19"]
-margin_top = 19547.0
-margin_bottom = 20046.0
+margin_top = 19991.0
+margin_bottom = 20490.0
 
 [node name="Propellant" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="20"]
-margin_top = 20050.0
-margin_bottom = 20549.0
+margin_top = 20494.0
+margin_bottom = 20993.0
 
 [node name="Thrusters" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="21"]
-margin_top = 20553.0
-margin_bottom = 21348.0
+margin_top = 20997.0
+margin_bottom = 21792.0
 
 [node name="Torches" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="22"]
-margin_top = 21352.0
-margin_bottom = 22073.0
+margin_top = 21796.0
+margin_bottom = 22517.0
 
 [node name="Rods" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="23"]
-margin_top = 22077.0
-margin_bottom = 22724.0
+margin_top = 22521.0
+margin_bottom = 23168.0
 
 [node name="Capacitor" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="24"]
-margin_top = 22728.0
-margin_bottom = 23005.0
+margin_top = 23172.0
+margin_bottom = 23449.0
 
 [node name="Turbine" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="25"]
-margin_top = 23009.0
-margin_bottom = 23286.0
+margin_top = 23453.0
+margin_bottom = 23730.0
 
 [node name="AuxilaryPower" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="26"]
-margin_top = 23290.0
-margin_bottom = 23863.0
+margin_top = 23734.0
+margin_bottom = 24307.0
 
 [node name="CargoBay" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="27"]
-margin_top = 23867.0
-margin_bottom = 24440.0
+margin_top = 24311.0
+margin_bottom = 24884.0
 
 [node name="Autopilot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="28"]
-margin_top = 24444.0
-margin_bottom = 24943.0
+margin_top = 24888.0
+margin_bottom = 25387.0
 
 [node name="Hud" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="29"]
-margin_top = 24947.0
-margin_bottom = 25742.0
+margin_top = 25391.0
+margin_bottom = 26186.0
 
 [node name="Lidar" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="30"]
-margin_top = 25746.0
-margin_bottom = 26171.0
+margin_top = 26190.0
+margin_bottom = 26615.0
 
 [node name="ReconDrone" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="31"]
-margin_top = 26175.0
-margin_bottom = 26526.0
+margin_top = 26619.0
+margin_bottom = 26970.0
 
 [editable path="VB/HeaderWithMoney"]
 [editable path="VB/WindowMargin/TabHintContainer"]

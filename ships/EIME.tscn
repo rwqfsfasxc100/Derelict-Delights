@@ -25,7 +25,6 @@ position = Vector2( 0, 64 )
 
 [node name="WeaponRight" parent="." index="23"]
 visible = true
-script = null
 
 [node name="SYSTEM_CL150" parent="WeaponRight" index="1"]
 visible = false

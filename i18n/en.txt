@@ -126,7 +126,7 @@ SYSTEM_EXSUPER_DESC|Modeled after the successful THI Cargo Container, the Interp
 
 SYSTEM_EXSUPER_SPECS|Cargo capacity: 120,000 kg / mineral \nPower usage (nominal): 20 MW \nDry Mass: 25,000 kg \nCradle mass: 500 kg \nReaction Mass Tank: 30,000 kg \nManufacturer: Grandfathered (originally Titan Heavy Industries)
 
-SYSTEM_EXSUPER_MANUAL|Automatically stores processed ore.\nYou can customize ore stored on Geologist tab.\nRequires mineral processing unit to be used effectively.\nWill unbalance the ship if only one is installed.\nCan be ejected by disabling the hardpoint.\nThe ejected container will attempt to return to the station with its cargo automatically.\nEmpty cradle arm can catch drones and lifepods.\nThis container is too large to fit in standard-issue docking bays.
+SYSTEM_EXSUPER_MANUAL|Automatically stores processed ore.\nYou can customize ore stored on Geologist tab.\nRequires mineral processing unit to be used effectively.\nWill unbalance the ship if only one is installed.\nCan be ejected by disabling the hardpoint.\nThe ejected container will attempt to return to the station with its cargo automatically.\nEmpty cradle arm can catch drones and lifepods.
 
 DIALOG_INTERPLANETARY_WEIRD|What's up with this container anyway? It's got some very high-tech thrusters for a container, even if it is oversized. Perhaps someone like a historian could give us a better insight?
 
@@ -203,3 +203,161 @@ DIALOG_PIRATE_BUSINESS_SHIP_KTI_KSERIES_LCB|One of KTI's K-Series modifications 
 DIALOG_PIRATE_BUSINESS_SHIP_KTI_KITSUMO|One of the demilitarized Kitsunes landed our way, and we've had one lying around. This one is one of KTI's attempts to improve it with a high-stress hardpoint and a torch slot. Didn't really see much point in using one, so may as well make an offer to you for it. We're offering 250 grand flat for it.
 
 DIALOG_PIRATE_BUSINESS_SHIP_KTI_OCP230|Some of the construction crew for Obonto Seven left one of their ships unlocked while on an inspection break. Somehow managed to take it without them noticing until too late. This one appears to be one of KTI's modifications. It's too unwieldy for our liking, so you can take a look for 500 grand.
+
+DIALOG_HABITAT_BUILDING_CONTAINER_YOU_SEEM|You know, I'm surprised that your superstructure hasn't been finished yet, don't you usually get shipments alongside miners providing you with minerals as they pass by?
+
+DIALOG_HABITAT_BUILDING_CONTAINER_REASON|Normally we wouldn't mention this, even to contractors, however we believe you're trustworthy enough. \n\nWe have one contractor who managed to get their hands on a license to the experimental interplanetary containers. They had us sent them instead of standard cargo containers, albeit slower than usual shipments, but they provided a faster way to receive them. \n\nOf course, with this there was a risk. Fewer single shipments means a bigger impact if things go wrong, and they did. Most of the planned shipments go missing, and we haven't seen the contractor in a while to change the order. A few have reported the containers operating without a transponder, so we can only presume it's piracy.
+
+DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN|As for how they obtained the licensing, we can't say for sure but we believe it's some form of grandfathering clause at Enceladus Prime's shipyard. Something to do with equipment being allowed to utilize the safety protocols given to it at the time of the license being issued. Probably means they found one of the ships left abandoned in the rings from when they were still in testing. Basically means that if you can find a ship that still has the licensing for them in tact, you can fit them to your ship.
+
+DIALOG_HABITAT_BUILDING_CONTAINER_HELP|Perhaps if you ask around with other crews, you may be able to find someone who knows something about them, and they may be able to help more than we can.
+
+MENU_DERELICTDELIGHTS_CONFIG|Derelict Delights Configuration
+
+SETTINGS_ADD_EQUIPMENT|Add New Equipment
+
+SETTINGS_ADD_EQUIPMENT_TOOLTIP|Adds equipment that Derelict Delights provides. \nIncludes the THI Interlunar Container and the Experimental Interplanetary Container. \nThe latter may require other toggles to be enabled to obtain, as it is a quest item.
+
+SETTINGS_ADD_AGENDAS|Add New Crew Agendas
+
+SETTINGS_ADD_AGENDAS_TOOLTIP|Main toggle to enable any settings toggled on in the the Agenda section.
+
+SETTINGS_ADD_EVENTS|Add New Events
+
+SETTINGS_ADD_EVENTS_TOOLTIP|Main toggle to enable events provided by this mod.
+
+SETTINGS_REQUEST_NEW_CONTAINERS|Enable Container Requests
+
+SETTINGS_REQUEST_NEW_CONTAINERS_TOOLTIP|Adds a new dialogue option to any cargo container variant that lets you request a new cargo container or monocargo container.
+
+SETTINGS_ADD_OBONTO_BALANCE|New Obonto Habit Trades & Rebalance
+
+SETTINGS_ADD_OBONTO_BALANCE_TOOLTIP|Enabled a rework of the Obonto Habitat trades, allowing a chance at tungsten or beryllium to be offered. \nAdds a mass limit to all minerals sold to make trading with habitats slightly less overpowered. \nLimits decreased to 50% and 25% of the usual mineral limits for tungsten and beryllium respectively.
+
+SETTINGS_EXPAND_SHIP_LOADOUTS|Expand Ship Loadouts
+
+SETTINGS_EXPAND_SHIP_LOADOUTS_TOOLTIP|Adds additional default ship loadouts, found on dealership ships, NPC miners and derelicts. \nYou can suggest additional options to the loadouts provided with this with the button on the title screen.
+
+SETTINGS_ADD_MOD_SUPPORT|Enable Mod Support
+
+SETTINGS_ADD_MOD_SUPPORT_TOOLTIP|Main toggle to enable all mod support. Check the DDSettings.cfg file in the save directory, or ask on the mod page to see the specifics to what mods are supported.
+
+SETTINGS_ADD_DERELICTS|Expand Derelict Pool
+
+SETTINGS_ADD_DERELICTS_TOOLTIP|Adds the 14 vanilla ship variants not found in derelict form to the event pool. \nRequired for modded derelicts.
+
+SETTINGS_ADD_NEW_NPCS|Expand NPC Ship Selection
+
+SETTINGS_ADD_NEW_NPCS_TOOLTIP|Adds 13 vanilla ships to the pool of ships that NPCs can use. \nK44 and K225 (modified) ships are yet to be found by the Miner's Guild as a whole. Required for modded NPCs.
+
+SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION|Add the Habitat Under Construction
+
+SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION_TOOLTIP|SRA-08 can be found in the rings. Has unique trades and interactions, and required for a large portion of the historian agenda storylines.
+
+SETTINGS_ADD_NEW_FACTION_ENCOUNTERS|Enable New Faction-Specific Encounters
+
+SETTINGS_ADD_NEW_FACTION_ENCOUNTERS_TOOLTIP|Adds new encounters with both Vilcy and Ganymedeans. Several encounters happen only after the respective station has been destroyed.
+
+SETTINGS_ADD_NEW_ROGUE_CONTAINERS|Rogue Containers Utilize DD Equipment
+
+SETTINGS_ADD_NEW_ROGUE_CONTAINERS_TOOLTIP|Rogue containers utilize the interlunar and interplanetary containers. Required for the historian agenda storyline.
+
+SETTINGS_EXPAND_PIRATE_TRADES|Expand Pirate Offers
+
+SETTINGS_EXPAND_PIRATE_TRADES_TOOLTIP|Adds additional trade offers from pirates outside of the vanilla 4, however are vastly rarer than the vanilla selection.
+
+SETTINGS_ADD_HISTORIAN_AGENDA|Add the Historian Crew Agenda
+
+SETTINGS_ADD_HISTORIAN_AGENDA_TOOLTIP|Enables the Historian crew agenda and respective storylines. Requires several other toggles to function.
+
+SETTINGS_SUPPORT_IOE|Support Industries of Enceladus Ships
+
+SETTINGS_SUPPORT_IOE_TOOLTIP|Add ship-based events involving ships from the Industries of Enceladus mod. \nSupports both SPDX original and HEV rewrite editions of IoE.
+
+SETTINGS_SUPPORT_KITSUMO|Support the KTI Kitsumo Ship
+
+SETTINGS_SUPPORT_KITSUMO_TOOLTIP|Add ship-based events involving ships from the K-Tech Kitsumo mod.
+
+SETTINGS_SUPPORT_COTHON_MKII|Support the KTI Cothon MkII ship
+
+SETTINGS_SUPPORT_COTHON_MKII_TOOLTIP|Add ship-based events involving ships from the K-Tech Cothon MkII mod.
+
+SETTINGS_SUPPORT_KTI_K225|Support the KTI K225-XL ship
+
+SETTINGS_SUPPORT_KTI_K225_TOOLTIP|Add ship-based events involving ships from the K-Tech K225-XL mod.
+
+SETTINGS_SUPPORT_KTI_KSERIES|Support the KTI K-Series ships
+
+SETTINGS_SUPPORT_KTI_KSERIES_TOOLTIP|Add ship-based events involving ships from the K-Tech K-Series mod.
+
+SETTINGS_SUPPORT_KTI_OCP|Support the KTI OCP ship
+
+SETTINGS_SUPPORT_KTI_OCP_TOOLTIP|Add ship-based events involving ships from the K-Tech OCP mod.
+
+SETTINGS_SUPPORT_DRONE_OCP|Support the Drone OCP ship
+
+SETTINGS_SUPPORT_DRONE_OCP_TOOLTIP|Add ship-based events involving ships from the Drone OCP mod.
+
+SETTINGS_SUPPORT_HEAVY_COTHON|Support the Heavy Cothon ship
+
+SETTINGS_SUPPORT_HEAVY_COTHON_TOOLTIP|Add ship-based events involving ships from the Heavy Cothon mod.
+
+SETTINGS_SUPPORT_IOE_CONTAINERS|Add IoE Container Requests
+
+SETTINGS_SUPPORT_IOE_CONTAINERS_TOOLTIP|Adds the Dyna-Cargo container from the Industries of Enceladus mod to the cargo container requests.
+
+SETTINGS_SUPPORT_MOD_PIRATE_TRADES|Add Modded Ships to Pirate Offers
+
+SETTINGS_SUPPORT_MOD_PIRATE_TRADES_TOOLTIP|Derelict ships added from mod toggles will be added to the pool of pirate trades.
+
+SETTINGS_DISABLE_DYNAMIC_MOD_LOADING|Disable Dynamic Mod Handling
+
+SETTINGS_DISABLE_DYNAMIC_MOD_LOADING_TOOLTIP|Main toggle to switch off the dynamic mod handling and use the following manual toggles. \nThis is intended for use only if a mod's compatability isn't working, or are running a version of the mod where the zip file's name differs from the name this mod looks for. \nCheck the DDSettings.cfg file in the save directory for the name looked for by the dynamic settings.
+
+SETTINGS_FORCE_DRONE_OCP|Force DroneOCP Handling
+
+SETTINGS_FORCE_DRONE_OCP_TOOLTIP|Forces the DroneOCP compatability to run.
+
+SETTINGS_FORCE_HEAVY_COTHON|Force HeavyCothon Handling
+
+SETTINGS_FORCE_HEAVY_COTHON_TOOLTIP|Forces the Heavy Cothon compatability to run.
+
+SETTINGS_FORCE_IOE|Force IndustriesOfEnceladus Handling
+
+SETTINGS_FORCE_IOE_TOOLTIP|Forces the Industries of Enceladus compatability to run.
+
+SETTINGS_FORCE_KTI_COTHON_MKII|Force KTI-CothonMkII Handling
+
+SETTINGS_FORCE_KTI_COTHON_MKII_TOOLTIP|Forces the K-Tech Cothon MkII compatability to run.
+
+SETTINGS_FORCE_KTI_K225|Force KTI-K225 Handling
+
+SETTINGS_FORCE_KTI_K225_TOOLTIP|Forces the K-Tech K225-XL compatability to run.
+
+SETTINGS_FORCE_KTI_KITSUMO|Force KTI-Kitsumo Handling
+
+SETTINGS_FORCE_KTI_KITSUMO_TOOLTIP|Forces the K-Tech Kitsumo compatability to run.
+
+SETTINGS_FORCE_KTI_KSERIES|Force KTI-KSeries Handling
+
+SETTINGS_FORCE_KTI_KSERIES_TOOLTIP|Forces the K-Tech K-Series compatability to run.
+
+SETTINGS_FORCE_KTI_OCP|Force KTI-OCP Handling
+
+SETTINGS_FORCE_KTI_OCP_TOOLTIP|Forces the K-Tech OCP compatability to run.
+
+DD_MAIN_TOGGLES|Main
+
+DD_EVENT_TOGGLES|Events
+
+DD_AGENDA_TOGGLES|Agendas
+
+DD_MOD_TOGGLES|Mods
+
+DD_MOD_DEBUG|DEBUG
+
+DD_DEBUG_WARNING|WARNING! UNSUPPORTED SETTINGS
+
+DD_DEBUG_WARNING_TOOLTIP|WARNING: These setting should be handled with caution, as they are not directly supported and may break a save if changed.\n\nIf you are unsure, leave the "Disable Dynamic Mod Handling" option disabled.
+
+DDCREDITS|Credit: hev; WT; Za'Krin Yoran

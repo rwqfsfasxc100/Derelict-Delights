@@ -5,7 +5,7 @@
 [ext_resource path="res://story/MinerMining.gd" type="Script" id=3]
 [ext_resource path="res://story/LifepodIsFloating.gd" type="Script" id=4]
 [ext_resource path="res://DerelictDelights/ships/drone/StoragePodSuperBigRogue.tscn" type="PackedScene" id=5]
-[ext_resource path="res://story/Vilcy.gd" type="Script" id=6]
+[ext_resource path="res://DerelictDelights/story/vilcySlashG4A/Vilcy.gd" type="Script" id=6]
 [ext_resource path="res://DerelictDelights/ships/drone/StoragePodBigRogue.tscn" type="PackedScene" id=7]
 [ext_resource path="res://DerelictDelights/ships/drone/StoragePodEmpty.tscn" type="PackedScene" id=8]
 [ext_resource path="res://DerelictDelights/ships/drone/StoragePodEmptyMono.tscn" type="PackedScene" id=9]
@@ -14,6 +14,7 @@
 [ext_resource path="res://DerelictDelights/story/SuperTHICCDerelict.gd" type="Script" id=12]
 
 [node name="TheRing" instance=ExtResource( 1 )]
+testSpecificStoryElement = "HighEnduranceBattleNoBBW"
 
 [node name="DerelictLCB" type="Node" parent="." index="77"]
 script = ExtResource( 2 )
@@ -219,6 +220,7 @@ script = ExtResource( 6 )
 chaosLimit = 0.2
 lockOutStory = ""
 lockOutLimit = 0
+pirateEagle = 2
 
 [node name="HighPerformancePirate" type="Node" parent="." index="108"]
 script = ExtResource( 6 )
@@ -228,6 +230,7 @@ lockOutStory = ""
 lockOutLimit = 0
 requireStory = "g4a.destroyed"
 requireMin = 1
+highPerformancePirate = 1
 
 [node name="HighEnduranceBattleNoG4A" type="Node" parent="." index="109"]
 script = ExtResource( 6 )
@@ -239,6 +242,8 @@ lockOutStory = ""
 lockOutLimit = 0
 requireStory = "g4a.destroyed"
 requireMin = 1
+highPerformancePirate = 2
+vilcyBattleship = 1
 
 [node name="VilcyBattleship" type="Node" parent="." index="110"]
 script = ExtResource( 6 )
@@ -248,6 +253,7 @@ lockOutStory = ""
 lockOutLimit = 0
 requireStory = "vilcy.bbw.destroyed"
 requireMin = 1
+vilcyBattleship = 1
 
 [node name="HighEnduranceBattleNoBBW" type="Node" parent="." index="111"]
 script = ExtResource( 6 )
@@ -259,6 +265,8 @@ lockOutStory = ""
 lockOutLimit = 0
 requireStory = "vilcy.bbw.destroyed"
 requireMin = 1
+highPerformancePirate = 1
+vilcyBattleship = 2
 
 [node name="EmptyStoragePod" type="Node" parent="." index="112"]
 script = ExtResource( 4 )

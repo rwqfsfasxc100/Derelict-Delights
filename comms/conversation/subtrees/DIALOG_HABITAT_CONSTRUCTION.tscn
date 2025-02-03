@@ -5,6 +5,9 @@
 
 [node name="DIALOG_HABITAT_CONSTRUCTION" instance=ExtResource( 2 )]
 
+[node name="DIALOG_HABITAT_LICENCING_INQUIRE" parent="." index="4"]
+storyFlag = "DISABLED"
+
 [node name="DIALOG_HABITAT_BUILDING_CONTAINER_ASK" type="Node" parent="." index="7"]
 script = ExtResource( 1 )
 myLine = false
@@ -29,4 +32,27 @@ script = ExtResource( 1 )
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 1
 storyFlagMax = 1
+storyFlagSet = 2
+
+[node name="DIALOG_HABITAT_BUILDING_CONTAINER_YOU_SEEM" type="Node" parent="." index="8"]
+script = ExtResource( 1 )
+myLine = false
+dispositionRequired = 0.8
+storyFlag = "dd.story.interplanetary"
+storyFlagMax = 0
+
+[node name="DIALOG_HABITAT_BUILDING_CONTAINER_REASON" type="Node" parent="DIALOG_HABITAT_BUILDING_CONTAINER_YOU_SEEM" index="0"]
+script = ExtResource( 1 )
+storyFlag = "dd.story.interplanetary"
+storyFlagMax = 0
+
+[node name="DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN" type="Node" parent="DIALOG_HABITAT_BUILDING_CONTAINER_YOU_SEEM/DIALOG_HABITAT_BUILDING_CONTAINER_REASON" index="0"]
+script = ExtResource( 1 )
+storyFlag = "dd.story.interplanetary"
+storyFlagMax = 0
+
+[node name="DIALOG_HABITAT_BUILDING_CONTAINER_HELP" type="Node" parent="DIALOG_HABITAT_BUILDING_CONTAINER_YOU_SEEM/DIALOG_HABITAT_BUILDING_CONTAINER_REASON/DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN" index="0"]
+script = ExtResource( 1 )
+storyFlag = "dd.story.interplanetary"
+storyFlagMax = 0
 storyFlagSet = 2

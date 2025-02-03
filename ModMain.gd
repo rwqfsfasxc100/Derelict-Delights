@@ -2,16 +2,18 @@ extends Node
 
 # Set mod priority if you want it to load before/after other mods
 # Mods are loaded from lowest to highest priority, default is 0
-const MOD_PRIORITY = 1000
+const MOD_PRIORITY = 1001
 # Name of the mod, used for writing to the logs
-const MOD_NAME = "Derelict Delights v.1.4.0"
+const MOD_NAME = "Derelict Delights v.1.4.3"
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
 var _savedObjects := []
 
-var modConfig = {}
 # Initializes the configuration variable. Used by loadSettings.
+var modConfig = {}
+
+var ZKYConfig = {}
 
 # Initializes dynamic mod variables
 var BOOTLEG_PDT = false
@@ -45,30 +47,88 @@ func _init(modLoader = ModLoader):
 	
 	l("Settings & DLC loaded, now initializing events")
 	
-	# Event initialization
-	if modConfig["additions"]["addEvents"]:
-		l("Initializing combat-driven events [additions -> addEvents]")
-		installScriptExtension("story/Vilcy.gd")
-		l("Combat-driven events loaded")
+	updateEquipment()
 	
-	# Equipment additions
-	if modConfig["additions"]["addEquipment"]:
-		l("Initializing equipment [additions -> addEquipment]")
+	# Scripts used to compile new equipment loadouts for ships
+	# installScriptExtension("ships/Shipyard.gd") - Legacy script used to load new equipment loadouts
+	
+	updateDefaultLoadouts()
+	
+	addAgendas()
+	
+	addConversations()
+	
+	addContainerRequests()
+	
+	addHabitatTradeAdditions()
+	
+	addAgendaBasedStories()
+	
+	updateTL("i18n/en.txt", "|")
+	updateTL("i18n/ua.txt", "|")
+	l("Loaded translations")
+	
+	l("Loading essential files, almost complete")
+	
+	installScriptExtension("menu/TitleMenu.gd")
+	replaceScene("TitleScreen.tscn")
+	updateEvents()
+	handleMods()
+	replaceScene("Game.tscn")
+	
+	l("Initialized %s completely!" % MOD_NAME)
+
+func handleMods():
+	if modConfig["mainToggles"]["addModSupport"]:
+		modsInstalled()
+		if not modConfig["DDEventLoaderSettings"]["disableDynamicEnablingAndForceModFunctionality"]:
+			dynamicModVerification()
+			attachModCompat()
+		else:
+			nonDynamicHandling()
+			attachModCompat()
+	else:
+		l("Mod support not enabled, skipping")
+
+func updateEvents():
+	# Event initialization
+	if modConfig["mainToggles"]["addEvents"]:
+		l("Initializing core event handling [mainToggles -> addEvents]")
+#		replaceScene("story/TheRing.tscn")
+		if modConfig["eventToggles"]["addDerelicts"]:
+			replaceScene("story/derelicts/TheRing.tscn","res://story/TheRing.tscn")
+		if modConfig["eventToggles"]["addNewNPCMiners"]:
+			replaceScene("story/miners/TheRing.tscn","res://story/TheRing.tscn")
+		if modConfig["eventToggles"]["addHabitatUnderConstruction"]:
+			installScriptExtension("Factions.gd")
+			replaceScene("story/habitat/TheRing.tscn","res://story/TheRing.tscn")
+		if modConfig["eventToggles"]["addNewRogueContainers"]:
+			replaceScene("story/containers/TheRing.tscn","res://story/TheRing.tscn")
+		l("Loaded ring events")
+		if modConfig["eventToggles"]["addNewVilcyAndG4AEncounters"]:
+			l("Initializing combat-driven events [eventToggles -> addNewVilcyAndG4AEncounters]")
+			installScriptExtension("story/vilcySlashG4A/Vilcy.gd")
+			replaceScene("story/vilcySlashG4A/TheRing.tscn","res://story/TheRing.tscn")
+			l("Combat-driven events loaded")
+		
+func updateEquipment():# Equipment additions
+	if modConfig["mainToggles"]["addEquipment"]:
+		l("Initializing equipment [mainToggles -> addEquipment]")
 		replaceScene("ships/EIME.tscn")
-		replaceScene("ships/Eagle-Prospector.tscn")
 		replaceScene("ships/Eagle-Prospector-VP.tscn")
 		replaceScene("ships/Eagle-Prospector-Lux.tscn")
 		replaceScene("ships/Eagle-Prospector-Fat.tscn")
+		replaceScene("ships/Eagle-Prospector.tscn")
+		replaceScene("ships/ATK225-B.tscn")
+		replaceScene("ships/ATK225.tscn")
 	
 		replaceScene("weapons/WeaponSlot.tscn")
 		replaceScene("enceladus/Upgrades.tscn")
 		l("Equipment and ships loaded")
-	
-	# Scripts used to compile new equipment loadouts for ships
-	# installScriptExtension("ships/Shipyard.gd") - Legacy script used to load new equipment loadouts
-
-	if modConfig["gameTweaks"]["expandShipEquipmentOptions"]:
-		l("Initializing ship loadout configurations [gameTweaks -> expandShipEquipmentOptions]")
+		
+func updateDefaultLoadouts():
+	if modConfig["mainToggles"]["expandShipEquipmentOptions"]:
+		l("Initializing ship loadout configurations [mainToggles -> expandShipEquipmentOptions]")
 		installScriptExtension("ships/HardpointSeparation.gd")
 		installScriptExtension("ships/prospector.gd")
 		l("Added ship configs for general prospector ships")
@@ -91,78 +151,56 @@ func _init(modLoader = ModLoader):
 		installScriptExtension("ships/trtl-44.gd")
 		l("Added ship configs for the K44")
 		l("Loaded ship configurations")
-	
+
+func addAgendas():
 	# Adding new agenda role
-	if modConfig["additions"]["addAgenda"]:
-		l("Initializing additional agendas [additions -> addAgenda]")
+	if modConfig["mainToggles"]["addAgenda"]:
+		l("Initializing additional agendas [mainToggles -> addAgenda]")
 		installScriptExtension("story/Agenda.gd")
 		l("Loaded agendas")
-		
+
+func addConversations():
 	# Conversation initialization for events
-	if modConfig["additions"]["addEvents"]:
-		l("Initializing dialogue-driven events [additions -> addEvents]")
-		replaceScene("comms/conversation/subtrees/StandClearMyArea.tscn")
-		replaceScene("comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
-		replaceScene("comms/conversation/subtrees/DIALOG_MINER_SEEN_STATION.tscn")
-		replaceScene("comms/conversation/InterCrewBanter.tscn")
+	if modConfig["mainToggles"]["addEvents"] and modConfig["eventToggles"]["addNewPirateTrades"]:
+		l("Initializing dialogue-driven events [mainToggles -> addEvents]")
+		if modConfig["agendaToggles"]["addHistorian"]:
+			replaceScene("comms/conversation/subtrees/StandClearMyArea.tscn")
+		if modConfig["eventToggles"]["addDerelicts"] and modConfig["eventToggles"]["addNewRogueContainers"]:
+			replaceScene("comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+		if modConfig["eventToggles"]["addHabitatUnderConstruction"]:
+			replaceScene("comms/conversation/subtrees/DIALOG_MINER_SEEN_STATION.tscn")
+		if modConfig["eventToggles"]["addDerelicts"] and modConfig["eventToggles"]["addHabitatUnderConstruction"]:
+			replaceScene("comms/conversation/InterCrewBanter.tscn")
 		l("Loaded dialogue")
-		
+
+func addContainerRequests():
 	# Adds extra dialogue to request containers from THICCs
-	if modConfig["gameTweaks"]["requestNewContainers"]:
-		l("Initializing container requesting [gameTweaks -> requestNewContainers]")
+	if modConfig["mainToggles"]["requestNewContainers"]:
+		l("Initializing container requesting [mainToggles -> requestNewContainers]")
 		replaceScene("comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn")
 		l("Loaded container requesting dialogue, thanks Kaidere for this suggestion")
 	
-	# Adds new habitat trades
-	if modConfig["gameTweaks"]["obontosAskForMoreStuff"]:
-		l("Initializing habitat trades [gameTweaks -> obontosAskForMoreStuff]")
-		replaceScene("comms/conversation/HabitatConversation.tscn")
-		l("Loaded habitat trades")
-		
+
+func addAgendaBasedStories():
 	# Add main interplanetary container storyline and disabled notice
-	if modConfig["additions"]["addEvents"] and modConfig["additions"]["addAgenda"] and modConfig["additions"]["addEquipment"]:
-		l("Initializing event-based equipment location [additions -> addEvents] + [additions -> addAgenda] + [additions -> addEquipment]")
+	if modConfig["mainToggles"]["addEvents"] and modConfig["mainToggles"]["addAgenda"] and modConfig["mainToggles"]["addEquipment"] and modConfig["agendaToggles"]["addHistorian"]:
+		l("Initializing event-based equipment location [mainToggles -> addEvents] + [mainToggles -> addAgenda] + [mainToggles -> addEquipment]")
 		replaceScene("comms/conversation/MinerConversation.tscn")
 		l("Loaded agenda-driven events")
-	if not modConfig["additions"]["addEvents"] or not modConfig["additions"]["addAgenda"] or not modConfig["additions"]["addEquipment"]:
-		l("Failed to load event-based equipment location due to one or more of the following [additions] options being disabled: [addEvents], [addAgenda], [addEquipment]")
+	if not modConfig["mainToggles"]["addEvents"] or not modConfig["mainToggles"]["addAgenda"] or not modConfig["mainToggles"]["addEquipment"]:
+		l("Failed to load event-based equipment location due to one or more of the following [mainToggles] options being disabled: [addEvents], [addAgenda], [addEquipment]")
 	l("Finished loading Derelict Delights content, now initializing translations")
-	
-	updateTL("i18n/en.txt", "|")
-	updateTL("i18n/ua.txt", "|")
-	l("Loaded translations")
-	
-	l("Loading essential files, almost complete")
-	
-	installScriptExtension("menu/TitleMenu.gd")
-	replaceScene("TitleScreen.tscn")
-	updateEvents()
-	handleMods()
-	replaceScene("Game.tscn")
-	
-	l("Initialized %s completely!" % MOD_NAME)
 
-func handleMods():
-	if modConfig["additions"]["addModSupport"]:
-		modsInstalled()
-		if not modConfig["DDEventLoaderSettings"]["disableDynamicEnablingAndForceModFunctionality"]:
-			dynamicModVerification()
-			attachModCompat()
-		else:
-			nonDynamicHandling()
-			attachModCompat()
-	else:
-		l("Mod support not enabled, skipping")
+func addHabitatTradeAdditions():
+	# Adds new habitat trades
+	if modConfig["mainToggles"]["obontosAskForMoreStuff"]:
+		l("Initializing habitat trades [mainToggles -> obontosAskForMoreStuff]")
+		replaceScene("comms/conversation/HabitatConversation.tscn")
+		l("Loaded habitat trades")
 
-func updateEvents():
-	if modConfig["additions"]["addEvents"]:
-		l("Initializing core event handling [additions -> addEvents]")
-		replaceScene("story/TheRing.tscn")
-		l("Loaded ring events")
-		
 func attachModCompat(): # Mod-based event additions
 	# Add modded equipment to the pool for vanilla ships (not likely gonna support modded ships outside of variants due to my free time)
-	if modConfig["otherSupportedModFunctionalities"]["addModdedEquipmentToShipDefaults"] and modConfig["gameTweaks"]["expandShipEquipmentOptions"] and modConfig["this is"]["a disabled feature"]:
+	if modConfig["otherSupportedModFunctionalities"]["addModdedEquipmentToShipDefaults"] and modConfig["mainToggles"]["expandShipEquipmentOptions"] and modConfig["this is"]["a disabled feature"]:
 		l("Adding modded equipment to ship loadouts")
 		if KTI_MPR_RCS:
 			installScriptExtension("modded/KTI-THRUSTERS/MPR-RCS/Shipyard.gd")
@@ -182,7 +220,7 @@ func attachModCompat(): # Mod-based event additions
 		if BOOTLEG_PDT:
 			installScriptExtension("modded/BootlegPDT/Shipyard.gd")
 			l("Added Bootleg PDT Laser to the ship equipment pool")
-	if modConfig["otherSupportedModFunctionalities"]["addModdedEquipmentToShipDefaults"] and not modConfig["gameTweaks"]["expandShipEquipmentOptions"] and modConfig["this is"]["a disabled feature"]:
+	if modConfig["otherSupportedModFunctionalities"]["addModdedEquipmentToShipDefaults"] and not modConfig["mainToggles"]["expandShipEquipmentOptions"] and modConfig["this is"]["a disabled feature"]:
 		l("Error loading modded equipment to ship equipment features. [expandShipEquipmentOptions] is not enabled")
 		
 	if KTI_KITSUMO and modConfig["supportedEventsFromMods"]["KTI-Kitsumo"]:
@@ -206,26 +244,23 @@ func attachModCompat(): # Mod-based event additions
 	if HEAVY_COTHON and modConfig["supportedEventsFromMods"]["HeavyCothon"]:
 		replaceScene("modded/HeavyCothon/story/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded mod supported events for the mod [Heavy Cothon]")
-	if ZKY and modConfig["supportedEventsFromMods"]["ZKY"] and modConfig["this is"]["a disabled feature"]:
-		replaceScene("modded/ZKY/story/TheRing.tscn","res://story/TheRing.tscn")
-		l("Loaded mod supported events for the mod [ZKY]")
 	if INDUSTRIES_OF_ENCELADUS and modConfig["supportedEventsFromMods"]["IndustriesOfEnceladus"]:
 		replaceScene("modded/IoE/story/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded mod supported events for the mod [Industries of Enceladus]")
 	
 	# Compatability for Derelict Delights features using stuff from other mods
 	# Add IoE containers to the request container options
-	if modConfig["otherSupportedModFunctionalities"]["IoERequestContainer"] and modConfig["gameTweaks"]["requestNewContainers"]:
+	if modConfig["otherSupportedModFunctionalities"]["IoERequestContainer"] and modConfig["mainToggles"]["requestNewContainers"]:
 		l("Initializing IoE container request addition to the [requestNewContainers] feature")
 		replaceScene("modded/IoE/story/DynaContainerEvent.tscn","res://story/TheRing.tscn")
 		replaceScene("modded/IoE/comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn","res://comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn")
 		l("Loaded IoE container request extension to Derelict Delights' [requestNewContainers] feature")
 	
-	if modConfig["otherSupportedModFunctionalities"]["IoERequestContainer"] and not modConfig["gameTweaks"]["requestNewContainers"]:
+	if modConfig["otherSupportedModFunctionalities"]["IoERequestContainer"] and not modConfig["mainToggles"]["requestNewContainers"]:
 		l("Error loading IoE container request additions to Derelict Delights features. [requestNewContainers] is not enabled")
 		
 	# Add modded ships to the pool for purchasing ships from pirates
-	if modConfig["otherSupportedModFunctionalities"]["addModdedShipsToPiratePool"] and modConfig["additions"]["addEvents"]:
+	if modConfig["otherSupportedModFunctionalities"]["addModdedShipsToPiratePool"] and modConfig["mainToggles"]["addEvents"]:
 		l("Initializing support for pirate trading of ships")
 		if INDUSTRIES_OF_ENCELADUS:
 			replaceScene("modded/IoE/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
@@ -244,10 +279,22 @@ func attachModCompat(): # Mod-based event additions
 		if ZKY and modConfig["this is"]["a disabled feature"]:
 			replaceScene("modded/ZKY/comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn","res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
 		
-	if modConfig["otherSupportedModFunctionalities"]["addModdedShipsToPiratePool"] and not modConfig["additions"]["addEvents"]:
+	if modConfig["otherSupportedModFunctionalities"]["addModdedShipsToPiratePool"] and not modConfig["mainToggles"]["addEvents"]:
 		l("Error loading modded pirate trades. [addEvents] is not enabled")
 	
-
+	if ZKY and modConfig["supportedEventsFromMods"]["ZKY"] and modConfig["mainToggles"]["addEvents"]:
+		l("Starting ZKY specific event handling")
+		loadZKYSpecificSettings()
+		if ZKYConfig["additions"]["addShips"]:
+			l("")
+		if ZKYConfig["additions"]["addEvents"]:
+			l("")
+		if ZKYConfig["sillyStuff"]["addATK222222225"]:
+			l("")
+		if ZKYConfig["sillyStuff"]["addATK225-HH"]:
+			l("")
+		if ZKYConfig["sillyStuff"]["addNyanShip"]:
+			l("")
 
 
 
@@ -267,6 +314,16 @@ func loadSettings():
 	l(MOD_NAME + ": Current settings: %s" % modConfig)
 	settings.queue_free()
 	l(MOD_NAME + ": Finished loading settings")
+	
+func loadZKYSpecificSettings():
+	Debug.l(MOD_NAME + ": Loading ZKY settings")
+	var settings = load("res://Settings.gd").new()
+	settings.loadZKYFromFile()
+	settings.saveZKYToFile()
+	ZKYConfig = settings.ZKYConfig
+	Debug.l(MOD_NAME + ": Current ZKY settings: %s" % ZKYConfig)
+	settings.queue_free()
+	Debug.l(MOD_NAME + ": Finished loading ZKY settings")
 
 # Helper script to load translations using csv format
 # `path` is the path to the transalation file

@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://story/Vilcy.gd" type="Script" id=1]
+[ext_resource path="res://story/TheRing.tscn" type="PackedScene" id=2]
+
+[node name="TheRing" instance=ExtResource( 2 )]
+
+[node name="PirateEagle" type="Node" parent="." index="77"]
+script = ExtResource( 1 )
+chaosLimit = 0.2
+lockOutStory = ""
+lockOutLimit = 0
+pirateEagle = 2
+
+[node name="HighPerformancePirate" type="Node" parent="." index="78"]
+script = ExtResource( 1 )
+chaosLimit = 0.4
+minMoney = 250000
+lockOutStory = ""
+lockOutLimit = 0
+requireStory = "g4a.destroyed"
+requireMin = 1
+highPerformancePirate = 1
+
+[node name="HighEnduranceBattleNoG4A" type="Node" parent="." index="79"]
+script = ExtResource( 1 )
+depthMinKm = 100
+depthMaxKm = 2900
+chaosLimit = 0.5
+minMoney = 250000
+lockOutStory = ""
+lockOutLimit = 0
+requireStory = "g4a.destroyed"
+requireMin = 1
+highPerformancePirate = 2
+vilcyBattleship = 1
+
+[node name="VilcyBattleship" type="Node" parent="." index="80"]
+script = ExtResource( 1 )
+chaosLimit = 0.4
+minMoney = 250000
+lockOutStory = ""
+lockOutLimit = 0
+requireStory = "vilcy.bbw.destroyed"
+requireMin = 1
+vilcyBattleship = 1
+
+[node name="HighEnduranceBattleNoBBW" type="Node" parent="." index="81"]
+script = ExtResource( 1 )
+depthMinKm = 100
+depthMaxKm = 2900
+chaosLimit = 0.5
+minMoney = 250000
+lockOutStory = ""
+lockOutLimit = 0
+requireStory = "vilcy.bbw.destroyed"
+requireMin = 1
+highPerformancePirate = 1
+vilcyBattleship = 2
