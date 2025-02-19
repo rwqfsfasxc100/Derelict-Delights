@@ -2,8 +2,8 @@
 Fulfil your derelict-hunting dream with this mod. All remaining 13 ship types and variants not usually found in the rings can now be found from both miners and in derelict form.
 
 This mod currently adds:
-* 38 new events!
-* NPC miner and derelict forms for all TNTRL variants (except the K44), Cothon variants, Eagle variants, AT-K225 variants (except modified variant), OCP-209, and the Kitsune.
+* 26 new events!
+* NPC miners now can utilize all TNTRL variants (except the K44), Cothon variants, Eagle variants, AT-K225 variants (except modified variant), OCP-209, and the Kitsune.
 * New ship configs for the dealership, NPC, and derelict ships.
 * Added a new container variant: the THI Interlunar Container, rogue form can be found randomly in the rings and be sold by pirates too.
 * Experimental Interplanetary containers can be found randomly in the rings, which may contain some loot for capturing them. 
@@ -25,62 +25,10 @@ This mod currently adds:
 
 ## Derelict Spawn Chances
 Check [this wiki page](https://delta-v.kodera.pl/index.php/Profit_Strategy_-_Derelicts#Finding_Derelicts_in_the_Wild) for further understanding on how derelicts spawn, as some of these values may seem misleading as to what they do.
-* KX37 TNTRL:
-  *   Spawn Chance: 70%
-  *   Minimum Chance: 10%
-  *   Money Ceiling: 4 million E$
-* Runasimi KR37 TNTRL:
-  *   Spawn Chance: 90%
-  *   Minimum Chance: 10%
-  *   Money Ceiling: 3 million E$
-* KTA24 TNTRL:
-  *   Spawn Chance: 75%
-  *   Minimum Chance: 10%
-  *   Money Ceiling: 3 million E$
-* Peacock Prospector:
-  *   Spawn Chance: 50%
-  *   Minimum Chance: 7.5%
-  *   Money Ceiling: 7 million E$
-* Vulture Prospector:
-  *   Spawn Chance: 60%
-  *   Minimum Chance: 9%
-  *   Money Ceiling: 9 million E$
-* Pelican Prospector:
-  *   Spawn Chance: 70%
-  *   Minimum Chance: 8%
-  *   Money Ceiling: 8 million E$
 * Bald Eagle:
   *   Spawn Chance: 15%
   *   Minimum Chance: 1%
   *   Money Ceiling: 2 million E$
-* Cothon-211 "Chonker":
-  *   Spawn Chance: 90%
-  *   Minimum Chance: 15%
-  *   Money Ceiling: 8 million E$
-* Cothon-213 "Triplet":
-  *   Spawn Chance: 95%
-  *   Minimum Chance: 9%
-  *   Money Ceiling: 6 million E$
-* Cothon-217 "Bender":
-  *   Spawn Chance: 80%
-  *   Minimum Chance: 8%
-  *   Money Ceiling: 5 million E$
-* AT-K225:
-  *   Spawn Chance: 50%
-  *   Minimum Chance: 5%
-  *   Money Ceiling: 5 million E$
-* AT-K225 Break Bulk:
-  *   Spawn Chance: 50%
-  *   Minimum Chance: 5%
-  *   Money Ceiling: 6 million E$
-* OCP-209:
-  *   Spawn Chance: 55%
-  *   Minimum Chance: 3%
-  *   Money Ceiling: 6 million E$
-* ND-LIS Kitsune:
-  *   Spawn Chance: 75%
-  *   Minimum Chance: 10%
-  *   Money Ceiling: 9 million E$
 
 ## Planned Additions
 * Expanding Historian questline and other interactions
