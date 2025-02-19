@@ -5,35 +5,71 @@
 [node name="EIME" instance=ExtResource( 1 )]
 
 [node name="SYSTEM_CL150" parent="WeaponSlot" index="1"]
-visible = false
 
 [node name="WeaponLeft" parent="." index="22"]
 visible = true
 
 [node name="SYSTEM_CL150" parent="WeaponLeft" index="1"]
-visible = false
 
 [node name="SYSTEM_EXSTORAGE-L" parent="WeaponLeft" index="15"]
-visible = false
 
 [node name="SYSTEM_EXBIG-L" parent="WeaponLeft" index="36" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockBig-L.tscn"]
-visible = false
 position = Vector2( 0, 64 )
 
 [node name="SYSTEM_EXSUPER-L" parent="WeaponLeft" index="37" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockSuper-L.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_E-L" parent="WeaponLeft" index="38" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockE-L.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_EP-L" parent="WeaponLeft" index="39" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockEP-L.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_L-L" parent="WeaponLeft" index="40" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockL-L.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_LP-L" parent="WeaponLeft" index="41" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockLP-L.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_M-L" parent="WeaponLeft" index="42" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockM-L.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_MP-L" parent="WeaponLeft" index="43" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockMP-L.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_P-L" parent="WeaponLeft" index="44" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockP-L.tscn"]
 position = Vector2( 0, 64 )
 
 [node name="WeaponRight" parent="." index="23"]
 visible = true
 
 [node name="SYSTEM_CL150" parent="WeaponRight" index="1"]
-visible = false
 
 [node name="SYSTEM_EXBIG-R" parent="WeaponRight" index="36" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockBig.tscn"]
-visible = false
 position = Vector2( 0, 64 )
 
 [node name="SYSTEM_EXSUPER-R" parent="WeaponRight" index="37" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockSuper - OLD.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_E-R" parent="WeaponRight" index="38" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockE.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_EP-R" parent="WeaponRight" index="39" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockEP.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_L-R" parent="WeaponRight" index="40" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockL.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_LP-R" parent="WeaponRight" index="41" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockLP.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_M-R" parent="WeaponRight" index="42" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockM.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_MP-R" parent="WeaponRight" index="43" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockMP.tscn"]
+position = Vector2( 0, 64 )
+
+[node name="SYSTEM_SCOOP_P-R" parent="WeaponRight" index="44" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockP.tscn"]
 position = Vector2( 0, 64 )
 
 [editable path="Noises"]

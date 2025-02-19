@@ -13,9 +13,54 @@ visible = false
 position = Vector2( 0, 196 )
 
 [node name="SYSTEM_EXSUPER-L" parent="." index="31" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockSuper-L.tscn"]
+visible = false
 position = Vector2( 0, 196 )
 repairReplacementPrice = 1100000
 
 [node name="SYSTEM_EXSUPER-R" parent="." index="32" instance_placeholder="res://DerelictDelights/ships/modules/StorageContainerDockSuper.tscn"]
+visible = false
 position = Vector2( 0, 196 )
 repairReplacementPrice = 1100000
+
+[node name="SYSTEM_SCOOP_E-L" parent="." index="40" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockE-L.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_E-R" parent="." index="41" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockE.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_EP-L" parent="." index="42" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockEP-L.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_EP-R" parent="." index="43" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockEP.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_L-L" parent="." index="44" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockL-L.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_L-R" parent="." index="45" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockL.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_LP-L" parent="." index="46" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockLP-L.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_LP-R" parent="." index="47" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockLP.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_M-L" parent="." index="48" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockM-L.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_M-R" parent="." index="49" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockM.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_MP-L" parent="." index="50" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockMP-L.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_MP-R" parent="." index="51" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockMP.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_P-L" parent="." index="52" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockP-L.tscn"]
+visible = false
+
+[node name="SYSTEM_SCOOP_P-R" parent="." index="53" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockP.tscn"]
+visible = false
+position = Vector2( 1, 0 )

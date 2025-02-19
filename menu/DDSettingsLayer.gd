@@ -36,11 +36,12 @@ func _unhandled_input(event):
 		
 
 var lastFocus = null
-func _on_DDsettings_pressed():
-	popup_centered()
-
-
+#
+#
 func _on_DDSettingsLayer_about_to_show():
 	Settings.saveDDToFile()
 	lastFocus = get_focus_owner()
-	pass # Replace with function body.
+
+
+func _on_DerelictDelights_pressed():
+	popup_centered()

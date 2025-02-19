@@ -1,7 +1,21 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://enceladus/Upgrades.tscn" type="PackedScene" id=1]
 [ext_resource path="res://DerelictDelights/enceladus/BigUpgradeUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopPRUpgradeUI.tscn" type="PackedScene" id=3]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopLPLUpgradeUI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopLRUpgradeUI.tscn" type="PackedScene" id=5]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopMPRUpgradeUI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopELUpgradeUI.tscn" type="PackedScene" id=7]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopERUpgradeUI.tscn" type="PackedScene" id=8]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopEPRUpgradeUI.tscn" type="PackedScene" id=9]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopEPLUpgradeUI.tscn" type="PackedScene" id=10]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopLLUpgradeUI.tscn" type="PackedScene" id=11]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopMPLUpgradeUI.tscn" type="PackedScene" id=12]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopMLUpgradeUI.tscn" type="PackedScene" id=13]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopPLUpgradeUI.tscn" type="PackedScene" id=14]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopLPRUpgradeUI.tscn" type="PackedScene" id=15]
+[ext_resource path="res://DerelictDelights/enceladus/ScoopMRUpgradeUI.tscn" type="PackedScene" id=16]
 
 [sub_resource type="ViewportTexture" id=1]
 flags = 5
@@ -25,34 +39,143 @@ texture = SubResource( 1 )
 texture = SubResource( 2 )
 
 [node name="MarginContainer" parent="VB/MarginContainer/ScrollContainer" index="0"]
-margin_bottom = 26986.0
+margin_bottom = 32166.0
 
 [node name="Items" parent="VB/MarginContainer/ScrollContainer/MarginContainer" index="0"]
-margin_bottom = 26970.0
+margin_bottom = 32150.0
 
 [node name="LeftWeaponSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="4"]
-margin_bottom = 7173.0
+margin_bottom = 7691.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot" index="0"]
-margin_bottom = 1755.0
+margin_bottom = 2273.0
 
-[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="34" instance=ExtResource( 2 )]
+[node name="SCOOP_E-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="11" instance=ExtResource( 7 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 1535.0
+margin_top = 573.0
 margin_right = 1196.0
+margin_bottom = 643.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_EP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="12" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 647.0
+margin_right = 1196.0
+margin_bottom = 717.0
+slot = "weaponSlot.left.type"
+
+[node name="MWG" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="13"]
+margin_top = 721.0
+margin_bottom = 791.0
+
+[node name="EXOSTORAGE-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="14"]
+margin_top = 795.0
+margin_bottom = 865.0
+
+[node name="SCOOP_M-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="16" instance=ExtResource( 13 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 869.0
+margin_right = 1196.0
+margin_bottom = 939.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_MP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="17" instance=ExtResource( 12 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 943.0
+margin_right = 1196.0
+margin_bottom = 1013.0
+slot = "weaponSlot.left.type"
+
+[node name="EXMONO-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="19"]
+margin_top = 1017.0
+margin_bottom = 1087.0
+
+[node name="SCOOP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="22"]
+margin_top = 1091.0
+margin_bottom = 1161.0
+
+[node name="SCOOP_P-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="23" instance=ExtResource( 14 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1165.0
+margin_right = 1196.0
+margin_bottom = 1235.0
+slot = "weaponSlot.left.type"
+
+[node name="PDT-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="25"]
+margin_top = 1239.0
+margin_bottom = 1309.0
+
+[node name="CL150" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="27"]
+margin_top = 1313.0
+margin_bottom = 1383.0
+
+[node name="IROH" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="28"]
+margin_top = 1387.0
+margin_bottom = 1457.0
+
+[node name="PDMWG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="30"]
+margin_top = 1461.0
+margin_bottom = 1531.0
+
+[node name="ACL200P" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="32"]
+margin_top = 1535.0
 margin_bottom = 1605.0
 
-[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="35"]
+[node name="DND_TS" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="33"]
 margin_top = 1609.0
 margin_bottom = 1679.0
 
-[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="SYNCHRO-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="34"]
+margin_top = 1683.0
+margin_bottom = 1753.0
+
+[node name="SCOOP_L-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="36" instance=ExtResource( 11 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 1683.0
+margin_top = 1757.0
 margin_right = 1196.0
-margin_bottom = 1753.0
+margin_bottom = 1827.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_LP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="37" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1831.0
+margin_right = 1196.0
+margin_bottom = 1901.0
+slot = "weaponSlot.left.type"
+
+[node name="CL600P" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="39"]
+margin_top = 1905.0
+margin_bottom = 1975.0
+
+[node name="DND_HAUL" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="40"]
+margin_top = 1979.0
+margin_bottom = 2049.0
+
+[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="41" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 2053.0
+margin_right = 1196.0
+margin_bottom = 2123.0
+slot = "weaponSlot.left.type"
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="42"]
+margin_top = 2127.0
+margin_bottom = 2197.0
+
+[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot/VBoxContainer" index="43" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 2201.0
+margin_right = 1196.0
+margin_bottom = 2271.0
 slot = "weaponSlot.left.type"
 system = "SYSTEM_EXSUPER-L"
 nameOverride = "SYSTEM_EXSUPER"
@@ -61,8 +184,8 @@ storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="MiddleLeftWeaponSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="5"]
-margin_top = 7177.0
-margin_bottom = 8416.0
+margin_top = 7695.0
+margin_bottom = 8934.0
 
 [node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/MiddleLeftWeaponSlot/VBoxContainer" index="35" instance=ExtResource( 2 )]
 visible = false
@@ -73,30 +196,140 @@ margin_right = 1196.0
 margin_bottom = 1309.0
 
 [node name="RightWeaponSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="6"]
-margin_top = 8420.0
-margin_bottom = 10177.0
+margin_top = 8938.0
+margin_bottom = 11213.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot" index="0"]
-margin_bottom = 1755.0
+margin_bottom = 2273.0
 
-[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="34" instance=ExtResource( 2 )]
+[node name="SCOOP_E-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="11" instance=ExtResource( 8 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 1535.0
+margin_top = 573.0
 margin_right = 1196.0
-margin_bottom = 1605.0
-system = "SYSTEM_EXBIG-R"
+margin_bottom = 643.0
+slot = "weaponSlot.right.type"
 
-[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="35"]
+[node name="SCOOP_EP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="12" instance=ExtResource( 9 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 647.0
+margin_right = 1196.0
+margin_bottom = 717.0
+slot = "weaponSlot.right.type"
+
+[node name="MWG" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="13"]
+margin_top = 721.0
+margin_bottom = 791.0
+
+[node name="EXOSTORAGE-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="15"]
+margin_top = 795.0
+margin_bottom = 865.0
+
+[node name="SCOOP_M-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="16" instance=ExtResource( 16 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 869.0
+margin_right = 1196.0
+margin_bottom = 939.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_MP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="17" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 943.0
+margin_right = 1196.0
+margin_bottom = 1013.0
+slot = "weaponSlot.right.type"
+
+[node name="EXMONO-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="20"]
+margin_top = 1017.0
+margin_bottom = 1087.0
+
+[node name="SCOOP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="21"]
+margin_top = 1091.0
+margin_bottom = 1161.0
+
+[node name="SCOOP_P-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="22" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1165.0
+margin_right = 1196.0
+margin_bottom = 1235.0
+slot = "weaponSlot.right.type"
+
+[node name="PDT-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="26"]
+margin_top = 1239.0
+margin_bottom = 1309.0
+
+[node name="CL150" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="27"]
+margin_top = 1313.0
+margin_bottom = 1383.0
+
+[node name="IROH" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="28"]
+margin_top = 1387.0
+margin_bottom = 1457.0
+
+[node name="PDMWG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="31"]
+margin_top = 1461.0
+margin_bottom = 1531.0
+
+[node name="ACL200P" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="32"]
+margin_top = 1535.0
+margin_bottom = 1605.0
+
+[node name="DND_TS" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="33"]
 margin_top = 1609.0
 margin_bottom = 1679.0
 
-[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="SYNCHRO-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="35"]
+margin_top = 1683.0
+margin_bottom = 1753.0
+
+[node name="SCOOP_L-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="36" instance=ExtResource( 5 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 1683.0
+margin_top = 1757.0
 margin_right = 1196.0
-margin_bottom = 1753.0
+margin_bottom = 1827.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_LP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="37" instance=ExtResource( 15 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1831.0
+margin_right = 1196.0
+margin_bottom = 1901.0
+slot = "weaponSlot.right.type"
+
+[node name="CL600P" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="39"]
+margin_top = 1905.0
+margin_bottom = 1975.0
+
+[node name="DND_HAUL" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="40"]
+margin_top = 1979.0
+margin_bottom = 2049.0
+
+[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="41" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 2053.0
+margin_right = 1196.0
+margin_bottom = 2123.0
+slot = "weaponSlot.right.type"
+system = "SYSTEM_EXBIG-R"
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="42"]
+margin_top = 2127.0
+margin_bottom = 2197.0
+
+[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot/VBoxContainer" index="43" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 2201.0
+margin_right = 1196.0
+margin_bottom = 2271.0
+slot = "weaponSlot.right.type"
 system = "SYSTEM_EXSUPER-R"
 nameOverride = "SYSTEM_EXSUPER"
 price = 1100000
@@ -104,8 +337,8 @@ storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="MiddleRightWeaponSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="7"]
-margin_top = 10181.0
-margin_bottom = 11420.0
+margin_top = 11217.0
+margin_bottom = 12456.0
 
 [node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/MiddleRightWeaponSlot/VBoxContainer" index="35" instance=ExtResource( 2 )]
 visible = false
@@ -117,37 +350,123 @@ margin_bottom = 1309.0
 system = "SYSTEM_EXBIG-R"
 
 [node name="LeftDroneSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="8"]
-margin_top = 11424.0
-margin_bottom = 11775.0
+margin_top = 12460.0
+margin_bottom = 12811.0
 
 [node name="RightDroneSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="9"]
-margin_top = 11779.0
-margin_bottom = 12130.0
+margin_top = 12815.0
+margin_bottom = 13166.0
 
 [node name="LeftRearSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="10"]
-margin_top = 12134.0
-margin_bottom = 13077.0
+margin_top = 13170.0
+margin_bottom = 14631.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot" index="0"]
-margin_bottom = 941.0
+margin_bottom = 1459.0
 
-[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="34" instance=ExtResource( 2 )]
+[node name="SCOOP_E-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="11" instance=ExtResource( 7 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 203.0
+margin_right = 1196.0
+margin_bottom = 273.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_EP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="12" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 277.0
+margin_right = 1196.0
+margin_bottom = 347.0
+slot = "weaponSlot.left.type"
+
+[node name="EXOSTORAGE-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="14"]
+margin_top = 351.0
+margin_bottom = 421.0
+
+[node name="SCOOP_M-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="16" instance=ExtResource( 13 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 425.0
+margin_right = 1196.0
+margin_bottom = 495.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_MP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="17" instance=ExtResource( 12 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 499.0
+margin_right = 1196.0
+margin_bottom = 569.0
+slot = "weaponSlot.left.type"
+
+[node name="EXMONO-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="19"]
+margin_top = 573.0
+margin_bottom = 643.0
+
+[node name="SCOOP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="22"]
+margin_top = 647.0
+margin_bottom = 717.0
+
+[node name="SCOOP_P-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="23" instance=ExtResource( 14 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 721.0
 margin_right = 1196.0
 margin_bottom = 791.0
+slot = "weaponSlot.left.type"
 
-[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="35"]
+[node name="PDT-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="25"]
 margin_top = 795.0
 margin_bottom = 865.0
 
-[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="PDMWG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="30"]
+margin_top = 869.0
+margin_bottom = 939.0
+
+[node name="DND_TS" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="33"]
+margin_top = 943.0
+margin_bottom = 1013.0
+
+[node name="SCOOP_L-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="36" instance=ExtResource( 11 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 869.0
+margin_top = 1017.0
 margin_right = 1196.0
-margin_bottom = 939.0
+margin_bottom = 1087.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_LP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="37" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1091.0
+margin_right = 1196.0
+margin_bottom = 1161.0
+slot = "weaponSlot.left.type"
+
+[node name="DND_HAUL" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="40"]
+margin_top = 1165.0
+margin_bottom = 1235.0
+
+[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="41" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1239.0
+margin_right = 1196.0
+margin_bottom = 1309.0
+slot = "weaponSlot.left.type"
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="42"]
+margin_top = 1313.0
+margin_bottom = 1383.0
+
+[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot/VBoxContainer" index="43" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1387.0
+margin_right = 1196.0
+margin_bottom = 1457.0
+slot = "weaponSlot.left.type"
 system = "SYSTEM_EXSUPER-L"
 nameOverride = "SYSTEM_EXSUPER"
 price = 1100000
@@ -155,30 +474,116 @@ storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="RightRearSlot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="11"]
-margin_top = 13081.0
-margin_bottom = 14024.0
+margin_top = 14635.0
+margin_bottom = 16096.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot" index="0"]
-margin_bottom = 941.0
+margin_bottom = 1459.0
 
-[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="34" instance=ExtResource( 2 )]
+[node name="SCOOP_E-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="11" instance=ExtResource( 8 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 203.0
+margin_right = 1196.0
+margin_bottom = 273.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_EP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="12" instance=ExtResource( 9 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 277.0
+margin_right = 1196.0
+margin_bottom = 347.0
+slot = "weaponSlot.right.type"
+
+[node name="EXOSTORAGE-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="15"]
+margin_top = 351.0
+margin_bottom = 421.0
+
+[node name="SCOOP_M-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="16" instance=ExtResource( 16 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 425.0
+margin_right = 1196.0
+margin_bottom = 495.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_MP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="17" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 499.0
+margin_right = 1196.0
+margin_bottom = 569.0
+slot = "weaponSlot.right.type"
+
+[node name="EXMONO-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="20"]
+margin_top = 573.0
+margin_bottom = 643.0
+
+[node name="SCOOP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="21"]
+margin_top = 647.0
+margin_bottom = 717.0
+
+[node name="SCOOP_P-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="23" instance=ExtResource( 3 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 721.0
 margin_right = 1196.0
 margin_bottom = 791.0
-system = "SYSTEM_EXBIG-R"
+slot = "weaponSlot.right.type"
 
-[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="35"]
+[node name="PDT-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="26"]
 margin_top = 795.0
 margin_bottom = 865.0
 
-[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="PDMWG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="31"]
+margin_top = 869.0
+margin_bottom = 939.0
+
+[node name="DND_TS" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="33"]
+margin_top = 943.0
+margin_bottom = 1013.0
+
+[node name="SCOOP_L-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="36" instance=ExtResource( 5 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 869.0
+margin_top = 1017.0
 margin_right = 1196.0
-margin_bottom = 939.0
+margin_bottom = 1087.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_LP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="37" instance=ExtResource( 15 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1091.0
+margin_right = 1196.0
+margin_bottom = 1161.0
+slot = "weaponSlot.right.type"
+
+[node name="DND_HAUL" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="40"]
+margin_top = 1165.0
+margin_bottom = 1235.0
+
+[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="41" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1239.0
+margin_right = 1196.0
+margin_bottom = 1309.0
+slot = "weaponSlot.right.type"
+system = "SYSTEM_EXBIG-R"
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="42"]
+margin_top = 1313.0
+margin_bottom = 1383.0
+
+[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot/VBoxContainer" index="43" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1387.0
+margin_right = 1196.0
+margin_bottom = 1457.0
+slot = "weaponSlot.right.type"
 system = "SYSTEM_EXSUPER-R"
 nameOverride = "SYSTEM_EXSUPER"
 price = 1100000
@@ -186,29 +591,115 @@ storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="LeftBay1" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="12"]
-margin_top = 14028.0
-margin_bottom = 14971.0
+margin_top = 16100.0
+margin_bottom = 17561.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1" index="0"]
-margin_bottom = 941.0
+margin_bottom = 1459.0
 
-[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="34" instance=ExtResource( 2 )]
+[node name="SCOOP_E-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="11" instance=ExtResource( 7 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 203.0
+margin_right = 1196.0
+margin_bottom = 273.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_EP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="12" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 277.0
+margin_right = 1196.0
+margin_bottom = 347.0
+slot = "weaponSlot.left.type"
+
+[node name="EXOSTORAGE-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="14"]
+margin_top = 351.0
+margin_bottom = 421.0
+
+[node name="SCOOP_M-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="16" instance=ExtResource( 13 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 425.0
+margin_right = 1196.0
+margin_bottom = 495.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_MP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="17" instance=ExtResource( 12 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 499.0
+margin_right = 1196.0
+margin_bottom = 569.0
+slot = "weaponSlot.left.type"
+
+[node name="EXMONO-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="19"]
+margin_top = 573.0
+margin_bottom = 643.0
+
+[node name="SCOOP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="22"]
+margin_top = 647.0
+margin_bottom = 717.0
+
+[node name="SCOOP_P-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="23" instance=ExtResource( 14 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 721.0
 margin_right = 1196.0
 margin_bottom = 791.0
+slot = "weaponSlot.left.type"
 
-[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="35"]
+[node name="PDT-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="25"]
 margin_top = 795.0
 margin_bottom = 865.0
 
-[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="PDMWG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="30"]
+margin_top = 869.0
+margin_bottom = 939.0
+
+[node name="DND_TS" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="33"]
+margin_top = 943.0
+margin_bottom = 1013.0
+
+[node name="SCOOP_L-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="36" instance=ExtResource( 11 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 869.0
+margin_top = 1017.0
 margin_right = 1196.0
-margin_bottom = 939.0
+margin_bottom = 1087.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_LP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="37" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1091.0
+margin_right = 1196.0
+margin_bottom = 1161.0
+slot = "weaponSlot.left.type"
+
+[node name="DND_HAUL" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="40"]
+margin_top = 1165.0
+margin_bottom = 1235.0
+
+[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="41" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1239.0
+margin_right = 1196.0
+margin_bottom = 1309.0
+slot = "weaponSlot.left.type"
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="42"]
+margin_top = 1313.0
+margin_bottom = 1383.0
+
+[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1/VBoxContainer" index="43" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1387.0
+margin_right = 1196.0
+margin_bottom = 1457.0
+slot = "weaponSlot.left.type"
 system = "SYSTEM_EXSUPER-L"
 nameOverride = "SYSTEM_EXSUPER"
 price = 1100000
@@ -216,30 +707,116 @@ storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="RightBay1" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="13"]
-margin_top = 14975.0
-margin_bottom = 15918.0
+margin_top = 17565.0
+margin_bottom = 19026.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1" index="0"]
-margin_bottom = 941.0
+margin_bottom = 1459.0
 
-[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="34" instance=ExtResource( 2 )]
+[node name="SCOOP_E-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="11" instance=ExtResource( 8 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 203.0
+margin_right = 1196.0
+margin_bottom = 273.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_EP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="12" instance=ExtResource( 9 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 277.0
+margin_right = 1196.0
+margin_bottom = 347.0
+slot = "weaponSlot.right.type"
+
+[node name="EXOSTORAGE-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="15"]
+margin_top = 351.0
+margin_bottom = 421.0
+
+[node name="SCOOP_M-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="16" instance=ExtResource( 16 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 425.0
+margin_right = 1196.0
+margin_bottom = 495.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_MP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="17" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 499.0
+margin_right = 1196.0
+margin_bottom = 569.0
+slot = "weaponSlot.right.type"
+
+[node name="EXMONO-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="20"]
+margin_top = 573.0
+margin_bottom = 643.0
+
+[node name="SCOOP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="21"]
+margin_top = 647.0
+margin_bottom = 717.0
+
+[node name="SCOOP_P-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="23" instance=ExtResource( 3 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 721.0
 margin_right = 1196.0
 margin_bottom = 791.0
-system = "SYSTEM_EXBIG-R"
+slot = "weaponSlot.right.type"
 
-[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="35"]
+[node name="PDT-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="26"]
 margin_top = 795.0
 margin_bottom = 865.0
 
-[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="PDMWG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="31"]
+margin_top = 869.0
+margin_bottom = 939.0
+
+[node name="DND_TS" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="33"]
+margin_top = 943.0
+margin_bottom = 1013.0
+
+[node name="SCOOP_L-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="36" instance=ExtResource( 5 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 869.0
+margin_top = 1017.0
 margin_right = 1196.0
-margin_bottom = 939.0
+margin_bottom = 1087.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_LP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="37" instance=ExtResource( 15 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1091.0
+margin_right = 1196.0
+margin_bottom = 1161.0
+slot = "weaponSlot.right.type"
+
+[node name="DND_HAUL" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="40"]
+margin_top = 1165.0
+margin_bottom = 1235.0
+
+[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="41" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1239.0
+margin_right = 1196.0
+margin_bottom = 1309.0
+slot = "weaponSlot.right.type"
+system = "SYSTEM_EXBIG-R"
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="42"]
+margin_top = 1313.0
+margin_bottom = 1383.0
+
+[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1/VBoxContainer" index="43" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1387.0
+margin_right = 1196.0
+margin_bottom = 1457.0
+slot = "weaponSlot.right.type"
 system = "SYSTEM_EXSUPER-R"
 nameOverride = "SYSTEM_EXSUPER"
 price = 1100000
@@ -247,29 +824,115 @@ storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="LeftBay2" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="14"]
-margin_top = 15922.0
-margin_bottom = 16791.0
+margin_top = 19030.0
+margin_bottom = 20417.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2" index="0"]
-margin_bottom = 867.0
+margin_bottom = 1385.0
 
-[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="34" instance=ExtResource( 2 )]
+[node name="SCOOP_E-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="11" instance=ExtResource( 7 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 129.0
+margin_right = 1196.0
+margin_bottom = 199.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_EP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="12" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 203.0
+margin_right = 1196.0
+margin_bottom = 273.0
+slot = "weaponSlot.left.type"
+
+[node name="EXOSTORAGE-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="14"]
+margin_top = 277.0
+margin_bottom = 347.0
+
+[node name="SCOOP_M-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="16" instance=ExtResource( 13 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 351.0
+margin_right = 1196.0
+margin_bottom = 421.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_MP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="17" instance=ExtResource( 12 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 425.0
+margin_right = 1196.0
+margin_bottom = 495.0
+slot = "weaponSlot.left.type"
+
+[node name="EXMONO-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="19"]
+margin_top = 499.0
+margin_bottom = 569.0
+
+[node name="SCOOP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="22"]
+margin_top = 573.0
+margin_bottom = 643.0
+
+[node name="SCOOP_P-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="23" instance=ExtResource( 14 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 647.0
 margin_right = 1196.0
 margin_bottom = 717.0
+slot = "weaponSlot.left.type"
 
-[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="35"]
+[node name="PDT-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="25"]
 margin_top = 721.0
 margin_bottom = 791.0
 
-[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="PDMWG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="30"]
+margin_top = 795.0
+margin_bottom = 865.0
+
+[node name="DND_TS" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="33"]
+margin_top = 869.0
+margin_bottom = 939.0
+
+[node name="SCOOP_L-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="36" instance=ExtResource( 11 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 795.0
+margin_top = 943.0
 margin_right = 1196.0
-margin_bottom = 865.0
+margin_bottom = 1013.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_LP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="37" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1017.0
+margin_right = 1196.0
+margin_bottom = 1087.0
+slot = "weaponSlot.left.type"
+
+[node name="DND_HAUL" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="40"]
+margin_top = 1091.0
+margin_bottom = 1161.0
+
+[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="41" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1165.0
+margin_right = 1196.0
+margin_bottom = 1235.0
+slot = "weaponSlot.left.type"
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="42"]
+margin_top = 1239.0
+margin_bottom = 1309.0
+
+[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2/VBoxContainer" index="43" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1313.0
+margin_right = 1196.0
+margin_bottom = 1383.0
+slot = "weaponSlot.left.type"
 system = "SYSTEM_EXSUPER-L"
 nameOverride = "SYSTEM_EXSUPER"
 price = 1100000
@@ -277,30 +940,116 @@ storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="RightBay2" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="15"]
-margin_top = 16795.0
-margin_bottom = 17664.0
+margin_top = 20421.0
+margin_bottom = 21808.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2" index="0"]
-margin_bottom = 867.0
+margin_bottom = 1385.0
 
-[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="34" instance=ExtResource( 2 )]
+[node name="SCOOP_E-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="11" instance=ExtResource( 8 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 129.0
+margin_right = 1196.0
+margin_bottom = 199.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_EP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="12" instance=ExtResource( 9 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 203.0
+margin_right = 1196.0
+margin_bottom = 273.0
+slot = "weaponSlot.right.type"
+
+[node name="EXOSTORAGE-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="15"]
+margin_top = 277.0
+margin_bottom = 347.0
+
+[node name="SCOOP_M-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="16" instance=ExtResource( 16 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 351.0
+margin_right = 1196.0
+margin_bottom = 421.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_MP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="17" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 425.0
+margin_right = 1196.0
+margin_bottom = 495.0
+slot = "weaponSlot.right.type"
+
+[node name="EXMONO-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="20"]
+margin_top = 499.0
+margin_bottom = 569.0
+
+[node name="SCOOP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="21"]
+margin_top = 573.0
+margin_bottom = 643.0
+
+[node name="SCOOP_P-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="23" instance=ExtResource( 3 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 647.0
 margin_right = 1196.0
 margin_bottom = 717.0
-system = "SYSTEM_EXBIG-R"
+slot = "weaponSlot.right.type"
 
-[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="35"]
+[node name="PDT-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="26"]
 margin_top = 721.0
 margin_bottom = 791.0
 
-[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="PDMWG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="31"]
+margin_top = 795.0
+margin_bottom = 865.0
+
+[node name="DND_TS" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="33"]
+margin_top = 869.0
+margin_bottom = 939.0
+
+[node name="SCOOP_L-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="36" instance=ExtResource( 5 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 795.0
+margin_top = 943.0
 margin_right = 1196.0
-margin_bottom = 865.0
+margin_bottom = 1013.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_LP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="37" instance=ExtResource( 15 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1017.0
+margin_right = 1196.0
+margin_bottom = 1087.0
+slot = "weaponSlot.right.type"
+
+[node name="DND_HAUL" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="40"]
+margin_top = 1091.0
+margin_bottom = 1161.0
+
+[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="41" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1165.0
+margin_right = 1196.0
+margin_bottom = 1235.0
+slot = "weaponSlot.right.type"
+system = "SYSTEM_EXBIG-R"
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="42"]
+margin_top = 1239.0
+margin_bottom = 1309.0
+
+[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2/VBoxContainer" index="43" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1313.0
+margin_right = 1196.0
+margin_bottom = 1383.0
+slot = "weaponSlot.right.type"
 system = "SYSTEM_EXSUPER-R"
 nameOverride = "SYSTEM_EXSUPER"
 price = 1100000
@@ -308,29 +1057,115 @@ storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="LeftBay3" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="16"]
-margin_top = 17668.0
-margin_bottom = 18537.0
+margin_top = 21812.0
+margin_bottom = 23199.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3" index="0"]
-margin_bottom = 867.0
+margin_bottom = 1385.0
 
-[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="34" instance=ExtResource( 2 )]
+[node name="SCOOP_E-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="11" instance=ExtResource( 7 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 129.0
+margin_right = 1196.0
+margin_bottom = 199.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_EP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="12" instance=ExtResource( 10 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 203.0
+margin_right = 1196.0
+margin_bottom = 273.0
+slot = "weaponSlot.left.type"
+
+[node name="EXOSTORAGE-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="14"]
+margin_top = 277.0
+margin_bottom = 347.0
+
+[node name="SCOOP_M-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="16" instance=ExtResource( 13 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 351.0
+margin_right = 1196.0
+margin_bottom = 421.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_MP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="17" instance=ExtResource( 12 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 425.0
+margin_right = 1196.0
+margin_bottom = 495.0
+slot = "weaponSlot.left.type"
+
+[node name="EXMONO-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="19"]
+margin_top = 499.0
+margin_bottom = 569.0
+
+[node name="SCOOP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="22"]
+margin_top = 573.0
+margin_bottom = 643.0
+
+[node name="SCOOP_P-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="23" instance=ExtResource( 14 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 647.0
 margin_right = 1196.0
 margin_bottom = 717.0
+slot = "weaponSlot.left.type"
 
-[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="35"]
+[node name="PDT-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="25"]
 margin_top = 721.0
 margin_bottom = 791.0
 
-[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="PDMWG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="30"]
+margin_top = 795.0
+margin_bottom = 865.0
+
+[node name="DND_TS" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="33"]
+margin_top = 869.0
+margin_bottom = 939.0
+
+[node name="SCOOP_L-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="36" instance=ExtResource( 11 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 795.0
+margin_top = 943.0
 margin_right = 1196.0
-margin_bottom = 865.0
+margin_bottom = 1013.0
+slot = "weaponSlot.left.type"
+
+[node name="SCOOP_LP-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="37" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1017.0
+margin_right = 1196.0
+margin_bottom = 1087.0
+slot = "weaponSlot.left.type"
+
+[node name="DND_HAUL" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="40"]
+margin_top = 1091.0
+margin_bottom = 1161.0
+
+[node name="EXBIG-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="41" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1165.0
+margin_right = 1196.0
+margin_bottom = 1235.0
+slot = "weaponSlot.left.type"
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="42"]
+margin_top = 1239.0
+margin_bottom = 1309.0
+
+[node name="EXSUPER-L" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3/VBoxContainer" index="43" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1313.0
+margin_right = 1196.0
+margin_bottom = 1383.0
+slot = "weaponSlot.left.type"
 system = "SYSTEM_EXSUPER-L"
 nameOverride = "SYSTEM_EXSUPER"
 price = 1100000
@@ -338,30 +1173,116 @@ storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="RightBay3" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="17"]
-margin_top = 18541.0
-margin_bottom = 19410.0
+margin_top = 23203.0
+margin_bottom = 24590.0
 
 [node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3" index="0"]
-margin_bottom = 867.0
+margin_bottom = 1385.0
 
-[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="34" instance=ExtResource( 2 )]
+[node name="SCOOP_E-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="11" instance=ExtResource( 8 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 129.0
+margin_right = 1196.0
+margin_bottom = 199.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_EP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="12" instance=ExtResource( 9 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 203.0
+margin_right = 1196.0
+margin_bottom = 273.0
+slot = "weaponSlot.right.type"
+
+[node name="EXOSTORAGE-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="15"]
+margin_top = 277.0
+margin_bottom = 347.0
+
+[node name="SCOOP_M-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="16" instance=ExtResource( 16 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 351.0
+margin_right = 1196.0
+margin_bottom = 421.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_MP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="17" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 425.0
+margin_right = 1196.0
+margin_bottom = 495.0
+slot = "weaponSlot.right.type"
+
+[node name="EXMONO-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="20"]
+margin_top = 499.0
+margin_bottom = 569.0
+
+[node name="SCOOP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="21"]
+margin_top = 573.0
+margin_bottom = 643.0
+
+[node name="SCOOP_P-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="23" instance=ExtResource( 3 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 647.0
 margin_right = 1196.0
 margin_bottom = 717.0
-system = "SYSTEM_EXBIG-R"
+slot = "weaponSlot.right.type"
 
-[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="35"]
+[node name="PDT-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="26"]
 margin_top = 721.0
 margin_bottom = 791.0
 
-[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="36" instance=ExtResource( 2 )]
+[node name="PDMWG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="31"]
+margin_top = 795.0
+margin_bottom = 865.0
+
+[node name="DND_TS" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="33"]
+margin_top = 869.0
+margin_bottom = 939.0
+
+[node name="SCOOP_L-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="36" instance=ExtResource( 5 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 795.0
+margin_top = 943.0
 margin_right = 1196.0
-margin_bottom = 865.0
+margin_bottom = 1013.0
+slot = "weaponSlot.right.type"
+
+[node name="SCOOP_LP-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="37" instance=ExtResource( 15 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1017.0
+margin_right = 1196.0
+margin_bottom = 1087.0
+slot = "weaponSlot.right.type"
+
+[node name="DND_HAUL" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="40"]
+margin_top = 1091.0
+margin_bottom = 1161.0
+
+[node name="EXBIG-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="41" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1165.0
+margin_right = 1196.0
+margin_bottom = 1235.0
+slot = "weaponSlot.right.type"
+system = "SYSTEM_EXBIG-R"
+
+[node name="DND_FIX" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="42"]
+margin_top = 1239.0
+margin_bottom = 1309.0
+
+[node name="EXSUPER-R" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3/VBoxContainer" index="43" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1313.0
+margin_right = 1196.0
+margin_bottom = 1383.0
+slot = "weaponSlot.right.type"
 system = "SYSTEM_EXSUPER-R"
 nameOverride = "SYSTEM_EXSUPER"
 price = 1100000
@@ -369,60 +1290,60 @@ storyFlag = "dd.story.interplanetary"
 storyFlagMin = 10
 
 [node name="AmmunitionDelivery" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="18"]
-margin_top = 19414.0
-margin_bottom = 19987.0
+margin_top = 24594.0
+margin_bottom = 25167.0
 
 [node name="DisposableDrones" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="19"]
-margin_top = 19991.0
-margin_bottom = 20490.0
+margin_top = 25171.0
+margin_bottom = 25670.0
 
 [node name="Propellant" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="20"]
-margin_top = 20494.0
-margin_bottom = 20993.0
+margin_top = 25674.0
+margin_bottom = 26173.0
 
 [node name="Thrusters" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="21"]
-margin_top = 20997.0
-margin_bottom = 21792.0
+margin_top = 26177.0
+margin_bottom = 26972.0
 
 [node name="Torches" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="22"]
-margin_top = 21796.0
-margin_bottom = 22517.0
+margin_top = 26976.0
+margin_bottom = 27697.0
 
 [node name="Rods" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="23"]
-margin_top = 22521.0
-margin_bottom = 23168.0
+margin_top = 27701.0
+margin_bottom = 28348.0
 
 [node name="Capacitor" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="24"]
-margin_top = 23172.0
-margin_bottom = 23449.0
+margin_top = 28352.0
+margin_bottom = 28629.0
 
 [node name="Turbine" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="25"]
-margin_top = 23453.0
-margin_bottom = 23730.0
+margin_top = 28633.0
+margin_bottom = 28910.0
 
 [node name="AuxilaryPower" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="26"]
-margin_top = 23734.0
-margin_bottom = 24307.0
+margin_top = 28914.0
+margin_bottom = 29487.0
 
 [node name="CargoBay" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="27"]
-margin_top = 24311.0
-margin_bottom = 24884.0
+margin_top = 29491.0
+margin_bottom = 30064.0
 
 [node name="Autopilot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="28"]
-margin_top = 24888.0
-margin_bottom = 25387.0
+margin_top = 30068.0
+margin_bottom = 30567.0
 
 [node name="Hud" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="29"]
-margin_top = 25391.0
-margin_bottom = 26186.0
+margin_top = 30571.0
+margin_bottom = 31366.0
 
 [node name="Lidar" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="30"]
-margin_top = 26190.0
-margin_bottom = 26615.0
+margin_top = 31370.0
+margin_bottom = 31795.0
 
 [node name="ReconDrone" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="31"]
-margin_top = 26619.0
-margin_bottom = 26970.0
+margin_top = 31799.0
+margin_bottom = 32150.0
 
 [editable path="VB/HeaderWithMoney"]
 [editable path="VB/WindowMargin/TabHintContainer"]

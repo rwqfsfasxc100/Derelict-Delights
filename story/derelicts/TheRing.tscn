@@ -5,132 +5,31 @@
 
 [node name="TheRing" instance=ExtResource( 1 )]
 
-[node name="DerelictLCB" type="Node" parent="." index="77"]
-script = ExtResource( 2 )
-randomChance = 0.7
-moneyCeiling = 5e+06
-model = "TRTL-LCB"
-rescue = false
-chaosLimit = 0.2
-
-[node name="DerelictR" type="Node" parent="." index="78"]
-script = ExtResource( 2 )
-randomChance = 0.9
-moneyCeiling = 3e+06
-model = "TRTL-R"
-rescue = false
-chaosLimit = 0.2
-
-[node name="DerelictT" type="Node" parent="." index="79"]
-script = ExtResource( 2 )
-randomChance = 0.75
-moneyCeiling = 4e+06
-model = "TRTL-T"
-rescue = false
-chaosLimit = 0.2
-
-[node name="DerelictLUX" type="Node" parent="." index="80"]
-script = ExtResource( 2 )
-randomChance = 0.5
-minimumChance = 0.075
-moneyCeiling = 7e+06
-model = "PROSPECTOR-LUX"
-rescue = false
-chaosLimit = 0.4
-
-[node name="DerelictVP" type="Node" parent="." index="81"]
-script = ExtResource( 2 )
-randomChance = 0.6
-minimumChance = 0.09
-moneyCeiling = 8e+06
-model = "PROSPECTOR-VP"
-rescue = false
-chaosLimit = 0.4
-
-[node name="DerelictFAT" type="Node" parent="." index="82"]
-script = ExtResource( 2 )
-randomChance = 0.7
-minimumChance = 0.08
-moneyCeiling = 8e+06
-model = "PROSPECTOR-FAT"
-rescue = false
-chaosLimit = 0.4
-
-[node name="DerelictBALD" type="Node" parent="." index="83"]
-script = ExtResource( 2 )
-randomChance = 0.15
-minimumChance = 0.01
-moneyCeiling = 2e+06
-model = "PROSPECTOR-BALD"
-rescue = false
-chaosLimit = 0.6
-
-[node name="DerelictCHK" type="Node" parent="." index="84"]
-script = ExtResource( 2 )
-randomChance = 0.9
-minimumChance = 0.15
-moneyCeiling = 8e+06
-model = "COTHON-CHK"
-rescue = false
-chaosLimit = 0.3
-
-[node name="DerelictLND" type="Node" parent="." index="85"]
-script = ExtResource( 2 )
-randomChance = 0.95
-minimumChance = 0.09
-moneyCeiling = 6e+06
-model = "COTHON-LND"
-rescue = false
-chaosLimit = 0.3
-
-[node name="DerelictV" type="Node" parent="." index="86"]
-script = ExtResource( 2 )
-minimumChance = 0.08
-moneyCeiling = 9e+06
-model = "COTHON-V"
-rescue = false
-chaosLimit = 0.3
-
-[node name="Derelict225" type="Node" parent="." index="87"]
-script = ExtResource( 2 )
-randomChance = 0.4
-minimumChance = 0.05
-moneyCeiling = 5e+06
-model = "AT225"
-rescue = false
-chaosLimit = 0.5
-
-[node name="Derelict225B" type="Node" parent="." index="88"]
-script = ExtResource( 2 )
-randomChance = 0.4
-minimumChance = 0.05
-moneyCeiling = 5e+06
-model = "AT225-B"
-rescue = false
-chaosLimit = 0.5
-
-[node name="DerelictOCP" type="Node" parent="." index="89"]
-script = ExtResource( 2 )
+[node name="DerelictOCP" parent="." index="77"]
 randomChance = 0.55
 minimumChance = 0.03
 moneyCeiling = 6e+06
-model = "OCP209"
-rescue = false
 chaosLimit = 0.4
 
-[node name="DerelictKitsune" type="Node" parent="." index="90"]
-script = ExtResource( 2 )
+[node name="DerelictKitsune" parent="." index="78"]
 randomChance = 0.75
 moneyCeiling = 9e+06
-model = "KITSUNE"
-rescue = false
 chaosLimit = 0.1
 
-[node name="Derelict225M" type="Node" parent="." index="91"]
+[node name="Derelict225M" type="Node" parent="." index="79"]
 script = ExtResource( 2 )
 randomChance = 0.1
 minimumChance = 0.01
 moneyCeiling = 2e+06
 model = "AT225-R"
+rescue = false
+chaosLimit = 0.6
+
+[node name="DerelictBALD" type="Node" parent="." index="80"]
+script = ExtResource( 2 )
+randomChance = 0.15
+minimumChance = 0.01
+moneyCeiling = 2e+06
+model = "PROSPECTOR-BALD"
 rescue = false
 chaosLimit = 0.6

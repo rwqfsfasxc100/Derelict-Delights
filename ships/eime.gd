@@ -248,12 +248,6 @@ var EIME = [
 				"right":{
 					"type":"SYSTEM_DND_FIX"
 				},
-				"leftBack":{
-					"type":"SYSTEM_DND_FIX"
-				}, 
-				"rightback":{
-					"type":"SYSTEM_DND_FIX"
-				}
 			}
 		}
 ]	

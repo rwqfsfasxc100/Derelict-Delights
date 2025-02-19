@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://enceladus/SystemShipUpgradeUI.tscn" type="PackedScene" id=1]
+
+[node name="SystemShipUpgradeUI" instance=ExtResource( 1 )]
+slot = "weaponSlot.main.type"
+system = "SYSTEM_SCOOP_L-L"
+nameOverride = "SYSTEM_SCOOP_L"
+manual = "SYSTEM_SCOOP_MANUAL"
+price = 280000
+testProtocol = "detach"
+
+[node name="System" parent="HBox" index="0"]
+text = "SYSTEM_SCOOP_L-L"

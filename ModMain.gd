@@ -4,7 +4,7 @@ extends Node
 # Mods are loaded from lowest to highest priority, default is 0
 const MOD_PRIORITY = 1001
 # Name of the mod, used for writing to the logs
-const MOD_NAME = "Derelict Delights v.1.4.3"
+const MOD_NAME = "Derelict Delights v.2.0.3"
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
@@ -31,6 +31,7 @@ var KTI_MTR_RCS = false
 var KTI_OCP = false
 var MOAR_RADARS = false
 var ZKY = false
+var salvageUpdateCheck = false # remove once experimental goes to stable
 
 # Initialize the mod
 # This function is executed before the majority of the game is loaded
@@ -39,7 +40,7 @@ var ZKY = false
 func _init(modLoader = ModLoader):
 	l("Initializing DLC")
 	
-# Modify Settings.gd first so we can load config and DLC
+	# Modify Settings.gd first so we can load config and DLC
 	installScriptExtension("Settings.gd")
 	loadSettings()
 	
@@ -47,8 +48,9 @@ func _init(modLoader = ModLoader):
 	
 	l("Settings & DLC loaded, now initializing events")
 	
-	updateEquipment()
+	initializeShips()
 	
+	updateEquipment()
 	# Scripts used to compile new equipment loadouts for ships
 	# installScriptExtension("ships/Shipyard.gd") - Legacy script used to load new equipment loadouts
 	
@@ -56,7 +58,7 @@ func _init(modLoader = ModLoader):
 	
 	addAgendas()
 	
-	addConversations()
+	# update conversations moved out until next stable release
 	
 	addContainerRequests()
 	
@@ -71,13 +73,40 @@ func _init(modLoader = ModLoader):
 	l("Loading essential files, almost complete")
 	
 	installScriptExtension("menu/TitleMenu.gd")
-	replaceScene("TitleScreen.tscn")
 	updateEvents()
 	handleMods()
 	replaceScene("Game.tscn")
 	
 	l("Initialized %s completely!" % MOD_NAME)
 
+
+
+
+# Do stuff on ready
+# At this point all AutoLoads are available and the game is loaded
+func _ready():
+	l("Readying")
+	# Temporary code to prevent crashes with pre-1.65.0 releases. Remove after experimental versions post that version go to stable
+	var versionDoubleCheck = CurrentGame.version
+	l("Currently running version " + versionDoubleCheck)
+	
+	
+	
+	var versionMinor = versionDoubleCheck.split(".")
+	var versionSplitSize = versionMinor.size()
+	var getMinorVersion = versionMinor[versionSplitSize - 2]
+	var minorVersionInt = str(getMinorVersion)
+	if  minorVersionInt >= str(65):
+		Debug.l("Currently running post salvage update")
+		salvageUpdateCheck = true
+	else:
+		Debug.l("Currently running pre salvage update")
+	
+	
+	# Once again moved here to prevent crashes
+	addConversations()
+	l("Ready")
+	
 func handleMods():
 	if modConfig["mainToggles"]["addModSupport"]:
 		modsInstalled()
@@ -114,18 +143,19 @@ func updateEvents():
 func updateEquipment():# Equipment additions
 	if modConfig["mainToggles"]["addEquipment"]:
 		l("Initializing equipment [mainToggles -> addEquipment]")
-		replaceScene("ships/EIME.tscn")
-		replaceScene("ships/Eagle-Prospector-VP.tscn")
-		replaceScene("ships/Eagle-Prospector-Lux.tscn")
-		replaceScene("ships/Eagle-Prospector-Fat.tscn")
-		replaceScene("ships/Eagle-Prospector.tscn")
-		replaceScene("ships/ATK225-B.tscn")
-		replaceScene("ships/ATK225.tscn")
-	
 		replaceScene("weapons/WeaponSlot.tscn")
 		replaceScene("enceladus/Upgrades.tscn")
 		l("Equipment and ships loaded")
 		
+func initializeShips():
+	
+	replaceScene("ships/EIME.tscn")
+	replaceScene("ships/Eagle-Prospector-VP.tscn")
+	replaceScene("ships/Eagle-Prospector-Lux.tscn")
+	replaceScene("ships/Eagle-Prospector-Fat.tscn")
+	replaceScene("ships/Eagle-Prospector.tscn")
+	replaceScene("ships/ATK225-B.tscn")
+	replaceScene("ships/ATK225.tscn")
 func updateDefaultLoadouts():
 	if modConfig["mainToggles"]["expandShipEquipmentOptions"]:
 		l("Initializing ship loadout configurations [mainToggles -> expandShipEquipmentOptions]")
@@ -134,8 +164,8 @@ func updateDefaultLoadouts():
 		l("Added ship configs for general prospector ships")
 		installScriptExtension("ships/prospector-bald.gd")
 		l("Added ship configs for bald eagles")
-		installScriptExtension("ships/prospector-vp.gd")
-		l("Added ship configs for vultures")
+#		installScriptExtension("ships/prospector-vp.gd")
+#		l("Added ship configs for vultures")
 		installScriptExtension("ships/at225.gd")
 		l("Added ship configs for titan ships")
 		installScriptExtension("ships/cothon.gd")
@@ -148,8 +178,8 @@ func updateDefaultLoadouts():
 		l("Added ship configs for the ocp")
 		installScriptExtension("ships/trtl.gd")
 		l("Added ship configs for general TNTRL ships")
-		installScriptExtension("ships/trtl-44.gd")
-		l("Added ship configs for the K44")
+#		installScriptExtension("ships/trtl-44.gd")
+#		l("Added ship configs for the K44")
 		l("Loaded ship configurations")
 
 func addAgendas():
@@ -161,7 +191,7 @@ func addAgendas():
 
 func addConversations():
 	# Conversation initialization for events
-	if modConfig["mainToggles"]["addEvents"] and modConfig["eventToggles"]["addNewPirateTrades"]:
+	if modConfig["mainToggles"]["addEvents"] and modConfig["eventToggles"]["addNewPirateTrades"] and salvageUpdateCheck:
 		l("Initializing dialogue-driven events [mainToggles -> addEvents]")
 		if modConfig["agendaToggles"]["addHistorian"]:
 			replaceScene("comms/conversation/subtrees/StandClearMyArea.tscn")
@@ -296,15 +326,6 @@ func attachModCompat(): # Mod-based event additions
 		if ZKYConfig["sillyStuff"]["addNyanShip"]:
 			l("")
 
-
-
-
-# Do stuff on ready
-# At this point all AutoLoads are available and the game is loaded
-func _ready():
-	l("Readying")
-	l("Ready")
-	
 func loadSettings():
 	l(MOD_NAME + ": Loading mod settings")
 	var settings = load("res://Settings.gd").new()
@@ -359,6 +380,8 @@ func updateTL(path:String, delim:String = ","):
 		TranslationServer.add_translation(translationObject)
 
 	l("Translations Updated")
+
+
 
 func dynamicModVerification():
 	l("Dynamic Mod Verification Enabled")
@@ -471,7 +494,6 @@ func installScriptExtension(path:String):
 	l("Installing script extension: %s <- %s" % [parentPath, childPath])
 
 	childScript.take_over_path(parentPath)
-
 
 # Helper function to replace scenes
 # Can either be passed a single path, or two paths

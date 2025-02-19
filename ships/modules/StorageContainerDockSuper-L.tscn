@@ -3,6 +3,7 @@
 [ext_resource path="res://DerelictDelights/ships/modules/StorageContainerDockSuper.tscn" type="PackedScene" id=1]
 
 [node name="StorageContainerDockSuper" instance=ExtResource( 1 )]
+position = Vector2( -10, 196 )
 flip = true
 
 [node name="DockArea" parent="." index="1"]

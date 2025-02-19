@@ -1,9 +1,6 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://TitleScreen.tscn" type="PackedScene" id=1]
-[ext_resource path="res://menu/PlatformLink.gd" type="Script" id=2]
-[ext_resource path="res://hud/EIME.theme" type="Theme" id=4]
-[ext_resource path="res://menu/MenuFontAudiowide.tres" type="DynamicFont" id=5]
 [ext_resource path="res://DerelictDelights/menu/DDSettingsLayer.tscn" type="PackedScene" id=6]
 [ext_resource path="res://DerelictDelights/menu/TitleMenu.gd" type="Script" id=7]
 
@@ -20,51 +17,36 @@ margin_top = -15.0
 margin_right = 1280.0
 margin_bottom = 735.0
 
-[node name="VERSION" type="Label" parent="MenuLayer/TitleMenu" index="4"]
-margin_left = -12.0
-margin_top = 164.831
-margin_right = 633.0
-margin_bottom = 245.831
-rect_rotation = -22.5
-theme = ExtResource( 4 )
-custom_fonts/font = ExtResource( 5 )
-text = "Derelict Delights v.1.4.3"
-align = 1
-valign = 2
+[node name="MarginContainer" parent="MenuLayer/TitleMenu/MarginContainer/VBoxContainer" index="0"]
+margin_bottom = 315.0
 
-[node name="CREDIT" type="Label" parent="MenuLayer/TitleMenu" index="5"]
-margin_left = 22.0
-margin_top = 192.493
-margin_right = 667.0
-margin_bottom = 273.492
-rect_rotation = -22.5
-theme = ExtResource( 4 )
-custom_fonts/font = ExtResource( 5 )
-text = "DDCREDITS"
-align = 1
-valign = 2
+[node name="Logo" parent="MenuLayer/TitleMenu/MarginContainer/VBoxContainer/MarginContainer" index="0"]
+margin_bottom = 315.0
 
-[node name="DDsettings" type="Button" parent="MenuLayer/TitleMenu" index="6"]
-margin_left = 34.0
-margin_top = 279.492
-margin_right = 679.0
-margin_bottom = 320.492
-rect_rotation = -22.5
+[node name="SteamAwardsNomination2022" parent="MenuLayer/TitleMenu/MarginContainer/VBoxContainer/MarginContainer" index="1"]
+margin_bottom = 315.0
+
+[node name="SteamAwards" parent="MenuLayer/TitleMenu/MarginContainer/VBoxContainer/MarginContainer/SteamAwardsNomination2022" index="0"]
+margin_top = 47.0
+margin_bottom = 267.0
+
+[node name="HBoxContainer" parent="MenuLayer/TitleMenu/MarginContainer/VBoxContainer" index="1"]
+margin_top = 319.0
+margin_bottom = 630.0
+
+[node name="MarginContainer2" parent="MenuLayer/TitleMenu/MarginContainer/VBoxContainer" index="2"]
+margin_top = 634.0
+
+[node name="GridContainer" parent="MenuLayer/TitleMenu/MarginContainer/VBoxContainer/MarginContainer2" index="0"]
+margin_bottom = 86.0
+
+[node name="DDsettings" type="Button" parent="MenuLayer/TitleMenu/MarginContainer/VBoxContainer/MarginContainer2/GridContainer" index="1"]
+margin_top = 45.0
+margin_right = 961.0
+margin_bottom = 86.0
 size_flags_horizontal = 3
 text = "MENU_DERELICTDELIGHTS_CONFIG"
 script = ExtResource( 7 )
-
-[node name="Suggestions" type="Button" parent="MenuLayer/TitleMenu" index="7"]
-margin_left = 102.0
-margin_top = 305.662
-margin_right = 663.0
-margin_bottom = 346.662
-rect_rotation = -22.5
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "DERELICTDELIGHTS_SUGGEST"
-script = ExtResource( 2 )
-url = "https://forms.gle/yzvbGmaWeHWH9ChK8"
 
 [node name="DespawnObserver" parent="AsteroidField/FocusMatch" index="0"]
 collision_mask = 2684878850
@@ -79,6 +61,6 @@ margin_right = 3454.0
 margin_bottom = 3467.0
 
 [connection signal="about_to_show" from="MenuLayer/TitleMenu/NoMargins/DDSettingsLayer" to="MenuLayer/TitleMenu/NoMargins/DDSettingsLayer" method="_on_DDSettingsLayer_about_to_show"]
-[connection signal="pressed" from="MenuLayer/TitleMenu/DDsettings" to="MenuLayer/TitleMenu/NoMargins/DDSettingsLayer" method="_on_DDsettings_pressed"]
+[connection signal="pressed" from="MenuLayer/TitleMenu/MarginContainer/VBoxContainer/MarginContainer2/GridContainer/DDsettings" to="MenuLayer/TitleMenu/NoMargins/DDSettingsLayer" method="_on_DDsettings_pressed"]
 
 [editable path="AsteroidField"]

@@ -1,0 +1,850 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://DerelictDelights/menu/DDSettingsLayer.gd" type="Script" id=1]
+[ext_resource path="res://menu/PlatformLink.gd" type="Script" id=2]
+[ext_resource path="res://DerelictDelights/menu/DDSettingsHandle.gd" type="Script" id=3]
+[ext_resource path="res://hud/TabHintContainer.tscn" type="PackedScene" id=4]
+[ext_resource path="res://menu/Foolish.tscn" type="PackedScene" id=5]
+[ext_resource path="res://hud/EIME.theme" type="Theme" id=6]
+[ext_resource path="res://menu/MenuTheme.tres" type="Theme" id=7]
+[ext_resource path="res://menu/PanelWithHugeShadow.tres" type="StyleBox" id=8]
+[ext_resource path="res://menu/MenuFontAudiowide.tres" type="DynamicFont" id=9]
+[ext_resource path="res://menu/TabsWithGamepadControl.gd" type="Script" id=10]
+[ext_resource path="res://menu/sfx/PlaySoundsOnTheseButtons.tscn" type="PackedScene" id=11]
+
+[node name="DerelictDelightsMenu" type="Popup"]
+margin_left = -400.0
+margin_right = 160.0
+margin_bottom = 750.0
+grow_horizontal = 2
+grow_vertical = 2
+rect_min_size = Vector2( 800, 750 )
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme = ExtResource( 7 )
+popup_exclusive = true
+script = ExtResource( 1 )
+
+[node name="NoMargins" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlaySoundsOnTheseButtons" parent="NoMargins" instance=ExtResource( 11 )]
+
+[node name="CenterContainer" type="CenterContainer" parent="NoMargins"]
+margin_left = -40.0
+margin_top = -15.0
+margin_right = 1070.0
+margin_bottom = 750.0
+rect_min_size = Vector2( 800, 720 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="TabHintContainer" parent="NoMargins/CenterContainer" instance=ExtResource( 4 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 20.0
+margin_top = 24.0
+margin_right = 1090.0
+margin_bottom = 740.0
+rect_min_size = Vector2( 1070, 716 )
+size_flags_horizontal = 4
+
+[node name="MarginContainer" parent="NoMargins/CenterContainer/TabHintContainer" index="0"]
+margin_right = 1070.0
+margin_bottom = 45.0
+rect_min_size = Vector2( 0, 32 )
+custom_constants/margin_right = -80
+custom_constants/margin_left = -80
+
+[node name="HBoxContainer" parent="NoMargins/CenterContainer/TabHintContainer/MarginContainer" index="0"]
+modulate = Color( 1, 1, 1, 0.501961 )
+margin_left = -80.0
+margin_right = 1150.0
+margin_bottom = 43.0
+size_flags_vertical = 3
+
+[node name="Right" parent="NoMargins/CenterContainer/TabHintContainer/MarginContainer/HBoxContainer" index="0"]
+margin_bottom = 39.0
+
+[node name="Label" parent="NoMargins/CenterContainer/TabHintContainer/MarginContainer/HBoxContainer" index="1"]
+margin_top = 0.0
+margin_right = 1150.0
+margin_bottom = 39.0
+
+[node name="Left" parent="NoMargins/CenterContainer/TabHintContainer/MarginContainer/HBoxContainer" index="2"]
+margin_left = 1150.0
+margin_right = 1230.0
+margin_bottom = 39.0
+
+[node name="TabsWithGamepadControl" type="TabContainer" parent="NoMargins/CenterContainer/TabHintContainer"]
+show_behind_parent = true
+margin_right = 1070.0
+margin_bottom = 716.0
+rect_min_size = Vector2( 0, 716 )
+size_flags_vertical = 3
+custom_styles/panel = ExtResource( 8 )
+use_hidden_tabs_for_min_size = true
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DD_TAB_INFO" type="Tabs" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_top = 50.0
+margin_right = -1.0
+margin_bottom = -1.0
+tab_align = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 0
+custom_constants/margin_top = 16
+custom_constants/margin_left = 0
+custom_constants/margin_bottom = 48
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer"]
+margin_top = 16.0
+margin_right = 1711.0
+margin_bottom = 617.0
+custom_constants/separation = 6
+
+[node name="VERSION" type="Label" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer"]
+margin_right = 1711.0
+margin_bottom = 123.0
+theme = ExtResource( 6 )
+custom_fonts/font = ExtResource( 9 )
+text = "Derelict Delights
+v.2.0.3
+Requires game version 1.65.0 for complete functionality"
+valign = 2
+
+[node name="Separator" type="Label" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer"]
+margin_top = 129.0
+margin_right = 1711.0
+margin_bottom = 168.0
+theme = ExtResource( 6 )
+custom_fonts/font = ExtResource( 9 )
+valign = 2
+
+[node name="CREDIT" type="Label" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer"]
+margin_top = 174.0
+margin_right = 1711.0
+margin_bottom = 213.0
+theme = ExtResource( 6 )
+custom_fonts/font = ExtResource( 9 )
+text = "DDCREDITS"
+valign = 2
+
+[node name="Separator2" type="Label" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer"]
+margin_top = 219.0
+margin_right = 1711.0
+margin_bottom = 258.0
+theme = ExtResource( 6 )
+custom_fonts/font = ExtResource( 9 )
+valign = 2
+
+[node name="GridContainer" type="GridContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer"]
+margin_top = 264.0
+margin_right = 1711.0
+margin_bottom = 305.0
+columns = 3
+
+[node name="Suggestions" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer/GridContainer"]
+margin_right = 561.0
+margin_bottom = 41.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "DERELICTDELIGHTS_SUGGEST"
+align = 0
+script = ExtResource( 2 )
+url = "https://forms.gle/yzvbGmaWeHWH9ChK8"
+
+[node name="Github" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer/GridContainer"]
+margin_left = 565.0
+margin_right = 1089.0
+margin_bottom = 41.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "DERELICTDELIGHTS_GITHUB"
+align = 0
+script = ExtResource( 2 )
+url = "https://github.com/rwqfsfasxc100/Derelict-Delights"
+
+[node name="Nexus" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer/GridContainer"]
+margin_left = 1093.0
+margin_right = 1711.0
+margin_bottom = 41.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "DERELICTDELIGHTS_NEXUSMODS"
+align = 0
+script = ExtResource( 2 )
+url = "https://www.nexusmods.com/dvringsofsaturn/mods/8"
+
+[node name="DD_MAIN_TOGGLES" type="Tabs" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_top = 50.0
+margin_right = -1.0
+margin_bottom = -1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 0
+custom_constants/margin_top = 16
+custom_constants/margin_left = 0
+custom_constants/margin_bottom = 48
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/MarginContainer"]
+margin_top = 16.0
+margin_right = 1068.0
+margin_bottom = 617.0
+custom_constants/separation = 6
+
+[node name="addEquipment" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/MarginContainer/VBoxContainer"]
+margin_right = 1068.0
+margin_bottom = 41.0
+hint_tooltip = "SETTINGS_ADD_EQUIPMENT_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_ADD_EQUIPMENT"
+align = 1
+script = ExtResource( 3 )
+
+[node name="addEvents" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 47.0
+margin_right = 1068.0
+margin_bottom = 88.0
+hint_tooltip = "SETTINGS_ADD_EVENTS_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_ADD_EVENTS"
+align = 1
+script = ExtResource( 3 )
+setting = "addEvents"
+
+[node name="addAgenda" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 94.0
+margin_right = 1068.0
+margin_bottom = 135.0
+hint_tooltip = "SETTINGS_ADD_AGENDAS_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_ADD_AGENDAS"
+align = 1
+script = ExtResource( 3 )
+setting = "addAgenda"
+
+[node name="requestNewContainers" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 141.0
+margin_right = 1068.0
+margin_bottom = 182.0
+hint_tooltip = "SETTINGS_REQUEST_NEW_CONTAINERS_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_REQUEST_NEW_CONTAINERS"
+align = 1
+script = ExtResource( 3 )
+setting = "requestNewContainers"
+
+[node name="obontosAskForMoreStuff" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 188.0
+margin_right = 1068.0
+margin_bottom = 229.0
+hint_tooltip = "SETTINGS_ADD_OBONTO_BALANCE_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_ADD_OBONTO_BALANCE"
+align = 1
+script = ExtResource( 3 )
+setting = "obontosAskForMoreStuff"
+
+[node name="expandShipEquipmentOptions" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 235.0
+margin_right = 1068.0
+margin_bottom = 276.0
+hint_tooltip = "SETTINGS_EXPAND_SHIP_LOADOUTS_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_EXPAND_SHIP_LOADOUTS"
+align = 1
+script = ExtResource( 3 )
+setting = "expandShipEquipmentOptions"
+
+[node name="addModSupport" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 282.0
+margin_right = 1068.0
+margin_bottom = 323.0
+hint_tooltip = "SETTINGS_ADD_MOD_SUPPORT_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_ADD_MOD_SUPPORT"
+align = 1
+script = ExtResource( 3 )
+setting = "addModSupport"
+
+[node name="Control" type="Control" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Save" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/Control"]
+margin_left = 7.0
+margin_top = -55.0
+margin_right = 341.0
+margin_bottom = -11.0
+focus_neighbour_right = NodePath("../Cancel")
+text = "SETTINGS_SAVE"
+
+[node name="Cancel" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -367.0
+margin_top = -55.0
+margin_right = -11.0
+margin_bottom = -11.0
+focus_neighbour_left = NodePath("../Save")
+text = "SETTINGS_CANCEL"
+
+[node name="DD_EVENT_TOGGLES" type="Tabs" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_top = 50.0
+margin_right = -1.0
+margin_bottom = -1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 0
+custom_constants/margin_top = 16
+custom_constants/margin_left = 0
+custom_constants/margin_bottom = 48
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES/MarginContainer"]
+margin_top = 16.0
+margin_right = 1068.0
+margin_bottom = 617.0
+custom_constants/separation = 6
+
+[node name="addDerelicts" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES/MarginContainer/VBoxContainer"]
+margin_right = 1068.0
+margin_bottom = 41.0
+hint_tooltip = "SETTINGS_ADD_DERELICTS_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_ADD_DERELICTS"
+align = 1
+script = ExtResource( 3 )
+setting = "addDerelicts"
+section = "eventToggles"
+
+[node name="addNewNPCMiners" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 47.0
+margin_right = 1068.0
+margin_bottom = 88.0
+hint_tooltip = "SETTINGS_ADD_NEW_NPCS_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_ADD_NEW_NPCS"
+align = 1
+script = ExtResource( 3 )
+setting = "addNewNPCMiners"
+section = "eventToggles"
+
+[node name="addHabitatUnderConstruction" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 94.0
+margin_right = 1068.0
+margin_bottom = 135.0
+hint_tooltip = "SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION"
+align = 1
+script = ExtResource( 3 )
+setting = "addHabitatUnderConstruction"
+section = "eventToggles"
+
+[node name="addNewVilcyAndG4AEncounters" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 141.0
+margin_right = 1068.0
+margin_bottom = 182.0
+hint_tooltip = "SETTINGS_ADD_NEW_FACTION_ENCOUNTERS_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_ADD_NEW_FACTION_ENCOUNTERS"
+align = 1
+script = ExtResource( 3 )
+setting = "addNewVilcyAndG4AEncounters"
+section = "eventToggles"
+
+[node name="addNewRogueContainers" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 188.0
+margin_right = 1068.0
+margin_bottom = 229.0
+hint_tooltip = "SETTINGS_ADD_NEW_ROGUE_CONTAINERS_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_ADD_NEW_ROGUE_CONTAINERS"
+align = 1
+script = ExtResource( 3 )
+setting = "addNewRogueContainers"
+section = "eventToggles"
+
+[node name="addNewPirateTrades" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 235.0
+margin_right = 1068.0
+margin_bottom = 276.0
+hint_tooltip = "SETTINGS_EXPAND_PIRATE_TRADES_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_EXPAND_PIRATE_TRADES"
+align = 1
+script = ExtResource( 3 )
+setting = "addNewPirateTrades"
+section = "eventToggles"
+
+[node name="Control" type="Control" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Save" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES/Control"]
+margin_left = 7.0
+margin_top = -55.0
+margin_right = 341.0
+margin_bottom = -11.0
+focus_neighbour_right = NodePath("../Cancel")
+text = "SETTINGS_SAVE"
+
+[node name="Cancel" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES/Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -367.0
+margin_top = -55.0
+margin_right = -11.0
+margin_bottom = -11.0
+focus_neighbour_left = NodePath("../Save")
+text = "SETTINGS_CANCEL"
+
+[node name="DD_AGENDA_TOGGLES" type="Tabs" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_top = 50.0
+margin_right = -1.0
+margin_bottom = -1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_AGENDA_TOGGLES"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 0
+custom_constants/margin_top = 16
+custom_constants/margin_left = 0
+custom_constants/margin_bottom = 48
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_AGENDA_TOGGLES/MarginContainer"]
+margin_top = 16.0
+margin_right = 1068.0
+margin_bottom = 617.0
+custom_constants/separation = 6
+
+[node name="addHistorian" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_AGENDA_TOGGLES/MarginContainer/VBoxContainer"]
+margin_right = 1068.0
+margin_bottom = 41.0
+hint_tooltip = "SETTINGS_ADD_HISTORIAN_AGENDA_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_ADD_HISTORIAN_AGENDA"
+align = 1
+script = ExtResource( 3 )
+setting = "addHistorian"
+section = "agendaToggles"
+
+[node name="Control" type="Control" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_AGENDA_TOGGLES"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Save" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_AGENDA_TOGGLES/Control"]
+margin_left = 7.0
+margin_top = -55.0
+margin_right = 341.0
+margin_bottom = -11.0
+focus_neighbour_right = NodePath("../Cancel")
+text = "SETTINGS_SAVE"
+
+[node name="Cancel" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_AGENDA_TOGGLES/Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -367.0
+margin_top = -55.0
+margin_right = -11.0
+margin_bottom = -11.0
+focus_neighbour_left = NodePath("../Save")
+text = "SETTINGS_CANCEL"
+
+[node name="DD_MOD_TOGGLES" type="Tabs" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_top = 50.0
+margin_right = -1.0
+margin_bottom = -1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 0
+custom_constants/margin_top = 16
+custom_constants/margin_left = 0
+custom_constants/margin_bottom = 48
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/MarginContainer"]
+margin_top = 16.0
+margin_right = 1068.0
+margin_bottom = 617.0
+custom_constants/separation = 6
+
+[node name="IndustriesOfEnceladus" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/MarginContainer/VBoxContainer"]
+margin_right = 1068.0
+margin_bottom = 41.0
+hint_tooltip = "SETTINGS_SUPPORT_IOE_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_SUPPORT_IOE"
+align = 1
+script = ExtResource( 3 )
+setting = "IndustriesOfEnceladus"
+section = "supportedEventsFromMods"
+
+[node name="KTI-Kitsumo" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 47.0
+margin_right = 1068.0
+margin_bottom = 88.0
+hint_tooltip = "SETTINGS_SUPPORT_KITSUMO_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_SUPPORT_KITSUMO"
+align = 1
+script = ExtResource( 3 )
+setting = "KTI-Kitsumo"
+section = "supportedEventsFromMods"
+
+[node name="KTI-CothonMkII" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 94.0
+margin_right = 1068.0
+margin_bottom = 135.0
+hint_tooltip = "SETTINGS_SUPPORT_COTHON_MKII_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_SUPPORT_COTHON_MKII"
+align = 1
+script = ExtResource( 3 )
+setting = "KTI-CothonMkII"
+section = "supportedEventsFromMods"
+
+[node name="KTI-K225" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 141.0
+margin_right = 1068.0
+margin_bottom = 182.0
+hint_tooltip = "SETTINGS_SUPPORT_KTI_K225_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_SUPPORT_KTI_K225"
+align = 1
+script = ExtResource( 3 )
+setting = "KTI-K225"
+section = "supportedEventsFromMods"
+
+[node name="KTI-KSeries" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 188.0
+margin_right = 1068.0
+margin_bottom = 229.0
+hint_tooltip = "SETTINGS_SUPPORT_KTI_KSERIES_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_SUPPORT_KTI_KSERIES"
+align = 1
+script = ExtResource( 3 )
+setting = "KTI-KSeries"
+section = "supportedEventsFromMods"
+
+[node name="KTI-OCP" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 235.0
+margin_right = 1068.0
+margin_bottom = 276.0
+hint_tooltip = "SETTINGS_SUPPORT_KTI_OCP_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_SUPPORT_KTI_OCP"
+align = 1
+script = ExtResource( 3 )
+setting = "KTI-OCP"
+section = "supportedEventsFromMods"
+
+[node name="DroneOCP" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 282.0
+margin_right = 1068.0
+margin_bottom = 323.0
+hint_tooltip = "SETTINGS_SUPPORT_DRONE_OCP_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_SUPPORT_DRONE_OCP"
+align = 1
+script = ExtResource( 3 )
+setting = "DroneOCP"
+section = "supportedEventsFromMods"
+
+[node name="HeavyCothon" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 329.0
+margin_right = 1068.0
+margin_bottom = 370.0
+hint_tooltip = "SETTINGS_SUPPORT_HEAVY_COTHON_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_SUPPORT_HEAVY_COTHON"
+align = 1
+script = ExtResource( 3 )
+setting = "HeavyCothon"
+section = "supportedEventsFromMods"
+
+[node name="IoERequestContainer" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 376.0
+margin_right = 1068.0
+margin_bottom = 417.0
+hint_tooltip = "SETTINGS_SUPPORT_IOE_CONTAINERS_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_SUPPORT_IOE_CONTAINERS"
+align = 1
+script = ExtResource( 3 )
+setting = "IoERequestContainer"
+section = "otherSupportedModFunctionalities"
+
+[node name="addModdedShipsToPiratePool" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/MarginContainer/VBoxContainer"]
+margin_top = 423.0
+margin_right = 1068.0
+margin_bottom = 464.0
+hint_tooltip = "SETTINGS_SUPPORT_MOD_PIRATE_TRADES_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_SUPPORT_MOD_PIRATE_TRADES"
+align = 1
+script = ExtResource( 3 )
+setting = "addModdedShipsToPiratePool"
+section = "otherSupportedModFunctionalities"
+
+[node name="Control" type="Control" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Save" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/Control"]
+margin_left = 7.0
+margin_top = -55.0
+margin_right = 341.0
+margin_bottom = -11.0
+focus_neighbour_right = NodePath("../Cancel")
+text = "SETTINGS_SAVE"
+
+[node name="Cancel" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -367.0
+margin_top = -55.0
+margin_right = -11.0
+margin_bottom = -11.0
+focus_neighbour_left = NodePath("../Save")
+text = "SETTINGS_CANCEL"
+
+[node name="DD_MOD_DEBUG" type="Tabs" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1.0
+margin_top = 50.0
+margin_right = -1.0
+margin_bottom = -1.0
+
+[node name="MarginContainer" type="MarginContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_constants/margin_right = 0
+custom_constants/margin_top = 16
+custom_constants/margin_left = 0
+custom_constants/margin_bottom = 48
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer"]
+margin_top = 16.0
+margin_right = 1068.0
+margin_bottom = 617.0
+custom_constants/separation = 6
+
+[node name="Label" type="Label" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer/VBoxContainer"]
+margin_right = 1068.0
+margin_bottom = 39.0
+hint_tooltip = "DD_DEBUG_WARNING_TOOLTIP"
+mouse_filter = 0
+text = "DD_DEBUG_WARNING"
+
+[node name="disableDynamicEnablingAndForceModFunctionality" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer/VBoxContainer"]
+margin_top = 45.0
+margin_right = 1068.0
+margin_bottom = 86.0
+hint_tooltip = "SETTINGS_DISABLE_DYNAMIC_MOD_LOADING_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_DISABLE_DYNAMIC_MOD_LOADING"
+align = 1
+script = ExtResource( 3 )
+setting = "disableDynamicEnablingAndForceModFunctionality"
+section = "DDEventLoaderSettings"
+
+[node name="Foolish" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer/VBoxContainer/disableDynamicEnablingAndForceModFunctionality" instance=ExtResource( 5 )]
+hint_tooltip = ""
+script = null
+
+[node name="forceDroneOCP" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer/VBoxContainer"]
+margin_top = 92.0
+margin_right = 1068.0
+margin_bottom = 133.0
+hint_tooltip = "SETTINGS_FORCE_DRONE_OCP_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_FORCE_DRONE_OCP"
+align = 1
+script = ExtResource( 3 )
+setting = "forceDroneOCP"
+section = "DDEventLoaderSettings"
+
+[node name="forceHeavyCothon" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer/VBoxContainer"]
+margin_top = 139.0
+margin_right = 1068.0
+margin_bottom = 180.0
+hint_tooltip = "SETTINGS_FORCE_HEAVY_COTHON_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_FORCE_HEAVY_COTHON"
+align = 1
+script = ExtResource( 3 )
+setting = "forceHeavyCothon"
+section = "DDEventLoaderSettings"
+
+[node name="forceIoE" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer/VBoxContainer"]
+margin_top = 186.0
+margin_right = 1068.0
+margin_bottom = 227.0
+hint_tooltip = "SETTINGS_FORCE_IOE_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_FORCE_IOE"
+align = 1
+script = ExtResource( 3 )
+setting = "forceIoE"
+section = "DDEventLoaderSettings"
+
+[node name="forceKTICothonMkII" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer/VBoxContainer"]
+margin_top = 233.0
+margin_right = 1068.0
+margin_bottom = 274.0
+hint_tooltip = "SETTINGS_FORCE_KTI_COTHON_MKII_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_FORCE_KTI_COTHON_MKII"
+align = 1
+script = ExtResource( 3 )
+setting = "forceKTICothonMkII"
+section = "DDEventLoaderSettings"
+
+[node name="forceKTI225" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer/VBoxContainer"]
+margin_top = 280.0
+margin_right = 1068.0
+margin_bottom = 321.0
+hint_tooltip = "SETTINGS_FORCE_KTI_K225_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_FORCE_KTI_K225"
+align = 1
+script = ExtResource( 3 )
+setting = "forceKTI225"
+section = "DDEventLoaderSettings"
+
+[node name="forceKTIKitsumo" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer/VBoxContainer"]
+margin_top = 327.0
+margin_right = 1068.0
+margin_bottom = 368.0
+hint_tooltip = "SETTINGS_FORCE_KTI_KITSUMO_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_FORCE_KTI_KITSUMO"
+align = 1
+script = ExtResource( 3 )
+setting = "forceKTIKitsumo"
+section = "DDEventLoaderSettings"
+
+[node name="forceKTIKSeries" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer/VBoxContainer"]
+margin_top = 374.0
+margin_right = 1068.0
+margin_bottom = 415.0
+hint_tooltip = "SETTINGS_FORCE_KTI_KSERIES_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_FORCE_KTI_KSERIES"
+align = 1
+script = ExtResource( 3 )
+setting = "forceKTIKSeries"
+section = "DDEventLoaderSettings"
+
+[node name="forceKTIOCP" type="CheckButton" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/MarginContainer/VBoxContainer"]
+margin_top = 421.0
+margin_right = 1068.0
+margin_bottom = 462.0
+hint_tooltip = "SETTINGS_FORCE_KTI_OCP_TOOLTIP"
+size_flags_horizontal = 3
+text = "SETTINGS_FORCE_KTI_OCP"
+align = 1
+script = ExtResource( 3 )
+setting = "forceKTIOCP"
+section = "DDEventLoaderSettings"
+
+[node name="Control" type="Control" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG"]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Save" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/Control"]
+margin_left = 7.0
+margin_top = -55.0
+margin_right = 341.0
+margin_bottom = -11.0
+focus_neighbour_right = NodePath("../Cancel")
+text = "SETTINGS_SAVE"
+
+[node name="Cancel" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/Control"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -367.0
+margin_top = -55.0
+margin_right = -11.0
+margin_bottom = -11.0
+focus_neighbour_left = NodePath("../Save")
+text = "SETTINGS_CANCEL"
+
+[connection signal="about_to_show" from="." to="." method="_on_DDSettingsLayer_about_to_show"]
+[connection signal="pressed" from="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/Control/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MAIN_TOGGLES/Control/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES/Control/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_EVENT_TOGGLES/Control/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_AGENDA_TOGGLES/Control/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_AGENDA_TOGGLES/Control/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/Control/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_TOGGLES/Control/Cancel" to="." method="_on_Cancel_pressed"]
+[connection signal="pressed" from="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/Control/Save" to="." method="_on_Save_pressed"]
+[connection signal="pressed" from="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_MOD_DEBUG/Control/Cancel" to="." method="_on_Cancel_pressed"]
+
+[editable path="NoMargins/CenterContainer/TabHintContainer"]

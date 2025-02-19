@@ -1,7 +1,7 @@
 extends "res://Settings.gd"
 
 # Mod version
-const DD_VERSION = "1.4.3"
+const DD_VERSION = "2.0.3"
 
 # Default config values
 var DDConfig = {
