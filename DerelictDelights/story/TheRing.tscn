@@ -14,7 +14,6 @@
 [ext_resource path="res://DerelictDelights/story/SuperTHICCDerelict.gd" type="Script" id=12]
 
 [node name="TheRing" instance=ExtResource( 1 )]
-testSpecificStoryElement = "HighEnduranceBattleNoBBW"
 
 [node name="DerelictLCB" type="Node" parent="." index="77"]
 script = ExtResource( 2 )
@@ -120,21 +119,15 @@ model = "AT225-B"
 rescue = false
 chaosLimit = 0.5
 
-[node name="DerelictOCP" type="Node" parent="." index="89"]
-script = ExtResource( 2 )
+[node name="DerelictOCP" parent="." index="89"]
 randomChance = 0.55
 minimumChance = 0.03
 moneyCeiling = 6e+06
-model = "OCP209"
-rescue = false
 chaosLimit = 0.4
 
-[node name="DerelictKitsune" type="Node" parent="." index="90"]
-script = ExtResource( 2 )
+[node name="DerelictKitsune" parent="." index="90"]
 randomChance = 0.75
 moneyCeiling = 9e+06
-model = "KITSUNE"
-rescue = false
 chaosLimit = 0.1
 
 [node name="ConstructionMinerMining" type="Node" parent="." index="91"]

@@ -24,6 +24,7 @@ repairReplacementPrice = 1100000
 
 [node name="SYSTEM_SCOOP_E-L" parent="." index="40" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockE-L.tscn"]
 visible = false
+flip = false
 
 [node name="SYSTEM_SCOOP_E-R" parent="." index="41" instance_placeholder="res://DerelictDelights/ships/modules/scoop/ScoopDockE.tscn"]
 visible = false

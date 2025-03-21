@@ -1,14 +1,11 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://DerelictDelights/menu/DDSettingsLayer.gd" type="Script" id=1]
-[ext_resource path="res://menu/PlatformLink.gd" type="Script" id=2]
 [ext_resource path="res://DerelictDelights/menu/DDSettingsHandle.gd" type="Script" id=3]
 [ext_resource path="res://hud/TabHintContainer.tscn" type="PackedScene" id=4]
 [ext_resource path="res://menu/Foolish.tscn" type="PackedScene" id=5]
-[ext_resource path="res://hud/EIME.theme" type="Theme" id=6]
 [ext_resource path="res://menu/MenuTheme.tres" type="Theme" id=7]
 [ext_resource path="res://menu/PanelWithHugeShadow.tres" type="StyleBox" id=8]
-[ext_resource path="res://menu/MenuFontAudiowide.tres" type="DynamicFont" id=9]
 [ext_resource path="res://menu/TabsWithGamepadControl.gd" type="Script" id=10]
 [ext_resource path="res://menu/sfx/PlaySoundsOnTheseButtons.tscn" type="PackedScene" id=11]
 
@@ -34,8 +31,6 @@ grow_vertical = 2
 [node name="PlaySoundsOnTheseButtons" parent="NoMargins" instance=ExtResource( 11 )]
 
 [node name="CenterContainer" type="CenterContainer" parent="NoMargins"]
-margin_left = -40.0
-margin_top = -15.0
 margin_right = 1070.0
 margin_bottom = 750.0
 rect_min_size = Vector2( 800, 720 )
@@ -45,10 +40,9 @@ size_flags_vertical = 3
 [node name="TabHintContainer" parent="NoMargins/CenterContainer" instance=ExtResource( 4 )]
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 20.0
-margin_top = 24.0
-margin_right = 1090.0
-margin_bottom = 740.0
+margin_top = 17.0
+margin_right = 1070.0
+margin_bottom = 733.0
 rect_min_size = Vector2( 1070, 716 )
 size_flags_horizontal = 4
 
@@ -92,104 +86,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="DD_TAB_INFO" type="Tabs" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-margin_left = 1.0
-margin_top = 50.0
-margin_right = -1.0
-margin_bottom = -1.0
-tab_align = 0
-
-[node name="MarginContainer" type="MarginContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-custom_constants/margin_right = 0
-custom_constants/margin_top = 16
-custom_constants/margin_left = 0
-custom_constants/margin_bottom = 48
-
-[node name="VBoxContainer" type="VBoxContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer"]
-margin_top = 16.0
-margin_right = 1711.0
-margin_bottom = 617.0
-custom_constants/separation = 6
-
-[node name="VERSION" type="Label" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer"]
-margin_right = 1711.0
-margin_bottom = 123.0
-theme = ExtResource( 6 )
-custom_fonts/font = ExtResource( 9 )
-text = "Derelict Delights
-v.2.0.3
-Requires game version 1.65.0 for complete functionality"
-valign = 2
-
-[node name="Separator" type="Label" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer"]
-margin_top = 129.0
-margin_right = 1711.0
-margin_bottom = 168.0
-theme = ExtResource( 6 )
-custom_fonts/font = ExtResource( 9 )
-valign = 2
-
-[node name="CREDIT" type="Label" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer"]
-margin_top = 174.0
-margin_right = 1711.0
-margin_bottom = 213.0
-theme = ExtResource( 6 )
-custom_fonts/font = ExtResource( 9 )
-text = "DDCREDITS"
-valign = 2
-
-[node name="Separator2" type="Label" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer"]
-margin_top = 219.0
-margin_right = 1711.0
-margin_bottom = 258.0
-theme = ExtResource( 6 )
-custom_fonts/font = ExtResource( 9 )
-valign = 2
-
-[node name="GridContainer" type="GridContainer" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer"]
-margin_top = 264.0
-margin_right = 1711.0
-margin_bottom = 305.0
-columns = 3
-
-[node name="Suggestions" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer/GridContainer"]
-margin_right = 561.0
-margin_bottom = 41.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "DERELICTDELIGHTS_SUGGEST"
-align = 0
-script = ExtResource( 2 )
-url = "https://forms.gle/yzvbGmaWeHWH9ChK8"
-
-[node name="Github" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer/GridContainer"]
-margin_left = 565.0
-margin_right = 1089.0
-margin_bottom = 41.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "DERELICTDELIGHTS_GITHUB"
-align = 0
-script = ExtResource( 2 )
-url = "https://github.com/rwqfsfasxc100/Derelict-Delights"
-
-[node name="Nexus" type="Button" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl/DD_TAB_INFO/MarginContainer/VBoxContainer/GridContainer"]
-margin_left = 1093.0
-margin_right = 1711.0
-margin_bottom = 41.0
-size_flags_horizontal = 4
-size_flags_vertical = 4
-text = "DERELICTDELIGHTS_NEXUSMODS"
-align = 0
-script = ExtResource( 2 )
-url = "https://www.nexusmods.com/dvringsofsaturn/mods/8"
-
 [node name="DD_MAIN_TOGGLES" type="Tabs" parent="NoMargins/CenterContainer/TabHintContainer/TabsWithGamepadControl"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_left = 1.0
@@ -298,6 +195,7 @@ margin_left = 7.0
 margin_top = -55.0
 margin_right = 341.0
 margin_bottom = -11.0
+hint_tooltip = "DDSETTINGS_SAVEHINT"
 focus_neighbour_right = NodePath("../Cancel")
 text = "SETTINGS_SAVE"
 
@@ -308,6 +206,7 @@ margin_left = -367.0
 margin_top = -55.0
 margin_right = -11.0
 margin_bottom = -11.0
+hint_tooltip = "DDSETTINGS_CANCELHINT"
 focus_neighbour_left = NodePath("../Save")
 text = "SETTINGS_CANCEL"
 
@@ -420,6 +319,7 @@ margin_left = 7.0
 margin_top = -55.0
 margin_right = 341.0
 margin_bottom = -11.0
+hint_tooltip = "DDSETTINGS_SAVEHINT"
 focus_neighbour_right = NodePath("../Cancel")
 text = "SETTINGS_SAVE"
 
@@ -430,6 +330,7 @@ margin_left = -367.0
 margin_top = -55.0
 margin_right = -11.0
 margin_bottom = -11.0
+hint_tooltip = "DDSETTINGS_CANCELHINT"
 focus_neighbour_left = NodePath("../Save")
 text = "SETTINGS_CANCEL"
 
@@ -482,6 +383,7 @@ margin_left = 7.0
 margin_top = -55.0
 margin_right = 341.0
 margin_bottom = -11.0
+hint_tooltip = "DDSETTINGS_SAVEHINT"
 focus_neighbour_right = NodePath("../Cancel")
 text = "SETTINGS_SAVE"
 
@@ -492,6 +394,7 @@ margin_left = -367.0
 margin_top = -55.0
 margin_right = -11.0
 margin_bottom = -11.0
+hint_tooltip = "DDSETTINGS_CANCELHINT"
 focus_neighbour_left = NodePath("../Save")
 text = "SETTINGS_CANCEL"
 
@@ -652,6 +555,7 @@ margin_left = 7.0
 margin_top = -55.0
 margin_right = 341.0
 margin_bottom = -11.0
+hint_tooltip = "DDSETTINGS_SAVEHINT"
 focus_neighbour_right = NodePath("../Cancel")
 text = "SETTINGS_SAVE"
 
@@ -662,6 +566,7 @@ margin_left = -367.0
 margin_top = -55.0
 margin_right = -11.0
 margin_bottom = -11.0
+hint_tooltip = "DDSETTINGS_CANCELHINT"
 focus_neighbour_left = NodePath("../Save")
 text = "SETTINGS_CANCEL"
 
@@ -822,6 +727,7 @@ margin_left = 7.0
 margin_top = -55.0
 margin_right = 341.0
 margin_bottom = -11.0
+hint_tooltip = "DDSETTINGS_SAVEHINT"
 focus_neighbour_right = NodePath("../Cancel")
 text = "SETTINGS_SAVE"
 
@@ -832,6 +738,7 @@ margin_left = -367.0
 margin_top = -55.0
 margin_right = -11.0
 margin_bottom = -11.0
+hint_tooltip = "DDSETTINGS_CANCELHINT"
 focus_neighbour_left = NodePath("../Save")
 text = "SETTINGS_CANCEL"
 

@@ -4,11 +4,11 @@
 
 [sub_resource type="StreamTexture" id=1]
 flags = 4
-load_path = "res://ModMenu/menu/ToggleIconConfig.png-c8cc2634ce50cfa3ae562410f54c4008.stex"
+load_path = "res://ModMenu/menu/ToggleIconConfig.png.stex"
 
 [sub_resource type="StreamTexture" id=2]
 flags = 4
-load_path = "res://DerelictDelights/menu/ToggleIconConfig.png-253db9429a5c499c21e1b3e42dbaa037.stex"
+load_path = "res://DerelictDelights/menu/ToggleIconConfig.png.stex"
 
 [node name="DerelictDelights" type="Button"]
 margin_left = 831.0
@@ -16,7 +16,7 @@ margin_right = 896.0
 margin_bottom = 65.0
 rect_min_size = Vector2( 65, 65 )
 rect_pivot_offset = Vector2( -30, -43 )
-hint_tooltip = "Opens mod configuration window"
+hint_tooltip = "MODMENU_HINT_HAS_CONFIG"
 flat = true
 
 [node name="Sprite" type="Sprite" parent="."]
