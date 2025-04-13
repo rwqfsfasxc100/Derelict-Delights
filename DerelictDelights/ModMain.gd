@@ -4,8 +4,8 @@ extends Node
 # Mods are loaded from lowest to highest priority, default is 0
 const MOD_PRIORITY = 1001
 # Name of the mod, used for writing to the logs
-const MOD_NAME = "Derelict Delights v.2.0.9"
-const MOD_VERSION = "2.0.9"
+const MOD_NAME = "Derelict Delights v.2.0.11"
+const MOD_VERSION = "2.0.11"
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
@@ -126,15 +126,15 @@ func updateEquipment():# Equipment additions
 		l("Initializing equipment [mainToggles -> addEquipment]")
 		replaceScene("weapons/WeaponSlot.tscn")
 		replaceScene("enceladus/Upgrades.tscn")
-
-		replaceScene("ships/EIME.tscn")
-		replaceScene("ships/Eagle-Prospector-VP.tscn")
-		replaceScene("ships/Eagle-Prospector-Lux.tscn")
-		replaceScene("ships/Eagle-Prospector-Fat.tscn")
-		replaceScene("ships/Eagle-Prospector.tscn")
-		replaceScene("ships/ATK225-B.tscn")
-		replaceScene("ships/ATK225.tscn")
-		
+#
+#		replaceScene("ships/EIME.tscn")
+#		replaceScene("ships/Eagle-Prospector-VP.tscn")
+#		replaceScene("ships/Eagle-Prospector-Lux.tscn")
+#		replaceScene("ships/Eagle-Prospector-Fat.tscn")
+#		replaceScene("ships/Eagle-Prospector.tscn")
+#		replaceScene("ships/ATK225-B.tscn")
+#		replaceScene("ships/ATK225.tscn")
+#
 		l("Equipment and ships loaded")
 		
 
