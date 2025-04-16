@@ -86,22 +86,22 @@ func makeVilcyBattleship():
 					"type":"SYSTEM_ACL200P"
 				}, 
 				"leftBay1":{
-					"type":"SYSTEM_PDT-L"
+					"type":"SYSTEM_PDMWG-L"
 				}, 
 				"leftBay2":{
-					"type":"SYSTEM_PDT-L"
+					"type":"SYSTEM_PDMWG-L"
 				}, 
 				"leftBay3":{
-					"type":"SYSTEM_PDT-L"
+					"type":"SYSTEM_PDMWG-L"
 				}, 
 				"rightBay1":{
-					"type":"SYSTEM_PDT-R"
+					"type":"SYSTEM_PDMWG-R"
 				}, 
 				"rightBay2":{
-					"type":"SYSTEM_PDT-R"
+					"type":"SYSTEM_PDMWG-R"
 				}, 
 				"rightBay3":{
-					"type":"SYSTEM_PDT-R"
+					"type":"SYSTEM_PDMWG-R"
 				}, 
 			}
 	cfg.config.ammo = {

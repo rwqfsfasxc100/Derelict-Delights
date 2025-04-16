@@ -4,8 +4,8 @@ extends Node
 # Mods are loaded from lowest to highest priority, default is 0
 const MOD_PRIORITY = 1001
 # Name of the mod, used for writing to the logs
-const MOD_NAME = "Derelict Delights v.2.0.11"
-const MOD_VERSION = "2.0.11"
+const MOD_NAME = "Derelict Delights v.2.0.12"
+const MOD_VERSION = "2.0.12"
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
