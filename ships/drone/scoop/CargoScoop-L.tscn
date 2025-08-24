@@ -160,8 +160,7 @@ shadow_filter_smooth = 4.0
 shadow_item_cull_mask = 3
 
 [node name="Grinder" parent="." instance=ExtResource( 15 )]
-visible = false
-position = Vector2( 0, -41 )
+position = Vector2( 0, -42 )
 
 [node name="Hull" type="Sprite" parent="."]
 light_mask = 5
@@ -192,7 +191,6 @@ light_mask = 0
 polygon = PoolVector2Array( 10, -90, 17, -60, 25, -54, 24, 27, -25, 27, -25, -54, -17, -60, -10, -90 )
 
 [node name="Collider" type="CollisionPolygon2D" parent="."]
-visible = false
 light_mask = 0
 z_index = 50
 polygon = PoolVector2Array( -31, 42, -31, -60, -17, -60, -25, -54, -25, 27, 24, 27, 25, -54, 17, -60, 31, -60, 31, 42 )

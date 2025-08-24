@@ -1,15 +1,33 @@
-[package]
+[mod_information]
 
-id="hev.DerelictDelights"
 name="Derelict Delights"
-version="2.0.12"
+id="hev.DerelictDelights"
 description="DERELICTDELIGHTS_MOD_DESCRIPTION"
-group="gameplay"
-github_homepage="https://github.com/rwqfsfasxc100/Derelict-Delights"
-github_releases="https://github.com/rwqfsfasxc100/Derelict-Delights/releases"
-discord_thread="https://discord.com/channels/426287934870781952/1316256288329699419"
-nexus_page="https://www.nexusmods.com/dvringsofsaturn/mods/8"
-donations_page=""
-wiki_page="https://delta-v.kodera.pl/index.php/Mod:Derelict_Delights"
-custom_link="https://forms.gle/yzvbGmaWeHWH9ChK8"
-custom_link_name="DERELICTDELIGHTS_SUGGEST"
+author="__hev"
+credits=["Za'krin - initial help with modding and events"]
+
+[version]
+version_major=2
+version_minor=1
+version_bugfix=0
+
+[tags]
+
+adds_equipment=["SYSTEM_EXBIG","SYSTEM_EXSUPER","SYSTEM_SCOOP_E","SYSTEM_SCOOP_EP","SYSTEM_SCOOP_L","SYSTEM_SCOOP_LP","SYSTEM_SCOOP_M","SYSTEM_SCOOP_MP","SYSTEM_SCOOP_P"]
+adds_events=["More derelicts","Miners with more ships","POI_HABITAT_BUILDING","Empty Containers"]
+adds_gameplay_mechanics=["Ask containers to request a new one to be sent","Obontos ask for tungsten and beryllium","Additional trades with pirates","New Historian crew agenda"]
+allow_achievements=false
+overhaul=true
+quality_of_life=true
+
+[links]
+
+github={"link":"https://github.com/rwqfsfasxc100/Derelict-Delights","has_releases":true}
+discord="https://discord.com/channels/426287934870781952/1316256288329699419"
+nexus="https://www.nexusmods.com/dvringsofsaturn/mods/8"
+wiki="https://delta-v.kodera.pl/index.php/Mod:Derelict_Delights"
+custom_links={"suggestionForm":{"link":"https://forms.gle/yzvbGmaWeHWH9ChK8","name":"DERELICTDELIGHTS_SUGGEST"}
+
+[manifest_definitions]
+
+manifest_version=2.1

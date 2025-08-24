@@ -158,7 +158,7 @@ shadow_filter_smooth = 4.0
 shadow_item_cull_mask = 3
 
 [node name="Grinder" parent="." instance=ExtResource( 15 )]
-position = Vector2( 0, -41 )
+position = Vector2( 0, -42 )
 
 [node name="Hull" type="Sprite" parent="."]
 light_mask = 5

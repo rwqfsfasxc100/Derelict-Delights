@@ -1,0 +1,353 @@
+extends Node
+
+
+const scoop_e_l = {
+	"system":"SYSTEM_SCOOP_E-L",
+	"name_override":"SYSTEM_SCOOP_E",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":50000,
+	"alignment":"ALIGNMENT_LEFT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockE-L.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_e_r = {
+	"system":"SYSTEM_SCOOP_E-R",
+	"name_override":"SYSTEM_SCOOP_E",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":50000,
+	"alignment":"ALIGNMENT_RIGHT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockE.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_ep_l = {
+	"system":"SYSTEM_SCOOP_EP-L",
+	"name_override":"SYSTEM_SCOOP_EP",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":69000,
+	"alignment":"ALIGNMENT_LEFT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockEP-L.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_ep_r = {
+	"system":"SYSTEM_SCOOP_EP-R",
+	"name_override":"SYSTEM_SCOOP_EP",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":69000,
+	"alignment":"ALIGNMENT_RIGHT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockEP.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_m_l = {
+	"system":"SYSTEM_SCOOP_M-L",
+	"name_override":"SYSTEM_SCOOP_M",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":110000,
+	"alignment":"ALIGNMENT_LEFT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockM-L.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_m_r = {
+	"system":"SYSTEM_SCOOP_M-R",
+	"name_override":"SYSTEM_SCOOP_M",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":110000,
+	"alignment":"ALIGNMENT_RIGHT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockM.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_mp_l = {
+	"system":"SYSTEM_SCOOP_MP-L",
+	"name_override":"SYSTEM_SCOOP_MP",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":150000,
+	"alignment":"ALIGNMENT_LEFT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockMP-L.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_mp_r = {
+	"system":"SYSTEM_SCOOP_MP-R",
+	"name_override":"SYSTEM_SCOOP_MP",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":150000,
+	"alignment":"ALIGNMENT_RIGHT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockMP.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_p_l = {
+	"system":"SYSTEM_SCOOP_P-L",
+	"name_override":"SYSTEM_SCOOP_P",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":130000,
+	"alignment":"ALIGNMENT_LEFT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockP-L.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_p_r = {
+	"system":"SYSTEM_SCOOP_P-R",
+	"name_override":"SYSTEM_SCOOP_P",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":130000,
+	"alignment":"ALIGNMENT_RIGHT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockP.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_l_l = {
+	"system":"SYSTEM_SCOOP_L-L",
+	"name_override":"SYSTEM_SCOOP_L",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":280000,
+	"alignment":"ALIGNMENT_LEFT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockL-L.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_l_r = {
+	"system":"SYSTEM_SCOOP_L-R",
+	"name_override":"SYSTEM_SCOOP_L",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":280000,
+	"alignment":"ALIGNMENT_RIGHT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockL.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_lp_l = {
+	"system":"SYSTEM_SCOOP_LP-L",
+	"name_override":"SYSTEM_SCOOP_LP",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":295000,
+	"alignment":"ALIGNMENT_LEFT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockLP-L.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const scoop_lp_r = {
+	"system":"SYSTEM_SCOOP_LP-R",
+	"name_override":"SYSTEM_SCOOP_LP",
+	"manual":"SYSTEM_SCOOP_MANUAL",
+	"price":295000,
+	"alignment":"ALIGNMENT_RIGHT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_MINING_COMPANION",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockLP.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const exbig_l = {
+	"system":"SYSTEM_EXBIG-L",
+	"name_override":"SYSTEM_EXBIG",
+	"price":350000,
+	"alignment":"ALIGNMENT_LEFT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/StorageContainerDockBig-L.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			},
+			{
+				"property":"flip",
+				"value":"true"
+			}
+		]
+	}
+}
+const exbig_r = {
+	"system":"SYSTEM_EXBIG-R",
+	"name_override":"SYSTEM_EXBIG",
+	"price":350000,
+	"alignment":"ALIGNMENT_RIGHT",
+	"test_protocol":"detach",
+	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/StorageContainerDockBig.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}
+const exsuper_l = {
+	"system":"SYSTEM_EXSUPER-L",
+	"name_override":"SYSTEM_EXSUPER",
+	"price":1100000,
+	"alignment":"ALIGNMENT_LEFT",
+	"test_protocol":"detach",
+	"story_flag":"dd.story.interplanetary",
+	"story_flag_max":10,
+	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/StorageContainerDockSuper-L.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			},
+			{
+				"property":"flip",
+				"value":"true"
+			}
+		]
+	}
+}
+const exsuper_r = {
+	"system":"SYSTEM_EXSUPER-R",
+	"name_override":"SYSTEM_EXSUPER",
+	"price":1100000,
+	"alignment":"ALIGNMENT_RIGHT",
+	"test_protocol":"detach",
+	"story_flag":"dd.story.interplanetary",
+	"story_flag_max":10,
+	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
+	"slot_type":"HARDPOINT",
+	"weapon_slot":{
+		"path":"res://DerelictDelights/ships/modules/StorageContainerDockSuper.tscn",
+		"data":[
+			{
+				"property":"position",
+				"value":"Vector2( 0, 196 )"
+			}
+		]
+	}
+}

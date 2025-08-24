@@ -46,6 +46,11 @@ func _init(modLoader = ModLoader):
 	
 	loadDLC()
 	
+	var self_path = self.get_script().get_path()
+	var self_directory = self_path.split(self_path.split("/")[self_path.split("/").size() - 1])[0]
+	var self_check = load(self_directory + "mod_checker_script.tscn").instance()
+	add_child(self_check)
+	addContainerRequests()
 	l("Settings & DLC loaded, now initializing events")
 	
 	updateEquipment()
@@ -59,7 +64,6 @@ func _init(modLoader = ModLoader):
 	
 	# update conversations moved out until next stable release
 	
-	addContainerRequests()
 	
 	addHabitatTradeAdditions()
 	
@@ -97,6 +101,7 @@ func handleMods():
 		else:
 			nonDynamicHandling()
 			attachModCompat()
+		replaceScene("comms/conversation/CargoContainer.tscn")
 	else:
 		l("Mod support not enabled, skipping")
 
@@ -124,8 +129,8 @@ func updateEvents():
 func updateEquipment():# Equipment additions
 	if modConfig["mainToggles"]["addEquipment"]:
 		l("Initializing equipment [mainToggles -> addEquipment]")
-		replaceScene("weapons/WeaponSlot.tscn")
-		replaceScene("enceladus/Upgrades.tscn")
+#		replaceScene("weapons/WeaponSlot.tscn")
+#		replaceScene("enceladus/Upgrades.tscn")
 #
 #		replaceScene("ships/EIME.tscn")
 #		replaceScene("ships/Eagle-Prospector-VP.tscn")
@@ -134,7 +139,7 @@ func updateEquipment():# Equipment additions
 #		replaceScene("ships/Eagle-Prospector.tscn")
 #		replaceScene("ships/ATK225-B.tscn")
 #		replaceScene("ships/ATK225.tscn")
-#
+
 		l("Equipment and ships loaded")
 		
 
