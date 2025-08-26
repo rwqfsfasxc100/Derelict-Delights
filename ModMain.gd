@@ -4,8 +4,11 @@ extends Node
 # Mods are loaded from lowest to highest priority, default is 0
 const MOD_PRIORITY = 1001
 # Name of the mod, used for writing to the logs
-const MOD_NAME = "Derelict Delights v.2.0.12"
-const MOD_VERSION = "2.0.12"
+const MOD_NAME = "Derelict Delights"
+const MOD_VERSION_MAJOR = 1
+const MOD_VERSION_MINOR = 6
+const MOD_VERSION_BUGFIX = 9
+const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
@@ -507,11 +510,10 @@ func loadDLC():
 	DLCLoader.queue_free()
 	l("Finished loading DLC")
 
-
-# Func to print messages to the logs
-func l(msg:String, title:String = MOD_NAME):
-	Debug.l("[%s]: %s" % [title, msg])
-	
+func l(msg:String, title:String = MOD_NAME, version:String = str(MOD_VERSION_MAJOR) + "." + str(MOD_VERSION_MINOR) + "." + str(MOD_VERSION_BUGFIX)):
+	if not MOD_VERSION_METADATA == "":
+		version = version + "-" + MOD_VERSION_METADATA
+	Debug.l("[%s V%s]: %s" % [title, version, msg])
 
 var listModZipFiles = []
 
