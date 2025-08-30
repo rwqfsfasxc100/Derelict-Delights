@@ -314,7 +314,7 @@ const exsuper_l = {
 	"alignment":"ALIGNMENT_LEFT",
 	"test_protocol":"detach",
 	"story_flag":"dd.story.interplanetary",
-	"story_flag_max":10,
+	"story_flag_min":10,
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
@@ -338,7 +338,7 @@ const exsuper_r = {
 	"alignment":"ALIGNMENT_RIGHT",
 	"test_protocol":"detach",
 	"story_flag":"dd.story.interplanetary",
-	"story_flag_max":10,
+	"story_flag_min":10,
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
