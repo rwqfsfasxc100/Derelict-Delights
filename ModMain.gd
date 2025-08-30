@@ -5,9 +5,9 @@ extends Node
 const MOD_PRIORITY = 1001
 # Name of the mod, used for writing to the logs
 const MOD_NAME = "Derelict Delights"
-const MOD_VERSION_MAJOR = 1
-const MOD_VERSION_MINOR = 6
-const MOD_VERSION_BUGFIX = 9
+const MOD_VERSION_MAJOR = 2
+const MOD_VERSION_MINOR = 1
+const MOD_VERSION_BUGFIX = 2
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
