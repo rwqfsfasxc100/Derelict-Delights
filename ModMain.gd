@@ -206,6 +206,7 @@ func addAgendaBasedStories():
 	if modConfig["mainToggles"]["addEvents"] and modConfig["mainToggles"]["addAgenda"] and modConfig["mainToggles"]["addEquipment"] and modConfig["agendaToggles"]["addHistorian"]:
 		l("Initializing event-based equipment location [mainToggles -> addEvents] + [mainToggles -> addAgenda] + [mainToggles -> addEquipment]")
 		replaceScene("comms/conversation/MinerConversation.tscn")
+		replaceScene("story/historianAgenda/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded agenda-driven events")
 	if not modConfig["mainToggles"]["addEvents"] or not modConfig["mainToggles"]["addAgenda"] or not modConfig["mainToggles"]["addEquipment"]:
 		l("Failed to load event-based equipment location due to one or more of the following [mainToggles] options being disabled: [addEvents], [addAgenda], [addEquipment]")
