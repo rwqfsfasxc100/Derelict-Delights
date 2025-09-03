@@ -7,7 +7,7 @@ const MOD_PRIORITY = 1001
 const MOD_NAME = "Derelict Delights"
 const MOD_VERSION_MAJOR = 2
 const MOD_VERSION_MINOR = 1
-const MOD_VERSION_BUGFIX = 2
+const MOD_VERSION_BUGFIX = 3
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
