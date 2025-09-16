@@ -6,7 +6,8 @@ This mod currently adds:
 * NPC miners now can utilize all TNTRL variants (except the K44), Cothon variants, Eagle variants, AT-K225 variants (except modified variant), OCP-209, and the Kitsune.
 * New ship configs for the dealership, NPC, and derelict ships.
 * Added a new container variant: the THI Interlunar Container, rogue form can be found randomly in the rings and be sold by pirates too.
-* Experimental Interplanetary containers can be found randomly in the rings, which may contain some loot for capturing them. 
+* Experimental Interplanetary containers can be found randomly in the rings, which may contain some loot for capturing them.
+* Several variants of the NT Companions, with the mike replaced with other tools, to swapping out the grinders, and even adding in an MPU 
 * More dialogue options for random crew interactions.
 * The Ganymedeans have started to take use of the Eagle Prospectors they've been stockpiling, and using them with the more powerful equipment they have taken from piracy.
 * The Ganymedeans now have a chance to sell a ship other than the default 3 (K37, Eagle Prospector, Cothon-212). As a result to the increase in ship opportunities, the weight to be offered an ore container has been increased sevenfold, and the weights for the vanilla 3 ship offers have been increased fourfold each, resulting in a 50.6/49.4 container-to-ship offer ratio.
