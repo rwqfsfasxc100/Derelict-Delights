@@ -417,3 +417,5 @@ DERELICTDELIGHTS_MOD_DESCRIPTION|Derelict delights is a content mod that adds se
 DDSETTINGS_SAVEHINT|CAUTION! Saving these settings will cause the game to restart. Be careful when modifying mid-dive.
 
 DDSETTINGS_CANCELHINT|Closes the menu without changing settings. Does not cause the game to restart.
+
+DERELICTDELIGHTS_SUGGEST_TOOLTIP|Allows you to suggest new ship default loadouts. Any and all are welcome, regardless of how repetitive.

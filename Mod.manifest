@@ -13,21 +13,24 @@ version_bugfix=3
 
 [tags]
 
-adds_equipment=["SYSTEM_EXBIG","SYSTEM_EXSUPER","SYSTEM_SCOOP_E","SYSTEM_SCOOP_EP","SYSTEM_SCOOP_L","SYSTEM_SCOOP_LP","SYSTEM_SCOOP_M","SYSTEM_SCOOP_MP","SYSTEM_SCOOP_P"]
-adds_events=["More derelicts","Miners with more ships","POI_HABITAT_BUILDING","Empty Containers"]
-adds_gameplay_mechanics=["Ask containers to request a new one to be sent","Obontos ask for tungsten and beryllium","Additional trades with pirates","New Historian crew agenda"]
-allow_achievements=false
-overhaul=true
-quality_of_life=true
+TAG_ADDS_EQUIPMENT={"type":"array","value":["SYSTEM_EXBIG","SYSTEM_EXSUPER","SYSTEM_SCOOP_E","SYSTEM_SCOOP_EP","SYSTEM_SCOOP_L","SYSTEM_SCOOP_LP","SYSTEM_SCOOP_M","SYSTEM_SCOOP_MP","SYSTEM_SCOOP_P"]}
+TAG_ADDS_EVENTS={"type":"array","value":["More derelicts","Miners with more ships","POI_HABITAT_BUILDING","Empty Containers"]}
+TAG_ADDS_GAMEPLAY_MECHANICS={"type":"array","value":["Ask containers to request a new one to be sent","Obontos ask for tungsten and beryllium","Additional trades with pirates","New Historian crew agenda"]}
+TAG_ALLOW_ACHIEVEMENTS={"type":"bool","value":false}
+TAG_OVERHAUL={"type":"bool","value":true}
+TAG_QOL={"type":"bool","value":true}
 
 [links]
 
-github={"link":"https://github.com/rwqfsfasxc100/Derelict-Delights","has_releases":true}
-discord="https://discord.com/channels/426287934870781952/1316256288329699419"
-nexus="https://www.nexusmods.com/dvringsofsaturn/mods/8"
-wiki="https://delta-v.kodera.pl/index.php/Mod:Derelict_Delights"
-custom_links={"suggestionForm":{"link":"https://forms.gle/yzvbGmaWeHWH9ChK8","name":"DERELICTDELIGHTS_SUGGEST"}}
+HEVLIB_GITHUB={"URL":"https://github.com/rwqfsfasxc100/Derelict-Delights"}
+HEVLIB_DISCORD={"URL":"https://discord.com/channels/426287934870781952/1316256288329699419"}
+HEVLIB_NEXUS={"URL":"https://www.nexusmods.com/dvringsofsaturn/mods/8"}
+HEVLIB_DONATIONS={"URL":"https://ko-fi.com/00hev"}
+HEVLIB_WIKI={"URL":"https://delta-v.kodera.pl/index.php/Mod:Derelict_Delights"}
+DERELICTDELIGHTS_SUGGEST={"URL":"https://forms.gle/yzvbGmaWeHWH9ChK8","TOOLTIP":"DERELICTDELIGHTS_SUGGEST_TOOLTIP"}
+HEVLIB_BUGREPORTS={"URL":"https://forms.gle/vUoarawnYjy3hXJi9"}
 
 [manifest_definitions]
 
-manifest_version=2.1
+manifest_version=2.2
+manifest_url="https://raw.githubusercontent.com/rwqfsfasxc100/Derelict-Delights/1.0.0/Mod.manifest"
