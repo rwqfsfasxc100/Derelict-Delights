@@ -1,4 +1,4 @@
-# Derelict-Delights
+# Abandoned Technologies
 Fulfil your derelict-hunting dream with this mod. All remaining 13 ship types and variants not usually found in the rings can now be found from both miners and in derelict form.
 
 This mod currently adds:
