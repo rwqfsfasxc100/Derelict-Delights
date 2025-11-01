@@ -11,7 +11,7 @@ const scoop_e_l = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockE-L.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockE-L.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -30,7 +30,7 @@ const scoop_e_r = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockE.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockE.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -49,7 +49,7 @@ const scoop_ep_l = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockEP-L.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockEP-L.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -68,7 +68,7 @@ const scoop_ep_r = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockEP.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockEP.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -87,7 +87,7 @@ const scoop_m_l = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockM-L.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockM-L.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -106,7 +106,7 @@ const scoop_m_r = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockM.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockM.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -125,7 +125,7 @@ const scoop_mp_l = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockMP-L.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockMP-L.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -144,7 +144,7 @@ const scoop_mp_r = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockMP.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockMP.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -163,7 +163,7 @@ const scoop_p_l = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockP-L.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockP-L.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -182,7 +182,7 @@ const scoop_p_r = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockP.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockP.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -201,7 +201,7 @@ const scoop_l_l = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockL-L.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockL-L.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -220,7 +220,7 @@ const scoop_l_r = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockL.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockL.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -239,7 +239,7 @@ const scoop_lp_l = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockLP-L.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockLP-L.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -258,7 +258,7 @@ const scoop_lp_r = {
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/scoop/ScoopDockLP.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockLP.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -276,7 +276,7 @@ const exbig_l = {
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/StorageContainerDockBig-L.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/StorageContainerDockBig-L.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -298,7 +298,7 @@ const exbig_r = {
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/StorageContainerDockBig.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/StorageContainerDockBig.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -318,7 +318,7 @@ const exsuper_l = {
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/StorageContainerDockSuper-L.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/StorageContainerDockSuper-L.tscn",
 		"data":[
 			{
 				"property":"position",
@@ -342,7 +342,7 @@ const exsuper_r = {
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
 	"slot_type":"HARDPOINT",
 	"weapon_slot":{
-		"path":"res://DerelictDelights/ships/modules/StorageContainerDockSuper.tscn",
+		"path":"res://AbandonedTechnologies/ships/modules/StorageContainerDockSuper.tscn",
 		"data":[
 			{
 				"property":"position",

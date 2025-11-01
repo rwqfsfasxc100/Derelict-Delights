@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://DerelictDelights/comms/conversation/subtrees/DIALOG_ASK_ABOUT_SUPER_THICC.tscn" type="PackedScene" id=1]
+[ext_resource path="res://AbandonedTechnologies/comms/conversation/subtrees/DIALOG_ASK_ABOUT_SUPER_THICC.tscn" type="PackedScene" id=1]
 [ext_resource path="res://comms/conversation/subtrees/StandClearMyArea.tscn" type="PackedScene" id=2]
 
 [node name="DIALOG_MINER_STAND_CLEAR_1" instance=ExtResource( 2 )]

@@ -4,7 +4,7 @@
 [ext_resource path="res://story/habitat/HabitatInConstruction.tscn" type="PackedScene" id=2]
 [ext_resource path="res://enceladus/enceladus-inner-c.png" type="Texture" id=3]
 [ext_resource path="res://enceladus/enceladus-inner-n.png" type="Texture" id=4]
-[ext_resource path="res://DerelictDelights/comms/conversation/HabitatBuildingConversation.tscn" type="PackedScene" id=5]
+[ext_resource path="res://AbandonedTechnologies/comms/conversation/HabitatBuildingConversation.tscn" type="PackedScene" id=5]
 
 [sub_resource type="ArrayMesh" id=1]
 surfaces/0 = {

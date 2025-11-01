@@ -4,7 +4,7 @@ extends Node
 # Mods are loaded from lowest to highest priority, default is 0
 const MOD_PRIORITY = 1001
 # Name of the mod, used for writing to the logs
-const MOD_NAME = "Derelict Delights"
+const MOD_NAME = "Abandoned Technologies"
 const MOD_VERSION_MAJOR = 2
 const MOD_VERSION_MINOR = 1
 const MOD_VERSION_BUGFIX = 3

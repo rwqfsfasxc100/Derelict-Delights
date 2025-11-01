@@ -1,6 +1,6 @@
 [mod_information]
 
-name="Derelict Delights"
+name="Abandoned Technologies"
 id="hev.DerelictDelights"
 description="DERELICTDELIGHTS_MOD_DESCRIPTION"
 author="__hev"
@@ -33,4 +33,4 @@ HEVLIB_BUGREPORTS={"URL":"https://forms.gle/vUoarawnYjy3hXJi9"}
 [manifest_definitions]
 
 manifest_version=2.2
-manifest_url="https://raw.githubusercontent.com/rwqfsfasxc100/Derelict-Delights/1.0.0/Mod.manifest"
+manifest_url="https://raw.githubusercontent.com/rwqfsfasxc100/Abandoned-Technologies/1.0.0/Mod.manifest"

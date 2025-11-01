@@ -15,7 +15,7 @@
 [ext_resource path="res://ships/modules/DisableAI.tscn" type="PackedScene" id=13]
 [ext_resource path="res://ships/modules/ThrusterSlot.tscn" type="PackedScene" id=14]
 [ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=15]
-[ext_resource path="res://DerelictDelights/comms/conversation/SuperCargoContainer.tscn" type="PackedScene" id=16]
+[ext_resource path="res://AbandonedTechnologies/comms/conversation/SuperCargoContainer.tscn" type="PackedScene" id=16]
 
 [sub_resource type="PhysicsMaterial" id=1]
 rough = true

@@ -88,7 +88,7 @@ var DDConfig = {
 
 #		"expandShipEquipmentOptions":true, disabled for now, this is more so a minor QOL feature that no one is really gonna see
 
-var DDPath = "user://cfg/DerelictDelights.cfg"
+var DDPath = "user://cfg/AbandonedTechnologies.cfg"
 var DDFile = ConfigFile.new()
 
 func _ready():

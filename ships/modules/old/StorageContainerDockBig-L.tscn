@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://DerelictDelights/ships/modules/old/StorageContainerDockBig.tscn" type="PackedScene" id=1]
+[ext_resource path="res://AbandonedTechnologies/ships/modules/old/StorageContainerDockBig.tscn" type="PackedScene" id=1]
 
 [node name="StorageContainerDockBig" instance=ExtResource( 1 )]
 position = Vector2( -10, 196 )

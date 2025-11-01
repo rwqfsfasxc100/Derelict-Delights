@@ -4,14 +4,15 @@
 [ext_resource path="res://story/RescueOperation.gd" type="Script" id=2]
 [ext_resource path="res://story/MinerMining.gd" type="Script" id=3]
 [ext_resource path="res://story/LifepodIsFloating.gd" type="Script" id=4]
-[ext_resource path="res://DerelictDelights/ships/drone/StoragePodSuperBigRogue.tscn" type="PackedScene" id=5]
-[ext_resource path="res://DerelictDelights/story/vilcySlashG4A/Vilcy.gd" type="Script" id=6]
-[ext_resource path="res://DerelictDelights/ships/drone/StoragePodBigRogue.tscn" type="PackedScene" id=7]
-[ext_resource path="res://DerelictDelights/ships/drone/StoragePodEmpty.tscn" type="PackedScene" id=8]
-[ext_resource path="res://DerelictDelights/ships/drone/StoragePodEmptyMono.tscn" type="PackedScene" id=9]
-[ext_resource path="res://DerelictDelights/story/habitat/HabitatBeingBuilt.tscn" type="PackedScene" id=10]
+[ext_resource path="res://AbandonedTechnologies/ships/drone/StoragePodSuperBigRogue.tscn" type="PackedScene" id=5]
+[ext_resource path="res://AbandonedTechnologies/story/vilcySlashG4A/Vilcy.gd" type="Script" id=6]
+[ext_resource path="res://AbandonedTechnologies/ships/drone/StoragePodBigRogue.tscn" type="PackedScene" id=7]
+[ext_resource path="res://AbandonedTechnologies/ships/drone/StoragePodEmpty.tscn" type="PackedScene" id=8]
+[ext_resource path="res://AbandonedTechnologies/ships/drone/StoragePodEmptyMono.tscn" type="PackedScene" id=9]
+[ext_resource path="res://AbandonedTechnologies/story/habitat/HabitatBeingBuilt.tscn" type="PackedScene" id=10]
 [ext_resource path="res://story/InstanceWithChance.gd" type="Script" id=11]
-[ext_resource path="res://DerelictDelights/story/SuperTHICCDerelict.gd" type="Script" id=12]
+[ext_resource path="res://AbandonedTechnologies/story/SuperTHICCDerelict.gd" type="Script" id=12]
+
 
 [node name="TheRing" instance=ExtResource( 1 )]
 

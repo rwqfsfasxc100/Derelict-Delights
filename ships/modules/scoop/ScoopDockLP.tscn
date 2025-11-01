@@ -2,7 +2,7 @@
 
 [ext_resource path="res://ships/modules/ClaimOwner.gd" type="Script" id=1]
 [ext_resource path="res://ships/modules/DockingArm.tscn" type="PackedScene" id=2]
-[ext_resource path="res://DerelictDelights/ships/drone/scoop/CargoScoop-LP.tscn" type="PackedScene" id=3]
+[ext_resource path="res://AbandonedTechnologies/ships/drone/scoop/CargoScoop-LP.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 200, 300 )

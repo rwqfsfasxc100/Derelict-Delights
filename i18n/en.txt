@@ -212,11 +212,11 @@ DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN|As for how they obtained the licensing,
 
 DIALOG_HABITAT_BUILDING_CONTAINER_HELP|Perhaps if you ask around with other crews, you may be able to find someone who knows something about them, and they may be able to help more than we can.
 
-MENU_DERELICTDELIGHTS_CONFIG|Derelict Delights Configuration
+MENU_DERELICTDELIGHTS_CONFIG|Abandoned Technologies Configuration
 
 SETTINGS_ADD_EQUIPMENT|Add New Equipment
 
-SETTINGS_ADD_EQUIPMENT_TOOLTIP|Adds equipment that Derelict Delights provides. \nIncludes the THI Interlunar Container and the Experimental Interplanetary Container. \nThe latter may require other toggles to be enabled to obtain, as it is a quest item.
+SETTINGS_ADD_EQUIPMENT_TOOLTIP|Adds equipment that Abandoned Technologies provides. \nIncludes the THI Interlunar Container and the Experimental Interplanetary Container. \nThe latter may require other toggles to be enabled to obtain, as it is a quest item.
 
 SETTINGS_ADD_AGENDAS|Add New Crew Agendas
 
@@ -412,7 +412,7 @@ DERELICTDELIGHTS_GITHUB|GitHub
 
 DERELICTDELIGHTS_NEXUSMODS|Nexus Mods
 
-DERELICTDELIGHTS_MOD_DESCRIPTION|Derelict delights is a content mod that adds several new NPC encounters, equipment options, storylines, new crew agenda, and more. \n\n - 27 new events!\n - NPCs now run ship variants\n - Extra Vilcy and Ganymede interactions\n - Cargo containers can be asked to send new containers once released \n\nRequires game version 1.65.0 for complete functionality \n\nCredit: \n__hev - Main writer \nZa'krin Yoran - ModMain template & assistance with writing \nWT - Ukranian Translations
+DERELICTDELIGHTS_MOD_DESCRIPTION|Abandoned Technologies is a content mod that adds several new NPC encounters, equipment options, storylines, new crew agenda, and more. \n\nFormerly Derelict Delights
 
 DDSETTINGS_SAVEHINT|CAUTION! Saving these settings will cause the game to restart. Be careful when modifying mid-dive.
 
