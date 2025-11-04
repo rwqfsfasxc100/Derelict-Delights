@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ToggleIconConfig.png-aef27efa76b0f9b3833ad079da1b8b84.stex"
+path="res://.import/ToggleIconConfig.png-253db9429a5c499c21e1b3e42dbaa037.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AbandonedTechnologies/menu/ToggleIconConfig.png"
-dest_files=[ "res://.import/ToggleIconConfig.png-aef27efa76b0f9b3833ad079da1b8b84.stex" ]
+source_file="res://DerelictDelights/menu/ToggleIconConfig.png"
+dest_files=[ "res://.import/ToggleIconConfig.png-253db9429a5c499c21e1b3e42dbaa037.stex" ]
 
 [params]
 
