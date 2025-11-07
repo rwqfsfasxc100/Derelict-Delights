@@ -75,6 +75,7 @@ func _init(modLoader = ModLoader):
 	addAgendaBasedStories()
 	updateTL("i18n/en.txt", "|")
 	updateTL("i18n/ua.txt", "|")
+	updateTL("i18n/ru.txt", "|")
 	l("Loaded translations")
 	
 	l("Loading essential files, almost complete")
