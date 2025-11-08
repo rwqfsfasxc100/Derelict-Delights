@@ -20,6 +20,107 @@ TAG_ALLOW_ACHIEVEMENTS={"type":"bool","value":false}
 TAG_OVERHAUL={"type":"bool","value":true}
 TAG_QOL={"type":"bool","value":true}
 
+[configs]
+
+DD_MAIN_TOGGLES={
+	"addEquipment":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+	"addEvents":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+	"addAgenda":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+	"addModSupport":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+	"requestNewContainers":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+	"obontosAskForMoreStuff":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+	"expandShipEquipmentOptions":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+}
+DD_EVENT_TOGGLES={
+	"addDerelicts":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+	"addNewNPCMiners":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+	"addHabitatUnderConstruction":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+	"addNewVilcyAndG4AEncounters":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+	"addNewRogueContainers":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+	"addNewPirateTrades":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+}
+DD_AGENDA_TOGGLES={
+	"addHistorian":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+}
+DD_OTHER_MOD_FUNCTIONALITIES={
+	"IoERequestContainer":{
+		"name":"VP_MINERAL_MARKET",
+		"description":"VP_MINERAL_MARKET_DESC",
+		"type":"bool",
+		"default":true
+	},
+}
+
 [links]
 
 HEVLIB_GITHUB={"URL":"https://github.com/rwqfsfasxc100/Derelict-Delights"}
