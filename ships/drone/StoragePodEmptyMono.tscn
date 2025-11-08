@@ -1,9 +1,14 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://AbandonedTechnologies/ships/drone/StoragePodEmpty.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ships/drone/StoragePodRogue.tscn" type="PackedScene" id=1]
 
 [node name="StoragePod" instance=ExtResource( 1 )]
 processedCargoCapacity = 90000
 processedCargoStorageType = "mono"
+aiFactionDispositionToMoveCargo = 0.6
+faction = "helpless"
+reactiveMass = 0
+reactiveMassMax = 1000
+aiMinimumReactiveMass = 100
 
 [editable path="AI"]

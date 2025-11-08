@@ -24,98 +24,84 @@ TAG_QOL={"type":"bool","value":true}
 
 DD_MAIN_TOGGLES={
 	"addEquipment":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_ADD_EQUIPMENT",
+		"description":"SETTINGS_ADD_EQUIPMENT_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 	"addEvents":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_ADD_EVENTS",
+		"description":"SETTINGS_ADD_EVENTS_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 	"addAgenda":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
-		"type":"bool",
-		"default":true
-	},
-	"addModSupport":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_ADD_AGENDAS",
+		"description":"SETTINGS_ADD_AGENDAS_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 	"requestNewContainers":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_REQUEST_NEW_CONTAINERS",
+		"description":"SETTINGS_REQUEST_NEW_CONTAINERS_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 	"obontosAskForMoreStuff":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_ADD_OBONTO_BALANCE",
+		"description":"SETTINGS_ADD_OBONTO_BALANCE_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 	"expandShipEquipmentOptions":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_EXPAND_SHIP_LOADOUTS",
+		"description":"SETTINGS_EXPAND_SHIP_LOADOUTS_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 }
 DD_EVENT_TOGGLES={
 	"addDerelicts":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_ADD_DERELICTS",
+		"description":"SETTINGS_ADD_DERELICTS_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 	"addNewNPCMiners":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_ADD_NEW_NPCS",
+		"description":"SETTINGS_ADD_NEW_NPCS_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 	"addHabitatUnderConstruction":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION",
+		"description":"SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 	"addNewVilcyAndG4AEncounters":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_ADD_NEW_FACTION_ENCOUNTERS",
+		"description":"SETTINGS_ADD_NEW_FACTION_ENCOUNTERS_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 	"addNewRogueContainers":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_ADD_NEW_ROGUE_CONTAINERS",
+		"description":"SETTINGS_ADD_NEW_ROGUE_CONTAINERS_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 	"addNewPirateTrades":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_EXPAND_PIRATE_TRADES",
+		"description":"SETTINGS_EXPAND_PIRATE_TRADES_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
 }
 DD_AGENDA_TOGGLES={
 	"addHistorian":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
-		"type":"bool",
-		"default":true
-	},
-}
-DD_OTHER_MOD_FUNCTIONALITIES={
-	"IoERequestContainer":{
-		"name":"VP_MINERAL_MARKET",
-		"description":"VP_MINERAL_MARKET_DESC",
+		"name":"SETTINGS_ADD_HISTORIAN_AGENDA",
+		"description":"SETTINGS_ADD_HISTORIAN_AGENDA_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},

@@ -54,7 +54,7 @@ func _init(modLoader = ModLoader):
 	l("Loading essential files, almost complete")
 	
 	updateEvents()
-	handleMods()
+	replaceScene("comms/conversation/CargoContainer.tscn")
 	
 	l("Initialized %s completely!" % MOD_NAME)
 
@@ -69,11 +69,6 @@ func _ready():
 	replaceScene("Game.tscn")
 	l("Ready")
 	
-func handleMods():
-	if modConfig.get("DD_MAIN_TOGGLES",{}).get("addModSupport",true):
-		replaceScene("comms/conversation/CargoContainer.tscn")
-	else:
-		l("Mod support not enabled, skipping")
 
 func updateEvents():
 	# Event initialization
@@ -169,17 +164,6 @@ func addHabitatTradeAdditions():
 		replaceScene("comms/conversation/HabitatConversation.tscn")
 		l("Loaded habitat trades")
 
-	# Compatability for Derelict Delights features using stuff from other mods
-	# Add IoE containers to the request container options
-	if modConfig.get("DD_OTHER_MOD_FUNCTIONALITIES",{}).get("IoERequestContainer",true) and modConfig.get("DD_MAIN_TOGGLES",{}).get("requestNewContainers",true):
-		l("Initializing IoE container request addition to the [requestNewContainers] feature")
-		replaceScene("modded/IoE/story/DynaContainerEvent.tscn","res://story/TheRing.tscn")
-		replaceScene("modded/IoE/comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn","res://comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn")
-		l("Loaded IoE container request extension to Derelict Delights' [requestNewContainers] feature")
-	
-	if modConfig.get("DD_OTHER_MOD_FUNCTIONALITIES",{}).get("IoERequestContainer",true) and not modConfig.get("DD_MAIN_TOGGLES",{}).get("requestNewContainers",true):
-		l("Error loading IoE container request additions to Derelict Delights features. [requestNewContainers] is not enabled")
-		
 
 func loadSettings():
 	l(MOD_NAME + ": Loading mod settings")

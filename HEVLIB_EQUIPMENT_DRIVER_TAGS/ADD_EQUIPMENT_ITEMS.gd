@@ -10,6 +10,11 @@ const scoop_e_l = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockE-L.tscn",
 		"data":[
@@ -29,6 +34,11 @@ const scoop_e_r = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockE.tscn",
 		"data":[
@@ -48,6 +58,11 @@ const scoop_ep_l = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockEP-L.tscn",
 		"data":[
@@ -67,6 +82,11 @@ const scoop_ep_r = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockEP.tscn",
 		"data":[
@@ -86,6 +106,11 @@ const scoop_m_l = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockM-L.tscn",
 		"data":[
@@ -105,6 +130,11 @@ const scoop_m_r = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockM.tscn",
 		"data":[
@@ -124,6 +154,11 @@ const scoop_mp_l = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockMP-L.tscn",
 		"data":[
@@ -143,6 +178,11 @@ const scoop_mp_r = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockMP.tscn",
 		"data":[
@@ -162,6 +202,11 @@ const scoop_p_l = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockP-L.tscn",
 		"data":[
@@ -181,6 +226,11 @@ const scoop_p_r = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockP.tscn",
 		"data":[
@@ -200,6 +250,11 @@ const scoop_l_l = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockL-L.tscn",
 		"data":[
@@ -219,6 +274,11 @@ const scoop_l_r = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockL.tscn",
 		"data":[
@@ -238,6 +298,11 @@ const scoop_lp_l = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockLP-L.tscn",
 		"data":[
@@ -257,6 +322,11 @@ const scoop_lp_r = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/scoop/ScoopDockLP.tscn",
 		"data":[
@@ -275,6 +345,11 @@ const exbig_l = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/StorageContainerDockBig-L.tscn",
 		"data":[
@@ -297,6 +372,11 @@ const exbig_r = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/StorageContainerDockBig.tscn",
 		"data":[
@@ -317,6 +397,11 @@ const exsuper_l = {
 	"story_flag_min":10,
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/StorageContainerDockSuper-L.tscn",
 		"data":[
@@ -341,6 +426,11 @@ const exsuper_r = {
 	"story_flag_min":10,
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER",
 	"slot_type":"HARDPOINT",
+	"config":{
+		"id":"AbandonedTechnologies",
+		"section":"DD_MAIN_TOGGLES",
+		"entry":"addEquipment"
+	},
 	"weapon_slot":{
 		"path":"res://AbandonedTechnologies/ships/modules/StorageContainerDockSuper.tscn",
 		"data":[
