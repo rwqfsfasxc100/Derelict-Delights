@@ -97,6 +97,12 @@ DD_EVENT_TOGGLES={
 		"type":"bool",
 		"default":true
 	},
+	"kesslerSyndrome":{
+		"name":"SETTINGS_ADD_KESSLER_SYNDROME",
+		"description":"SETTINGS_ADD_KESSLER_SYNDROME_TOOLTIP",
+		"type":"bool",
+		"default":true
+	},
 }
 DD_AGENDA_TOGGLES={
 	"addHistorian":{

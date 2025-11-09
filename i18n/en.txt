@@ -419,3 +419,7 @@ DDSETTINGS_SAVEHINT|CAUTION! Saving these settings will cause the game to restar
 DDSETTINGS_CANCELHINT|Closes the menu without changing settings. Does not cause the game to restart.
 
 DERELICTDELIGHTS_SUGGEST_TOOLTIP|Allows you to suggest new ship default loadouts. Any and all are welcome, regardless of how repetitive.
+
+SETTINGS_ADD_KESSLER_SYNDROME|Add Kessler Syndrome
+
+SETTINGS_ADD_KESSLER_SYNDROME_TOOLTIP|Adds rare but catestrophic debris hurtling through the rings, and sometimes along with the idiot who caused it...

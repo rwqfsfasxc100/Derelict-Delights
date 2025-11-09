@@ -84,6 +84,8 @@ func updateEvents():
 			replaceScene("story/habitat/TheRing.tscn","res://story/TheRing.tscn")
 		if modConfig.get("DD_EVENT_TOGGLES",{}).get("addNewRogueContainers",true):
 			replaceScene("story/containers/TheRing.tscn","res://story/TheRing.tscn")
+		if modConfig.get("DD_EVENT_TOGGLES",{}).get("kesslerSyndrome",true):
+			replaceScene("story/kesslersyndrome/TheRing.tscn","res://story/TheRing.tscn")
 		l("Loaded ring events")
 		if modConfig.get("DD_EVENT_TOGGLES",{}).get("addNewVilcyAndG4AEncounters",true):
 			l("Initializing combat-driven events [DD_EVENT_TOGGLES -> addNewVilcyAndG4AEncounters]")
