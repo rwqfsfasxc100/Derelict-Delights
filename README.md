@@ -24,6 +24,8 @@ This mod currently adds:
 1. If you have any suggestions for this mod, please feel free to comment on the mod's [Discord thread](https://discord.com/channels/426287934870781952/1316256288329699419). If you want to suggest a new ship loadout configuration, check out [this Google form here](https://forms.gle/yzvbGmaWeHWH9ChK8), and it should give you a quick dropdown selection for each equipment on a ship to save time and not clog up the Discord channel.
 2. The K225 and K225-BB's THICCs act similarly to Rogue THICCs. Even the cargo containers have opted to include the NT Companions' work ethic.
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M01L6LMF)
+
 ## Derelict Spawn Chances
 Check [this wiki page](https://delta-v.kodera.pl/index.php/Profit_Strategy_-_Derelicts#Finding_Derelicts_in_the_Wild) for further understanding on how derelicts spawn, as some of these values may seem misleading as to what they do.
 * Bald Eagle:
