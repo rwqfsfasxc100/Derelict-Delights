@@ -423,3 +423,7 @@ DERELICTDELIGHTS_SUGGEST_TOOLTIP|Allows you to suggest new ship default loadouts
 SETTINGS_ADD_KESSLER_SYNDROME|Add Kessler Syndrome
 
 SETTINGS_ADD_KESSLER_SYNDROME_TOOLTIP|Adds rare but catestrophic debris hurtling through the rings, and sometimes along with the idiot who caused it...
+
+SETTINGS_ROGUE_MONOS|Add rogue monocargo containers
+
+SETTINGS_ROGUE_MONOS_TOOLTIP|Adds a rarer variant to the rogue cargo container, using the monocargo container instead, being a considerably larger gamble with lower lows and higher highs in value.

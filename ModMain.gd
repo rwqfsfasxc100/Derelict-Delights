@@ -7,7 +7,7 @@ const MOD_PRIORITY = 1001
 const MOD_NAME = "Abandoned Technologies"
 const MOD_VERSION_MAJOR = 3
 const MOD_VERSION_MINOR = 0
-const MOD_VERSION_BUGFIX = 0
+const MOD_VERSION_BUGFIX = 1
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
@@ -86,12 +86,17 @@ func updateEvents():
 			replaceScene("story/containers/TheRing.tscn","res://story/TheRing.tscn")
 		if modConfig.get("DD_EVENT_TOGGLES",{}).get("kesslerSyndrome",true):
 			replaceScene("story/kesslersyndrome/TheRing.tscn","res://story/TheRing.tscn")
+		if modConfig.get("DD_EVENT_TOGGLES",{}).get("rogueMonos",true):
+			replaceScene("story/rogueMonos/TheRing.tscn","res://story/TheRing.tscn")
+			replaceScene("story/rogueMonos/DIALOG_PIRATE_SUPPORT.tscn","res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
+			replaceScene("story/rogueMonos/AnarchyStationConversation.tscn","res://comms/conversation/AnarchyStationConversation.tscn")
 		l("Loaded ring events")
 		if modConfig.get("DD_EVENT_TOGGLES",{}).get("addNewVilcyAndG4AEncounters",true):
 			l("Initializing combat-driven events [DD_EVENT_TOGGLES -> addNewVilcyAndG4AEncounters]")
 			installScriptExtension("story/vilcySlashG4A/Vilcy.gd")
 			replaceScene("story/vilcySlashG4A/TheRing.tscn","res://story/TheRing.tscn")
 			l("Combat-driven events loaded")
+		
 		
 func updateDefaultLoadouts():
 	if modConfig.get("DD_MAIN_TOGGLES",{}).get("expandShipEquipmentOptions",true):

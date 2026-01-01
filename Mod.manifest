@@ -9,7 +9,7 @@ credits=["Za'krin - initial help with modding and events"]
 [version]
 version_major=3
 version_minor=0
-version_bugfix=0
+version_bugfix=1
 
 [tags]
 
@@ -100,6 +100,12 @@ DD_EVENT_TOGGLES={
 	"kesslerSyndrome":{
 		"name":"SETTINGS_ADD_KESSLER_SYNDROME",
 		"description":"SETTINGS_ADD_KESSLER_SYNDROME_TOOLTIP",
+		"type":"bool",
+		"default":true
+	},
+	"rogueMonos":{
+		"name":"SETTINGS_ROGUE_MONOS",
+		"description":"SETTINGS_ROGUE_MONOS_TOOLTIP",
 		"type":"bool",
 		"default":true
 	},
