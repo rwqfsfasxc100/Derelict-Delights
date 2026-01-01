@@ -1,8 +1,9 @@
 # Abandoned Technologies
-Fulfil your derelict-hunting dream with this mod. All remaining 13 ship types and variants not usually found in the rings can now be found from both miners and in derelict form.
+Fill the rings with life and find the secrets of old and new tech.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M01L6LMF)
 
 This mod currently adds:
-* 26 new events!
 * NPC miners now can utilize all TNTRL variants (except the K44), Cothon variants, Eagle variants, AT-K225 variants (except modified variant), OCP-209, and the Kitsune.
 * New ship configs for the dealership, NPC, and derelict ships.
 * Added a new container variant: the THI Interlunar Container, rogue form can be found randomly in the rings and be sold by pirates too.
@@ -11,6 +12,7 @@ This mod currently adds:
 * More dialogue options for random crew interactions.
 * The Ganymedeans have started to take use of the Eagle Prospectors they've been stockpiling, and using them with the more powerful equipment they have taken from piracy.
 * The Ganymedeans now have a chance to sell a ship other than the default 3 (K37, Eagle Prospector, Cothon-212). As a result to the increase in ship opportunities, the weight to be offered an ore container has been increased sevenfold, and the weights for the vanilla 3 ship offers have been increased fourfold each, resulting in a 50.6/49.4 container-to-ship offer ratio.
+* You can more rarely find monocargo containers filled with ore, being a much higher risk-reward with higher highs and lower lows. Pirates also occasionally sell these.
 * Vilcy utilize their contracts with Obonto Habitats to put their point defence turrets on Titans, and use them in extreme cases of caution.
 * You can now ask a container to supply a new one nearby, at a cost of course.
 * Empty, inert containers can be found in the rings.
@@ -23,8 +25,6 @@ This mod currently adds:
 ## NOTES
 1. If you have any suggestions for this mod, please feel free to comment on the mod's [Discord thread](https://discord.com/channels/426287934870781952/1316256288329699419). If you want to suggest a new ship loadout configuration, check out [this Google form here](https://forms.gle/yzvbGmaWeHWH9ChK8), and it should give you a quick dropdown selection for each equipment on a ship to save time and not clog up the Discord channel.
 2. The K225 and K225-BB's THICCs act similarly to Rogue THICCs. Even the cargo containers have opted to include the NT Companions' work ethic.
-
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M01L6LMF)
 
 ## Derelict Spawn Chances
 Check [this wiki page](https://delta-v.kodera.pl/index.php/Profit_Strategy_-_Derelicts#Finding_Derelicts_in_the_Wild) for further understanding on how derelicts spawn, as some of these values may seem misleading as to what they do.
