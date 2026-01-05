@@ -5,7 +5,7 @@
 
 [node name="DIALOG_PIRATE_SUPPORT_1" instance=ExtResource( 2 )]
 
-[node name="DIALOG_PIRATE_BUSINESS_ORE|mono" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="6"]
+[node name="DIALOG_PIRATE_BUSINESS_ORE_MONO" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="6"]
 script = ExtResource( 1 )
 weight = 0.7
 mostPrelevantDisposition = "support"
@@ -16,7 +16,7 @@ storyFlagSet = 1
 temporaryStory = true
 poiTimeHours = 168.0
 
-[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_ORE|mono" index="0"]
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_ORE_MONO" index="0"]
 script = ExtResource( 1 )
 myLine = false
 changeHostility = -0.1
@@ -32,14 +32,14 @@ poiExposeEvent = "StoragePodMono"
 poiDistanceKm = 500.0
 poiDirection = Vector2( 1, 0 )
 
-[node name="DIALOG_PIRATE_BUSINESS_ORE_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_ORE|mono/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+[node name="DIALOG_PIRATE_BUSINESS_ORE_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_ORE_MONO/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
 script = ExtResource( 1 )
 
-[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_ORE|mono" index="1"]
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_ORE_MONO" index="1"]
 script = ExtResource( 1 )
 myLine = false
 changeSupport = -0.2
 
-[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_ORE|mono" index="2"]
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_ORE_MONO" index="2"]
 script = ExtResource( 1 )
 alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")

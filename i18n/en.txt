@@ -427,3 +427,5 @@ SETTINGS_ADD_KESSLER_SYNDROME_TOOLTIP|Adds rare but catestrophic debris hurtling
 SETTINGS_ROGUE_MONOS|Add rogue monocargo containers
 
 SETTINGS_ROGUE_MONOS_TOOLTIP|Adds a rarer variant to the rogue cargo container, using the monocargo container instead, being a considerably larger gamble with lower lows and higher highs in value.
+
+DIALOG_PIRATE_BUSINESS_ORE_MONO|We have some ore to sell. High quality, processed, just waiting in the rings in a nice, tidy monocargo container. You just need to bring a cradle with you and grab it. 200 grand and it's yours.
