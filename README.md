@@ -1,6 +1,10 @@
 # Abandoned Technologies
 Fill the rings with life and find the secrets of old and new tech.
 
+> [!WARNING]
+> HevLib is required for this mod to function.
+> A download can be found from it's [releases page](https://github.com/rwqfsfasxc100/HevLib/releases/latest)
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M01L6LMF)
 
 This mod currently adds:
