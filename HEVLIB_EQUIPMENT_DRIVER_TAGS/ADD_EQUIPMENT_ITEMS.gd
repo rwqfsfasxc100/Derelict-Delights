@@ -106,6 +106,8 @@ const scoop_m_l = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"story_flag":"dd.remove.broken",
+	"story_flag_min":100,
 	"config":{
 		"id":"AbandonedTechnologies",
 		"section":"DD_MAIN_TOGGLES",
@@ -130,6 +132,8 @@ const scoop_m_r = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"story_flag":"dd.remove.broken",
+	"story_flag_min":100,
 	"config":{
 		"id":"AbandonedTechnologies",
 		"section":"DD_MAIN_TOGGLES",
@@ -154,6 +158,8 @@ const scoop_mp_l = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"story_flag":"dd.remove.broken",
+	"story_flag_min":100,
 	"config":{
 		"id":"AbandonedTechnologies",
 		"section":"DD_MAIN_TOGGLES",
@@ -178,6 +184,8 @@ const scoop_mp_r = {
 	"test_protocol":"detach",
 	"equipment_type":"EQUIPMENT_MINING_COMPANION",
 	"slot_type":"HARDPOINT",
+	"story_flag":"dd.remove.broken",
+	"story_flag_min":100,
 	"config":{
 		"id":"AbandonedTechnologies",
 		"section":"DD_MAIN_TOGGLES",

@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://hud/HudBare.tscn" type="PackedScene" id=2]
@@ -21,6 +21,7 @@
 [ext_resource path="res://comms/conversation/CargoScoopBye.tscn" type="PackedScene" id=19]
 [ext_resource path="res://ships/modules/ReactionWheel.tscn" type="PackedScene" id=20]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=21]
+[ext_resource path="res://HevLib/scenes/tools/ConfigSetter.tscn" type="PackedScene" id=22]
 
 [sub_resource type="PhysicsMaterial" id=1]
 rough = true
@@ -258,7 +259,6 @@ targetable = false
 
 [node name="DisableAI" parent="." instance=ExtResource( 10 )]
 visible = false
-collision_mask = 2147487232
 
 [node name="emp" parent="." instance=ExtResource( 18 )]
 position = Vector2( 0, -120 )
@@ -274,6 +274,10 @@ maxRpm = 600.0
 rpmPS = 25.0
 
 [node name="Noises" parent="." instance=ExtResource( 5 )]
+
+[node name="ConfigSetter" parent="." instance=ExtResource( 22 )]
+slot = "cargo.equipment"
+system = "SYSTEM_CARGO_MPU"
 
 [node name="MineralProcessingUnit" parent="." instance=ExtResource( 21 )]
 position = Vector2( 0, 3 )
