@@ -1,0 +1,5 @@
+[3.0.4]
+
+1="* Fixed issues with P-type companions"
+2="* Removed mass driver companions due to a crash"
+3="* Added changelog file"

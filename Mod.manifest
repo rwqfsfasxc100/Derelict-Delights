@@ -9,7 +9,7 @@ credits=["Za'krin - initial help with modding and events"]
 [version]
 version_major=3
 version_minor=0
-version_bugfix=3
+version_bugfix=4
 
 [tags]
 
@@ -133,3 +133,4 @@ HEVLIB_BUGREPORTS={"URL":"https://forms.gle/vUoarawnYjy3hXJi9"}
 
 manifest_version=2.2
 manifest_url="https://raw.githubusercontent.com/rwqfsfasxc100/Abandoned-Technologies/1.0.0/Mod.manifest"
+changelog_path="changelog.txt"
