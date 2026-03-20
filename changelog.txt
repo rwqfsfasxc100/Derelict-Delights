@@ -1,3 +1,8 @@
+[3.0.5]
+
+1="* Reduced logging from translations being defined during the mod loading phase"
+2="* Improved handling for cases where HevLib was not downloaded correctly"
+
 [3.0.4]
 
 1="* Fixed issues with P-type companions"

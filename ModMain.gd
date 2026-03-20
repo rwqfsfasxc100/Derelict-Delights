@@ -7,7 +7,7 @@ const MOD_PRIORITY = 1001
 const MOD_NAME = "Abandoned Technologies"
 const MOD_VERSION_MAJOR = 3
 const MOD_VERSION_MINOR = 0
-const MOD_VERSION_BUGFIX = 4
+const MOD_VERSION_BUGFIX = 5
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
@@ -17,10 +17,13 @@ var _savedObjects := []
 # Initializes the configuration variable. Used by loadSettings.
 var modConfig = {}
 
+var dir = Directory.new()
+var correct = dir.file_exists("res://HevLib/pointers.gd")
 func _init(modLoader = ModLoader):
+	
 	l("Initializing DLC")
 	
-	loadSettings()
+	
 	
 	loadDLC()
 	
@@ -28,35 +31,38 @@ func _init(modLoader = ModLoader):
 	var self_directory = self_path.split(self_path.split("/")[self_path.split("/").size() - 1])[0]
 	var self_check = load(self_directory + "mod_checker_script.tscn").instance()
 	add_child(self_check)
-	addContainerRequests()
-	l("Settings & DLC loaded, now initializing events")
 	
-	# Scripts used to compile new equipment loadouts for ships
-	# installScriptExtension("ships/Shipyard.gd") - Legacy script used to load new equipment loadouts
-	
-	updateDefaultLoadouts()
-	
-	addAgendas()
-	
-	# update conversations moved out until next stable release
-	
-	
-	addHabitatTradeAdditions()
-	
-	addConversations()
-	
-	addAgendaBasedStories()
-	updateTL("i18n/en.txt", "|")
-	updateTL("i18n/ua.txt", "|")
-	updateTL("i18n/ru.txt", "|")
-	l("Loaded translations")
-	
-	l("Loading essential files, almost complete")
-	
-	updateEvents()
-	replaceScene("comms/conversation/CargoContainer.tscn")
-	
-	l("Initialized %s completely!" % MOD_NAME)
+	if correct:
+		loadSettings()
+		addContainerRequests()
+		l("Settings & DLC loaded, now initializing events")
+		
+		# Scripts used to compile new equipment loadouts for ships
+		# installScriptExtension("ships/Shipyard.gd") - Legacy script used to load new equipment loadouts
+		
+		updateDefaultLoadouts()
+		
+		addAgendas()
+		
+		# update conversations moved out until next stable release
+		
+		
+		addHabitatTradeAdditions()
+		
+		addConversations()
+		
+		addAgendaBasedStories()
+		updateTL("i18n/en.txt", "|",true,false)
+		updateTL("i18n/ua.txt", "|",true,false)
+		updateTL("i18n/ru.txt", "|",true,false)
+		l("Loaded translations")
+		
+		l("Loading essential files, almost complete")
+		
+		updateEvents()
+		replaceScene("comms/conversation/CargoContainer.tscn")
+		
+		l("Initialized %s completely!" % MOD_NAME)
 
 
 
@@ -184,36 +190,52 @@ func loadSettings():
 # `path` is the path to the transalation file
 # `delim` is the symbol used to seperate the values
 # example usage: updateTL("i18n/translation.txt", "|")
-func updateTL(path:String, delim:String = ","):
-	path = str(modPath + path)
+func updateTL(path:String, delim:String = ",", useRelativePath:bool = true, fullLogging:bool = true):
+	if useRelativePath:
+		path = str(modPath + path)
 	l("Adding translations from: %s" % path)
 	var tlFile:File = File.new()
-	tlFile.open(path, File.READ)
-
+	var err = tlFile.open(path, File.READ)
+	
+	if err != OK:
+		return
+	
 	var translations := []
-
+	
+	var translationCount = 0
 	var csvLine := tlFile.get_line().split(delim)
-	l("Adding translations as: %s" % csvLine)
+	
+	if fullLogging:
+		l("Adding translations as: %s" % csvLine)
 	for i in range(1, csvLine.size()):
 		var translationObject := Translation.new()
 		translationObject.locale = csvLine[i]
 		translations.append(translationObject)
-
+	
 	while not tlFile.eof_reached():
 		csvLine = tlFile.get_csv_line(delim)
-
-		if csvLine.size() > 1:
+		var size = csvLine.size()
+		if size > 1:
+			if size > 2:
+				var i = 0
+				while i < size:
+					if csvLine[i].ends_with("\\") and i < size:
+						csvLine[i] = csvLine[i].rstrip("\\") + delim + csvLine[i + 1]
+						csvLine.remove(i + 1)
+						size -= 1
+					i += 1
 			var translationID := csvLine[0]
-			for i in range(1, csvLine.size()):
+			for i in range(1, size):
 				translations[i - 1].add_message(translationID, csvLine[i].c_unescape())
-			l("Added translation: %s" % csvLine)
-
+			if fullLogging:
+				l("Added translation: %s" % csvLine)
+			translationCount += 1
+	
 	tlFile.close()
-
+	
 	for translationObject in translations:
 		TranslationServer.add_translation(translationObject)
-
-	l("Translations Updated")
+	l("%s Translations Updated" % translationCount)
 
 # Helper function to extend scripts
 # Loads the script you pass, checks what script is extended, and overrides it
