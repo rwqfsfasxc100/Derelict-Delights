@@ -1,3 +1,7 @@
+[3.0.6]
+
+1="* P-type companion config setters are now local to the respective scenes"
+
 [3.0.5]
 
 1="* Reduced logging from translations being defined during the mod loading phase"

@@ -7,7 +7,7 @@ const MOD_PRIORITY = 1001
 const MOD_NAME = "Abandoned Technologies"
 const MOD_VERSION_MAJOR = 3
 const MOD_VERSION_MINOR = 0
-const MOD_VERSION_BUGFIX = 5
+const MOD_VERSION_BUGFIX = 6
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
