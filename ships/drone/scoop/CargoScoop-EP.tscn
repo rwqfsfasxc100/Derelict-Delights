@@ -21,7 +21,6 @@
 [ext_resource path="res://comms/conversation/CargoScoopBye.tscn" type="PackedScene" id=19]
 [ext_resource path="res://ships/modules/ReactionWheel.tscn" type="PackedScene" id=20]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=21]
-[ext_resource path="res://HevLib/scenes/tools/ConfigSetter.tscn" type="PackedScene" id=22]
 
 [sub_resource type="PhysicsMaterial" id=1]
 rough = true
@@ -75,6 +74,29 @@ radius = 108.0
 
 [sub_resource type="CircleShape2D" id=8]
 radius = 240.033
+
+[sub_resource type="GDScript" id=9]
+script/source = "# Tool used to automatically set a config value for the ship it's attached to
+# Useful for providing access to equipment that would otherwise remove itself
+# without the config present, e.g. MPUs
+
+extends Node
+
+export var slot = \"\"
+export var system = \"\"
+
+var ship
+func _enter_tree():
+	ship = getShip()
+	ship.setConfig(slot,system)
+	Tool.remove(self)
+
+func getShip():
+	var c = self
+	while not c.has_method(\"getConfig\") and c != null:
+		c = c.get_parent()
+	return c
+"
 
 [node name="CargoScoop" type="RigidBody2D" groups=["drones", "tactical"]]
 collision_layer = 4099
@@ -275,7 +297,8 @@ rpmPS = 25.0
 
 [node name="Noises" parent="." instance=ExtResource( 5 )]
 
-[node name="ConfigSetter" parent="." instance=ExtResource( 22 )]
+[node name="ConfigSetter" type="Node" parent="."]
+script = SubResource( 9 )
 slot = "cargo.equipment"
 system = "SYSTEM_CARGO_MPU"
 
