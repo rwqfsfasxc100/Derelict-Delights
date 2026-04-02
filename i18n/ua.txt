@@ -272,7 +272,7 @@ SETTINGS_ADD_HISTORIAN_AGENDA_TOOLTIP|Enables the Historian crew agenda and resp
 
 SETTINGS_SUPPORT_IOE|Підтримка кораблів Industries of Enceladus
 
-SETTINGS_SUPPORT_IOE_TOOLTIP||Додає події, пов’язані з кораблями з моду Industries of Enceladus. \nПідтримує як оригінальну версію SPDX, так і HEV-переробку IoE.
+SETTINGS_SUPPORT_IOE_TOOLTIP|Додає події, пов’язані з кораблями з моду Industries of Enceladus. \nПідтримує як оригінальну версію SPDX, так і HEV-переробку IoE.
 
 SETTINGS_SUPPORT_KITSUMO|Підтримка корабля KTI Kitsumo
 
