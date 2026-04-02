@@ -213,7 +213,10 @@ func updateTL(path:String, delim:String = ",", useRelativePath:bool = true, full
 		translations.append(translationObject)
 	
 	while not tlFile.eof_reached():
-		csvLine = tlFile.get_csv_line(delim)
+		var line = tlFile.get_line()
+		if line.begins_with("#"):
+			continue
+		csvLine = line.split(delim)
 		var size = csvLine.size()
 		if size > 1:
 			if size > 2:
