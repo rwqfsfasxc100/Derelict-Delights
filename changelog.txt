@@ -1,3 +1,10 @@
+[3.0.7]
+
+1="* Added supporters to the credits"
+2="* Fixed Ukranian translations"
+3="* Updated updateTL function"
+4="* Updated comms script path"
+
 [3.0.6]
 
 1="* P-type companion config setters are now local to the respective scenes"
