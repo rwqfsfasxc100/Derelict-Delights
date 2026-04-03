@@ -2,7 +2,7 @@
 
 [ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=1]
 [ext_resource path="res://comms/conversation/subtrees/DIALOG_STORAGE_RETURNING_1.tscn" type="PackedScene" id=2]
-[ext_resource path="res://HevLib/scenes/comms/ConversationPlayer.gd" type="Script" id=3]
+[ext_resource path="res://HevLib/development_tools/ConversationPlayerExtended.gd" type="Script" id=3]
 
 [node name="DIALOG_STORAGE_RETURNING_1" instance=ExtResource( 2 )]
 
