@@ -7,7 +7,7 @@ const MOD_PRIORITY = 1001
 const MOD_NAME = "Abandoned Technologies"
 const MOD_VERSION_MAJOR = 3
 const MOD_VERSION_MINOR = 0
-const MOD_VERSION_BUGFIX = 7
+const MOD_VERSION_BUGFIX = 8
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
@@ -52,10 +52,6 @@ func _init(modLoader = ModLoader):
 		addConversations()
 		
 		addAgendaBasedStories()
-		updateTL("i18n/en.txt", "|",true,false)
-		updateTL("i18n/ua.txt", "|",true,false)
-		updateTL("i18n/ru.txt", "|",true,false)
-		l("Loaded translations")
 		
 		l("Loading essential files, almost complete")
 		
@@ -186,60 +182,6 @@ func loadSettings():
 	
 	l(MOD_NAME + ": Finished loading settings")
 	
-# Helper script to load translations using csv format
-# `path` is the path to the transalation file
-# `delim` is the symbol used to seperate the values
-# example usage: updateTL("i18n/translation.txt", "|")
-func updateTL(path:String, delim:String = ",", useRelativePath:bool = true, fullLogging:bool = true):
-	if useRelativePath:
-		path = str(modPath + path)
-	l("Adding translations from: %s" % path)
-	var tlFile:File = File.new()
-	var err = tlFile.open(path, File.READ)
-	
-	if err != OK:
-		return
-	
-	var translations := []
-	
-	var translationCount = 0
-	var csvLine := tlFile.get_line().split(delim)
-	
-	if fullLogging:
-		l("Adding translations as: %s" % csvLine)
-	for i in range(1, csvLine.size()):
-		var translationObject := Translation.new()
-		translationObject.locale = csvLine[i]
-		translations.append(translationObject)
-	
-	while not tlFile.eof_reached():
-		var line = tlFile.get_line()
-		if line.begins_with("#"):
-			continue
-		csvLine = line.split(delim)
-		var size = csvLine.size()
-		if size > 1:
-			if size > 2:
-				var i = 0
-				while i < size:
-					if csvLine[i].ends_with("\\") and i < size:
-						csvLine[i] = csvLine[i].rstrip("\\") + delim + csvLine[i + 1]
-						csvLine.remove(i + 1)
-						size -= 1
-					i += 1
-			var translationID := csvLine[0]
-			for i in range(1, size):
-				translations[i - 1].add_message(translationID, csvLine[i].c_unescape())
-			if fullLogging:
-				l("Added translation: %s" % csvLine)
-			translationCount += 1
-	
-	tlFile.close()
-	
-	for translationObject in translations:
-		TranslationServer.add_translation(translationObject)
-	l("%s Translations Updated" % translationCount)
-
 # Helper function to extend scripts
 # Loads the script you pass, checks what script is extended, and overrides it
 func installScriptExtension(path:String):

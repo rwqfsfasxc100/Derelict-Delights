@@ -1,3 +1,11 @@
+[3.0.8]
+
+1="* Fixed left-side companions having a bent-but-functional cradle"
+2="* Fixed oversized container positioning on Titans"
+3="* Removed all unused files"
+4="* Updated supporters list in credits"
+5="* Moved to driver-based translations"
+
 [3.0.7]
 
 1="* Added supporters to the credits"
