@@ -1,7 +1,7 @@
 extends Node
 
 const WEAPONSLOT_SHIP_MODIFY = {
-	"AT225":{
+	"SHIP_AT225":{
 		"leftBay1":{
 			"SYSTEM_EXSUPER-L":[
 				{
