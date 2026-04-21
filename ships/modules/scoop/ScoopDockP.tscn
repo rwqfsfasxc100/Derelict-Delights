@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://ships/modules/ClaimOwner.gd" type="Script" id=1]
-[ext_resource path="res://ships/modules/DockingArm.tscn" type="PackedScene" id=2]
-[ext_resource path="res://AbandonedTechnologies/ships/drone/scoop/CargoScoop-P.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ships/modules/DockingArm.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ships/modules/ClaimOwner.gd" type="Script" id=8]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 200, 300 )
@@ -10,7 +9,7 @@ extents = Vector2( 200, 300 )
 [sub_resource type="CircleShape2D" id=2]
 radius = 1.0
 
-[node name="StorageContainerDockCombined" instance=ExtResource( 2 )]
+[node name="StorageContainerDockCombined" instance=ExtResource( 1 )]
 hardLock = true
 timeAccelerationOverride = 2
 repairFixPrice = 30000
@@ -25,6 +24,8 @@ onlyMinerals = true
 targetAsCargo = true
 processedCargoTransferSpeed = 500
 processedCargoTransferBuffer = 500
+remassTransferSpeed = 100
+remassTransferBuffer = 5000
 targetMassThrust = 25
 targetMassTorque = 20000
 fullThrust = 15000
@@ -72,9 +73,9 @@ position = Vector2( 0, 0 )
 shape = SubResource( 2 )
 
 [node name="ClaimOwner" type="Node2D" parent="." index="5"]
-script = ExtResource( 1 )
+script = ExtResource( 8 )
 
-[node name="StoragePodCombined" parent="ClaimOwner" index="0" instance=ExtResource( 3 )]
+[node name="StoragePodCombined" parent="ClaimOwner" index="0" instance_placeholder="res://AbandonedTechnologies/ships/drone/scoop/CargoScoop-P.tscn"]
 position = Vector2( 80, -40 )
 
 [editable path="Arm"]
