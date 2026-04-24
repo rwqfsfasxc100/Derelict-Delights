@@ -1,3 +1,7 @@
+[3.0.9]
+
+1="* Fixed crash caused by cradled equipment"
+
 [3.0.8]
 
 1="* Fixed left-side companions having a bent-but-functional cradle"
