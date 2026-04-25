@@ -853,8 +853,8 @@ const TRANSLATIONS = {
 			"version_hash": 3578211032
 		},
 		"SETTINGS_ADD_KESSLER_SYNDROME_TOOLTIP": {
-			"string": "Adds rare but catestrophic debris hurtling through the rings, and sometimes along with the idiot who caused it...",
-			"version_hash": 4012892112
+			"string": "Adds rare but catastrophic debris hurtling through the rings, and sometimes along with the idiot who caused it...",
+			"version_hash": 2390401100
 		},
 		"SETTINGS_ROGUE_MONOS": {
 			"string": "Add rogue monocargo containers",
