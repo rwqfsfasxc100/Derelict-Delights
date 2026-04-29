@@ -1,6 +1,7 @@
 ;MOD_ID|hev.DerelictDelights
 ;MOD_NAME|Abandoned Technologies
 ;MOD_ICON|https://raw.githubusercontent.com/rwqfsfasxc100/AbandonedTechnologies/refs/heads/1.0.0/icon.png
+;AUTHOR|__hev
 ;MOD_ZIP_NAME|AbandonedTechnologies.zip
 
 [b]Abandoned Technologies[/b]
