@@ -4,11 +4,11 @@
 ;AUTHOR|__hev
 ;MOD_ZIP_NAME|AbandonedTechnologies.zip
 
-[b]Abandoned Technologies[/b]
+[center][b]Abandoned Technologies[/b][/center]
 
 A content mod for [i]∆V: Rings of Saturn[/i]
 
-[center][b]Features[/b][/center]
+[center][u]Features[/u][/center]
 
 [indent]
 * NPC miners now can utilize all TNTRL variants (except the K44), Cothon variants, Eagle variants, AT-K225 variants (except modified variant), OCP-209, and the Kitsune.
