@@ -765,8 +765,8 @@ const TRANSLATIONS = {
 			"version_hash": 1898745095
 		},
 		"SYSTEM_SCOOP_L_SPECS": {
-			"string": "Cargo capacity: 50 m^3\\nAutonomy class: C2\\nStock Modification: Mining laser\\nPower usage (nominal): 10 MW\\nDry Mass: 2,000 kg\\nCradle Mass: 500 kg\\nPropellant Tank: 4,000 kg\\nManufacturer: Nakamura-Coherent Light-Titan",
-			"version_hash": 2141743833
+			"string": "Cargo capacity: 50 m^3\nAutonomy class: C2\nStock Modification: Mining laser\nPower usage (nominal): 30 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Coherent Light-Titan",
+			"version_hash": 3842814331
 		},
 		"SYSTEM_SCOOP_LP": {
 			"string": "NCT P-Type Blaze Companion",
@@ -777,8 +777,8 @@ const TRANSLATIONS = {
 			"version_hash": 1782242953
 		},
 		"SYSTEM_SCOOP_LP_SPECS": {
-			"string": "Cargo capacity: 50 m^3\\nAutonomy class: C2\\nStock Modification: Mining laser, mineral processing unit\\nPower usage (nominal): 10 MW\\nDry Mass: 2,000 kg\\nCradle Mass: 500 kg\\nPropellant Tank: 4,000 kg\\nManufacturer: Nakamura-Coherent Light-Titan",
-			"version_hash": 754332810
+			"string": "Cargo capacity: 50 m^3\nAutonomy class: C2\nStock Modification: Mining laser, mineral processing unit\nPower usage (nominal): 30 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Coherent Light-Titan",
+			"version_hash": 1790946444
 		},
 		"SYSTEM_SCOOP_M": {
 			"string": "N-A Mining Companion",
@@ -813,8 +813,8 @@ const TRANSLATIONS = {
 			"version_hash": 642345260
 		},
 		"SYSTEM_SCOOP_P_SPECS": {
-			"string": "Cargo capacity: 50 m^3\\nStock Modification: Mineral processing unit\\nAutonomy class: C2\\nPower usage (nominal): 10 MW\\nDry Mass: 2,000 kg\\nCradle Mass: 500 kg\\nPropellant Tank: 4,000 kg\\nManufacturer: Nakamura-Titan",
-			"version_hash": 3824740328
+			"string": "Cargo capacity: 50 m^3\nStock Modification: Mineral processing unit\nAutonomy class: C2\nPower usage (nominal): 30 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Titan",
+			"version_hash": 3971469386
 		},
 		"SYSTEM_SCOOP_MPU_MANUAL": {
 			"string": "Deploy by powering down the arm and moving away.\\nWill gather ore automatically.\\nGathering parameters can be adjusted on the Geologist tab.\\nInternal processing unit packs down ore chunks and replenished remass\\nDock with and disable parameters in the Geologist tab to move processed ore to the ship\\nReturns to the station when full or low on propellant.\\nWhen attached, grinders are synchronized with your ship.\\nEmpty cradle arm can catch drones and lifepods.",
