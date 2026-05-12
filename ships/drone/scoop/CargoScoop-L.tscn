@@ -115,6 +115,8 @@ aiCuriosityMaxVelocity = 500
 aiFleeMaxVelocity = 1200
 aiCommitment = 1.0
 aiFlipAboveVelocity = 35000
+resetableAi = true
+powerInterface = true
 aiSeekRadius = 512.0
 aiExamineEvery = 0.1
 aiNominalDistance = 2500
@@ -263,7 +265,6 @@ targetable = false
 
 [node name="DisableAI" parent="." instance=ExtResource( 10 )]
 visible = false
-collision_mask = 2147487232
 
 [node name="CargoScoop" parent="." instance=ExtResource( 14 )]
 
