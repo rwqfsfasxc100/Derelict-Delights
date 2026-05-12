@@ -1,3 +1,9 @@
+[3.0.12]
+
+1="* Fixed companion power consumption stats being disconnected from the stock companion"
+2="* Fixed companions not being connected to the excavator"
+3="* Adjusted position of the oversized containers on prospectors to make them more feasible to use"
+
 [3.0.11]
 
 1="* Fixed missing companion names when displayed in any OMS or tuning list"
