@@ -86,5 +86,43 @@ const WEAPONSLOT_SHIP_MODIFY = {
 				}
 			],
 		},
-	}
+	},
+	"SHIP_PROSPECTOR":{
+		"left":{
+			"SYSTEM_EXSUPER-L":[
+				{
+					"property":"position",
+					"value":"Vector2( 32, -112 )"
+				},
+				{
+					"property":"z_index",
+					"value":"-10"
+				}
+			],
+			"SYSTEM_EXBIG-L":[
+				{
+					"property":"position",
+					"value":"Vector2( 32, -112 )"
+				}
+			],
+		},
+		"right":{
+			"SYSTEM_EXSUPER-R":[
+				{
+					"property":"position",
+					"value":"Vector2( -32, -112 )"
+				},
+				{
+					"property":"z_index",
+					"value":"-10"
+				}
+			],
+			"SYSTEM_EXBIG-R":[
+				{
+					"property":"position",
+					"value":"Vector2( -32, -112 )"
+				}
+			],
+		}
+	},
 }
