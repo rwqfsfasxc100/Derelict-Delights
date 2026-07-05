@@ -177,8 +177,7 @@ func addHabitatTradeAdditions():
 func loadSettings():
 	l(MOD_NAME + ": Loading mod settings")
 	
-	var ConfigDriver = load("res://HevLib/pointers/ConfigDriver.gd")
-	modConfig = ConfigDriver.__get_config("AbandonedTechnologies")
+	modConfig = ModLoader._savedObjects[0].ConfigDriver.__get_config("AbandonedTechnologies")
 	
 	l(MOD_NAME + ": Finished loading settings")
 	
