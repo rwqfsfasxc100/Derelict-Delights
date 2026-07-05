@@ -33,7 +33,7 @@ func _init(modLoader = ModLoader):
 	add_child(self_check)
 	
 	if correct:
-		loadSettings()
+		loadSettings(modLoader)
 		addContainerRequests()
 		l("Settings & DLC loaded, now initializing events")
 		
@@ -174,10 +174,10 @@ func addHabitatTradeAdditions():
 		l("Loaded habitat trades")
 
 
-func loadSettings():
+func loadSettings(ml):
 	l(MOD_NAME + ": Loading mod settings")
 	
-	modConfig = ModLoader._savedObjects[0].ConfigDriver.__get_config("AbandonedTechnologies")
+	modConfig = ml._savedObjects[0].ConfigDriver.__get_config("AbandonedTechnologies")
 	
 	l(MOD_NAME + ": Finished loading settings")
 	
