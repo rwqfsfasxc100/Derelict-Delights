@@ -38,6 +38,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_K44" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_KX37" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="7"]
 script = ExtResource( 2 )
@@ -72,6 +73,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_KX37" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_K37_I" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="8"]
 script = ExtResource( 2 )
@@ -105,6 +107,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_K37_I" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_KTA24" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="9"]
 script = ExtResource( 2 )
@@ -139,6 +142,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_KTA24" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_KR37" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="10"]
 script = ExtResource( 2 )
@@ -173,6 +177,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_KR37" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_COTHON_217" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="11"]
 script = ExtResource( 2 )
@@ -207,6 +212,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_COTHON_217" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_COTHON_I" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="12"]
 script = ExtResource( 2 )
@@ -240,6 +246,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_COTHON_I" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_I" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="13"]
 script = ExtResource( 2 )
@@ -273,6 +280,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_I" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_COTHON_213" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="14"]
 script = ExtResource( 2 )
@@ -307,6 +315,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_COTHON_213" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_COTHON_211" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="15"]
 script = ExtResource( 2 )
@@ -341,6 +350,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_COTHON_211" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_PEACOCK" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="16"]
 script = ExtResource( 2 )
@@ -375,6 +385,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_PEACOCK" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_PELICAN" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="17"]
 script = ExtResource( 2 )
@@ -409,6 +420,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_PELICAN" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_VULTURE" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="18"]
 script = ExtResource( 2 )
@@ -443,6 +455,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_VULTURE" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_BALD" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="19"]
 script = ExtResource( 2 )
@@ -477,6 +490,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_PROSPECTOR_BALD" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_TITAN" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="20"]
 script = ExtResource( 2 )
@@ -511,6 +525,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_TITAN" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_TITAN_BB" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="21"]
 script = ExtResource( 2 )
@@ -545,6 +560,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_TITAN_BB" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_OCP" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="22"]
 script = ExtResource( 2 )
@@ -579,6 +595,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_OCP" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_KITSUNE" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="23"]
 script = ExtResource( 2 )
@@ -613,6 +630,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_KITSUNE" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_SHIP_EIME" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="24"]
 script = ExtResource( 2 )
@@ -647,6 +665,7 @@ changeSupport = -0.2
 
 [node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_EIME" index="2"]
 script = ExtResource( 2 )
+alias = NodePath("../../../DIALOG_PIRATE_ON_OUR_WAY_1")
 
 [node name="DIALOG_PIRATE_BUSINESS_ORE_I" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="25"]
 script = ExtResource( 2 )
