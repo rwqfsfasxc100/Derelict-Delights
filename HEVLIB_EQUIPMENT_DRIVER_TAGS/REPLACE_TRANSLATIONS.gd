@@ -323,12 +323,12 @@ const TRANSLATIONS = {
 			"version_hash": 3998129810
 		},
 		"DIALOG_SUPER_THICC_DERELICT_THIS_DOCUMENTS": {
-			"string": "Looks like this hunk of junk really was ditched in a hurry. The cabin's full of paperwork. Luckily it seems the licensing documents are still in their cubby. Everything about them appears to be in check.",
-			"version_hash": 4147588930
+			"string": "Appears like this hunk of junk really was ditched in a hurry, the cabin's a mess and full of paperwork everywhere. Found the cabinet at least. Luckily it seems the licensing documents are still in their cubby. Everything about them appears to be in check.",
+			"version_hash": 454678981
 		},
 		"DIALOG_SUPER_THICC_DERELICT_THIS_TAKE": {
-			"string": "As much as it looks pretty damaged from the outside, looking over it's systems from the computer, much of it is still operational, and the reactor seems to be functional at least. I'll take this for a spin and figure out the rest at Enceladus.",
-			"version_hash": 3565513511
+			"string": "As much as it looks pretty damaged from the outside, much of her systems are still operational according to the computer, and the reactor seems to be functional at least. I'll take this for a spin and figure out the rest at Enceladus.",
+			"version_hash": 492619180
 		},
 		"DIALOG_STORAGE_DYNA": {
 			"string": "I need a new dyna container!",
@@ -889,6 +889,14 @@ const TRANSLATIONS = {
 		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CONTRACTOR_3_FIND": {
 			"string": "If you can find a ship that still has the licensing for them intact, or better yet one still attached, you can bring them back to the station to claim as your own.",
 			"version_hash": 2400195760
+		},
+		"DIALOG_SUPER_THICC_DERELICT_THIS_APPROACH": {
+			"string": "Approaching {origin/shipname} now. This thing looks ancient from the outside, wonder just how long it's been drifting.",
+			"version_hash": 2947560858
+		},
+		"DIALOG_SUPER_THICC_DERELICT_THIS_BOARDED": {
+			"string": "Onboard now. No power or anything whatsoever, hopefully my suit's lamp will be enough. Shouldn't be too hard to find the installation records cabinet.",
+			"version_hash": 447391236
 		}
 	},
 	"ru": {
