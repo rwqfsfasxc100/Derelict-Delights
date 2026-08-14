@@ -1,3 +1,15 @@
+[3.1.0]
+
+1=* Cleaned up dialogues:
+1.1=* Fixed issues with added pirate trades not properly linking back to regular dialogues
+1.2=* Cleaned up interacting with the Habitat Under Construction in regards to the experimental container quest
+1.2.1=* Asking about containers without having found one prior now requires good standing for them to open up
+1.2.2=* Paced out dialogue and added extra context to not overwhelm the player with over 20 lines of text in about 30 seconds
+1.2.3=* Adjusted dialogue for the experimental container derelict to have better pacing and better match more modern derelict dialogues
+2=* Reinstated old feature of the end-of-quest experimental container derelict having the experimental containers installed
+3=* Experimental container derelict now properly boots up after salvaging
+4=* Added 3-Clause BSD NON-AI license.
+
 [3.0.12]
 
 1="* Fixed companion power consumption stats being disconnected from the stock companion"
