@@ -3,131 +3,178 @@
 name="Abandoned Technologies"
 id="hev.DerelictDelights"
 description="DERELICTDELIGHTS_MOD_DESCRIPTION"
+brief="DERELICTDELIGHTS_MOD_BRIEF"
 author="__hev"
-credits=["Za'krin - initial help with modding and events","   --- Supporters ---   ","GAZI - supporter (ko-fi)","Bagger dude - supporter (ko-fi)","WT - supporter (ko-fi)"]
+credits=PoolStringArray( "Za\'krin - initial help with modding and events", "   --- Supporters ---   ", "GAZI - supporter (ko-fi)", "Bagger dude - supporter (ko-fi)", "WT - supporter (ko-fi)" )
 
 [version]
+
 version_major=3
-version_minor=0
-version_bugfix=12
+version_minor=1
+version_bugfix=0
 
 [tags]
 
-TAG_ADDS_EQUIPMENT={"type":"array","value":["SYSTEM_EXBIG","SYSTEM_EXSUPER","SYSTEM_SCOOP_E","SYSTEM_SCOOP_EP","SYSTEM_SCOOP_L","SYSTEM_SCOOP_LP","SYSTEM_SCOOP_M","SYSTEM_SCOOP_MP","SYSTEM_SCOOP_P"]}
-TAG_ADDS_EVENTS={"type":"array","value":["More derelicts","Miners with more ships","POI_HABITAT_BUILDING","Empty Containers"]}
-TAG_ADDS_GAMEPLAY_MECHANICS={"type":"array","value":["Ask containers to request a new one to be sent","Obontos ask for tungsten and beryllium","Additional trades with pirates","New Historian crew agenda"]}
-TAG_ALLOW_ACHIEVEMENTS={"type":"bool","value":false}
-TAG_OVERHAUL={"type":"bool","value":true}
-TAG_QOL={"type":"bool","value":true}
-
-[configs]
-
-DD_MAIN_TOGGLES={
-	"addEquipment":{
-		"name":"SETTINGS_ADD_EQUIPMENT",
-		"description":"SETTINGS_ADD_EQUIPMENT_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"addEvents":{
-		"name":"SETTINGS_ADD_EVENTS",
-		"description":"SETTINGS_ADD_EVENTS_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"addAgenda":{
-		"name":"SETTINGS_ADD_AGENDAS",
-		"description":"SETTINGS_ADD_AGENDAS_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"requestNewContainers":{
-		"name":"SETTINGS_REQUEST_NEW_CONTAINERS",
-		"description":"SETTINGS_REQUEST_NEW_CONTAINERS_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"obontosAskForMoreStuff":{
-		"name":"SETTINGS_ADD_OBONTO_BALANCE",
-		"description":"SETTINGS_ADD_OBONTO_BALANCE_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"expandShipEquipmentOptions":{
-		"name":"SETTINGS_EXPAND_SHIP_LOADOUTS",
-		"description":"SETTINGS_EXPAND_SHIP_LOADOUTS_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
+TAG_ADDS_EQUIPMENT={
+"type": "array",
+"value": [ "SYSTEM_EXBIG", "SYSTEM_EXSUPER", "SYSTEM_SCOOP_E", "SYSTEM_SCOOP_EP", "SYSTEM_SCOOP_L", "SYSTEM_SCOOP_LP", "SYSTEM_SCOOP_M", "SYSTEM_SCOOP_MP", "SYSTEM_SCOOP_P" ]
 }
-DD_EVENT_TOGGLES={
-	"addDerelicts":{
-		"name":"SETTINGS_ADD_DERELICTS",
-		"description":"SETTINGS_ADD_DERELICTS_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"addNewNPCMiners":{
-		"name":"SETTINGS_ADD_NEW_NPCS",
-		"description":"SETTINGS_ADD_NEW_NPCS_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"addHabitatUnderConstruction":{
-		"name":"SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION",
-		"description":"SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"addNewVilcyAndG4AEncounters":{
-		"name":"SETTINGS_ADD_NEW_FACTION_ENCOUNTERS",
-		"description":"SETTINGS_ADD_NEW_FACTION_ENCOUNTERS_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"addNewRogueContainers":{
-		"name":"SETTINGS_ADD_NEW_ROGUE_CONTAINERS",
-		"description":"SETTINGS_ADD_NEW_ROGUE_CONTAINERS_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"addNewPirateTrades":{
-		"name":"SETTINGS_EXPAND_PIRATE_TRADES",
-		"description":"SETTINGS_EXPAND_PIRATE_TRADES_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"kesslerSyndrome":{
-		"name":"SETTINGS_ADD_KESSLER_SYNDROME",
-		"description":"SETTINGS_ADD_KESSLER_SYNDROME_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
-	"rogueMonos":{
-		"name":"SETTINGS_ROGUE_MONOS",
-		"description":"SETTINGS_ROGUE_MONOS_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
+TAG_ADDS_EVENTS={
+"type": "array",
+"value": [ "More derelicts", "Miners with more ships", "POI_HABITAT_BUILDING", "Empty Containers" ]
 }
-DD_AGENDA_TOGGLES={
-	"addHistorian":{
-		"name":"SETTINGS_ADD_HISTORIAN_AGENDA",
-		"description":"SETTINGS_ADD_HISTORIAN_AGENDA_TOOLTIP",
-		"type":"bool",
-		"default":true
-	},
+TAG_ADDS_GAMEPLAY_MECHANICS={
+"type": "array",
+"value": [ "Ask containers to request a new one to be sent", "Obontos ask for tungsten and beryllium", "Additional trades with pirates", "New Historian crew agenda" ]
+}
+TAG_ALLOW_ACHIEVEMENTS={
+"type": "bool",
+"value": false
+}
+TAG_OVERHAUL={
+"type": "bool",
+"value": true
+}
+TAG_QOL={
+"type": "bool",
+"value": true
 }
 
 [links]
 
-HEVLIB_GITHUB={"URL":"https://github.com/rwqfsfasxc100/Derelict-Delights"}
-HEVLIB_DISCORD={"URL":"https://discord.com/channels/426287934870781952/1316256288329699419"}
-HEVLIB_NEXUS={"URL":"https://www.nexusmods.com/dvringsofsaturn/mods/8"}
-HEVLIB_DONATIONS={"URL":"https://ko-fi.com/00hev"}
-HEVLIB_WIKI={"URL":"https://delta-v.kodera.pl/index.php/Mod:Derelict_Delights"}
-DERELICTDELIGHTS_SUGGEST={"URL":"https://forms.gle/yzvbGmaWeHWH9ChK8","TOOLTIP":"DERELICTDELIGHTS_SUGGEST_TOOLTIP"}
-HEVLIB_BUGREPORTS={"URL":"https://forms.gle/vUoarawnYjy3hXJi9"}
+HEVLIB_GITHUB={
+"URL": "https://github.com/rwqfsfasxc100/Derelict-Delights"
+}
+HEVLIB_DISCORD={
+"URL": "https://discord.com/channels/426287934870781952/1316256288329699419"
+}
+HEVLIB_DONATIONS={
+"URL": "https://ko-fi.com/00hev"
+}
+HEVLIB_WIKI={
+"URL": "https://delta-v.kodera.pl/index.php/Mod:Derelict_Delights"
+}
+DERELICTDELIGHTS_SUGGEST={
+"TOOLTIP": "DERELICTDELIGHTS_SUGGEST_TOOLTIP",
+"URL": "https://forms.gle/yzvbGmaWeHWH9ChK8"
+}
+HEVLIB_BUGREPORTS={
+"URL": "https://forms.gle/vUoarawnYjy3hXJi9"
+}
+
+[configs]
+
+DD_MAIN_TOGGLES={
+"addAgenda": {
+"default": true,
+"description": "SETTINGS_ADD_AGENDAS_TOOLTIP",
+"display_order_position": 2,
+"name": "SETTINGS_ADD_AGENDAS",
+"type": "bool"
+},
+"addEquipment": {
+"default": true,
+"description": "SETTINGS_ADD_EQUIPMENT_TOOLTIP",
+"display_order_position": 0,
+"name": "SETTINGS_ADD_EQUIPMENT",
+"type": "bool"
+},
+"addEvents": {
+"default": true,
+"description": "SETTINGS_ADD_EVENTS_TOOLTIP",
+"display_order_position": 1,
+"name": "SETTINGS_ADD_EVENTS",
+"type": "bool"
+},
+"expandShipEquipmentOptions": {
+"default": true,
+"description": "SETTINGS_EXPAND_SHIP_LOADOUTS_TOOLTIP",
+"display_order_position": 5,
+"name": "SETTINGS_EXPAND_SHIP_LOADOUTS",
+"type": "bool"
+},
+"obontosAskForMoreStuff": {
+"default": true,
+"description": "SETTINGS_ADD_OBONTO_BALANCE_TOOLTIP",
+"display_order_position": 4,
+"name": "SETTINGS_ADD_OBONTO_BALANCE",
+"type": "bool"
+},
+"requestNewContainers": {
+"default": true,
+"description": "SETTINGS_REQUEST_NEW_CONTAINERS_TOOLTIP",
+"display_order_position": 3,
+"name": "SETTINGS_REQUEST_NEW_CONTAINERS",
+"type": "bool"
+}
+}
+DD_EVENT_TOGGLES={
+"addDerelicts": {
+"default": true,
+"description": "SETTINGS_ADD_DERELICTS_TOOLTIP",
+"display_order_position": 0,
+"name": "SETTINGS_ADD_DERELICTS",
+"type": "bool"
+},
+"addHabitatUnderConstruction": {
+"default": true,
+"description": "SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION_TOOLTIP",
+"display_order_position": 2,
+"name": "SETTINGS_ADD_HABITAT_UNDER_CONSTRUCTION",
+"type": "bool"
+},
+"addNewNPCMiners": {
+"default": true,
+"description": "SETTINGS_ADD_NEW_NPCS_TOOLTIP",
+"display_order_position": 1,
+"name": "SETTINGS_ADD_NEW_NPCS",
+"type": "bool"
+},
+"addNewPirateTrades": {
+"default": true,
+"description": "SETTINGS_EXPAND_PIRATE_TRADES_TOOLTIP",
+"display_order_position": 5,
+"name": "SETTINGS_EXPAND_PIRATE_TRADES",
+"type": "bool"
+},
+"addNewRogueContainers": {
+"default": true,
+"description": "SETTINGS_ADD_NEW_ROGUE_CONTAINERS_TOOLTIP",
+"display_order_position": 4,
+"name": "SETTINGS_ADD_NEW_ROGUE_CONTAINERS",
+"type": "bool"
+},
+"addNewVilcyAndG4AEncounters": {
+"default": true,
+"description": "SETTINGS_ADD_NEW_FACTION_ENCOUNTERS_TOOLTIP",
+"display_order_position": 3,
+"name": "SETTINGS_ADD_NEW_FACTION_ENCOUNTERS",
+"type": "bool"
+},
+"kesslerSyndrome": {
+"default": true,
+"description": "SETTINGS_ADD_KESSLER_SYNDROME_TOOLTIP",
+"display_order_position": 6,
+"name": "SETTINGS_ADD_KESSLER_SYNDROME",
+"type": "bool"
+},
+"rogueMonos": {
+"default": true,
+"description": "SETTINGS_ROGUE_MONOS_TOOLTIP",
+"display_order_position": 7,
+"name": "SETTINGS_ROGUE_MONOS",
+"type": "bool"
+}
+}
+DD_AGENDA_TOGGLES={
+"addHistorian": {
+"default": true,
+"description": "SETTINGS_ADD_HISTORIAN_AGENDA_TOOLTIP",
+"display_order_position": 0,
+"name": "SETTINGS_ADD_HISTORIAN_AGENDA",
+"type": "bool"
+}
+}
 
 [manifest_definitions]
 
