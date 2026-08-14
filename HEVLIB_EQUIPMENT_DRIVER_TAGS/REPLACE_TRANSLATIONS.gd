@@ -1,7 +1,5 @@
-extends Node
-
 # This translation file is generated automatically
-# Do not modify anything directly, as this can break things for those working on them
+# Do not modify anything directly, as this will break things for translators
 # Please use Translation Tracker to modify these yourself, and contact the mod author to implement them
 # https://github.com/rwqfsfasxc100/TranslationTracker/releases/latest
 
@@ -280,19 +278,19 @@ const TRANSLATIONS = {
 			"string": "Bet if we could find a ship with one of those experimental containers attached, we could grandfather a license for it. It could still hold some use even from how unreliable they were reported to be.",
 			"version_hash": 2531360812
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_ASK": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_1": {
 			"string": "We found one of those interplanetary containers just lying around in the rings. It didn't have a transponder, so we reprogrammed it as ours and sent it home. We had thought they were just found derelict from the failed tests before they were condemned.",
 			"version_hash": 237310463
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_EXPLAIN": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_2": {
 			"string": "That would be one of the containers that we had sent to us. We were running behind schedule and made the decision to use them to speed up the shipments of minerals. We didn't think that we would lose so many to pirates.",
 			"version_hash": 3705656819
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_3": {
 			"string": "As much as the containers are condemned in the rings, we have a contractor who was lucky enough to find a derelict from the old tests. The documents for the containers were still intact, and was allowed to use them by grandfathering the licenses. ",
 			"version_hash": 4090624365
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_FIND": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_4": {
 			"string": "Few of the ships fitted with them were ever tested in the rings, so finding one is practically impossible. If you ask around, you may be able to find someone who knows something about them, they may be able to help more than we can.",
 			"version_hash": 566868509
 		},
@@ -313,8 +311,8 @@ const TRANSLATIONS = {
 			"version_hash": 2487955614
 		},
 		"DIALOG_SUPER_THICC_DERELICT_THIS": {
-			"string": "Well, this is supposed to be one of the testing ships for the interplanetary container. Doesn't appear to have one installed, so let's just hope that it's got the necessary paperwork onboard.",
-			"version_hash": 2986541441
+			"string": "Well, this is supposed to be one of the testing ships for the interplanetary container. Looks like it's got one installed too, so all that's left is to find the necessary paperwork and we can head out of here.",
+			"version_hash": 3081110936
 		},
 		"DIALOG_SUPER_THICC_DERELICT_THIS_GO": {
 			"string": "Do you have your EVA suit ready, {agenda/firstname}? We should check it out.",
@@ -416,21 +414,21 @@ const TRANSLATIONS = {
 			"string": "Some of the construction crew for Obonto Seven left one of their ships unlocked while on an inspection break. Somehow managed to take it without them noticing until too late. This one appears to be one of KTI's modifications. It's too unwieldy for our liking, so you can take a look for 500 grand.",
 			"version_hash": 1078897400
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_YOU_SEEM": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_1": {
 			"string": "You know, I'm surprised that your superstructure hasn't been finished yet, don't you usually get shipments alongside miners providing you with minerals as they pass by?",
 			"version_hash": 877995902
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_REASON": {
-			"string": "Normally we wouldn't mention this, even to contractors, however we believe you're trustworthy enough. \\n\\nWe have one contractor who managed to get their hands on a license to the experimental interplanetary containers. They had us sent them instead of standard cargo containers, albeit slower than usual shipments, but they provided a faster way to receive them. \\n\\nOf course, with this there was a risk. Fewer single shipments means a bigger impact if things go wrong, and they did. Most of the planned shipments go missing, and we haven't seen the contractor in a while to change the order. A few have reported the containers operating without a transponder, so we can only presume it's piracy.",
-			"version_hash": 2847434099
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_2": {
+			"string": "Normally we wouldn't mention this {target/shipname}, even to contractors, however we believe you're trustworthy enough.",
+			"version_hash": 4155322825
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN": {
-			"string": "As for how they obtained the licensing, we can't say for sure but we believe it's some form of grandfathering clause at Enceladus Prime's shipyard. Something to do with equipment being allowed to utilize the safety protocols given to it at the time of the license being issued. Probably means they found one of the ships left abandoned in the rings from when they were still in testing. Basically means that if you can find a ship that still has the licensing for them in tact, you can fit them to your ship.",
-			"version_hash": 1852773999
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_3": {
+			"string": "As for how they obtained the licensing, we can't say for sure, but we believe it's some form of grandfathering clause at Enceladus Prime's shipyard. Something to do with equipment being allowed to utilize the safety protocols given to it at the time of the license being issued.",
+			"version_hash": 3674173536
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_HELP": {
-			"string": "Perhaps if you ask around with other crews, you may be able to find someone who knows something about them, and they may be able to help more than we can.",
-			"version_hash": 1643995563
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_4": {
+			"string": "Perhaps if you ask around with other crews, you may be able to find someone who knows something about them, and they may be able to help better than we can.",
+			"version_hash": 4060019614
 		},
 		"MENU_DERELICTDELIGHTS_CONFIG": {
 			"string": "Abandoned Technologies Configuration",
@@ -867,6 +865,30 @@ const TRANSLATIONS = {
 		"DIALOG_PIRATE_BUSINESS_ORE_MONO": {
 			"string": "We have some ore to sell. High quality, processed, just waiting in the rings in a nice, tidy monocargo container. You just need to bring a cradle with you and grab it. 200 grand and it's yours.",
 			"version_hash": 1580994363
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CANNOT_SAY": {
+			"string": "Sorry {target/shipname}, you're not in a position for us to be able to disclose that information.",
+			"version_hash": 2801708407
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CONTRACTOR_1": {
+			"string": "We have one contractor who managed to get their hands on a license to the experimental interplanetary containers. They had us sent them instead of standard cargo containers, albeit slower than usual shipments, but they provided a faster way to receive them.",
+			"version_hash": 2826077326
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CONTRACTOR_2": {
+			"string": "Of course, with this there was a risk. Fewer individual shipments means a bigger impact when things go wrong, and they did.",
+			"version_hash": 3391746704
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CONTRACTOR_3": {
+			"string": "Probably means they found one of the ships left abandoned in the rings from when they were still in testing.",
+			"version_hash": 923299593
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CONTRACTOR_2_MISSING": {
+			"string": "Most of the shipments went missing, and we haven't seen said contractor in a while for us to change the order. A few have reported the containers operating without a transponder, so we can only presume it's piracy.",
+			"version_hash": 591922901
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CONTRACTOR_3_FIND": {
+			"string": "If you can find a ship that still has the licensing for them intact, or better yet one still attached, you can bring them back to the station to claim as your own.",
+			"version_hash": 2400195760
 		}
 	},
 	"ru": {
@@ -1142,19 +1164,19 @@ const TRANSLATIONS = {
 			"string": "Держу пари, если бы мы нашли корабль с одним из этих экспериментальных контейнеров, мы могли бы получить на него лицензию. Он всё ещё может пригодиться, даже учитывая, насколько ненадёжными они, по слухам, были.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_ASK": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_1": {
 			"string": "Мы нашли один из этих межпланетных контейнеров, просто валявшийся в кольцах. У него не было транспондера, поэтому мы перепрограммировали его как свой и отправили домой. Мы думали, что их просто нашли брошенными после неудачных испытаний, прежде чем их забраковали.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_EXPLAIN": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_2": {
 			"string": "Это был один из контейнеров, которые мы отправили. Мы отставали от графика и решили использовать их для ускорения поставок минералов. Мы не думали, что потеряем так много из-за пиратов.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_3": {
 			"string": "Хотя контейнеры и забракованы в кольцах, у нас есть подрядчик, которому повезло найти брошенный контейнер со старых испытаний. Документы на контейнеры были целы, и он получил разрешение на их использование благодаря передаче лицензий.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_FIND": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_4": {
 			"string": "Мало какие корабли, оснащённые такими контейнерами, когда-либо испытывались в кольцах, поэтому найти их практически невозможно. Если вы поспрашиваете, возможно, вам удастся найти кого-нибудь, кто что-то о них знает. Возможно, он сможет помочь больше, чем мы.",
 			"version_hash": 0
 		},
@@ -1278,19 +1300,19 @@ const TRANSLATIONS = {
 			"string": "Некоторые строители Obonto Seven оставили один из своих кораблей незапертым во время инспекционного перерыва. Каким-то образом нам удалось забрать его, они не заметили, пока не стало слишком поздно. Похоже, этот — одна из модификаций KTI. Он слишком громоздкий, на наш взгляд, так что можете посмотреть его за 500 тысяч.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_YOU_SEEM": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_1": {
 			"string": "Знаете, я удивлён, что ваша надстройка ещё не закончена. Разве вы обычно не получаете грузы вместе с шахтёрами, которые снабжают вас ресурсами по пути?",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_REASON": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_2": {
 			"string": "Обычно мы не говорим об этом даже подрядчикам, однако мы считаем вас достаточно надёжным. \\n\\nУ нас есть один подрядчик, которому удалось получить лицензию на экспериментальные межпланетные контейнеры. Они отправили их нам вместо стандартных грузовых контейнеров, пусть и медленнее, чем обычные поставки, но они обеспечили более быстрый способ их получения. \\n\\nКонечно, это было рискованно. Меньше отдельных поставок означает более серьёзные последствия, если что-то пойдёт не так, что и произошло. Большинство запланированных поставок пропало, и мы давно не видели подрядчика, чтобы изменить заказ. Некоторые сообщали о том, что контейнеры работают без транспондера, поэтому мы можем лишь предположить, что это из-за пиратов.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_3": {
 			"string": "Что касается того, как они получили лицензию, мы не можем сказать наверняка, но полагаем, что это своего рода «дедушкина оговорка» на верфи Энцелада Прайм. Что-то связанное с тем, что оборудованию разрешено использовать по протоколам безопасности которые были предоставленны ему при выдаче лицензии. Вероятно, это означает, что они нашли один из кораблей, брошенных в кольцах ещё со времён испытаний. По сути, это означает, что если вам удастся найти корабль с действующей лицензией на них, вы сможете установить их на свой корабль.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_HELP": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_4": {
 			"string": "Возможно, если вы поспрашиваете другие экипажи, вы найдёте кого-нибудь, кто что-то о них знает, и он сможет помочь больше, чем мы.",
 			"version_hash": 0
 		},
@@ -2000,19 +2022,19 @@ const TRANSLATIONS = {
 			"string": "Б'юся об заклад, якщо ми зможемо знайти корабель з одним із тих експериментальних контейнерів, ми могли б отримати ліцензію за дідовим положенням. Він все ще міг би бути корисним, навіть попри те, наскільки ненадійними їх вважали.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_ASK": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_1": {
 			"string": "Ми знайшли один з тих міжпланетних контейнерів, що просто лежав у кільцях. У нього не було транспондера, тому ми перепрограмували його як наш і відправили додому. Ми думали, що їх просто знаходять покинутими після невдалих випробувань, до того як їх заборонили.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_EXPLAIN": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_2": {
 			"string": "Це був один з контейнерів, які нам надіслали. Ми відставали від графіка і прийняли рішення використати їх, щоб пришвидшити доставку мінералів. Ми не думали, що втратимо так багато через піратів.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_3": {
 			"string": "Хоч контейнери і заборонені в кільцях, у нас є підрядник, якому пощастило знайти покинутий корабель зі старих випробувань. Документи на контейнери все ще були цілі, і йому дозволили використовувати їх за дідівською ліцензією. ",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_FIND": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_4": {
 			"string": "Мало кораблів з ними взагалі випробовувалися в кільцях, тому знайти такий практично неможливо. Якщо розпитаєте навкруги, можливо, зможете знайти когось, хто щось знає про них, вони можуть допомогти більше, ніж ми.",
 			"version_hash": 0
 		},
@@ -2136,19 +2158,19 @@ const TRANSLATIONS = {
 			"string": "Дехто з будівельної бригади Обонто Сім залишив один із своїх кораблів незамкненим під час інспекційної перерви. Якимось чином вдалося забрати його так, що вони не помітили, поки не стало надто пізно. Схоже, це одна з модифікацій КТІ. Він занадто незграбний, як на наш смак, тож ви можете глянути на нього за 500 тисяч.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_YOU_SEEM": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_1": {
 			"string": "Знаєте, я здивований, що ваша надбудова ще не закінчена, хіба ви не отримуєте вантажі, а також шахтарі, які постачають вам мінерали, коли минають повз?",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_REASON": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_2": {
 			"string": "Зазвичай ми би не розповідали про це навіть підрядникам, але ми вважаємо, що ви заслуговуєте на довіру. \\n\\nУ нас є один підрядник, якому вдалося роздобути ліцензію на експериментальні міжпланетні контейнери. Вони відправили нам їх замість стандартних вантажних контейнерів, хоч і повільніше, ніж звичайні контейнери, але зате вони забезпечили швидший спосіб їх отримання. \\n\\nвичайно, з цим був пов'язаний ризик. Менша кількість окремих відправок означає більший вплив, якщо щось піде не так, що і сталося. Більшість запланованих відправок зникли, і ми вже давно не бачили підрядника, щоб змінити замовлення. Дехто повідомляв, що контейнери працюють без транспондера, тож ми можемо лише припустити, що це піратство.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_3": {
 			"string": "одо того, як вони отримали ліцензію, ми не можемо сказати напевно, але вважаємо, що це якась форма дідвовського положення на верфі Енцелада Прайм. Щось пов'язане з тим, що обладнання може використовувати протоколи безпеки, надані йому на момент видачі ліцензії. Ймовірно, це означає, що вони знайшли один із кораблів, покинутих у кільцях з часів їх випробувань. По суті, це означає, що якщо ви зможете знайти корабель, який все ще має діючу ліцензію на них, ви зможете встановити їх на свій корабель.",
 			"version_hash": 0
 		},
-		"DIALOG_HABITAT_BUILDING_CONTAINER_HELP": {
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_4": {
 			"string": "Perhaps if you ask around with other crews, you may be able to find someone who knows something about them, and they may be able to help more than we can.",
 			"version_hash": 0
 		},
