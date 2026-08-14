@@ -45,7 +45,33 @@ func makeAt(pos):
 		return null
 
 	var ships = []
-	var wreckage = Shipyard.createShipBuildByName(model, "helpless", false)
+	var cfg = Shipyard.getDefaultConfigByName(model)
+	cfg.config.weaponSlot = {
+		"left": {"type": "SYSTEM_CL600P"},
+		"right": {"type": "SYSTEM_DND_HAUL"},
+		"leftBack": {"type": "SYSTEM_EXSUPER-L"},
+		"rightBack": {"type": "SYSTEM_EXSUPER-R"},
+	}
+	cfg.config.ammo = {
+		"capacity": 0, 
+		"initial": 0
+	}
+	cfg.config.drones = {
+		"capacity": 20000, 
+		"initial": 20000
+	}
+	cfg.config.propulsion = {
+		"main": "SYSTEM_MAIN_ENGINE_K44",
+		"rcs": "SYSTEM_THRUSTER_K44"
+	}
+	cfg.config.fuel = {
+		"capacity": 80000,
+		"initial": 0
+	}
+	cfg.config.turbine.power = 500
+	cfg.config.capacitor.capacity = 1500
+	cfg.faction = "helpless"
+	var wreckage = Shipyard.createShipByConfig(cfg, false,24 * 3600 * 365 * 150)
 	if bootedUp:
 		wreckage.preheat = true
 		wreckage.setReactorState(true)
