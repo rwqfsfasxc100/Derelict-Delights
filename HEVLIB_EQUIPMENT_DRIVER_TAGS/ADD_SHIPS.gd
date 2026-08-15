@@ -1651,7 +1651,7 @@ const ATK225_MODIFY = {
 	"alternate_configs":"AT225"
 }
 const COTHON_MODIFY = {
-	"name":"AT225",
+	"name":"COTHON",
 	"used_configs":[
 		{
 			"weaponSlot":{
