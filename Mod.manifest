@@ -5,13 +5,13 @@ id="hev.DerelictDelights"
 description="DERELICTDELIGHTS_MOD_DESCRIPTION"
 brief="DERELICTDELIGHTS_MOD_BRIEF"
 author="__hev"
-credits=PoolStringArray( "Za\'krin - initial help with modding and events", "   --- Supporters ---   ", "GAZI - supporter (ko-fi)", "Bagger dude - supporter (ko-fi)", "WT - supporter (ko-fi)" )
+credits=PoolStringArray( "Za\'krin - initial help with modding and events", "   --- Supporters ---   ", "GAZI - supporter (ko-fi)", "Bagger dude - supporter (ko-fi)", "WT - supporter (ko-fi)", "Tessier-Ashpool S.A. - supporter (ko-fi)" )
 
 [version]
 
 version_major=3
 version_minor=1
-version_bugfix=0
+version_bugfix=1
 
 [tags]
 

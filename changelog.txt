@@ -1,3 +1,13 @@
+[3.1.1]
+
+1=* Converted into modlet
+2=* Events now use the `EVENT_DRIVER.gd` driver
+3=* Config additions now use the `ADD_SHIPS.gd` driver
+4=* Cleaned up old and unused scripts and scenes
+5=* You can now only ask the habitat under construction about the experimental containers once per visit
+6=* Container requests now take 3 minutes for the new container to arrive.
+7=* Updated credits
+
 [3.1.0]
 
 1=* Cleaned up dialogues:

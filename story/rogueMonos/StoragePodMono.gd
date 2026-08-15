@@ -14,7 +14,7 @@
 # 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products
 # derived from this software without specific prior written permission.
 # 
-# 4. The source code and the binary form, and any modifications made to them may not be used for the purpose of input data, the training of, or improvment of machine learning algorithms,
+# 4. The source code and the binary form, and any modifications made to them may not be used for the purpose of input data, the training of, or improvement of machine learning algorithms,
 # including but not limited to artificial intelligence, natural language processing, or data mining. This condition applies to any derivatives,
 # modifications, or updates based on the Software code. Any usage of the source code or the binary form in an AI-training dataset is considered a breach of this License.
 # 
@@ -29,7 +29,7 @@
 
 extends Node
 
-export  var lifepod = preload("res://ships/Lifepod.tscn")
+export  var lifepod = preload("res://ships/drone/StoragePodRogue.tscn")
 export  var processedCargo = false
 export (float, 0, 1, 0.1) var processedCargoMax = 1.0
 export (float, 0, 1, 0.1) var processedCargoMin = 0.0

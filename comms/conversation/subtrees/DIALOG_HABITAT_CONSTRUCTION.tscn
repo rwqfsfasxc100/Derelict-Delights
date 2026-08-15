@@ -14,6 +14,7 @@ myLine = false
 storyFlag = "dd.story.interplanetary"
 storyFlagMin = 1
 storyFlagMax = 1
+onlyOnce = true
 
 [node name="DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_2" type="Node" parent="DIALOG_HABITAT_BUILDING_CONTAINER_GRANDFATHER_1" index="0"]
 script = ExtResource( 1 )
@@ -34,6 +35,7 @@ script = ExtResource( 1 )
 myLine = false
 storyFlag = "dd.story.interplanetary"
 storyFlagMax = 0
+onlyOnce = true
 
 [node name="DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_2" type="Node" parent="DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_1" index="0"]
 script = ExtResource( 1 )

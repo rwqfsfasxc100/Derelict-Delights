@@ -19,7 +19,7 @@
 # 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products
 # derived from this software without specific prior written permission.
 # 
-# 4. The source code and the binary form, and any modifications made to them may not be used for the purpose of input data, the training of, or improvment of machine learning algorithms,
+# 4. The source code and the binary form, and any modifications made to them may not be used for the purpose of input data, the training of, or improvement of machine learning algorithms,
 # including but not limited to artificial intelligence, natural language processing, or data mining. This condition applies to any derivatives,
 # modifications, or updates based on the Software code. Any usage of the source code or the binary form in an AI-training dataset is considered a breach of this License.
 # 
@@ -168,8 +168,8 @@ const TRANSLATIONS = {
 			"version_hash": 1483079600
 		},
 		"DIALOG_STORAGE_THX": {
-			"string": "Container should appear on LIDAR soon. You will need to manually collect the container for safety protocols. Note that containers cannot be sent in quick succession.",
-			"version_hash": 1348274575
+			"string": "Your container should appear on LIDAR within a few minutes. Please be patient as it will take a moment to reach your location.\n\nYou will need to manually dock with the container due to safety protocols.",
+			"version_hash": 1313537934
 		},
 		"NEARBYCONTAINER": {
 			"string": "Empty Cargo Unit Nearby",
@@ -806,30 +806,6 @@ const TRANSLATIONS = {
 		"SYSTEM_SCOOP_LP_SPECS": {
 			"string": "Cargo capacity: 50 m^3\nAutonomy class: C2\nStock Modification: Mining laser, mineral processing unit\nPower usage (nominal): 30 MW\nDry Mass: 2,000 kg\nCradle Mass: 500 kg\nPropellant Tank: 4,000 kg\nManufacturer: Nakamura-Coherent Light-Titan",
 			"version_hash": 1790946444
-		},
-		"SYSTEM_SCOOP_M": {
-			"string": "N-A Mining Companion",
-			"version_hash": 1494069063
-		},
-		"SYSTEM_SCOOP_M_DESC": {
-			"string": "A lesser known project for the mining companion team came together with Antonoff to produce a limited-run variation of the stock NT companion. This variant ran with a mass driver, and was initially intended with ambush combat in mind, closely mirroring the military techniques of the early to mid 21st century. They were slowly repurposed into mining drones as Nakamura demilitarized their ring operations, and still see some usage with a handful of crews.",
-			"version_hash": 3457252067
-		},
-		"SYSTEM_SCOOP_M_SPECS": {
-			"string": "Cargo capacity: 50 m^3\\nAutonomy class: C2\\nStock Modification: Mass driver\\nPower usage (nominal): 10 MW\\nDry Mass: 2,000 kg\\nCradle Mass: 500 kg\\nPropellant Tank: 4,000 kg\\nManufacturer: Nakamura-Antonoff",
-			"version_hash": 2161418846
-		},
-		"SYSTEM_SCOOP_MP": {
-			"string": "N-A P-Type Mining Companion",
-			"version_hash": 868282502
-		},
-		"SYSTEM_SCOOP_MP_DESC": {
-			"string": "A lesser known project for the mining companion team came together with Antonoff to produce a limited-run variation of the stock NT companion. This variant ran with a mass driver, and was initially intended with ambush combat in mind, closely mirroring the military techniques of the early to mid 21st century. They were slowly repurposed into mining drones as Nakamura demilitarized their ring operations, and still see some usage with a handful of crews.\\n\\nA third party modification brought in the mineral processing unit to the driver line of companions. Not too much use was seen from these lines of drones, but they became popular among the pirates as self-sustaining ambush drones.",
-			"version_hash": 125241347
-		},
-		"SYSTEM_SCOOP_MP_SPECS": {
-			"string": "Cargo capacity: 50 m^3\\nAutonomy class: C2\\nStock Modification: Mass driver, mineral processing unit\\nPower usage (nominal): 10 MW\\nDry Mass: 2,000 kg\\nCradle Mass: 500 kg\\nPropellant Tank: 4,000 kg\\nManufacturer: Nakamura-Antonoff",
-			"version_hash": 145100911
 		},
 		"SYSTEM_SCOOP_P": {
 			"string": "NT P-Type Mining Companion",
@@ -1705,30 +1681,6 @@ const TRANSLATIONS = {
 			"string": "Объём грузового отсека: 50 м^3\\nКласс автономности: C2\\nСтандартная модификация: Горнодобывающий лазер, установка для переработки руды\\nЭнергопотребление (номинальное): 10 МВт\\nМасса пустого аппарата: 2000 кг\\nМасса люльки: 500 кг\\nЗапас рабочего тела: 4000 кг\\nПроизводитель: Nakamura-Coherent Light-Titan",
 			"version_hash": 0
 		},
-		"SYSTEM_SCOOP_M": {
-			"string": "Компаньон-Добытчик N-A",
-			"version_hash": 0
-		},
-		"SYSTEM_SCOOP_M_DESC": {
-			"string": "Менее известный проект команды по разработке компаньона-добытчика был реализован совместно с Антоновым для создания ограниченной серии стандартных компаньонов NT. Этот вариант был оснащён электромагнитной пушкой и изначально предназначался для ведения боя из засад, что во многом отражало военные методы начала и середины XXI века. После того, как Nakamura демилитаризовала свои операции в кольцах, их постепенно перепрофилировали в добывающие дроны, и они до сих пор используются некоторыми экипажами.",
-			"version_hash": 0
-		},
-		"SYSTEM_SCOOP_M_SPECS": {
-			"string": "Объём грузового отсека: 50 м³\\nКласс автономности: C2\\nСтандартная модификация: электромагнитная пушка\\nЭнергопотребление (номинальное): 10 МВт\\nМасса пустого аппарата: 2000 кг\\nМасса люльки: 500 кг\\nЗапас рабочего тела: 4000 кг\\nПроизводитель: Nakamura-Antonoff",
-			"version_hash": 0
-		},
-		"SYSTEM_SCOOP_MP": {
-			"string": "Компаньон-Добытчик N-A P-Type ",
-			"version_hash": 0
-		},
-		"SYSTEM_SCOOP_MP_DESC": {
-			"string": "Менее известный проект команды по разработке компаньона-добытчика был реализован совместно с Антоновым для создания ограниченной серии стандартных компаньонов NT. Этот вариант был оснащен электромагнитной пушкой и изначально предназначался для ведения боя из засад, что во многом отражало военные методы начала и середины XXI века. После того, как Nakamura демилитаризовала свои операции в кольцах, их постепенно перепрофилировали в добывающие дроны, и они до сих пор используются некоторыми экипажами.\\n\\nСторонняя модификация добавила к линейке установку для переработки минералов. Эти дроны не получили широкого распространения, но стали популярны среди пиратов как самоподдерживающиеся засадные дроны.",
-			"version_hash": 0
-		},
-		"SYSTEM_SCOOP_MP_SPECS": {
-			"string": "Объём грузового отсека: 50 м^3\\nКласс автономности: C2\\nСтандартная модификация: электромагнитная пушка, установка переработки руды\\nЭнергопотребление (номинальное): 10 МВт\\nМасса пустого аппарата: 2000 кг\\nМасса люльки: 500 кг\\nЗапас рабочего тела: 4000 кг\\nПроизводитель: Nakamura-Antonoff",
-			"version_hash": 0
-		},
 		"SYSTEM_SCOOP_P": {
 			"string": "Компаньон-Добытчик NT P-Type",
 			"version_hash": 0
@@ -2561,30 +2513,6 @@ const TRANSLATIONS = {
 		},
 		"SYSTEM_SCOOP_LP_SPECS": {
 			"string": "Місткість: 50 m^3\\nКлас автономності: C2\\nМодифікація: Буровий лазер , УПМ\\nЕнергоспоживання (номінальне): 10 MW\\nСуха маса: 2,000 kg\\nМаса люльки: 500 kg\\nЗапас робочого тіла: 4,000 kg\\nВиробник: Nakamura-Coherent Light-Titan",
-			"version_hash": 0
-		},
-		"SYSTEM_SCOOP_M": {
-			"string": "N-A Mining Companion",
-			"version_hash": 0
-		},
-		"SYSTEM_SCOOP_M_DESC": {
-			"string": "Менш відомий проєкт для команди Mining Companion об'єднався з Antonoff для випуску обмеженої серії варіації стандартного NT companion. Цей варіант працював з електромагнітною гарматою і спочатку був розроблений для засідкового бою, що тісно відображало військові методи початку-середини 21-го століття. Їх повільно перепрофілювали в гірничі дрони, оскільки Nakamura демілітаризувала свої кільцеві операції, і вони все ще використовуються деякими екіпажами.",
-			"version_hash": 0
-		},
-		"SYSTEM_SCOOP_M_SPECS": {
-			"string": "Місткість: 50 m^3\\nКлас автономності: C2\\nМодифікація: Електромагнітна гармат\\nЕнергоспоживання (номінальне): 10 MW\\nСуха маса: 2,000 kg\\nМаса люльки: 500 kg\\nЗапас робочого тіла: 4,000 kg\\nВиробник: Nakamura-Antonoff",
-			"version_hash": 0
-		},
-		"SYSTEM_SCOOP_MP": {
-			"string": "N-A P-Type Mining Companion",
-			"version_hash": 0
-		},
-		"SYSTEM_SCOOP_MP_DESC": {
-			"string": "Менш відомий проєкт для команди Mining Companion об'єднався з Antonoff для випуску обмеженої серії варіації стандартного NT companion. Цей варіант працював з електромагнітною гарматою і спочатку був розроблений для засідкового бою, що тісно відображало військові методи початку-середини 21-го століття. Їх повільно перепрофілювали в гірничі дрони, оскільки Nakamura демілітаризувала свої кільцеві операції, і вони все ще використовуються деякими екіпажами.\\n\\nСтороння модифікація додала УМП до лінійки компаньйонів з гарматою. Ці лінії дронів не знайшли широкого застосування, але стали популярними серед піратів як самодостатні засідкові дрони.",
-			"version_hash": 0
-		},
-		"SYSTEM_SCOOP_MP_SPECS": {
-			"string": "Місткість: 50 m^3\\nКлас автономності: C2\\nМодифікація: Електромагнітна гармата, УПМ\\nЕнергоспоживання (номінальне): 10 MW\\nСуха маса: 2,000 kg\\nМаса люльки: 500 kg\\nЗапас робочого тіла: 4,000 kg\\nВиробник: Nakamura-Antonoff",
 			"version_hash": 0
 		},
 		"SYSTEM_SCOOP_P": {
