@@ -106,7 +106,6 @@ rotationCabinOffsetPx = 0.0
 factionIndependent = true
 factionClaimable = true
 reactiveMass = 30000
-mystery = true
 ai = true
 aiTargetVelocity = Vector2( -1000, 0 )
 aiLookaheadSeconds = 8.0
@@ -232,7 +231,6 @@ targetable = false
 [node name="DisableAI" parent="." instance=ExtResource( 13 )]
 visible = false
 scale = Vector2( 1.5, 1.5 )
-collision_mask = 2147487232
 
 [node name="CargoContainer" parent="." instance=ExtResource( 8 )]
 

@@ -5,5 +5,6 @@
 [node name="StoragePodBigRogue" instance=ExtResource( 1 )]
 hasMusicChange = true
 faction = "pirate"
+mystery = true
 
 [editable path="AI"]

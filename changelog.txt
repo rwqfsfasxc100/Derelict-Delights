@@ -1,3 +1,9 @@
+[3.1.2]
+
+1=* Habitat Construction docking instructions now use unique directions that no longer assume the habitat would be spinning.
+2=* Your Experimental containers no longer produce the mystery music after releasing them from the cradle.
+3=* Rogue Experimental containers now produce mystery music
+
 [3.1.1]
 
 1=* Converted into modlet

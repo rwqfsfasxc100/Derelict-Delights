@@ -906,6 +906,10 @@ const TRANSLATIONS = {
 		"DERELICTDELIGHTS_MOD_BRIEF": {
 			"string": "Adds new encounters, storylines, and equipment to the rings.",
 			"version_hash": 3771175045
+		},
+		"DIALOG_HABITAT_DOCKING_INSTRUCTION_CONSTRUCTION": {
+			"string": "Roger that, {target/shipname}. Try to approach gently and let the docking arm catch you. Keep yourself in control, as the arm won't stay attached if you drift too far.",
+			"version_hash": 3900523518
 		}
 	},
 	"ru": {
