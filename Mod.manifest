@@ -11,7 +11,7 @@ credits=PoolStringArray( "ABANDONEDTECH_CREDITS_ZAKRIN", "", "HEVLIB_CREDITS_TRA
 
 version_major=3
 version_minor=1
-version_bugfix=2
+version_bugfix=3
 
 [tags]
 
