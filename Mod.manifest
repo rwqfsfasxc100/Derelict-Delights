@@ -5,7 +5,7 @@ id="hev.DerelictDelights"
 description="DERELICTDELIGHTS_MOD_DESCRIPTION"
 brief="DERELICTDELIGHTS_MOD_BRIEF"
 author="__hev"
-credits=PoolStringArray( "Za\'krin - initial help with modding and events", "   --- Supporters ---   ", "GAZI - supporter (ko-fi)", "Bagger dude - supporter (ko-fi)", "WT - supporter (ko-fi)", "Tessier-Ashpool S.A. - supporter (ko-fi)" )
+credits=PoolStringArray( "ABANDONEDTECH_CREDITS_ZAKRIN", "", "HEVLIB_CREDITS_TRANSLATORS_HEADER", "HEVLIB_CREDITS_TRANSLATORS_1WT1", "HEVLIB_CREDITS_TRANSLATORS_HEDRAUTA", "", "HEVLIB_CREDITS_SUPPORTERS_HEADER", "HEVLIB_CREDITS_SUPPORTERS_KOFI_GAZI", "HEVLIB_CREDITS_SUPPORTERS_KOFI_BAGGERDUDE", "HEVLIB_CREDITS_SUPPORTERS_KOFI_1WT1", "HEVLIB_CREDITS_SUPPORTERS_KOFI_TESSIER" )
 
 [version]
 
@@ -181,3 +181,4 @@ DD_AGENDA_TOGGLES={
 manifest_version=2.2
 manifest_url="https://raw.githubusercontent.com/rwqfsfasxc100/Abandoned-Technologies/1.0.0/Mod.manifest"
 changelog_path="changelog.txt"
+expected_manifest_path="res://AbandonedTechnologies/Mod.manifest"

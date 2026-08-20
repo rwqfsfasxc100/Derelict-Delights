@@ -910,6 +910,10 @@ const TRANSLATIONS = {
 		"DIALOG_HABITAT_DOCKING_INSTRUCTION_CONSTRUCTION": {
 			"string": "Roger that, {target/shipname}. Try to approach gently and let the docking arm catch you. Keep yourself in control, as the arm won't stay attached if you drift too far.",
 			"version_hash": 3900523518
+		},
+		"ABANDONEDTECH_CREDITS_ZAKRIN": {
+			"string": "Za'krin - initial help with modding and events",
+			"version_hash": 3319037921
 		}
 	},
 	"ru": {
