@@ -34,7 +34,8 @@ const WEAPONSLOT_MODIFY = {
 	"SYSTEM_PDTL":[
 		{
 			"property":"position",
-			"value":"Vector2(0,-800)"
+			"value":Vector2(0,-800),
+			"use_stringified_value":false
 		}
 	]
 }

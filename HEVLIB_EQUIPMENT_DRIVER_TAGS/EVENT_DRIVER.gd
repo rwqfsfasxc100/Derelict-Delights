@@ -181,6 +181,15 @@ const KESSLER_SYNDROME = {
 	"script_path":"res://AbandonedTechnologies/story/kesslersyndrome/KesslerSyndrome.gd",
 	"config":[{"id":"AbandonedTechnologies","section":"DD_EVENT_TOGGLES","entry":"kesslerSyndrome"},{"id":"AbandonedTechnologies","section":"DD_MAIN_TOGGLES","entry":"addEvents"}]
 }
+const SUPER_THICC_DERELICT = {
+	"event_name":"DerelictSuperTHICC",
+	"event_type":"script",
+	"script_path":"res://AbandonedTechnologies/story/historianAgenda/SuperTHICCDerelict.gd",
+	"custom_property_modifications":{
+		"imperative":15
+	},
+	"config":[{"id":"AbandonedTechnologies","section":"DD_MAIN_TOGGLES","entry":"addEvents"},{"id":"AbandonedTechnologies","section":"DD_MAIN_TOGGLES","entry":"addAgenda"},{"id":"AbandonedTechnologies","section":"DD_MAIN_TOGGLES","entry":"addEquipment"},{"id":"AbandonedTechnologies","section":"DD_AGENDA_TOGGLES","entry":"addHistorian"}]
+}
 const STORAGE_POD_MONO = {
 	"event_name":"StoragePodMono",
 	"event_type":"script",

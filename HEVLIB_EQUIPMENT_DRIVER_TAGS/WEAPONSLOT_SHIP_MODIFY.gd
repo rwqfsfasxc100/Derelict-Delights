@@ -36,13 +36,15 @@ const WEAPONSLOT_SHIP_MODIFY = {
 			"SYSTEM_EXSUPER-L":[
 				{
 					"property":"position",
-					"value":"Vector2( -35, 190 )"
+					"value":Vector2( -35, 190 ),
+					"use_stringified_value":false
 				}
 			],
 			"SYSTEM_EXBIG-L":[
 				{
 					"property":"position",
-					"value":"Vector2( -10, 185 )"
+					"value":Vector2( -10, 185 ),
+					"use_stringified_value":false
 				}
 			],
 		},
@@ -50,13 +52,15 @@ const WEAPONSLOT_SHIP_MODIFY = {
 			"SYSTEM_EXSUPER-R":[
 				{
 					"property":"position",
-					"value":"Vector2( 35, 190 )"
+					"value":Vector2( 35, 190 ),
+					"use_stringified_value":false
 				}
 			],
 			"SYSTEM_EXBIG-R":[
 				{
 					"property":"position",
-					"value":"Vector2( 10, 185 )"
+					"value":Vector2( 10, 185 ),
+					"use_stringified_value":false
 				}
 			],
 		},
@@ -64,13 +68,15 @@ const WEAPONSLOT_SHIP_MODIFY = {
 			"SYSTEM_EXSUPER-L":[
 				{
 					"property":"position",
-					"value":"Vector2( -35, 190 )"
+					"value":Vector2( -35, 190 ),
+					"use_stringified_value":false
 				}
 			],
 			"SYSTEM_EXBIG-L":[
 				{
 					"property":"position",
-					"value":"Vector2( -10, 185 )"
+					"value":Vector2( -10, 185 ),
+					"use_stringified_value":false
 				}
 			],
 		},
@@ -78,13 +84,15 @@ const WEAPONSLOT_SHIP_MODIFY = {
 			"SYSTEM_EXSUPER-R":[
 				{
 					"property":"position",
-					"value":"Vector2( 35, 190 )"
+					"value":Vector2( 35, 190 ),
+					"use_stringified_value":false
 				}
 			],
 			"SYSTEM_EXBIG-R":[
 				{
 					"property":"position",
-					"value":"Vector2( 10, 185 )"
+					"value":Vector2( 10, 185 ),
+					"use_stringified_value":false
 				}
 			],
 		},
@@ -92,13 +100,15 @@ const WEAPONSLOT_SHIP_MODIFY = {
 			"SYSTEM_EXSUPER-L":[
 				{
 					"property":"position",
-					"value":"Vector2( -35, 190 )"
+					"value":Vector2( -35, 190 ),
+					"use_stringified_value":false
 				}
 			],
 			"SYSTEM_EXBIG-L":[
 				{
 					"property":"position",
-					"value":"Vector2( -10, 185 )"
+					"value":Vector2( -10, 185 ),
+					"use_stringified_value":false
 				}
 			],
 		},
@@ -106,13 +116,15 @@ const WEAPONSLOT_SHIP_MODIFY = {
 			"SYSTEM_EXSUPER-R":[
 				{
 					"property":"position",
-					"value":"Vector2( 35, 190 )"
+					"value":Vector2( 35, 190 ),
+					"use_stringified_value":false
 				}
 			],
 			"SYSTEM_EXBIG-R":[
 				{
 					"property":"position",
-					"value":"Vector2( 10, 185 )"
+					"value":Vector2( 10, 185 ),
+					"use_stringified_value":false
 				}
 			],
 		},
@@ -122,17 +134,20 @@ const WEAPONSLOT_SHIP_MODIFY = {
 			"SYSTEM_EXSUPER-L":[
 				{
 					"property":"position",
-					"value":"Vector2( 32, -112 )"
+					"value":Vector2( 32, -112 ),
+					"use_stringified_value":false
 				},
 				{
 					"property":"z_index",
-					"value":"-10"
+					"value":-10,
+					"use_stringified_value":false
 				}
 			],
 			"SYSTEM_EXBIG-L":[
 				{
 					"property":"position",
-					"value":"Vector2( 32, -112 )"
+					"value":Vector2( 32, -112 ),
+					"use_stringified_value":false
 				}
 			],
 		},
@@ -140,17 +155,20 @@ const WEAPONSLOT_SHIP_MODIFY = {
 			"SYSTEM_EXSUPER-R":[
 				{
 					"property":"position",
-					"value":"Vector2( -32, -112 )"
+					"value":Vector2( -32, -112 ),
+					"use_stringified_value":false
 				},
 				{
 					"property":"z_index",
-					"value":"-10"
+					"value":-10,
+					"use_stringified_value":false
 				}
 			],
 			"SYSTEM_EXBIG-R":[
 				{
 					"property":"position",
-					"value":"Vector2( -32, -112 )"
+					"value":Vector2( -32, -112 ),
+					"use_stringified_value":false
 				}
 			],
 		}

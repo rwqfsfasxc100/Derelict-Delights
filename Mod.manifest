@@ -10,8 +10,8 @@ credits=PoolStringArray( "ABANDONEDTECH_CREDITS_ZAKRIN", "", "HEVLIB_CREDITS_TRA
 [version]
 
 version_major=3
-version_minor=1
-version_bugfix=3
+version_minor=2
+version_bugfix=0
 
 [tags]
 
@@ -179,6 +179,11 @@ DD_AGENDA_TOGGLES={
 [manifest_definitions]
 
 manifest_version=2.2
+dependancy_mod_ids=[ {
+"blocking": true,
+"minimum_version": [ 1, 15, 49 ],
+"mod_id": "hev.LIBRARY"
+} ]
 manifest_url="https://raw.githubusercontent.com/rwqfsfasxc100/Abandoned-Technologies/1.0.0/Mod.manifest"
 changelog_path="changelog.txt"
 expected_manifest_path="res://AbandonedTechnologies/Mod.manifest"

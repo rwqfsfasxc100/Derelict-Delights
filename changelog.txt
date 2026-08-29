@@ -1,3 +1,8 @@
+[3.2.0]
+
+1=* Changed weaponslot modifications to use the new property handling
+2=* Fixed Experimental container derelict not EventDriver, which would occasionally prevent it from being loaded when installed alongside other specific mods.
+
 [3.1.3]
 
 1=* Updated credits to use translation strings
