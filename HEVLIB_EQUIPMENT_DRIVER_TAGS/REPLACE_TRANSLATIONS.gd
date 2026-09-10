@@ -1,9 +1,9 @@
 # This translation file is generated automatically
-# Do not modify anything directly, as this will break things for translators
+# Do not modify anything directly, as this will cause the file to break for translators
 # Please use Translation Tracker to modify these yourself, and contact the mod author to implement them
 # https://github.com/rwqfsfasxc100/TranslationTracker/releases/latest
 
-# # [license]
+# [license]
 # 3-Clause BSD NON-AI License
 # 
 # Copyright 2026 __hev (Benjamin Buckhurst)
@@ -1755,6 +1755,50 @@ const TRANSLATIONS = {
 		"DIALOG_PIRATE_BUSINESS_ORE_MONO": {
 			"string": "У нас есть руда на продажу. Высококачественная, обработанная, ждет своей очереди в аккуратном моноконтейнере. Вам нужно только взять с собой поддон и забрать ее. 200 тысяч, и она ваша.",
 			"version_hash": 0
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CANNOT_SAY": {
+			"string": "Извините, {target/shipname}, но мы не можем раскрыть вам эту информацию.",
+			"version_hash": 2801708407
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CONTRACTOR_1": {
+			"string": "Один из наших подрядчиков сумел получить лицензию на экспериментальные межпланетные контейнеры. По его договорённости нам отправляли их вместо обычных грузовых контейнеров. Поставки шли медленнее, но сами контейнеры мы получали быстрее.",
+			"version_hash": 2826077326
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CONTRACTOR_2": {
+			"string": "Конечно, это было рискованно. Чем меньше отдельных поставок, тем серьёзнее последствия любой неудачи. И неудача произошла.",
+			"version_hash": 3391746704
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CONTRACTOR_3": {
+			"string": "Вероятно, они нашли один из кораблей, брошенных в кольцах ещё во время испытаний.",
+			"version_hash": 923299593
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CONTRACTOR_2_MISSING": {
+			"string": "Большинство партий пропало, а подрядчик давно не выходил на связь, поэтому изменить заказ мы не смогли. Несколько пилотов сообщали о контейнерах, работающих без транспондера. Остаётся предположить, что дело в пиратах.",
+			"version_hash": 591922901
+		},
+		"DIALOG_HABITAT_BUILDING_CONTAINER_OBTAIN_CONTRACTOR_3_FIND": {
+			"string": "Если найдёте корабль с действующей лицензией на эти контейнеры — а ещё лучше с контейнером на борту, — доставьте его на станцию и сможете оформить находку на себя.",
+			"version_hash": 2400195760
+		},
+		"DIALOG_SUPER_THICC_DERELICT_THIS_APPROACH": {
+			"string": "Подходим к {origin/shipname}. Снаружи эта штука выглядит древней. Интересно, сколько она уже дрейфует.",
+			"version_hash": 2133903302
+		},
+		"DIALOG_SUPER_THICC_DERELICT_THIS_BOARDED": {
+			"string": "Я на борту. Питания нет вообще; надеюсь, фонаря скафандра хватит. Шкаф с монтажной документацией найти будет нетрудно.",
+			"version_hash": 447391236
+		},
+		"DERELICTDELIGHTS_MOD_BRIEF": {
+			"string": "Добавляет в кольца новые встречи, сюжетные линии и оборудование.",
+			"version_hash": 3771175045
+		},
+		"DIALOG_HABITAT_DOCKING_INSTRUCTION_CONSTRUCTION": {
+			"string": "Принято, {target/shipname}. Подходите медленно и позвольте стыковочному манипулятору захватить вас. Контролируйте дрейф: если отойдёте слишком далеко, захват сорвётся.",
+			"version_hash": 3900523518
+		},
+		"ABANDONEDTECH_CREDITS_ZAKRIN": {
+			"string": "Za'krin — первоначальная помощь с моддингом и событиями",
+			"version_hash": 3319037921
 		}
 	},
 	"uk_UA": {
