@@ -127,7 +127,7 @@ func makeAt(pos):
 	var tv = target * velocity + player.linear_velocity
 	var angularV = (randf() - 0.5) * angular
 	rng.randomize()
-	for i in range(number):
+	for i in number:
 		var a = null
 		if randf() < 0.6:
 			var bp = aimerAsteroids[randi() % aimerAsteroids.size()]
@@ -175,14 +175,14 @@ func add_oddities(tv,angularV,pos):
 	if randf() < 0.5:
 		oddities.append_array(procure_derelicts([],tv))
 	if randf() < 0.85:
-		for i in range(randi() % 5):
+		for i in (randi() % 5):
 			var a = drones[randi() % drones.size()].instance()
 			a.ai = true
 			a.preheat = false
 			if aim:
 				a.linear_velocity = tv * 0.8
 			oddities.append(a)
-	for i in range(randi() % 2):
+	for i in (randi() % 2):
 		var a = pods[randi() % pods.size()].instance()
 		if aim:
 			a.linear_velocity = tv * 0.7

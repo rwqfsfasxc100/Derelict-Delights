@@ -174,13 +174,13 @@ func makeVilcyBattleship():
 func makeAt(pos):
 	var out = .makeAt(pos)
 	# Spawn your new event
-	for i in range(pirateEagle):
+	for i in pirateEagle:
 		var ship = makePirateEagle()
 		out.append(ship)
-	for i in range(highPerformancePirate):
+	for i in highPerformancePirate:
 		var ship = makeHighPerformanceEagle()
 		out.append(ship)
-	for i in range(vilcyBattleship):
+	for i in vilcyBattleship:
 		var ship = makeVilcyBattleship()
 		out.append(ship)
 	return out
